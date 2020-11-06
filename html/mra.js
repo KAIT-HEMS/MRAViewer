@@ -1,10 +1,10 @@
 const jsonData = {
   "metaData":{
-    "date":"2020-11-05",
+    "date":"2020-11-06",
     "release":"M",
     "version":"1.0.0rc1",
     "note":{"ja":" Machine Readable Appendix official release", "en":"Machine Readable Appendix official release"},
-    "Copyright":"(C) 2020 ECHONET Consortium and Kanagawa institute of Technology"
+    "Copyright":"(C) 2020 Kanagawa Institute of Technology, ECHONET CONSORTIUM"
   },
   "definitions":{
     "number_0":{
@@ -2586,7 +2586,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0xFD",
-                    "state": {
+                    "descriptions": {
                       "ja": "無限",
                       "en": "No time limit"
                     }
@@ -2796,14 +2796,14 @@ const jsonData = {
                   "enum": [
                     {
                       "edt": 0,
-                      "state": {
+                      "descriptions": {
                         "ja": "正常",
                         "en": "No Alarm"
                       }
                     },
                     {
                       "edt": 1,
-                      "state": {
+                      "descriptions": {
                         "ja": "発生",
                         "en": "Alarm"
                       }
@@ -2827,14 +2827,14 @@ const jsonData = {
                   "enum": [
                     {
                       "edt": 0,
-                      "state": {
+                      "descriptions": {
                         "ja": "正常",
                         "en": "No Alarm"
                       }
                     },
                     {
                       "edt": 1,
-                      "state": {
+                      "descriptions": {
                         "ja": "発生",
                         "en": "Alarm"
                       }
@@ -2858,14 +2858,14 @@ const jsonData = {
                   "enum": [
                     {
                       "edt": 0,
-                      "state": {
+                      "descriptions": {
                         "ja": "正常",
                         "en": "No Alarm"
                       }
                     },
                     {
                       "edt": 1,
-                      "state": {
+                      "descriptions": {
                         "ja": "発生",
                         "en": "Alarm"
                       }
@@ -3051,7 +3051,7 @@ const jsonData = {
                   {
                     "edt": "0x09",
                     "name": "09:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "9時",
                       "en": "9:00"
                     }
@@ -3059,7 +3059,7 @@ const jsonData = {
                   {
                     "edt": "0x0A",
                     "name": "10:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "10時",
                       "en": "10:00"
                     }
@@ -3067,7 +3067,7 @@ const jsonData = {
                   {
                     "edt": "0x0B",
                     "name": "11:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "11時",
                       "en": "11:00"
                     }
@@ -3075,7 +3075,7 @@ const jsonData = {
                   {
                     "edt": "0x0C",
                     "name": "12:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "12時",
                       "en": "12:00"
                     }
@@ -3083,7 +3083,7 @@ const jsonData = {
                   {
                     "edt": "0x0D",
                     "name": "13:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "13時",
                       "en": "13:00"
                     }
@@ -3091,7 +3091,7 @@ const jsonData = {
                   {
                     "edt": "0x0E",
                     "name": "14:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "14時",
                       "en": "14:00"
                     }
@@ -3099,7 +3099,7 @@ const jsonData = {
                   {
                     "edt": "0x0F",
                     "name": "15:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "15時",
                       "en": "15:00"
                     }
@@ -3107,7 +3107,7 @@ const jsonData = {
                   {
                     "edt": "0x10",
                     "name": "16:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "16時",
                       "en": "16:00"
                     }
@@ -3115,7 +3115,7 @@ const jsonData = {
                   {
                     "edt": "0x11",
                     "name": "17:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "17時（エネルギーシフト回数が2回の場合はこの値無効になる）",
                       "en": "17:00 (this value is nullified if energy shifts occur twice)"
                     }
@@ -3128,7 +3128,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x00",
-                    "state": {
+                    "descriptions": {
                       "ja": "クリア状態",
                       "en": "Undefined"
                     }
@@ -3260,7 +3260,7 @@ const jsonData = {
                   {
                     "edt": "0x0A",
                     "name": "10:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "10時",
                       "en": "10:00"
                     }
@@ -3268,7 +3268,7 @@ const jsonData = {
                   {
                     "edt": "0x0B",
                     "name": "11:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "11時",
                       "en": "11:00"
                     }
@@ -3276,7 +3276,7 @@ const jsonData = {
                   {
                     "edt": "0x0C",
                     "name": "12:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "12時",
                       "en": "12:00"
                     }
@@ -3284,7 +3284,7 @@ const jsonData = {
                   {
                     "edt": "0x0D",
                     "name": "13:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "13時",
                       "en": "13:00"
                     }
@@ -3292,7 +3292,7 @@ const jsonData = {
                   {
                     "edt": "0x0E",
                     "name": "14:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "14時",
                       "en": "14:00"
                     }
@@ -3300,7 +3300,7 @@ const jsonData = {
                   {
                     "edt": "0x0F",
                     "name": "15:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "15時",
                       "en": "15:00"
                     }
@@ -3308,7 +3308,7 @@ const jsonData = {
                   {
                     "edt": "0x10",
                     "name": "16:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "16時",
                       "en": "16:00"
                     }
@@ -3316,7 +3316,7 @@ const jsonData = {
                   {
                     "edt": "0x11",
                     "name": "17:00:00",
-                    "state": {
+                    "descriptions": {
                       "ja": "17時",
                       "en": "17:00"
                     }
@@ -3330,7 +3330,7 @@ const jsonData = {
                   {
                     "edt": "0x00",
                     "name": "undefined",
-                    "state": {
+                    "descriptions": {
                       "ja": "クリア状態",
                       "en": "Undefined"
                     }
@@ -3633,7 +3633,7 @@ const jsonData = {
                         "enum": [
                           {
                             "edt": "0x8000",
-                            "state": {
+                            "descriptions": {
                               "ja": "無効値",
                               "en": "Invalid data"
                             }
@@ -14418,7 +14418,10 @@ const jsonData = {
           "data": {
             "$ref": "#/definitions/number_0-100%"
           },
-          "note": { "en": "0x00-0x64", "ja":"0x00-0x64" }
+          "note": {
+            "en": "0x00-0x64",
+            "ja": "0x00-0x64"
+          }
         },
         "0xBA": {
           "validRelease": {
