@@ -14418,7 +14418,7 @@ const jsonData = {
           "data": {
             "$ref": "#/definitions/number_0-100%"
           },
-          "note": "0x00-0x64"
+          "note": { "en": "0x00-0x64", "ja":"0x00-0x64" }
         },
         "0xBA": {
           "validRelease": {

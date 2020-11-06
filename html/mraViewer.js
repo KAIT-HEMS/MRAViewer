@@ -447,7 +447,10 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
             indexObject = (indexObject === null) ? 0 : indexObject;
             for (let i=0; i < arrayObject.length; i++, indexObject++) {
                 // display object header
-                const objectTitle = (vm.rbLanguage == 'japanese') ? arrayObject[i].descriptions.ja : arrayObject[i].descriptions.en;
+                let objectTitle = "Missing descriptions !";
+                if (arrayObject[i].descriptions) {
+                    objectTitle = (vm.rbLanguage == 'japanese') ? arrayObject[i].descriptions.ja : arrayObject[i].descriptions.en;
+                }
                 const objectHeaderProperty = {
                     propertyName:property.propertyName, 
                     accessRule:property.accessRule, 
