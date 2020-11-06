@@ -1,6 +1,6 @@
 const jsonData = {
   "metaData": {
-    "date": "2020-11-05",
+    "date": "2020-11-06",
     "release": "M",
     "version": "1.0.0rc1",
     "note": {
