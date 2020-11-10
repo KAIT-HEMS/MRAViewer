@@ -1,5 +1,5 @@
 <!-- index.html for mraViewer-->
-<!-- 2020.11.06 -->
+<!-- 2020.11.10 -->
 <!-- Hiroyuki Fujita -->
 
 <!doctype html>
@@ -163,10 +163,16 @@
                 <template v-if="appendix.propType === 'state'">
                   <table>
                     <tr v-for="item in appendix.range" tabindex="0" >
-                    <template v-if="rbLanguage === 'japanese'">
+                    <template v-if="rbLanguage === 'japanese' && rbName === 'name-on'">
+                      <td class="col3">{{ item.edt }}:{{ item.descriptions.ja }}:{{ item.name }}</td>
+                    </template>
+                    <template v-if="rbLanguage === 'japanese' && rbName === 'name-off'">
                       <td class="col3">{{ item.edt }}:{{ item.descriptions.ja }}</td>
                     </template>
-                    <template v-if="rbLanguage === 'english'">
+                    <template v-if="rbLanguage === 'english' && rbName === 'name-on'">
+                      <td class="col3">{{ item.edt }}:{{ item.descriptions.en }}:{{ item.name }}</td>
+                    </template>
+                    <template v-if="rbLanguage === 'english' && rbName === 'name-off'">
                       <td class="col3">{{ item.edt }}:{{ item.descriptions.en }}</td>
                     </template>
                   </table>

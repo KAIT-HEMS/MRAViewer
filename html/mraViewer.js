@@ -1,7 +1,7 @@
 // mraViewer.js
-// 2020.11.09
+// 2020.11.10
 
-let globalVersionInfo = "V1.1.0 2020-11-09";
+let globalVersionInfo = "V1.1.1 2020-11-10";
 let globalNotes = {}; // 備考欄のデータを保持するため
 let globalBitmaps = {}; // value range欄のbitmapデータを保持するため
 var vm = new Vue({
@@ -12,7 +12,7 @@ var vm = new Vue({
     rbName: "name-off", // selected radio button for language selection
     appendix_list: [], // array of each property info
     packetDetail: "", // gabage code from SSNG
-    deviceSelected: "0x0288", // selected device by pull down menu with default value
+    deviceSelected: "0x0EF0", // selected device by pull down menu with default value
     deviceList: [], // list of device objects for a pull down menu
     releaseSelected: "", // selected release by pull down menu
     releaseList: [], // list of releases for a pull down menu

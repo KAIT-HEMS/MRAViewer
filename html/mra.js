@@ -2250,6 +2250,6189 @@ const jsonData = {
       }
     },
   "devices":{
+    "0x0130": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "家庭用エアコン",
+        "en": "Home air conditioner"
+      },
+      "shortName": "homeAirConditioner",
+      "elProperties": {
+        "0x80": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "動作状態",
+            "en": "Operation status"
+          },
+          "shortName": "operationStatus",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x30",
+                "name": "true",
+                "descriptions": {
+                  "ja": "ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x31",
+                "name": "false",
+                "descriptions": {
+                  "ja": "OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0x8F": {
+          "validRelease": {
+            "from": "D",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "節電動作設定",
+            "en": "Power-saving operation setting"
+          },
+          "shortName": "powerSaving",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "節電動作中",
+                  "en": "Operating in power-saving mode"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "通常動作中",
+                  "en": "Operating in normal operation mode"
+                }
+              }
+            ]
+          }
+        },
+        "0x90": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ONタイマ予約設定",
+            "en": "ON timer-based reservation setting"
+          },
+          "shortName": "onTimerReservation",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "timeBasedAndRelativeTimeBasedOn",
+                "descriptions": {
+                  "ja": "時刻予約、相対時間予約共に入",
+                  "en": "Both the time- and relative time-based reservation functions are ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "bothOff",
+                "descriptions": {
+                  "ja": "予約切",
+                  "en": "Both reservation functions are OFF"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "timeBasedOn",
+                "descriptions": {
+                  "ja": "時刻予約のみ入",
+                  "en": "Time-based reservation function is ON"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "relativeTimeBasedOn",
+                "descriptions": {
+                  "ja": "相対時間予約のみ入",
+                  "en": "Relative time-based reservation function is ON"
+                }
+              }
+            ]
+          }
+        },
+        "0x91": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ONタイマ時刻設定値",
+            "en": "ON timer setting(time)"
+          },
+          "shortName": "onTimerTime",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "time",
+            "size": 2
+          }
+        },
+        "0x92": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ONタイマ相対時間設定値",
+            "en": "ON timer setting(relative time)"
+          },
+          "shortName": "onTimerRelativeTime",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "time",
+            "size": 2,
+            "maximumOfHour": 255
+          }
+        },
+        "0x94": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "OFFタイマ予約設定",
+            "en": "OFF timer-based reservation setting"
+          },
+          "shortName": "offTimerReservation",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "timeBasedAndRelativeTimeBasedOn",
+                "descriptions": {
+                  "ja": "時刻予約、相対時間予約共に入",
+                  "en": "Both the time- and relative time-based reservation functions are ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "bothOff",
+                "descriptions": {
+                  "ja": "予約切",
+                  "en": "Both reservation functions are OFF"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "timeBasedOn",
+                "descriptions": {
+                  "ja": "時刻予約のみ入",
+                  "en": "Time-based reservation function is ON"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "relativeTimeBasedOn",
+                "descriptions": {
+                  "ja": "相対時間予約のみ入",
+                  "en": "Relative time-based reservation function is ON"
+                }
+              }
+            ]
+          }
+        },
+        "0x95": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "OFFタイマ時刻設定値",
+            "en": "OFF timer setting(time)"
+          },
+          "shortName": "offTimerTime",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "time",
+            "size": 2
+          }
+        },
+        "0x96": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "OFFタイマ相対時間設定値",
+            "en": "OFF timer setting(relative time)"
+          },
+          "shortName": "offTimerRelativeTime",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "time",
+            "size": 2,
+            "maximumOfHour": 255
+          }
+        },
+        "0xA0": {
+          "oneOf": [
+            {
+              "validRelease": {
+                "from": "A",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "風量設定",
+                "en": "Air flow rate setting"
+              },
+              "shortName": "airFlowLevel",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "type": "level",
+                    "base": "0x31",
+                    "maximum": 8,
+                    "descriptions": {
+                      "ja": "風量レベル",
+                      "en": "Air flow rate"
+                    }
+                  },
+                  {
+                    "type": "state",
+                    "size": 1,
+                    "enum": [
+                      {
+                        "edt": "0x41",
+                        "name": "auto",
+                        "descriptions": {
+                          "ja": "風量自動設定",
+                          "en": "Automatic air flow rate control function used"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "風量設定",
+                "en": "Air flow rate setting"
+              },
+              "shortName": "airFlowLevel",
+              "accessRule": {
+                "get": "required",
+                "set": "required",
+                "inf": "required"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "type": "level",
+                    "base": "0x31",
+                    "maximum": 8,
+                    "descriptions": {
+                      "ja": "風量レベル",
+                      "en": "Air flow rate"
+                    }
+                  },
+                  {
+                    "type": "state",
+                    "size": 1,
+                    "enum": [
+                      {
+                        "edt": "0x41",
+                        "name": "auto",
+                        "descriptions": {
+                          "ja": "風量自動設定",
+                          "en": "Automatic air flow rate control function used"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "0xA1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "風向自動設定",
+            "en": "Automatic control of air flow direction setting"
+          },
+          "shortName": "automaticControlAirFlowDirection",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "Auto",
+                "descriptions": {
+                  "ja": "AUTO",
+                  "en": "Automatic"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "Non-Auto",
+                "descriptions": {
+                  "ja": "非AUTO",
+                  "en": "Non-automatic"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "Auto(vertical)",
+                "descriptions": {
+                  "ja": "上下AUTO",
+                  "en": "Automatic(vertical)"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "Auto(horizontal)",
+                "descriptions": {
+                  "ja": "左右AUTO",
+                  "en": "Automatic(horizontal)"
+                }
+              }
+            ]
+          }
+        },
+        "0xA3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "風向スイング設定",
+            "en": "Automatic swing of air flow setting"
+          },
+          "shortName": "automaticSwingAirFlow",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x31",
+                "name": "off",
+                "descriptions": {
+                  "ja": "OFF",
+                  "en": "OFF"
+                }
+              },
+              {
+                "edt": "0x41",
+                "name": "vertical",
+                "descriptions": {
+                  "ja": "上下",
+                  "en": "Vertical"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "holizontal",
+                "descriptions": {
+                  "ja": "左右",
+                  "en": "Holizontal"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "verticalAndHolizontal",
+                "descriptions": {
+                  "ja": "上下左右",
+                  "en": "Vertical and Holizontal"
+                }
+              }
+            ]
+          }
+        },
+        "0xA4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "風向上下設定",
+            "en": "Air flow direction(vertical) setting"
+          },
+          "shortName": "airFlowDirection(vertical)",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "uppermost",
+                "descriptions": {
+                  "ja": "上",
+                  "en": "Uppermost"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "lowermost",
+                "descriptions": {
+                  "ja": "下",
+                  "en": "Lowermost"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "central",
+                "descriptions": {
+                  "ja": "中央",
+                  "en": "Central"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "upperCenter",
+                "descriptions": {
+                  "ja": "上中",
+                  "en": "Midpoint between uppermost and central"
+                }
+              },
+              {
+                "edt": "0x45",
+                "name": "lowerCenter",
+                "descriptions": {
+                  "ja": "下中",
+                  "en": "Midpoint between lowermost and central"
+                }
+              }
+            ]
+          }
+        },
+        "0xA5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "風向左右設定",
+            "en": "Air flow direction(horizontal) setting"
+          },
+          "shortName": "airFlowDirection(horizontal)",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "RC-R",
+                "descriptions": {
+                  "ja": "右中・右",
+                  "en": "Right center and Right"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "L-LC",
+                "descriptions": {
+                  "ja": "左・左中",
+                  "en": "Left and Left center"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "LC-C-RC",
+                "descriptions": {
+                  "ja": "左中・中・右中",
+                  "en": "Left center, Center and Right center"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "L-LC-RC-R",
+                "descriptions": {
+                  "ja": "左・左中・右中・右",
+                  "en": "Left, Left center, Right center and Right"
+                }
+              },
+              {
+                "edt": "0x51",
+                "name": "R",
+                "descriptions": {
+                  "ja": "右",
+                  "en": "Right"
+                }
+              },
+              {
+                "edt": "0x52",
+                "name": "RC",
+                "descriptions": {
+                  "ja": "右中",
+                  "en": "Right center"
+                }
+              },
+              {
+                "edt": "0x54",
+                "name": "C",
+                "descriptions": {
+                  "ja": "中",
+                  "en": "Center"
+                }
+              },
+              {
+                "edt": "0x55",
+                "name": "C-R",
+                "descriptions": {
+                  "ja": "中・右",
+                  "en": "Center and right"
+                }
+              },
+              {
+                "edt": "0x56",
+                "name": "C-RC",
+                "descriptions": {
+                  "ja": "中・右中",
+                  "en": "Center and Right center"
+                }
+              },
+              {
+                "edt": "0x57",
+                "name": "C-RC-R",
+                "descriptions": {
+                  "ja": "中・右中・右",
+                  "en": "Center, Right center and Right"
+                }
+              },
+              {
+                "edt": "0x58",
+                "name": "LC",
+                "descriptions": {
+                  "ja": "左中",
+                  "en": "Left center"
+                }
+              },
+              {
+                "edt": "0x59",
+                "name": "LC-R",
+                "descriptions": {
+                  "ja": "左中・右",
+                  "en": "Left center and Right"
+                }
+              },
+              {
+                "edt": "0x5A",
+                "name": "LC-RC",
+                "descriptions": {
+                  "ja": "左中・右中",
+                  "en": "Left center and Right center"
+                }
+              },
+              {
+                "edt": "0x5B",
+                "name": "LC-RC-R",
+                "descriptions": {
+                  "ja": "左中・右中・右",
+                  "en": "Left center, Right center and Right"
+                }
+              },
+              {
+                "edt": "0x5C",
+                "name": "LC-C",
+                "descriptions": {
+                  "ja": "左中・中",
+                  "en": "Left center and Center"
+                }
+              },
+              {
+                "edt": "0x5D",
+                "name": "LC-C-R",
+                "descriptions": {
+                  "ja": "左中・中・右",
+                  "en": "Left center, Center and Right"
+                }
+              },
+              {
+                "edt": "0x5F",
+                "name": "LC-C-RC-R",
+                "descriptions": {
+                  "ja": "左中・中・右中・右",
+                  "en": "Left center, Center, Right center and Right"
+                }
+              },
+              {
+                "edt": "0x60",
+                "name": "L",
+                "descriptions": {
+                  "ja": "左",
+                  "en": "Left"
+                }
+              },
+              {
+                "edt": "0x61",
+                "name": "L-R",
+                "descriptions": {
+                  "ja": "左・右",
+                  "en": "Left and Right"
+                }
+              },
+              {
+                "edt": "0x62",
+                "name": "L-RC",
+                "descriptions": {
+                  "ja": "左・右中",
+                  "en": "Left and Right center"
+                }
+              },
+              {
+                "edt": "0x63",
+                "name": "L-RC-R",
+                "descriptions": {
+                  "ja": "左・右中・右",
+                  "en": "Left, Right center and Right"
+                }
+              },
+              {
+                "edt": "0x64",
+                "name": "L-C",
+                "descriptions": {
+                  "ja": "左・中",
+                  "en": "Left and Center"
+                }
+              },
+              {
+                "edt": "0x65",
+                "name": "L-C-R",
+                "descriptions": {
+                  "ja": "左・中・右",
+                  "en": "Left, Center and Right"
+                }
+              },
+              {
+                "edt": "0x66",
+                "name": "L-C-RC",
+                "descriptions": {
+                  "ja": "左・中・右中",
+                  "en": "Left, Center and Right center"
+                }
+              },
+              {
+                "edt": "0x67",
+                "name": "L-C-RC-R",
+                "descriptions": {
+                  "ja": "左・中・右中・右",
+                  "en": "Left, Center, Right center and Right"
+                }
+              },
+              {
+                "edt": "0x69",
+                "name": "L-LC-R",
+                "descriptions": {
+                  "ja": "左・左中・右",
+                  "en": "Left, Left center and Right"
+                }
+              },
+              {
+                "edt": "0x6A",
+                "name": "L-LC-RC",
+                "descriptions": {
+                  "ja": "左・左中・右中",
+                  "en": "Left, Left center and Right center"
+                }
+              },
+              {
+                "edt": "0x6C",
+                "name": "L-LC-C",
+                "descriptions": {
+                  "ja": "左・左中・中",
+                  "en": "Left, Left center and center"
+                }
+              },
+              {
+                "edt": "0x6D",
+                "name": "L-LC-C-R",
+                "descriptions": {
+                  "ja": "左・左中・中・右",
+                  "en": "Left, Left center, Center and Right"
+                }
+              },
+              {
+                "edt": "0x6E",
+                "name": "L-LC-C-RC",
+                "descriptions": {
+                  "ja": "左・左中・中・右中",
+                  "en": "Left, Left center, Center and Right center"
+                }
+              },
+              {
+                "edt": "0x6F",
+                "name": "L-LC-C-RC-R",
+                "descriptions": {
+                  "ja": "左・左中・中・右中・右",
+                  "en": "Left, Left center, Center, Right center and Right"
+                }
+              }
+            ]
+          }
+        },
+        "0xAA": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "特殊状態",
+            "en": "Special state"
+          },
+          "shortName": "specialState",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x40",
+                "name": "normal",
+                "descriptions": {
+                  "ja": "通常状態",
+                  "en": "Normal operation"
+                }
+              },
+              {
+                "edt": "0x41",
+                "name": "defrosting",
+                "descriptions": {
+                  "ja": "除霜状態",
+                  "en": "Defrosting"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "preheating",
+                "descriptions": {
+                  "ja": "予熱状態",
+                  "en": "Preheating"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "heatRemoval",
+                "descriptions": {
+                  "ja": "排熱状態",
+                  "en": "Heat removal"
+                }
+              }
+            ]
+          }
+        },
+        "0xAB": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "非優先状態",
+            "en": "Non-priority state"
+          },
+          "shortName": "nonPriorityState",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x40",
+                "name": "false",
+                "descriptions": {
+                  "ja": "通常状態",
+                  "en": "Normal"
+                }
+              },
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "非優先状態",
+                  "en": "Non-priority"
+                }
+              }
+            ]
+          }
+        },
+        "0xB0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "運転モード設定",
+            "en": "Operation mode setting"
+          },
+          "shortName": "operationMode",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "auto",
+                "descriptions": {
+                  "ja": "自動",
+                  "en": "Automatic"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "cooling",
+                "descriptions": {
+                  "ja": "冷房",
+                  "en": "Cooling"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "heating",
+                "descriptions": {
+                  "ja": "暖房",
+                  "en": "Heating"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "dehumidification",
+                "descriptions": {
+                  "ja": "除湿",
+                  "en": "Dehumidification"
+                }
+              },
+              {
+                "edt": "0x45",
+                "name": "circulation",
+                "descriptions": {
+                  "ja": "送風",
+                  "en": "Air circulator"
+                }
+              },
+              {
+                "edt": "0x40",
+                "name": "other",
+                "descriptions": {
+                  "ja": "その他",
+                  "en": "Other"
+                }
+              }
+            ]
+          }
+        },
+        "0xB1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "温度自動設定",
+            "en": "Automatic temperature control setting"
+          },
+          "shortName": "automaticTemperatureControl",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "auto",
+                "descriptions": {
+                  "ja": "AUTO",
+                  "en": "Automatic"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "nonAuto",
+                "descriptions": {
+                  "ja": "非AUTO",
+                  "en": "Non-automatic"
+                }
+              }
+            ]
+          }
+        },
+        "0xB2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "急速動作モード設定",
+            "en": "Normal/highspeed/silent operation setting"
+          },
+          "shortName": "highspeedOperation",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "normal",
+                "descriptions": {
+                  "ja": "通常運転",
+                  "en": "Normal operation"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "highspeed",
+                "descriptions": {
+                  "ja": "急速",
+                  "en": "High-speed operation"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "silent",
+                "descriptions": {
+                  "ja": "静音",
+                  "en": "Silent operation"
+                }
+              }
+            ]
+          }
+        },
+        "0xB3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "温度設定値",
+            "en": "Set temperature value"
+          },
+          "shortName": "targetTemperature",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "uint8",
+                "unit": "Celsius",
+                "minimum": 0,
+                "maximum": 50
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0xFD",
+                    "name": "undefined",
+                    "descriptions": {
+                      "ja": "不明",
+                      "en": "Undefined"
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xB4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "除湿モード時相対湿度設定値",
+            "en": "Set value of relative humidity in dehumidifying mode"
+          },
+          "shortName": "relativeHumidityDehumidifying",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "%",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "0xB5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷房モード時温度設定値",
+            "en": "Set temperature value in cooling mode"
+          },
+          "shortName": "targetTemperatureCooling",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "uint8",
+                "unit": "Celsius",
+                "minimum": 0,
+                "maximum": 50
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0xFD",
+                    "name": "undefined",
+                    "descriptions": {
+                      "ja": "不明",
+                      "en": "Undefined"
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xB6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "暖房モード時温度設定値",
+            "en": "Set temperature value in heating mode"
+          },
+          "shortName": "targetTemperatureHeating",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "uint8",
+                "unit": "Celsius",
+                "minimum": 0,
+                "maximum": 50
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0xFD",
+                    "name": "undefined",
+                    "descriptions": {
+                      "ja": "不明",
+                      "en": "Undefined"
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xB7": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "除湿モード時温度設定値",
+            "en": "Set temperature value in dehumidifying mode"
+          },
+          "shortName": "targetTemperatureDehumidifying",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "uint8",
+                "unit": "Celsius",
+                "minimum": 0,
+                "maximum": 50
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0xFD",
+                    "name": "undefined",
+                    "descriptions": {
+                      "ja": "不明",
+                      "en": "Undefined"
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xB8": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "定格消費電力値",
+            "en": "Rated power consumption"
+          },
+          "shortName": "ratedPowerConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "object",
+            "properties": [
+              {
+                "name": "cooling",
+                "element": {
+                  "oneOf": [
+                    {
+                      "type": "number",
+                      "format": "uint16",
+                      "minimum": 0,
+                      "maximum": 65533,
+                      "unit": "W"
+                    },
+                    {
+                      "type": "state",
+                      "size": 2,
+                      "enum": [
+                        {
+                          "edt": "0xFFFE",
+                          "name": "unsupported",
+                          "descriptions": {
+                            "ja": "未サポート",
+                            "en": "Unsupported"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "descriptions": {
+                  "ja": "冷房",
+                  "en": "Cooling"
+                }
+              },
+              {
+                "name": "heating",
+                "element": {
+                  "oneOf": [
+                    {
+                      "type": "number",
+                      "format": "uint16",
+                      "minimum": 0,
+                      "maximum": 65533,
+                      "unit": "W"
+                    },
+                    {
+                      "type": "state",
+                      "size": 2,
+                      "enum": [
+                        {
+                          "edt": "0xFFFE",
+                          "name": "unsupported",
+                          "descriptions": {
+                            "ja": "未サポート",
+                            "en": "Unsupported"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "descriptions": {
+                  "ja": "暖房",
+                  "en": "Heating"
+                }
+              },
+              {
+                "name": "dehumidifying",
+                "element": {
+                  "oneOf": [
+                    {
+                      "type": "number",
+                      "format": "uint16",
+                      "minimum": 0,
+                      "maximum": 65533,
+                      "unit": "W"
+                    },
+                    {
+                      "type": "state",
+                      "size": 2,
+                      "enum": [
+                        {
+                          "edt": "0xFFFE",
+                          "name": "unsupported",
+                          "descriptions": {
+                            "ja": "未サポート",
+                            "en": "Unsupported"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "descriptions": {
+                  "ja": "除湿",
+                  "en": "Dehumidifying"
+                }
+              },
+              {
+                "name": "blast",
+                "element": {
+                  "oneOf": [
+                    {
+                      "type": "number",
+                      "format": "uint16",
+                      "minimum": 0,
+                      "maximum": 65533,
+                      "unit": "W"
+                    },
+                    {
+                      "type": "state",
+                      "size": 2,
+                      "enum": [
+                        {
+                          "edt": "0xFFFE",
+                          "name": "unsupported",
+                          "descriptions": {
+                            "ja": "未サポート",
+                            "en": "Unsupported"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "descriptions": {
+                  "ja": "送風",
+                  "en": "Blast"
+                }
+              }
+            ]
+          }
+        },
+        "0xB9": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "消費電流計測値",
+            "en": "Measured value of current consumption"
+          },
+          "shortName": "currentConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "A",
+            "multipleOf": 0.1
+          }
+        },
+        "0xBA": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "室内相対湿度計測値",
+            "en": "Measured value of room relative humidity"
+          },
+          "shortName": "humidity",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "uint8",
+                "unit": "%",
+                "minimum": 0,
+                "maximum": 100
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0xFD",
+                    "name": "unmeasurable",
+                    "descriptions": {
+                      "ja": "計測不能",
+                      "en": "Unmeasurable"
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xBB": {
+          "oneOf": [
+            {
+              "validRelease": {
+                "from": "A",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "室内温度計測値",
+                "en": "Measured value of room temperature"
+              },
+              "shortName": "roomTemperature",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "type": "number",
+                    "format": "int8",
+                    "unit": "Celsius",
+                    "minimum": -127,
+                    "maximum": 125
+                  },
+                  {
+                    "type": "state",
+                    "size": 1,
+                    "enum": [
+                      {
+                        "edt": "0x7E",
+                        "name": "unmeasurable",
+                        "descriptions": {
+                          "ja": "計測不能",
+                          "en": "Unmeasurable"
+                        },
+                        "readOnly": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "室内温度計測値",
+                "en": "Measured value of room temperature"
+              },
+              "shortName": "roomTemperature",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "type": "number",
+                    "format": "int8",
+                    "unit": "Celsius",
+                    "minimum": -127,
+                    "maximum": 125
+                  },
+                  {
+                    "type": "state",
+                    "size": 1,
+                    "enum": [
+                      {
+                        "edt": "0x7E",
+                        "name": "unmeasurable",
+                        "descriptions": {
+                          "ja": "計測不能",
+                          "en": "Unmeasurable"
+                        },
+                        "readOnly": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "0xBC": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ユーザリモコン温度設定値",
+            "en": "Set temperature value of user remote control"
+          },
+          "shortName": "temperatureUserRemoteControl",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "Celsius",
+            "minimum": 0,
+            "maximum": 50
+          }
+        },
+        "0xBD": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "吹き出し温度計測値",
+            "en": "Measured cooled air temperature"
+          },
+          "shortName": "airFlowTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "int8",
+                "unit": "Celsius",
+                "minimum": -127,
+                "maximum": 125
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x7E",
+                    "name": "unmeasurable",
+                    "descriptions": {
+                      "ja": "計測不能",
+                      "en": "Unmeasurable"
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xBE": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "外気温度計測値",
+            "en": "Measured outdoor air temperature"
+          },
+          "shortName": "outdoorTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "int8",
+                "unit": "Celsius",
+                "minimum": -127,
+                "maximum": 125
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x7E",
+                    "name": "unmeasurable",
+                    "descriptions": {
+                      "ja": "計測不能",
+                      "en": "Unmeasurable"
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xBF": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "相対温度設定値",
+            "en": "Relative temperature setting"
+          },
+          "shortName": "relativeTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "int8",
+                "unit": "Celsius",
+                "minimum": -127,
+                "maximum": 125,
+                "multipleOf": 0.1
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x7E",
+                    "name": "unmeasurable",
+                    "descriptions": {
+                      "ja": "計測不能",
+                      "en": "Unmeasurable"
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xC0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "換気モード設定",
+            "en": "Ventilation function setting"
+          },
+          "shortName": "ventilationFunction",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "ON(outlet)",
+                "descriptions": {
+                  "ja": "換気ON（排気方向）",
+                  "en": "Ventilation function ON(outlet direction)"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "OFF",
+                "descriptions": {
+                  "ja": "換気OFF",
+                  "en": "Ventilation function OFF"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "ON(intake)",
+                "descriptions": {
+                  "ja": "換気ON（吸気方向）",
+                  "en": "Ventilation function ON(intake direction)"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "ON(outletAndIntake)",
+                "descriptions": {
+                  "ja": "換気ON（吸排気方向）",
+                  "en": "Ventilation function ON(outlet and intake direction)"
+                }
+              }
+            ]
+          }
+        },
+        "0xC1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "加湿モード設定",
+            "en": "Humidifier function setting"
+          },
+          "shortName": "humidifierFunction",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "ON",
+                "descriptions": {
+                  "ja": "加湿ON",
+                  "en": "Humidifier function ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "OFF",
+                "descriptions": {
+                  "ja": "加湿OFF",
+                  "en": "Humidifier function OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xC2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "換気風量設定",
+            "en": "Ventilation air flow rate setting"
+          },
+          "shortName": "ventilationAirFlowLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "level",
+                "base": "0x31",
+                "maximum": 8,
+                "descriptions": {
+                  "ja": "換気風量レベル",
+                  "en": "Ventilation air flow rate"
+                }
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "auto",
+                    "descriptions": {
+                      "ja": "換気風量自動",
+                      "en": "Automatic control of ventilation air flow rate"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xC4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "加湿量設定",
+            "en": "Degree of humidification setting"
+          },
+          "shortName": "humidificationLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "level",
+                "base": "0x31",
+                "maximum": 8,
+                "descriptions": {
+                  "ja": "加湿量レベル",
+                  "en": "Degree of humidification"
+                }
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "auto",
+                    "descriptions": {
+                      "ja": "加湿量自動",
+                      "en": "Automatic control of the degree of humidification"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xC6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "搭載空気清浄方法",
+            "en": "Mounted air cleaning method"
+          },
+          "shortName": "airCleaningMethod",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "bitmap",
+            "size": 1,
+            "bitmaps": [
+              {
+                "name": "electronic",
+                "descriptions": {
+                  "ja": "電気集塵方式搭載情報",
+                  "en": "Electronic dust collection"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "no",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "No"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "yes",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Yes"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "clusterIon",
+                "descriptions": {
+                  "ja": "クラスタイオン方式搭載情報",
+                  "en": "Cluster ion"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "no",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "No"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "yes",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Yes"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "0xC7": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "空気清浄機能モード設定",
+            "en": "Air purifier function setting"
+          },
+          "shortName": "airPurifierFunction",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "bitmap",
+            "size": 8,
+            "bitmaps": [
+              {
+                "name": "electronic_level",
+                "descriptions": {
+                  "ja": "電気集塵方式：制御レベル",
+                  "en": "Electronic dust collection:Level"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000111"
+                },
+                "value": {
+                  "type": "numericValue",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x00",
+                      "numericValue": 0
+                    },
+                    {
+                      "edt": "0x01",
+                      "numericValue": 1
+                    },
+                    {
+                      "edt": "0x02",
+                      "numericValue": 2
+                    },
+                    {
+                      "edt": "0x03",
+                      "numericValue": 3
+                    },
+                    {
+                      "edt": "0x04",
+                      "numericValue": 4
+                    },
+                    {
+                      "edt": "0x05",
+                      "numericValue": 5
+                    },
+                    {
+                      "edt": "0x06",
+                      "numericValue": 6
+                    },
+                    {
+                      "edt": "0x07",
+                      "numericValue": 7
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "electronic_mode",
+                "descriptions": {
+                  "ja": "電気集塵方式：動作モード",
+                  "en": "Electronic dust collection:Mode"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "OFF",
+                      "descriptions": {
+                        "ja": "OFF",
+                        "en": "OFF"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "ON",
+                      "descriptions": {
+                        "ja": "ON",
+                        "en": "ON"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "electronic_Auto",
+                "descriptions": {
+                  "ja": "電気集塵方式：制御状態",
+                  "en": "Electronic dust collection:Auto function"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "nonAuto",
+                      "descriptions": {
+                        "ja": "非AUTO",
+                        "en": "Non-automatic"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "auto",
+                      "descriptions": {
+                        "ja": "AUTO",
+                        "en": "Automatic"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "clusterIon_level",
+                "descriptions": {
+                  "ja": "クラスタイオン方式：制御レベル",
+                  "en": "Cluster ion:Level"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00000111"
+                },
+                "value": {
+                  "type": "numericValue",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x00",
+                      "numericValue": 0
+                    },
+                    {
+                      "edt": "0x01",
+                      "numericValue": 1
+                    },
+                    {
+                      "edt": "0x02",
+                      "numericValue": 2
+                    },
+                    {
+                      "edt": "0x03",
+                      "numericValue": 3
+                    },
+                    {
+                      "edt": "0x04",
+                      "numericValue": 4
+                    },
+                    {
+                      "edt": "0x05",
+                      "numericValue": 5
+                    },
+                    {
+                      "edt": "0x06",
+                      "numericValue": 6
+                    },
+                    {
+                      "edt": "0x07",
+                      "numericValue": 7
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "clusterIon_mode",
+                "descriptions": {
+                  "ja": "クラスタイオン方式：動作モード",
+                  "en": "Cluster ion:Mode"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "OFF",
+                      "descriptions": {
+                        "ja": "OFF",
+                        "en": "OFF"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "ON",
+                      "descriptions": {
+                        "ja": "ON",
+                        "en": "ON"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "clusterIon_Auto",
+                "descriptions": {
+                  "ja": "クラスタイオン方式：制御状態",
+                  "en": "Cluster ion:Auto function"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "nonAuto",
+                      "descriptions": {
+                        "ja": "非AUTO",
+                        "en": "Non-automatic"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "auto",
+                      "descriptions": {
+                        "ja": "AUTO",
+                        "en": "Automatic"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "0xC8": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "搭載リフレッシュ方法",
+            "en": "Mounted air refresh method"
+          },
+          "shortName": "airRefreshMethod",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "bitmap",
+            "size": 1,
+            "bitmaps": [
+              {
+                "name": "minusIon",
+                "descriptions": {
+                  "ja": "マイナスイオン方式搭載情報",
+                  "en": "Minus ion collection"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "no",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "No"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "yes",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Yes"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "clusterIon",
+                "descriptions": {
+                  "ja": "クラスタイオン方式搭載情報",
+                  "en": "Cluster ion"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "no",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "No"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "yes",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Yes"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "0xC9": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "リフレッシュ機能モード設定",
+            "en": "Air refresher function setting"
+          },
+          "shortName": "airRefresherFunction",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "bitmap",
+            "size": 8,
+            "bitmaps": [
+              {
+                "name": "minusIon_level",
+                "descriptions": {
+                  "ja": "マイナスイオン方式：制御レベル",
+                  "en": "Minus ion:Level"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000111"
+                },
+                "value": {
+                  "type": "numericValue",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x00",
+                      "numericValue": 0
+                    },
+                    {
+                      "edt": "0x01",
+                      "numericValue": 1
+                    },
+                    {
+                      "edt": "0x02",
+                      "numericValue": 2
+                    },
+                    {
+                      "edt": "0x03",
+                      "numericValue": 3
+                    },
+                    {
+                      "edt": "0x04",
+                      "numericValue": 4
+                    },
+                    {
+                      "edt": "0x05",
+                      "numericValue": 5
+                    },
+                    {
+                      "edt": "0x06",
+                      "numericValue": 6
+                    },
+                    {
+                      "edt": "0x07",
+                      "numericValue": 7
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "minusIon_mode",
+                "descriptions": {
+                  "ja": "マイナスイオン方式：動作モード",
+                  "en": "Minus ion:Mode"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "OFF",
+                      "descriptions": {
+                        "ja": "OFF",
+                        "en": "OFF"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "ON",
+                      "descriptions": {
+                        "ja": "ON",
+                        "en": "ON"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "minusIon_Auto",
+                "descriptions": {
+                  "ja": "マイナスイオン方式：制御状態",
+                  "en": "Minus ion:Auto function"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "nonAuto",
+                      "descriptions": {
+                        "ja": "非AUTO",
+                        "en": "Non-automatic"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "auto",
+                      "descriptions": {
+                        "ja": "AUTO",
+                        "en": "Automatic"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "clusterIon_level",
+                "descriptions": {
+                  "ja": "クラスタイオン方式：制御レベル",
+                  "en": "Cluster ion:Level"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00000111"
+                },
+                "value": {
+                  "type": "numericValue",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x00",
+                      "numericValue": 0
+                    },
+                    {
+                      "edt": "0x01",
+                      "numericValue": 1
+                    },
+                    {
+                      "edt": "0x02",
+                      "numericValue": 2
+                    },
+                    {
+                      "edt": "0x03",
+                      "numericValue": 3
+                    },
+                    {
+                      "edt": "0x04",
+                      "numericValue": 4
+                    },
+                    {
+                      "edt": "0x05",
+                      "numericValue": 5
+                    },
+                    {
+                      "edt": "0x06",
+                      "numericValue": 6
+                    },
+                    {
+                      "edt": "0x07",
+                      "numericValue": 7
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "clusterIon_mode",
+                "descriptions": {
+                  "ja": "クラスタイオン方式：動作モード",
+                  "en": "Cluster ion:Mode"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "OFF",
+                      "descriptions": {
+                        "ja": "OFF",
+                        "en": "OFF"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "ON",
+                      "descriptions": {
+                        "ja": "ON",
+                        "en": "ON"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "clusterIon_Auto",
+                "descriptions": {
+                  "ja": "クラスタイオン方式：制御状態",
+                  "en": "Cluster ion:Auto function"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "nonAuto",
+                      "descriptions": {
+                        "ja": "非AUTO",
+                        "en": "Non-automatic"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "auto",
+                      "descriptions": {
+                        "ja": "AUTO",
+                        "en": "Automatic"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "0xCA": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "搭載自己洗浄方法",
+            "en": "Mounted self-cleaning method"
+          },
+          "shortName": "selfCleaningMethod",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "bitmap",
+            "size": 1,
+            "bitmaps": [
+              {
+                "name": "ozone",
+                "descriptions": {
+                  "ja": "オゾン洗浄方式搭載情報",
+                  "en": "Information about ozone cleaning method mounting"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "no",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "No"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "yes",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Yes"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "drying",
+                "descriptions": {
+                  "ja": "乾燥方式搭載情報",
+                  "en": "Information about drying method mounting"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "no",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "No"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "yes",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Yes"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "0xCB": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "自己洗浄機能モード設定",
+            "en": "Self-cleaning function setting"
+          },
+          "shortName": "selfCleaningFunction",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "bitmap",
+            "size": 8,
+            "bitmaps": [
+              {
+                "name": "ozone_level",
+                "descriptions": {
+                  "ja": "オゾン洗浄方式：制御レベル",
+                  "en": "Ozone cleaning:Level"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000111"
+                },
+                "value": {
+                  "type": "numericValue",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x00",
+                      "numericValue": 0
+                    },
+                    {
+                      "edt": "0x01",
+                      "numericValue": 1
+                    },
+                    {
+                      "edt": "0x02",
+                      "numericValue": 2
+                    },
+                    {
+                      "edt": "0x03",
+                      "numericValue": 3
+                    },
+                    {
+                      "edt": "0x04",
+                      "numericValue": 4
+                    },
+                    {
+                      "edt": "0x05",
+                      "numericValue": 5
+                    },
+                    {
+                      "edt": "0x06",
+                      "numericValue": 6
+                    },
+                    {
+                      "edt": "0x07",
+                      "numericValue": 7
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "ozone_mode",
+                "descriptions": {
+                  "ja": "オゾン洗浄方式：動作モード",
+                  "en": "Ozone cleaning:Mode"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "OFF",
+                      "descriptions": {
+                        "ja": "OFF",
+                        "en": "OFF"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "ON",
+                      "descriptions": {
+                        "ja": "ON",
+                        "en": "ON"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "ozone_Auto",
+                "descriptions": {
+                  "ja": "オゾン洗浄方式：制御状態",
+                  "en": "Ozone cleaning:Auto function"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "nonAuto",
+                      "descriptions": {
+                        "ja": "非AUTO",
+                        "en": "Non-automatic"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "auto",
+                      "descriptions": {
+                        "ja": "AUTO",
+                        "en": "Automatic"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "drying_level",
+                "descriptions": {
+                  "ja": "乾燥方式：制御レベル",
+                  "en": "Drying:Level"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00000111"
+                },
+                "value": {
+                  "type": "numericValue",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x00",
+                      "numericValue": 0
+                    },
+                    {
+                      "edt": "0x01",
+                      "numericValue": 1
+                    },
+                    {
+                      "edt": "0x02",
+                      "numericValue": 2
+                    },
+                    {
+                      "edt": "0x03",
+                      "numericValue": 3
+                    },
+                    {
+                      "edt": "0x04",
+                      "numericValue": 4
+                    },
+                    {
+                      "edt": "0x05",
+                      "numericValue": 5
+                    },
+                    {
+                      "edt": "0x06",
+                      "numericValue": 6
+                    },
+                    {
+                      "edt": "0x07",
+                      "numericValue": 7
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "drying_mode",
+                "descriptions": {
+                  "ja": "乾燥方式：動作モード",
+                  "en": "Drying:Mode"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "OFF",
+                      "descriptions": {
+                        "ja": "OFF",
+                        "en": "OFF"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "ON",
+                      "descriptions": {
+                        "ja": "ON",
+                        "en": "ON"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "drying_Auto",
+                "descriptions": {
+                  "ja": "乾燥方式：制御状態",
+                  "en": "Drying:Auto function"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "nonAuto",
+                      "descriptions": {
+                        "ja": "非AUTO",
+                        "en": "Non-automatic"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "auto",
+                      "descriptions": {
+                        "ja": "AUTO",
+                        "en": "Automatic"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "0xCC": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "特別運転モード設定",
+            "en": "Special function setting"
+          },
+          "shortName": "specialFunction",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x40",
+                "name": "noSetting",
+                "descriptions": {
+                  "ja": "設定なし",
+                  "en": "No setting"
+                }
+              },
+              {
+                "edt": "0x41",
+                "name": "clothesDryer",
+                "descriptions": {
+                  "ja": "衣類乾燥",
+                  "en": "Clothes dryer function"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "condensationSuppressor",
+                "descriptions": {
+                  "ja": "結露抑制",
+                  "en": "Condensation suppressor function"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "miteAndMoldControl",
+                "descriptions": {
+                  "ja": "ダニカビ抑制",
+                  "en": "Mite and mold control function"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "activeDefrosting",
+                "descriptions": {
+                  "ja": "強制除霜",
+                  "en": "Active defrosting function"
+                }
+              }
+            ]
+          }
+        },
+        "0xCD": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "内部動作状態",
+            "en": "Operation status of components"
+          },
+          "shortName": "componentsOperationStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "bitmap",
+            "size": 1,
+            "bitmaps": [
+              {
+                "name": "compressor",
+                "descriptions": {
+                  "ja": "コンプレッサ動作状態",
+                  "en": "Operation status of the compressor"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "OFF",
+                      "descriptions": {
+                        "ja": "停止中",
+                        "en": "Not operating"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "ON",
+                      "descriptions": {
+                        "ja": "動作中",
+                        "en": "In operation"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "thermostat",
+                "descriptions": {
+                  "ja": "サーモON/OFF状態",
+                  "en": "Operation status of the thermostat"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "OFF",
+                      "descriptions": {
+                        "ja": "OFF",
+                        "en": "OFF"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "ON",
+                      "descriptions": {
+                        "ja": "ON",
+                        "en": "ON"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "0xCE": {
+          "oneOf": [
+            {
+              "validRelease": {
+                "from": "A",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "強制サーモモード設定",
+                "en": "Thermostat setting override function"
+              },
+              "shortName": "thermostatOverride",
+              "accessRule": {
+                "get": "notApplicable",
+                "set": "optional",
+                "inf": "notApplicable"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x40",
+                    "name": "normal",
+                    "descriptions": {
+                      "ja": "通常設定",
+                      "en": "Normal setting"
+                    }
+                  },
+                  {
+                    "edt": "0x41",
+                    "name": "ON",
+                    "descriptions": {
+                      "ja": "強制サーモON",
+                      "en": "Thermostat setting override function ON"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "OFF",
+                    "descriptions": {
+                      "ja": "強制サーモOFF",
+                      "en": "Thermostat setting override function OFF"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "強制サーモモード設定",
+                "en": "Thermostat setting override function"
+              },
+              "shortName": "thermostatOverride",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x40",
+                    "name": "normal",
+                    "descriptions": {
+                      "ja": "通常設定",
+                      "en": "Normal setting"
+                    }
+                  },
+                  {
+                    "edt": "0x41",
+                    "name": "ON",
+                    "descriptions": {
+                      "ja": "強制サーモON",
+                      "en": "Thermostat setting override function ON"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "OFF",
+                    "descriptions": {
+                      "ja": "強制サーモOFF",
+                      "en": "Thermostat setting override function OFF"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "0xCF": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "空気清浄モード設定",
+            "en": "Air purification mode setting"
+          },
+          "shortName": "airPurification",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "ON",
+                "descriptions": {
+                  "ja": "空気清浄ON",
+                  "en": "Air purification ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "OFF",
+                "descriptions": {
+                  "ja": "空気清浄OFF",
+                  "en": "Air purification OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xD0": {
+          "validRelease": {
+            "from": "H",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ブザー",
+            "en": "Buzzer"
+          },
+          "shortName": "buzzer",
+          "accessRule": {
+            "get": "notApplicable",
+            "set": "optional",
+            "inf": "notApplicable"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "buzzer",
+                "descriptions": {
+                  "ja": "ブザー音発生",
+                  "en": "Buzzer sound generation"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "0x0133": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "換気扇",
+        "en": "Ventilation fan"
+      },
+      "shortName": "ventilationFan",
+      "elProperties": {
+        "0x80": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "動作状態",
+            "en": "Operation status"
+          },
+          "shortName": "operationStatus",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x30",
+                "name": "true",
+                "descriptions": {
+                  "ja": "ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x31",
+                "name": "false",
+                "descriptions": {
+                  "ja": "OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xA0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "換気風量設定",
+            "en": "Set value of ventilation air flow rate"
+          },
+          "shortName": "airFlowLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "level",
+                "base": "0x31",
+                "maximum": 8,
+                "descriptions": {
+                  "ja": "換気風量レベル",
+                  "en": "Ventilation air flow rate level"
+                }
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "auto",
+                    "descriptions": {
+                      "ja": "換気風量自動状態",
+                      "en": "Ventilation air flow rate auto status"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xBF": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "換気自動設定",
+            "en": "Ventilation Auto setting"
+          },
+          "shortName": "ventilationAuto",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "AUTO",
+                  "en": "Auto"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "非AUTO",
+                  "en": "Non-auto"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "0x0134": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "空調換気扇",
+        "en": "Air conditioner ventilation fan"
+      },
+      "shortName": "airConditionerVentilationFan",
+      "elProperties": {
+        "0x80": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "動作状態",
+            "en": "Operation status"
+          },
+          "shortName": "operationStatus",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x30",
+                "name": "true",
+                "descriptions": {
+                  "ja": "ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x31",
+                "name": "false",
+                "descriptions": {
+                  "ja": "OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xA0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "換気風量設定",
+            "en": "Set value of ventilation air flow rate"
+          },
+          "shortName": "airFlowLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "level",
+                "base": "0x31",
+                "maximum": 8,
+                "descriptions": {
+                  "ja": "換気風量レベル",
+                  "en": ":Ventilation air flow rate level"
+                }
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "auto",
+                    "descriptions": {
+                      "ja": "換気風量自動状態",
+                      "en": "Ventilation air flow rate auto status"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xB0": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "換気モード自動設定",
+            "en": "Ventilation mode automatic setting"
+          },
+          "shortName": "ventilationAuto",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "AUTO",
+                  "en": "Auto"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "非AUTO",
+                  "en": "Non-auto"
+                }
+              }
+            ]
+          }
+        },
+        "0xB1": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "換気方式設定",
+            "en": "Ventilation method setting"
+          },
+          "shortName": "ventilationMethod",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "blowing",
+                "descriptions": {
+                  "ja": "送風換気",
+                  "en": "Blowing ventilation"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "airConditioning",
+                "descriptions": {
+                  "ja": "空調換気",
+                  "en": "Air conditioning ventilation"
+                }
+              }
+            ]
+          }
+        },
+        "0xB2": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "換気モード設定",
+            "en": "Ventilation mode setting"
+          },
+          "shortName": "ventilationMode",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "normal",
+                "descriptions": {
+                  "ja": "普通換気",
+                  "en": "Normal ventilation"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "heatExchange",
+                "descriptions": {
+                  "ja": "熱交換換気",
+                  "en": "Heat exchange ventilation"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "cooling",
+                "descriptions": {
+                  "ja": "冷房換気",
+                  "en": "Cooling ventilation"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "heating",
+                "descriptions": {
+                  "ja": "暖房換気",
+                  "en": "Heating ventilation"
+                }
+              },
+              {
+                "edt": "0x45",
+                "name": "dehumidifying",
+                "descriptions": {
+                  "ja": "除湿換気",
+                  "en": "Dehumidifying ventilation"
+                }
+              },
+              {
+                "edt": "0x46",
+                "name": "humidifying",
+                "descriptions": {
+                  "ja": "加湿換気",
+                  "en": "Humidifying ventilation"
+                }
+              },
+              {
+                "edt": "0x40",
+                "name": "other",
+                "descriptions": {
+                  "ja": "その他換気",
+                  "en": "Other ventilation modes"
+                }
+              }
+            ]
+          }
+        },
+        "0xB3": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷暖強弱設定",
+            "en": "Cooling / heating high-low setting"
+          },
+          "shortName": "highlowLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "level",
+            "base": "0x31",
+            "maximum": 8,
+            "descriptions": {
+              "ja": "冷暖強弱レベル",
+              "en": "Cooling / heating high-low setting level"
+            }
+          }
+        },
+        "0xB4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "室内相対湿度設定値",
+            "en": "Set value of room relative humidity"
+          },
+          "shortName": "tartgetHumidity",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "%",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "0xB9": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "消費電流計測値",
+            "en": "Measured value of electric current consumption"
+          },
+          "shortName": "currentConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "A",
+            "multipleOf": 0.1
+          }
+        },
+        "0xBA": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "室内相対湿度計測値",
+            "en": "Measured value of room relative humidity"
+          },
+          "shortName": "humidity",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "%",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "0xBE": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "外気温度計測値",
+            "en": "Measured value of outdoor air temperature"
+          },
+          "shortName": "outdoorTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 125
+          }
+        },
+        "0xBF": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "換気自動設定",
+            "en": "Ventilation auto setting"
+          },
+          "shortName": "ventilationAuto",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "AUTO",
+                  "en": "Auto"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "非AUTO",
+                  "en": "Non-auto"
+                }
+              }
+            ]
+          }
+        },
+        "0xC0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "CO2濃度計測値",
+            "en": "Measured value of CO2 concentration"
+          },
+          "shortName": "co2Concentration",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "ppm"
+          }
+        },
+        "0xC1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "煙（タバコ）検知状態",
+            "en": "Smoke (cigarette) detection status"
+          },
+          "shortName": "smokeDetection",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "煙(タバコ)検知有",
+                  "en": "Smoke (cigarette) detection status found"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "煙(タバコ)検知無",
+                  "en": "Smoke (cigarette) detection status not found"
+                }
+              }
+            ]
+          }
+        },
+        "0xC2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "汚れ検知状態",
+            "en": "Pollution detection status"
+          },
+          "shortName": "pollutionDetection",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "汚れ検知有",
+                  "en": "Pollution detected"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "汚れ検知無",
+                  "en": "Pollution non-detected"
+                }
+              }
+            ]
+          }
+        },
+        "0xCA": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "外気相対湿度計測値",
+            "en": "Measured value of outdoor relative humidity"
+          },
+          "shortName": "outdoorHumidity",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "%",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "0xD0": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "還気温度計測値",
+            "en": "Measured value of return air temperature"
+          },
+          "shortName": "returnAirTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "array",
+            "itemSize": 1,
+            "minItems": 10,
+            "maxItems": 10,
+            "items": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "format": "int8",
+                  "unit": "Celsius",
+                  "minimum": -127,
+                  "maximum": 125
+                },
+                {
+                  "type": "state",
+                  "size": 1,
+                  "enum": [
+                    {
+                      "edt": "0x7E",
+                      "name": "unmeasurable",
+                      "descriptions": {
+                        "ja": "計測不能",
+                        "en": "Unmeasurable"
+                      },
+                      "readOnly": true
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "0xD1": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "還気相対湿度計測値",
+            "en": "Measured value of return relative humidity"
+          },
+          "shortName": "returnAirHumidity",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "array",
+            "itemSize": 1,
+            "minItems": 10,
+            "maxItems": 10,
+            "items": {
+              "oneOf": [
+                {
+                  "type": "number",
+                  "format": "uint8",
+                  "unit": "%",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                {
+                  "type": "state",
+                  "size": 1,
+                  "enum": [
+                    {
+                      "edt": "0xFD",
+                      "name": "undefined",
+                      "descriptions": {
+                        "ja": "不明",
+                        "en": "Undefined"
+                      },
+                      "readOnly": true
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "0xD2": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "給気温度計測値",
+            "en": "Measured value of charging air temperature"
+          },
+          "shortName": "chargingAirTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 125
+          }
+        },
+        "0xD3": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "給気相対湿度計測値",
+            "en": "Measured value of charging relative humidity"
+          },
+          "shortName": "chargingAirHumidity",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "%",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "0xD4": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "排気温度計測値",
+            "en": "Measured value of discharging air temperature"
+          },
+          "shortName": "dischargingAirTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 125
+          }
+        },
+        "0xD5": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "排気相対湿度計測値",
+            "en": "Measured value of discharging air relative humidity"
+          },
+          "shortName": "dischargingAirHumidity",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "%",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "0xE0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "熱交換機動作設定",
+            "en": "Heat exchanger operation setting"
+          },
+          "shortName": "heatExchangerOperationStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "熱交換機ON",
+                  "en": "Heat exchanger ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "熱交換機OFF",
+                  "en": "Heat exchanger ON"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "0x0135": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "空気清浄器",
+        "en": "Air cleaner"
+      },
+      "shortName": "airCleaner",
+      "elProperties": {
+        "0x80": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "動作状態",
+            "en": "Operation status"
+          },
+          "shortName": "operationStatus",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x30",
+                "name": "true",
+                "descriptions": {
+                  "ja": "ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x31",
+                "name": "false",
+                "descriptions": {
+                  "ja": "OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xA0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "風量設定",
+            "en": "Air flow rate setting"
+          },
+          "shortName": "airFlowLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "level",
+                "base": "0x31",
+                "maximum": 8,
+                "descriptions": {
+                  "ja": "換気風量レベル",
+                  "en": "Ventilation air flow rate level"
+                }
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "auto",
+                    "descriptions": {
+                      "ja": "換気風量自動状態",
+                      "en": "Ventilation air flow rate auto status"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xC0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "空気汚れ検知状態",
+            "en": "Air pollution detection status"
+          },
+          "shortName": "pollutionDetection",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "空気汚れ検知有",
+                  "en": "Air pollution detected"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "空気汚れ検知無",
+                  "en": "Air pollution non-detected"
+                }
+              }
+            ]
+          }
+        },
+        "0xC1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "煙(タバコ)検知状態",
+            "en": "Smoke (cigarette) detection status"
+          },
+          "shortName": "smokeDetection",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "煙(タバコ)検知有",
+                  "en": "Smoke (cigarette) detection status found"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "煙(タバコ)検知無",
+                  "en": "Smoke (cigarette) detection status not found"
+                }
+              }
+            ]
+          }
+        },
+        "0xC2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "光触媒動作設定",
+            "en": "Optical catalyst operation setting"
+          },
+          "shortName": "opticalCatalystOperationStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "光触媒ON",
+                  "en": "Optical catalyst ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "光触媒OFF",
+                  "en": "Optical catalyst OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xE1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "フィルタ交換通知状態",
+            "en": "Filter change notice"
+          },
+          "shortName": "filterChangeNotice",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "フィルタ交換時期通知有",
+                  "en": "Found"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "フィルタ交換時期通知無",
+                  "en": "Not found"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "0x0156": {
+      "validRelease": {
+        "from": "I",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "業務用パッケージエアコン室内機（設備用を除く）",
+        "en": "Package-type commercial air conditioner (indoor unit) (except those for facilities)"
+      },
+      "shortName": "commercialAirConditionerIndoorUnit",
+      "elProperties": {
+        "0xAC": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "サーモ状態",
+            "en": "Thermostat state"
+          },
+          "shortName": "thermostatState",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "サーモON ",
+                  "en": "Thermostat ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "サーモOFF",
+                  "en": "Thermostat OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xAE": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "自動運転時運転モード状態",
+            "en": "Current function (automatic operation mode)"
+          },
+          "shortName": "automaticOperationModeStatus",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x40",
+                "name": "other",
+                "descriptions": {
+                  "ja": "その他",
+                  "en": "Other"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "cooling",
+                "descriptions": {
+                  "ja": "冷房",
+                  "en": "Cooling"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "heating",
+                "descriptions": {
+                  "ja": "暖房",
+                  "en": "Heating"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "dehumidification",
+                "descriptions": {
+                  "ja": "除湿",
+                  "en": "Dehumidification"
+                }
+              },
+              {
+                "edt": "0x45",
+                "name": "circulation",
+                "descriptions": {
+                  "ja": "送風",
+                  "en": "Air circulation"
+                }
+              }
+            ]
+          }
+        },
+        "0xB0": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "運転モード設定",
+            "en": "Operation mode setting"
+          },
+          "shortName": "operationMode",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "auto",
+                "descriptions": {
+                  "ja": "自動",
+                  "en": "Automatic"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "cooling",
+                "descriptions": {
+                  "ja": "冷房",
+                  "en": "Cooling"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "heating",
+                "descriptions": {
+                  "ja": "暖房",
+                  "en": "Heating"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "dehumidification",
+                "descriptions": {
+                  "ja": "除湿",
+                  "en": "Dehumidification"
+                }
+              },
+              {
+                "edt": "0x45",
+                "name": "circulation",
+                "descriptions": {
+                  "ja": "送風",
+                  "en": "Air circulation"
+                }
+              }
+            ]
+          }
+        },
+        "0xB3": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "温度設定値",
+            "en": "Temperature setting"
+          },
+          "shortName": "targetTemperature",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "required"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "Celsius",
+            "minimum": 0,
+            "maximum": 50
+          }
+        },
+        "0xBB": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "室内機温度計測値",
+            "en": "Measured indoor unit temperature"
+          },
+          "shortName": "roomTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "int8",
+                "unit": "Celsius",
+                "minimum": -127,
+                "maximum": 125
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x7E",
+                    "name": "unmeasurable",
+                    "descriptions": {
+                      "ja": "計測値を返せない",
+                      "en": "When the measurement value cannot be returned."
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xCA": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "グループ情報",
+            "en": "Group information"
+          },
+          "shortName": "groupInformation",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "uint8",
+                "minimum": 1,
+                "maximum": 253
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x00",
+                    "name": "none",
+                    "descriptions": {
+                      "ja": "設定なし",
+                      "en": "No setting"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xDB": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "室内機消費電力範囲",
+            "en": "Power consumption range for indoor units"
+          },
+          "shortName": "powerConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x00",
+                "name": "undefined",
+                "descriptions": {
+                  "ja": "未定",
+                  "en": "Undefined"
+                }
+              },
+              {
+                "edt": "0x01",
+                "name": "less50W",
+                "descriptions": {
+                  "ja": "50W未満",
+                  "en": "up to 50W"
+                }
+              },
+              {
+                "edt": "0x02",
+                "name": "less100W",
+                "descriptions": {
+                  "ja": "50W以上〜100W未満",
+                  "en": "50W-100W"
+                }
+              },
+              {
+                "edt": "0x03",
+                "name": "less150W",
+                "descriptions": {
+                  "ja": "100W以上〜150W未満",
+                  "en": "100W-150W"
+                }
+              },
+              {
+                "edt": "0x04",
+                "name": "less200W",
+                "descriptions": {
+                  "ja": "150W以上〜200W未満",
+                  "en": "150W-200W"
+                }
+              },
+              {
+                "edt": "0x05",
+                "name": "200WOrMore",
+                "descriptions": {
+                  "ja": "200W以上",
+                  "en": "200W-"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "0x0157": {
+      "validRelease": {
+        "from": "I",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "業務用パッケージエアコン室外機（設備用を除く）",
+        "en": "Package-type commercial air conditioner (outdoor unit)"
+      },
+      "shortName": "commercialAirConditionerOutdoorUnit",
+      "elProperties": {
+        "0xAB": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "特殊状態",
+            "en": "Special state"
+          },
+          "shortName": "specialState",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x40",
+                "name": "false",
+                "descriptions": {
+                  "ja": "通常状態",
+                  "en": "Normal operation"
+                }
+              },
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "特殊状態",
+                  "en": "“special” state"
+                }
+              }
+            ]
+          }
+        },
+        "0xB8": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "室外機定格消費電力値",
+            "en": "Rated power consumption of outdoor unit"
+          },
+          "shortName": "ratedPowerConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "object",
+            "properties": [
+              {
+                "name": "Cooling",
+                "element": {
+                  "oneOf": [
+                    {
+                      "type": "number",
+                      "format": "uint32",
+                      "minimum": 0,
+                      "maximum": 4294967293,
+                      "unit": "W"
+                    },
+                    {
+                      "type": "state",
+                      "size": 4,
+                      "enum": [
+                        {
+                          "edt": "0xFFFFFFFE",
+                          "name": "unsupported",
+                          "descriptions": {
+                            "ja": "サポートしない",
+                            "en": "Unsupported"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "descriptions": {
+                  "ja": "冷房",
+                  "en": "Cooling"
+                }
+              },
+              {
+                "name": "Heating",
+                "element": {
+                  "oneOf": [
+                    {
+                      "type": "number",
+                      "format": "uint32",
+                      "minimum": 0,
+                      "maximum": 4294967293,
+                      "unit": "W"
+                    },
+                    {
+                      "type": "state",
+                      "size": 4,
+                      "enum": [
+                        {
+                          "edt": "0xFFFFFFFE",
+                          "name": "unsupported",
+                          "descriptions": {
+                            "ja": "サポートしない",
+                            "en": "Unsupported"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "descriptions": {
+                  "ja": "暖房",
+                  "en": "Heating"
+                }
+              }
+            ]
+          }
+        },
+        "0xBE": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "室外機温度計測値",
+            "en": "Measured outdoor unit temperature"
+          },
+          "shortName": "outdoorTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "int8",
+                "unit": "Celsius",
+                "minimum": -127,
+                "maximum": 125
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x7E",
+                    "name": "unmeasurable",
+                    "descriptions": {
+                      "ja": "計測値を返せない",
+                      "en": "When the measurement value cannot be returned."
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xCA": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "グループ情報",
+            "en": "Group information"
+          },
+          "shortName": "groupInformation",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "uint8",
+                "minimum": 1,
+                "maximum": 253
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x00",
+                    "name": "none",
+                    "descriptions": {
+                      "ja": "設定なし",
+                      "en": "No setting"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xDB": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "室外機消費電力計測値",
+            "en": "Measured power consumption of outdoor unit"
+          },
+          "shortName": "powerConsumption",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint32",
+            "minimum": 0,
+            "maximum": 4294967293,
+            "unit": "W"
+          }
+        },
+        "0xDD": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "室外機節電可能消費電力",
+            "en": "Possible power savings for outdoor units"
+          },
+          "shortName": "powerConsumptionWillBeSaved",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint32",
+            "minimum": 0,
+            "maximum": 4294967293,
+            "unit": "W"
+          }
+        },
+        "0xDE": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "室外機消費電力制限設定",
+            "en": "Settings restricting power consumption of outdoor units"
+          },
+          "shortName": "powerConsumptionLimit",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "uint32",
+                "minimum": 1,
+                "maximum": 4294967293,
+                "unit": "W"
+              },
+              {
+                "type": "state",
+                "size": 4,
+                "enum": [
+                  {
+                    "edt": "0x00000000",
+                    "name": "Canceling",
+                    "descriptions": {
+                      "ja": "電力制限解除",
+                      "en": "Canceling the restriction"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xDF": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "室外機抑制最低消費電力",
+            "en": "Minimum power consumption for restricted outdoor unit"
+          },
+          "shortName": "restrictedMinimumPowerConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint32",
+            "minimum": 0,
+            "maximum": 4294967293,
+            "unit": "W"
+          }
+        }
+      }
+    },
+    "0x03B7": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "冷凍冷蔵庫",
+        "en": "Refrigerator"
+      },
+      "shortName": "refrigerator",
+      "elProperties": {
+        "0xA0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "急速冷凍動作設定",
+            "en": "Quick freeze function setting"
+          },
+          "shortName": "quickFreeze",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "normal",
+                "descriptions": {
+                  "ja": "通常冷凍",
+                  "en": "Normal operation"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "quick",
+                "descriptions": {
+                  "ja": "急速冷凍",
+                  "en": "Quick freeze"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "standby",
+                "descriptions": {
+                  "ja": "急速冷凍待機",
+                  "en": "Standby for quick freezing"
+                }
+              }
+            ]
+          }
+        },
+        "0xA1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "急速冷蔵動作設定",
+            "en": "Quick refrigeration function setting"
+          },
+          "shortName": "quickRefrigeration",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "normal",
+                "descriptions": {
+                  "ja": "通常冷蔵",
+                  "en": "Normal operation"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "quick",
+                "descriptions": {
+                  "ja": "急速冷蔵",
+                  "en": "Quick refrigeration"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "standby",
+                "descriptions": {
+                  "ja": "急速冷蔵待機",
+                  "en": "Standby for quick refrigeration"
+                }
+              }
+            ]
+          }
+        },
+        "0xA4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "製氷許可設定",
+            "en": "Icemaker setting"
+          },
+          "shortName": "icemaker",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "enable",
+                "descriptions": {
+                  "ja": "製氷許可",
+                  "en": "Enable icemaker"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "disable",
+                "descriptions": {
+                  "ja": "製氷禁止",
+                  "en": "Disable icemaker"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "standby",
+                "descriptions": {
+                  "ja": "製氷一定時間禁止",
+                  "en": "Temporarily disable icemaker"
+                }
+              }
+            ]
+          }
+        },
+        "0xA5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "製氷動作状態",
+            "en": "Icemaker operation status"
+          },
+          "shortName": "icemakerStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "running",
+                "descriptions": {
+                  "ja": "運転中",
+                  "en": "Ice-making in progress"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "stopped",
+                "descriptions": {
+                  "ja": "停止中",
+                  "en": "Ice-making stopped"
+                }
+              }
+            ]
+          }
+        },
+        "0xA6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "製氷用給水タンク状態",
+            "en": "Icemaker tank status"
+          },
+          "shortName": "icemakerTankStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "normal",
+                "descriptions": {
+                  "ja": "水あり",
+                  "en": "Water in tank"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "warning",
+                "descriptions": {
+                  "ja": "水なし",
+                  "en": "No water"
+                }
+              }
+            ]
+          }
+        },
+        "0xA8": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷蔵室加湿動作設定",
+            "en": "Refrigerator compartment humidification function setting"
+          },
+          "shortName": "refrigeratorHumidification",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "on",
+                "descriptions": {
+                  "ja": "加湿ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "off",
+                "descriptions": {
+                  "ja": "加湿OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xA9": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "野菜室加湿動作設定",
+            "en": "Vegetable compartment humidification function setting"
+          },
+          "shortName": "vegetableHumidification",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "on",
+                "descriptions": {
+                  "ja": "加湿ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "off",
+                "descriptions": {
+                  "ja": "加湿OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xAD": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "脱臭動作設定",
+            "en": "Deodorization function setting"
+          },
+          "shortName": "deodorization",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "on",
+                "descriptions": {
+                  "ja": "脱臭ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "off",
+                "descriptions": {
+                  "ja": "脱臭OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xB0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ドア開閉状態",
+            "en": "Door open/close status"
+          },
+          "shortName": "doorOpenCloseStatus",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "anyOpen",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Door open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "allClose",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Door close"
+                }
+              }
+            ]
+          }
+        },
+        "0xB1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ドア開放警告状態",
+            "en": "Door open warning"
+          },
+          "shortName": "doorOpenWarning",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "ドア開放警告有",
+                  "en": "Door open warning found"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "ドア開放警告無",
+                  "en": "Door open warning not found"
+                }
+              }
+            ]
+          }
+        },
+        "0xB2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷蔵室ドア開閉状態",
+            "en": "Refrigerator compartment door status"
+          },
+          "shortName": "refrigeratorCompartmentDoorStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "open",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "close",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Closed"
+                }
+              }
+            ]
+          }
+        },
+        "0xB3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷凍室ドア開閉状態",
+            "en": "Freezer compartment door status"
+          },
+          "shortName": "freezerCompartmentDoorStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "open",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "close",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Closed"
+                }
+              }
+            ]
+          }
+        },
+        "0xB4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "氷温室ドア開閉状態",
+            "en": "Ice compartment door status"
+          },
+          "shortName": "iceCompartmentDoorStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "open",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "close",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Closed"
+                }
+              }
+            ]
+          }
+        },
+        "0xB5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "野菜室ドア開閉状態",
+            "en": "Vegetable compartment door status"
+          },
+          "shortName": "vegetableCompartmentDoorStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "open",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "close",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Closed"
+                }
+              }
+            ]
+          }
+        },
+        "0xB6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "切換室ドア開閉状態",
+            "en": "Multi-refrigerating mode compartment door status"
+          },
+          "shortName": "multiModeCompartmentDoorStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "open",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "close",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Closed"
+                }
+              }
+            ]
+          }
+        },
+        "0xD1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷蔵室温度計測値",
+            "en": "Measured refrigerator compartment temperature"
+          },
+          "shortName": "measuredRefrigeratorTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xD2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷凍室温度計測値",
+            "en": "Measured freezer compartment temperature"
+          },
+          "shortName": "measuredFreezerTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xD3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "氷温室温度計測値",
+            "en": "Measured subzero-fresh compartment temperature"
+          },
+          "shortName": "measuredIceTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xD4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "野菜室温度計測値",
+            "en": "Measured vegetable compartment temperature"
+          },
+          "shortName": "measuredVegetableTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xD5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "切替室室温度計測値",
+            "en": "Measured multi-refrigerating mode compartment temperature"
+          },
+          "shortName": "measuredMultiModeTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xD8": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "圧縮機回転数レベル",
+            "en": "Compressor rotation speed"
+          },
+          "shortName": "compressorRotationSpeed",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "object",
+            "properties": [
+              {
+                "name": "maxLevel",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 1,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "最大回転数レベル",
+                  "en": "Maximum rotation speed"
+                }
+              },
+              {
+                "name": "level",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "回転数レベル",
+                  "en": "Rotation speed of the actual compressor"
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "0x00:停止",
+            "en": "0x00:Stopped"
+          }
+        },
+        "0xDA": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "消費電流計測値",
+            "en": "Measured electric current consumption"
+          },
+          "shortName": "electricCurrentConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "A",
+            "multipleOf": 0.1
+          }
+        },
+        "0xDC": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "定格消費電力値",
+            "en": "Rated power consumption"
+          },
+          "shortName": "ratedPowerConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "W"
+          }
+        },
+        "0xE0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "設定可能温度レベル最大値",
+            "en": "Maximum allowable temperature setting level"
+          },
+          "shortName": "maximumAllowableTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "object",
+            "properties": [
+              {
+                "name": "refrigerator",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "冷蔵室",
+                  "en": "Refrigerator compartment"
+                }
+              },
+              {
+                "name": "freezer",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "冷凍室",
+                  "en": "Freezer compartment"
+                }
+              },
+              {
+                "name": "ice",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "氷温室",
+                  "en": "Subzero-fresh compartment"
+                }
+              },
+              {
+                "name": "vegetable",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "野菜室",
+                  "en": "Vegetable compartment"
+                }
+              },
+              {
+                "name": "multi",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "切換室",
+                  "en": "Multi-refrigerating mode compartment"
+                }
+              },
+              {
+                "name": "reserved",
+                "element": {
+                  "$ref": "#/definitions/raw_3"
+                },
+                "descriptions": {
+                  "ja": "for future reserved",
+                  "en": "Reserved for future use"
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "0x00:室を搭載していない場合",
+            "en": "0x00:no compartment"
+          }
+        },
+        "0xE2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷蔵室温度設定値",
+            "en": "Refrigerator compartment temperature setting"
+          },
+          "shortName": "refrigeratorTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xE3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷凍室温度設定値",
+            "en": "Freezer compartment temperature setting"
+          },
+          "shortName": "freezerTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xE4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "氷温室温度設定値",
+            "en": "Ice temperature setting"
+          },
+          "shortName": "iceTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xE5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "野菜室温度設定値",
+            "en": "Vegetable compartment temperature setting"
+          },
+          "shortName": "vegetableTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xE6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "切換室温度設定値",
+            "en": "Multi-refrigerating mode compartment temperature setting"
+          },
+          "shortName": "multiModeTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xE9": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷蔵室温度レベル設定",
+            "en": "Refrigerator compartment temperature level setting"
+          },
+          "shortName": "refrigeratorTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "note": {
+            "ja": "最大値はEPC=0xE0の値",
+            "en": "maximum value is at EPC=0xE0"
+          }
+        },
+        "0xEA": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷凍室温度レベル設定",
+            "en": "Freezer compartment temperature level setting"
+          },
+          "shortName": "freezerTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "note": {
+            "ja": "最大値はEPC=0xE0の値",
+            "en": "maximum value is at EPC=0xE0"
+          }
+        },
+        "0xEB": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "氷温室温度レベル設定",
+            "en": "ice compartment temperature level setting"
+          },
+          "shortName": "iceTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "note": {
+            "ja": "最大値はEPC=0xE0の値",
+            "en": "maximum value is at EPC=0xE0"
+          }
+        },
+        "0xEC": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "野菜室温度レベル設定",
+            "en": "Vegetable compartment temperature level setting"
+          },
+          "shortName": "vegetableTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "note": {
+            "ja": "最大値はEPC=0xE0の値",
+            "en": "maximum value is at EPC=0xE0"
+          }
+        },
+        "0xED": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "切換室温度レベル設定",
+            "en": "Multi-refrigerating mode compartment temperature level setting"
+          },
+          "shortName": "multiModeTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "note": {
+            "ja": "最大値はEPC=0xE0の値",
+            "en": "maximum value is at EPC=0xE0"
+          }
+        }
+      }
+    },
     "0x026B": {
       "validRelease": {
         "from": "A",
@@ -6071,7 +12254,7 @@ const jsonData = {
         "ja": "床暖房",
         "en": "Floor heater"
       },
-      "shortname": "floorHeater",
+      "shortName": "floorHeater",
       "elProperties": {
         "0x90": {
           "validRelease": {
@@ -6082,7 +12265,7 @@ const jsonData = {
             "ja": "ONタイマ予約設定",
             "en": "ON timer reservation setting"
           },
-          "shortname": "reservationOfOnTimer",
+          "shortName": "reservationOfOnTimer",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -6120,7 +12303,7 @@ const jsonData = {
             "ja": "ONタイマ時刻設定値",
             "en": "Time set by ON timer"
           },
-          "shortname": "timeOfOnTimer",
+          "shortName": "timeOfOnTimer",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -6140,7 +12323,7 @@ const jsonData = {
             "ja": "ONタイマ相対時間設定値",
             "en": "Relative ON timer setting"
           },
-          "shortname": "relativeTimeOfOnTimer",
+          "shortName": "relativeTimeOfOnTimer",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -6160,7 +12343,7 @@ const jsonData = {
             "ja": "OFFタイマ予約設定",
             "en": "OFF timer reservation setting"
           },
-          "shortname": "reservationOfOffTimer",
+          "shortName": "reservationOfOffTimer",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -6198,7 +12381,7 @@ const jsonData = {
             "ja": "OFFタイマ時刻設定値",
             "en": "Time set by OFF timer"
           },
-          "shortname": "timeOfOffTimer",
+          "shortName": "timeOfOffTimer",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -6218,7 +12401,7 @@ const jsonData = {
             "ja": "OFFタイマ相対時間設定値",
             "en": "Relative OFF timer setting"
           },
-          "shortname": "relativeTimeOfOffTimer",
+          "shortName": "relativeTimeOfOffTimer",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -6238,7 +12421,7 @@ const jsonData = {
             "ja": "温度設定2 設定可能最大レベル",
             "en": "Maximum allowable setting level for temperature setting 2"
           },
-          "shortname": "maximumTargetTemperature2",
+          "shortName": "maximumTargetTemperature2",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -6260,7 +12443,7 @@ const jsonData = {
             "ja": "温度設定1",
             "en": "Temperature 1"
           },
-          "shortname": "targetTemperature1",
+          "shortName": "targetTemperature1",
           "accessRule": {
             "get": "required_c",
             "set": "required_c",
@@ -6305,7 +12488,7 @@ const jsonData = {
             "ja": "温度設定2",
             "en": "Temperature 2"
           },
-          "shortname": "targetTemperature2",
+          "shortName": "targetTemperature2",
           "accessRule": {
             "get": "required_c",
             "set": "required_c",
@@ -6348,7 +12531,7 @@ const jsonData = {
             "ja": "室内温度計測値",
             "en": "Measured room temperature"
           },
-          "shortname": "measuredRoomTemperature",
+          "shortName": "measuredRoomTemperature",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -6392,7 +12575,7 @@ const jsonData = {
                 "ja": "床温度計測値",
                 "en": "Measured floor temperature"
               },
-              "shortname": "measuredFloorTemperature",
+              "shortName": "measuredFloorTemperature",
               "accessRule": {
                 "get": "optional",
                 "set": "notApplicable",
@@ -6434,7 +12617,7 @@ const jsonData = {
                 "ja": "床温度計測値",
                 "en": "Measured floor temperature"
               },
-              "shortname": "measuredFloorTemperature",
+              "shortName": "measuredFloorTemperature",
               "accessRule": {
                 "get": "optional",
                 "set": "notApplicable",
@@ -6478,7 +12661,7 @@ const jsonData = {
             "ja": "ゾーン切替え設定",
             "en": "Zone change setting"
           },
-          "shortname": "controllableZone",
+          "shortName": "controllableZone",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -6503,7 +12686,7 @@ const jsonData = {
             "ja": "特殊運転設定",
             "en": "Special operation setting"
           },
-          "shortname": "specialOperationMode",
+          "shortName": "specialOperationMode",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -6549,7 +12732,7 @@ const jsonData = {
             "ja": "デイリータイマー設定",
             "en": "Daily timer setting"
           },
-          "shortname": "dailyTimer",
+          "shortName": "dailyTimer",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -6595,7 +12778,7 @@ const jsonData = {
             "ja": "デイリータイマー1設定",
             "en": "Daily timer setting 1"
           },
-          "shortname": "workedDailyTimer1",
+          "shortName": "workedDailyTimer1",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -6620,7 +12803,7 @@ const jsonData = {
             "ja": "デイリータイマー2設定",
             "en": "Daily timer setting 2"
           },
-          "shortname": "workedDailyTimer2",
+          "shortName": "workedDailyTimer2",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -6645,7 +12828,7 @@ const jsonData = {
             "ja": "定格消費電力値",
             "en": "Rated power consumption"
           },
-          "shortname": "ratedPowerConsumption",
+          "shortName": "ratedPowerConsumption",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -6668,7 +12851,7 @@ const jsonData = {
             "ja": "消費電力計測方法",
             "en": "Power consumption measurement method"
           },
-          "shortname": "powerMeasurementMethod",
+          "shortName": "powerMeasurementMethod",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -13945,7 +20128,7 @@ const jsonData = {
         "ja": "一般照明",
         "en": "General lighting"
       },
-      "shortname": "generalLighting",
+      "shortName": "generalLighting",
       "elProperties": {
         "0x90": {
           "validRelease": {
@@ -13956,7 +20139,7 @@ const jsonData = {
             "ja": "ONタイマ予約設定",
             "en": "ON timer reservation setting"
           },
-          "shortname": "onTimerReservation",
+          "shortName": "onTimerReservation",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14072,7 +20255,7 @@ const jsonData = {
             "ja": "照度レベル設定",
             "en": "Illuminance Level"
           },
-          "shortname": "brightness",
+          "shortName": "brightness",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14093,7 +20276,7 @@ const jsonData = {
                 "ja": "光色設定",
                 "en": "Light color setting"
               },
-              "shortname": "lightColor",
+              "shortName": "lightColor",
               "accessRule": {
                 "get": "optional",
                 "set": "optional",
@@ -14112,7 +20295,7 @@ const jsonData = {
                 "ja": "光色設定",
                 "en": "Light color setting"
               },
-              "shortname": "lightColor",
+              "shortName": "lightColor",
               "accessRule": {
                 "get": "optional",
                 "set": "optional",
@@ -14133,7 +20316,7 @@ const jsonData = {
             "ja": "照度レベル段数設定",
             "en": "Brightness level step setting"
           },
-          "shortname": "brightnessLevel",
+          "shortName": "brightnessLevel",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14156,7 +20339,7 @@ const jsonData = {
             "ja": "光色レベル段数設定",
             "en": "Light color step setting"
           },
-          "shortname": "lightColorLevel",
+          "shortName": "lightColorLevel",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14179,7 +20362,7 @@ const jsonData = {
             "ja": "設定可能レベル最大値",
             "en": "Maximum specifiable values"
           },
-          "shortname": "maximumSettableLevel",
+          "shortName": "maximumSettableLevel",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -14246,7 +20429,7 @@ const jsonData = {
             "ja": "常夜灯設定可能レベル最大値",
             "en": "Maximum value of settable level for night lighting"
           },
-          "shortname": "maximumSettableLevelForNightLighting",
+          "shortName": "maximumSettableLevelForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -14313,7 +20496,7 @@ const jsonData = {
             "ja": "点灯モード設定",
             "en": "Lighting mode setting"
           },
-          "shortname": "operationMode",
+          "shortName": "operationMode",
           "accessRule": {
             "get": "required",
             "set": "required",
@@ -14367,7 +20550,7 @@ const jsonData = {
             "ja": "通常灯モード時照度レベル設定",
             "en": "Brightness level setting for main lighting"
           },
-          "shortname": "brightnessLevelForMainLighting",
+          "shortName": "brightnessLevelForMainLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14386,7 +20569,7 @@ const jsonData = {
             "ja": "通常灯モード時照度レベル段数設定",
             "en": "Brightness level step setting for main lighting"
           },
-          "shortname": "brightnessLevelStepForMainLighting",
+          "shortName": "brightnessLevelStepForMainLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14409,7 +20592,7 @@ const jsonData = {
             "ja": "常夜灯モード時照度レベル設定",
             "en": "Brightness level setting for night lighting"
           },
-          "shortname": "brightnessLevelForNightLighting",
+          "shortName": "brightnessLevelForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14432,7 +20615,7 @@ const jsonData = {
             "ja": "常夜灯モード時照度レベル段数設定",
             "en": "Brightness level step setting for night lighting"
           },
-          "shortname": "brightnessLevelStepForNightLighting",
+          "shortName": "brightnessLevelStepForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14455,7 +20638,7 @@ const jsonData = {
             "ja": "通常灯モード時光色設定",
             "en": "Light color setting for main lighting"
           },
-          "shortname": "brightnessLevelStepForNightLighting",
+          "shortName": "brightnessLevelStepForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14474,7 +20657,7 @@ const jsonData = {
             "ja": "通常灯モード時光色レベル段数設定",
             "en": "Light color level step setting for main lighting"
           },
-          "shortname": "lightColorLevelForMainLighting",
+          "shortName": "lightColorLevelForMainLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14497,7 +20680,7 @@ const jsonData = {
             "ja": "常夜灯モード時光色設定",
             "en": "Light color setting for night lighting"
           },
-          "shortname": "lightColorLevelForNightLighting",
+          "shortName": "lightColorLevelForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14516,7 +20699,7 @@ const jsonData = {
             "ja": "常夜灯モード時光色レベル段数設定",
             "en": "Light color level step setting for night lighting"
           },
-          "shortname": "lightColorLevelStepForNightLighting",
+          "shortName": "lightColorLevelStepForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -14539,7 +20722,7 @@ const jsonData = {
             "ja": "自動モード時点灯モード状態",
             "en": "Lighting mode status in Auto mode"
           },
-          "shortname": "autoMode",
+          "shortName": "autoMode",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -14593,7 +20776,7 @@ const jsonData = {
             "ja": "カラー灯モード時RGB 設定",
             "en": "RGB setting for color lighting"
           },
-          "shortname": "rgb",
+          "shortName": "rgb",
           "accessRule": {
             "get": "optional",
             "set": "optional",
