@@ -1,113 +1,116 @@
 const jsonData = {
-  "metaData":{
-    "date":"2020-11-06",
-    "release":"M",
-    "version":"1.0.0rc1",
-    "note":{"ja":" Machine Readable Appendix official release", "en":"Machine Readable Appendix official release"},
-    "Copyright":"(C) 2020 Kanagawa Institute of Technology, ECHONET CONSORTIUM"
+  "metaData": {
+    "date": "2020-11-16",
+    "release": "M",
+    "version": "1.0.0rc1",
+    "note": {
+      "ja": " Machine Readable Appendix official release",
+      "en": "Machine Readable Appendix official release"
+    },
+    "Copyright": "(C) 2020 Kanagawa Institute of Technology, ECHONET CONSORTIUM"
   },
-  "definitions":{
-    "number_0":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":0
+  "definitions": {
+    "number_0": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 0
     },
-    "number_0-8":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":8
+    "number_0-8": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 8
     },
-    "number_0-23":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":23
+    "number_0-23": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 23
     },
-    "number_0-24":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":24
+    "number_0-24": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 24
     },
-    "number_0-59":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":59
+    "number_0-59": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 59
     },
-    "number_0-84":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":84
+    "number_0-84": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 84
     },
-    "number_0-99":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":99
+    "number_0-99": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 99
     },
-    "number_0-127":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":127
+    "number_0-127": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 127
     },
-    "number_0-252":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":252
+    "number_0-252": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 252
     },
-    "number_0-244":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":244
+    "number_0-244": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 244
     },
-    "number_0-253":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":253
+    "number_0-253": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 253
     },
-    "number_0-254":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":254
+    "number_0-254": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 254
     },
-    "number_0-255":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":0,
-        "maximum":255
+    "number_0-255": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 0,
+      "maximum": 255
     },
-    "number_0-1004":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":0,
-        "maximum":1004
+    "number_0-1004": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 0,
+      "maximum": 1004
     },
-    "number_1-2":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":1,
-        "maximum":2
+    "number_1-2": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 1,
+      "maximum": 2
     },
-    "number_1-8":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":1,
-        "maximum":8
+    "number_1-8": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 1,
+      "maximum": 8
     },
-    "number_1-12":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":1,
-        "maximum":12
+    "number_1-12": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 1,
+      "maximum": 12
     },
     "number_1-30": {
       "type": "number",
@@ -115,729 +118,1076 @@ const jsonData = {
       "minimum": 1,
       "maximum": 30
     },
-    "number_1-31":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":1,
-        "maximum":31
-    },
-    "number_1-60":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":1,
-        "maximum":60
-    },
-    "number_1-128":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":1,
-        "maximum":128
-    },
-    "number_1-128_u16":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":1,
-        "maximum":128
-    },
-    "number_1-252":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":1,
-        "maximum":252
-    },
-    "number_1-253":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":1,
-        "maximum":253
-    },
-    "number_1-255":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":1,
-        "maximum":255
-    },
-    "number_9-17":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":9,
-        "maximum":17
-    },
-    "number_10-17":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":10,
-        "maximum":17
-    },
-    "number_49-63":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":49,
-        "maximum":63
-    },
-    "number_50-250":{
-        "type":"number",
-        "format":"uint8",
-        "minimum":50,
-        "maximum":250
-    },
-    "number_0-100%":{
-        "type":"number",
-        "format":"uint8",
-        "unit":"%",
-        "minimum":0,
-        "maximum":100
-    },
-    "number_0-50Celsius":{
-        "type":"number",
-        "format":"uint8",
-        "unit":"Celsius",
-        "minimum":0,
-        "maximum":50
-    },
-    "number_0-100Celsius":{
-        "type":"number",
-        "format":"uint8",
-        "unit":"Celsius",
-        "minimum":0,
-        "maximum":100
-    },
-    "number_0-150Celsius":{
-        "type":"number",
-        "format":"uint8",
-        "unit":"Celsius",
-        "minimum":0,
-        "maximum":150
-    },
-    "number_0-180degree":{
-        "type":"number",
-        "format":"uint8",
-        "unit":"degree",
-        "minimum":0,
-        "maximum":180
-    },
-    "number_0-360degree":{
-        "type":"number",
-        "format":"uint8",
-        "unit":"degree",
-        "minimum":0,
-        "maximum":360
-    },
-    "number_0-360degree_u16":{
-        "type":"number",
-        "format":"uint16",
-        "unit":"degree",
-        "minimum":0,
-        "maximum":360
-    },
-    "number_-127-125Celsius":{
-        "type":"number",
-        "format":"int8",
-        "unit":"Celsius",
-        "minimum":-127,
-        "maximum":125
-    },
-    "number_-127-126Celsius":{
-        "type":"number",
-        "format":"int8",
-        "unit":"Celsius",
-        "minimum":-127,
-        "maximum":126
-    },
-    "number_0-99_u16":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":0,
-        "maximum":99
-    },
-    "number_1-253_u16":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":1,
-        "maximum":253
-    },
-    "number_0-1000":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":0,
-        "maximum":1000
-    },
-    "number_0-3600":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":0,
-        "maximum":3600
-    },
-    "number_0-4095":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":0,
-        "maximum":4095
-    },
-    "number_0-10000":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":0,
-        "maximum":10000
-    },
-    "number_0-32766":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":0,
-        "maximum":32766
-    },
-    "number_0-65533":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":0,
-        "maximum":65533
-    },
-    "number_0-65534":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":0,
-        "maximum":65534
-    },
-    "number_0-65535":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":0,
-        "maximum":65535
-    },
-    "number_1-65533":{
-        "type":"number",
-        "format":"uint16",
-        "minimum":1,
-        "maximum":65533
-    },
-    "number_-200-1000":{
-        "type":"number",
-        "format":"int16",
-        "minimum":-200,
-        "maximum":1000
-    },
-    "number_-2732-32766":{
-        "type":"number",
-        "format":"int16",
-        "minimum":-2732,
-        "maximum":32766
-    },
-    "number_-32767-32765":{
-        "type":"number",
-        "format":"int16",
-        "minimum":-32767,
-        "maximum":32765
-    },
-    "number_-32767-32766":{
-        "type":"number",
-        "format":"int16",
-        "minimum":-32767,
-        "maximum":32766
-    },
-    "number_0-999999":{
-        "type":"number",
-        "format":"uint32",
-        "minimum":0,
-        "maximum":999999
-    },
-    "number_0-99999999":{
-        "type":"number",
-        "format":"uint32",
-        "minimum":0,
-        "maximum":99999999
-    },
-    "number_0-999999999":{
-        "type":"number",
-        "format":"uint32",
-        "minimum":0,
-        "maximum":999999999
-    },
-    "number_0-4294967293":{
-        "type":"number",
-        "format":"uint32",
-        "minimum":0,
-        "maximum":4294967293
-    },
-    "number_1-4294967293":{
-        "type":"number",
-        "format":"uint32",
-        "minimum":1,
-        "maximum":4294967293
-    },
-    "number_0-4294967295":{
-        "type":"number",
-        "format":"uint32",
-        "minimum":0,
-        "maximum":4294967295
-    },
-    "number_1-999999999":{
-        "type":"number",
-        "format":"uint32",
-        "minimum":1,
-        "maximum":999999999
-    },
-    "number_-999999999-999999999":{
-            "type":"number",
-            "format":"int32",
-            "minimum":-999999999,
-            "maximum":999999999
-    },
-    "number_-2147483647-2147483645":{
-        "type":"number",
-        "format":"int32",
-        "minimum":-2147483647,
-        "maximum":2147483645
-    },
-    "number_-2147483647-2147483646":{
-        "type":"number",
-        "format":"int32",
-        "minimum":-2147483647,
-        "maximum":2147483646
-    },
-    "state_NoSetting":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x00", "name":"xxx", "descriptions":{"ja":"設定なし", "en":"No setting"}}
-        ]
-    },
-    "state_NotSet_00000000":{
-        "type":"state",
-        "size":4,
-        "enum":[
-            {"edt":"0x00000000", "name":"xxx", "descriptions":{"ja":"未設定", "en":"Not set"}}
-        ]
-    },
-    "state_RESET":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x00", "name":"xxx", "descriptions":{"ja":"リセット", "en":"Reset"}}
-        ]
-    },
-    "state_ON-OFF-3031":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x30", "name":"xxx", "descriptions":{"ja":"入", "en":"ON"}},
-            {"edt":"0x31", "name":"yyy", "descriptions":{"ja":"切", "en":"OFF"}}
-        ]
-    },
-    "state_YES-NO-3031":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x30", "name":"xxx", "descriptions":{"ja":"有", "en":"YES"}},
-            {"edt":"0x31", "name":"yyy", "descriptions":{"ja":"無", "en":"NO"}}
-        ]
-    },
-    "state_AUTO-41":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"自動", "en":"Automatic"}}
-        ]
-    },
-    "state_AUTO-71":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x71", "name":"xxx", "descriptions":{"ja":"自動", "en":"Automatic"}}
-        ]
-    },
-    "state_ON-OFF-4142":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"入", "en":"ON"}},
-            {"edt":"0x42", "name":"yyy", "descriptions":{"ja":"切", "en":"OFF"}}
-        ]
-    },
-    "state_YES-NO-4142":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"有", "en":"YES"}},
-            {"edt":"0x42", "name":"yyy", "descriptions":{"ja":"無", "en":"NO"}}
-        ]
-    },
-    "state_YES-NO-4140":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"有", "en":"YES"}},
-            {"edt":"0x40", "name":"yyy", "descriptions":{"ja":"無", "en":"NO"}}
-        ]
-    },
-    "state_OPEN-CLOSE-4142":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"開", "en":"Open"}},
-            {"edt":"0x42", "name":"yyy", "descriptions":{"ja":"閉", "en":"Close"}}
-        ]
-    },
-    "state_OPEN-CLOSE-STOP-414243":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"開", "en":"Open"}},
-            {"edt":"0x42", "name":"yyy", "descriptions":{"ja":"閉", "en":"Close"}},
-            {"edt":"0x43", "name":"zzz", "descriptions":{"ja":"停止", "en":"Stop"}}
-        ]
-    },
-    "state_LOCK-UNLOCK-4142":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"施錠", "en":"Lock"}},
-            {"edt":"0x42", "name":"yyy", "descriptions":{"ja":"解錠", "en":"Unlock"}}
-        ]
-    },
-    "state_AUTO-STANDARD-4142":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"自動", "en":"Automatic"}},
-            {"edt":"0x42", "name":"yyy", "descriptions":{"ja":"標準", "en":"Standard"}}
-        ]
-    },
-    "state_AUTO-NONAUTO-4142":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"AUTO", "en":"Automatic"}},
-            {"edt":"0x42", "name":"yyy", "descriptions":{"ja":"非AUTO", "en":"Non-automatic"}}
-        ]
-    },
-    "state_LOW-MID-HIGH-414243":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"低", "en":"Low"}},
-            {"edt":"0x42", "name":"yyy", "descriptions":{"ja":"中", "en":"Middle"}},
-            {"edt":"0x43", "name":"zzz", "descriptions":{"ja":"高", "en":"High"}}
-        ]
-    },
-    "state_LOW-MID-HIGH-NONE-41424344":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"低", "en":"Low"}},
-            {"edt":"0x42", "name":"yyy", "descriptions":{"ja":"中", "en":"Middle"}},
-            {"edt":"0x43", "name":"zzz", "descriptions":{"ja":"高", "en":"High"}},
-            {"edt":"0x44", "name":"aaa", "descriptions":{"ja":"無し", "en":"None"}}
-        ]
-    },
-    "state_LightColor-40-44":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"電球色", "en":"Incandescent lamp color"}},
-            {"edt":"0x42", "name":"yyy", "descriptions":{"ja":"白色", "en":"White"}},
-            {"edt":"0x43", "name":"zzz", "descriptions":{"ja":"昼白色", "en":"Daylight white"}},
-            {"edt":"0x44", "name":"aaa", "descriptions":{"ja":"昼光色", "en":"Daylight color"}},
-            {"edt":"0x40", "name":"bbb", "descriptions":{"ja":"その他", "en":"Other"}}
-        ]
-    },
-    "state_LightColor-41-44":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x41", "name":"xxx", "descriptions":{"ja":"電球色", "en":"Incandescent lamp color"}},
-            {"edt":"0x42", "name":"yyy", "descriptions":{"ja":"白色", "en":"White"}},
-            {"edt":"0x43", "name":"zzz", "descriptions":{"ja":"昼白色", "en":"Daylight white"}},
-            {"edt":"0x44", "name":"aaa", "descriptions":{"ja":"昼光色", "en":"Daylight color"}}
-        ]
-    },
-    "state_Undefined-7E":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0x7E", "name":"xxx", "descriptions":{"ja":"不明", "en":"Undefined"}, "readOnly":true}
-        ]
-    },
-    "state_Undefined-FD":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0xFD", "name":"xxx", "descriptions":{"ja":"不明", "en":"Undefined"}, "readOnly":true}
-        ]
-    },
-    "state_NoHotWater-FE":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0xFE", "name":"xxx", "descriptions":{"ja":"熱水不使用", "en":"Not to use warm water"} }
-        ]
-    },
-    "state_Undefined-FF":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0xFF", "name":"xxx", "descriptions":{"ja":"不明", "en":"Undefined"}, "readOnly":true}
-        ]
-    },
-    "state_AUTO-FF":{
-        "type":"state",
-        "size":1,
-        "enum":[
-            {"edt":"0xFF", "name":"xxx", "descriptions":{"ja":"自動", "en":"AUTO"}}
-        ]
-    },
-    "state_Undefined-FFFF":{
-        "type":"state",
-        "size":2,
-        "enum":[
-            {"edt":"0xFFFF", "name":"xxx", "descriptions":{"ja":"不明", "en":"Undefined"}, "readOnly":true}
-        ]
-    },
-    "state_AUTO-FFFF":{
-        "type":"state",
-        "size":2,
-        "enum":[
-            {"edt":"0xFFFF", "name":"xxx", "descriptions":{"ja":"自動", "en":"AUTO"}}
-        ]
-    },
-    "level_21-15":{
-        "type":"level",
-        "base":"0x21",
-        "maximum":15
-    },
-    "level_31-3":{
-        "type":"level",
-        "base":"0x31",
-        "maximum":3
-    },
-    "level_31-5":{
-        "type":"level",
-        "base":"0x31",
-        "maximum":5
-    },
-    "level_31-8":{
-        "type":"level",
-        "base":"0x31",
-        "maximum":8
-    },
-    "level_31-10":{
-        "type":"level",
-        "base":"0x31",
-        "maximum":10
-    },
-    "level_31-15":{
-        "type":"level",
-        "base":"0x31",
-        "maximum":15
-    },
-    "level_31-16":{
-        "type":"level",
-        "base":"0x31",
-        "maximum":16
-    },
-    "level_40-6":{
-        "type":"level",
-        "base":"0x40",
-        "maximum":6
-    },
-    "level_A0-8":{
-        "type":"level",
-        "base":"0xA0",
-        "maximum":8
-    },
-    "level_A0-32":{
-        "type":"level",
-        "base":"0xA0",
-        "maximum":32
-    },
-    "level_A1-8":{
-        "type":"level",
-        "base":"0xA1",
-        "maximum":8
-    },
-    "level_C0-8":{
-        "type":"level",
-        "base":"0xC0",
-        "maximum":8
-    },
-    "level_C0-32":{
-        "type":"level",
-        "base":"0xC0",
-        "maximum":32
-    },
-    "level_C1-8":{
-        "type":"level",
-        "base":"0xC1",
-        "maximum":8
-    },
-    "level_3000-17":{
-        "type":"level",
-        "base":"0x3000",
-        "maximum":17
-    },
-    "level_A000-60":{
-        "type":"level",
-        "base":"0xA000",
-        "maximum":60
-    },
-    "level_A000-2048":{
-        "type":"level",
-        "base":"0xA000",
-        "maximum":2048
-    },
-    "level_A001-8":{
-        "type":"level",
-        "base":"0xA001",
-        "maximum":8
-    },
-    "level_C000-60":{
-        "type":"level",
-        "base":"0xC000",
-        "maximum":60
-    },
-    "level_C000-2048":{
-        "type":"level",
-        "base":"0xC000",
-        "maximum":2048
-    },
-    "level_C001-8":{
-        "type":"level",
-        "base":"0xC001",
-        "maximum":8
-    },
-    "raw_1":{
-        "type":"raw",
-        "minSize":1,
-        "maxSize":1
-    },
-    "raw_2":{
-        "type":"raw",
-        "minSize":2,
-        "maxSize":2
-    },
-    "raw_3":{
-        "type":"raw",
-        "minSize":3,
-        "maxSize":3
-    },
-    "raw_4":{
-        "type":"raw",
-        "minSize":4,
-        "maxSize":4
-    },
-    "raw_6":{
-        "type":"raw",
-        "minSize":6,
-        "maxSize":6
-    },
-    "raw_8":{
-        "type":"raw",
-        "minSize":8,
-        "maxSize":8
-    },
-    "raw_10":{
-        "type":"raw",
-        "minSize":10,
-        "maxSize":10
-    },
-    "raw_11":{
-        "type":"raw",
-        "minSize":11,
-        "maxSize":11
-    },
-    "raw_12":{
-        "type":"raw",
-        "minSize":12,
-        "maxSize":12
-    },
-    "raw_14":{
-        "type":"raw",
-        "minSize":14,
-        "maxSize":14
-    },
-    "raw_16":{
-        "type":"raw",
-        "minSize":16,
-        "maxSize":16
-    },
-    "raw_17":{
-        "type":"raw",
-        "minSize":17,
-        "maxSize":17
-    },
-    "raw_24":{
-        "type":"raw",
-        "minSize":24,
-        "maxSize":24
-    },
-    "raw_27":{
-        "type":"raw",
-        "minSize":27,
-        "maxSize":27
-    },
-    "raw_40":{
-        "type":"raw",
-        "minSize":40,
-        "maxSize":40
-    },
-    "raw_109":{
-        "type":"raw",
-        "minSize":109,
-        "maxSize":109
-    },
-    "raw_194":{
-        "type":"raw",
-        "minSize":194,
-        "maxSize":194
-    },
-    "raw_1-12":{
-        "type":"raw",
-        "minSize":1,
-        "maxSize":12
-    },
-    "raw_1-17":{
-        "type":"raw",
-        "minSize":1,
-        "maxSize":17
-    },
-    "raw_1-31":{
-        "type":"raw",
-        "minSize":1,
-        "maxSize":31
-    },
-    "raw_1-40":{
-        "type":"raw",
-        "minSize":1,
-        "maxSize":40
-    },
-    "raw_1-101":{
-        "type":"raw",
-        "minSize":1,
-        "maxSize":101
-    },
-    "raw_1-165":{
-        "type":"raw",
-        "minSize":1,
-        "maxSize":165
-    },
-    "raw_1-231":{
-        "type":"raw",
-        "minSize":1,
-        "maxSize":231
-    },
-    "raw_1-244":{
-        "type":"raw",
-        "minSize":1,
-        "maxSize":244
-    },
-    "raw_1-247":{
-        "type":"raw",
-        "minSize":1,
-        "maxSize":247
-    },
-    "raw_1-253":{
-        "type":"raw",
-        "minSize":1,
-        "maxSize":253
+    "number_1-31": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 1,
+      "maximum": 31
+    },
+    "number_1-60": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 1,
+      "maximum": 60
+    },
+    "number_1-128": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 1,
+      "maximum": 128
+    },
+    "number_1-128_u16": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 1,
+      "maximum": 128
+    },
+    "number_1-252": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 1,
+      "maximum": 252
+    },
+    "number_1-253": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 1,
+      "maximum": 253
+    },
+    "number_1-255": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 1,
+      "maximum": 255
+    },
+    "number_9-17": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 9,
+      "maximum": 17
+    },
+    "number_10-17": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 10,
+      "maximum": 17
+    },
+    "number_49-63": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 49,
+      "maximum": 63
+    },
+    "number_50-250": {
+      "type": "number",
+      "format": "uint8",
+      "minimum": 50,
+      "maximum": 250
+    },
+    "number_0-100%": {
+      "type": "number",
+      "format": "uint8",
+      "unit": "%",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "number_0-50Celsius": {
+      "type": "number",
+      "format": "uint8",
+      "unit": "Celsius",
+      "minimum": 0,
+      "maximum": 50
+    },
+    "number_0-100Celsius": {
+      "type": "number",
+      "format": "uint8",
+      "unit": "Celsius",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "number_0-150Celsius": {
+      "type": "number",
+      "format": "uint8",
+      "unit": "Celsius",
+      "minimum": 0,
+      "maximum": 150
+    },
+    "number_0-180degree": {
+      "type": "number",
+      "format": "uint8",
+      "unit": "degree",
+      "minimum": 0,
+      "maximum": 180
+    },
+    "number_0-360degree": {
+      "type": "number",
+      "format": "uint8",
+      "unit": "degree",
+      "minimum": 0,
+      "maximum": 360
+    },
+    "number_0-360degree_u16": {
+      "type": "number",
+      "format": "uint16",
+      "unit": "degree",
+      "minimum": 0,
+      "maximum": 360
+    },
+    "number_-127-125Celsius": {
+      "type": "number",
+      "format": "int8",
+      "unit": "Celsius",
+      "minimum": -127,
+      "maximum": 125
+    },
+    "number_-127-126Celsius": {
+      "type": "number",
+      "format": "int8",
+      "unit": "Celsius",
+      "minimum": -127,
+      "maximum": 126
+    },
+    "number_0-99_u16": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 0,
+      "maximum": 99
+    },
+    "number_1-253_u16": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 1,
+      "maximum": 253
+    },
+    "number_0-1000": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 0,
+      "maximum": 1000
+    },
+    "number_0-3600": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 0,
+      "maximum": 3600
+    },
+    "number_0-4095": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 0,
+      "maximum": 4095
+    },
+    "number_0-10000": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 0,
+      "maximum": 10000
+    },
+    "number_0-32766": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 0,
+      "maximum": 32766
+    },
+    "number_0-65533": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 0,
+      "maximum": 65533
+    },
+    "number_0-65534": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 0,
+      "maximum": 65534
+    },
+    "number_0-65535": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 0,
+      "maximum": 65535
+    },
+    "number_1-65533": {
+      "type": "number",
+      "format": "uint16",
+      "minimum": 1,
+      "maximum": 65533
+    },
+    "number_-200-1000": {
+      "type": "number",
+      "format": "int16",
+      "minimum": -200,
+      "maximum": 1000
+    },
+    "number_-2732-32766": {
+      "type": "number",
+      "format": "int16",
+      "minimum": -2732,
+      "maximum": 32766
+    },
+    "number_-32767-32765": {
+      "type": "number",
+      "format": "int16",
+      "minimum": -32767,
+      "maximum": 32765
+    },
+    "number_-32767-32766": {
+      "type": "number",
+      "format": "int16",
+      "minimum": -32767,
+      "maximum": 32766
+    },
+    "number_0-999999": {
+      "type": "number",
+      "format": "uint32",
+      "minimum": 0,
+      "maximum": 999999
+    },
+    "number_0-99999999": {
+      "type": "number",
+      "format": "uint32",
+      "minimum": 0,
+      "maximum": 99999999
+    },
+    "number_0-999999999": {
+      "type": "number",
+      "format": "uint32",
+      "minimum": 0,
+      "maximum": 999999999
+    },
+    "number_0-4294967293": {
+      "type": "number",
+      "format": "uint32",
+      "minimum": 0,
+      "maximum": 4294967293
+    },
+    "number_1-4294967293": {
+      "type": "number",
+      "format": "uint32",
+      "minimum": 1,
+      "maximum": 4294967293
+    },
+    "number_0-4294967295": {
+      "type": "number",
+      "format": "uint32",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "number_1-999999999": {
+      "type": "number",
+      "format": "uint32",
+      "minimum": 1,
+      "maximum": 999999999
+    },
+    "number_-999999999-999999999": {
+      "type": "number",
+      "format": "int32",
+      "minimum": -999999999,
+      "maximum": 999999999
+    },
+    "number_-2147483647-2147483645": {
+      "type": "number",
+      "format": "int32",
+      "minimum": -2147483647,
+      "maximum": 2147483645
+    },
+    "number_-2147483647-2147483646": {
+      "type": "number",
+      "format": "int32",
+      "minimum": -2147483647,
+      "maximum": 2147483646
+    },
+    "state_NoSetting": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x00",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "設定なし",
+            "en": "No setting"
+          }
+        }
+      ]
+    },
+    "state_NotSet_00000000": {
+      "type": "state",
+      "size": 4,
+      "enum": [
+        {
+          "edt": "0x00000000",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "未設定",
+            "en": "Not set"
+          }
+        }
+      ]
+    },
+    "state_RESET": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x00",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "リセット",
+            "en": "Reset"
+          }
+        }
+      ]
+    },
+    "state_ON-OFF-3031": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x30",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "入",
+            "en": "ON"
+          }
+        },
+        {
+          "edt": "0x31",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "切",
+            "en": "OFF"
+          }
+        }
+      ]
+    },
+    "state_YES-NO-3031": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x30",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "有",
+            "en": "YES"
+          }
+        },
+        {
+          "edt": "0x31",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "無",
+            "en": "NO"
+          }
+        }
+      ]
+    },
+    "state_AUTO-41": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "自動",
+            "en": "Automatic"
+          }
+        }
+      ]
+    },
+    "state_AUTO-71": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x71",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "自動",
+            "en": "Automatic"
+          }
+        }
+      ]
+    },
+    "state_ON-OFF-4142": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "入",
+            "en": "ON"
+          }
+        },
+        {
+          "edt": "0x42",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "切",
+            "en": "OFF"
+          }
+        }
+      ]
+    },
+    "state_YES-NO-4142": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "有",
+            "en": "YES"
+          }
+        },
+        {
+          "edt": "0x42",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "無",
+            "en": "NO"
+          }
+        }
+      ]
+    },
+    "state_YES-NO-4140": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "有",
+            "en": "YES"
+          }
+        },
+        {
+          "edt": "0x40",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "無",
+            "en": "NO"
+          }
+        }
+      ]
+    },
+    "state_OPEN-CLOSE-4142": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "開",
+            "en": "Open"
+          }
+        },
+        {
+          "edt": "0x42",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "閉",
+            "en": "Close"
+          }
+        }
+      ]
+    },
+    "state_OPEN-CLOSE-STOP-414243": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "開",
+            "en": "Open"
+          }
+        },
+        {
+          "edt": "0x42",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "閉",
+            "en": "Close"
+          }
+        },
+        {
+          "edt": "0x43",
+          "name": "zzz",
+          "descriptions": {
+            "ja": "停止",
+            "en": "Stop"
+          }
+        }
+      ]
+    },
+    "state_LOCK-UNLOCK-4142": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "施錠",
+            "en": "Lock"
+          }
+        },
+        {
+          "edt": "0x42",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "解錠",
+            "en": "Unlock"
+          }
+        }
+      ]
+    },
+    "state_AUTO-STANDARD-4142": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "自動",
+            "en": "Automatic"
+          }
+        },
+        {
+          "edt": "0x42",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "標準",
+            "en": "Standard"
+          }
+        }
+      ]
+    },
+    "state_AUTO-NONAUTO-4142": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "AUTO",
+            "en": "Automatic"
+          }
+        },
+        {
+          "edt": "0x42",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "非AUTO",
+            "en": "Non-automatic"
+          }
+        }
+      ]
+    },
+    "state_LOW-MID-HIGH-414243": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "低",
+            "en": "Low"
+          }
+        },
+        {
+          "edt": "0x42",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "中",
+            "en": "Middle"
+          }
+        },
+        {
+          "edt": "0x43",
+          "name": "zzz",
+          "descriptions": {
+            "ja": "高",
+            "en": "High"
+          }
+        }
+      ]
+    },
+    "state_LOW-MID-HIGH-NONE-41424344": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "低",
+            "en": "Low"
+          }
+        },
+        {
+          "edt": "0x42",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "中",
+            "en": "Middle"
+          }
+        },
+        {
+          "edt": "0x43",
+          "name": "zzz",
+          "descriptions": {
+            "ja": "高",
+            "en": "High"
+          }
+        },
+        {
+          "edt": "0x44",
+          "name": "aaa",
+          "descriptions": {
+            "ja": "無し",
+            "en": "None"
+          }
+        }
+      ]
+    },
+    "state_LightColor-40-44": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "電球色",
+            "en": "Incandescent lamp color"
+          }
+        },
+        {
+          "edt": "0x42",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "白色",
+            "en": "White"
+          }
+        },
+        {
+          "edt": "0x43",
+          "name": "zzz",
+          "descriptions": {
+            "ja": "昼白色",
+            "en": "Daylight white"
+          }
+        },
+        {
+          "edt": "0x44",
+          "name": "aaa",
+          "descriptions": {
+            "ja": "昼光色",
+            "en": "Daylight color"
+          }
+        },
+        {
+          "edt": "0x40",
+          "name": "bbb",
+          "descriptions": {
+            "ja": "その他",
+            "en": "Other"
+          }
+        }
+      ]
+    },
+    "state_LightColor-41-44": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x41",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "電球色",
+            "en": "Incandescent lamp color"
+          }
+        },
+        {
+          "edt": "0x42",
+          "name": "yyy",
+          "descriptions": {
+            "ja": "白色",
+            "en": "White"
+          }
+        },
+        {
+          "edt": "0x43",
+          "name": "zzz",
+          "descriptions": {
+            "ja": "昼白色",
+            "en": "Daylight white"
+          }
+        },
+        {
+          "edt": "0x44",
+          "name": "aaa",
+          "descriptions": {
+            "ja": "昼光色",
+            "en": "Daylight color"
+          }
+        }
+      ]
+    },
+    "state_Undefined-7E": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0x7E",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "不明",
+            "en": "Undefined"
+          },
+          "readOnly": true
+        }
+      ]
+    },
+    "state_Undefined-FD": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0xFD",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "不明",
+            "en": "Undefined"
+          },
+          "readOnly": true
+        }
+      ]
+    },
+    "state_NoHotWater-FE": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0xFE",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "熱水不使用",
+            "en": "Not to use warm water"
+          }
+        }
+      ]
+    },
+    "state_Undefined-FF": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0xFF",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "不明",
+            "en": "Undefined"
+          },
+          "readOnly": true
+        }
+      ]
+    },
+    "state_AUTO-FF": {
+      "type": "state",
+      "size": 1,
+      "enum": [
+        {
+          "edt": "0xFF",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "自動",
+            "en": "AUTO"
+          }
+        }
+      ]
+    },
+    "state_Undefined-FFFF": {
+      "type": "state",
+      "size": 2,
+      "enum": [
+        {
+          "edt": "0xFFFF",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "不明",
+            "en": "Undefined"
+          },
+          "readOnly": true
+        }
+      ]
+    },
+    "state_AUTO-FFFF": {
+      "type": "state",
+      "size": 2,
+      "enum": [
+        {
+          "edt": "0xFFFF",
+          "name": "xxx",
+          "descriptions": {
+            "ja": "自動",
+            "en": "AUTO"
+          }
+        }
+      ]
+    },
+    "level_21-15": {
+      "type": "level",
+      "base": "0x21",
+      "maximum": 15
+    },
+    "level_31-3": {
+      "type": "level",
+      "base": "0x31",
+      "maximum": 3
+    },
+    "level_31-5": {
+      "type": "level",
+      "base": "0x31",
+      "maximum": 5
+    },
+    "level_31-8": {
+      "type": "level",
+      "base": "0x31",
+      "maximum": 8
+    },
+    "level_31-10": {
+      "type": "level",
+      "base": "0x31",
+      "maximum": 10
+    },
+    "level_31-15": {
+      "type": "level",
+      "base": "0x31",
+      "maximum": 15
+    },
+    "level_31-16": {
+      "type": "level",
+      "base": "0x31",
+      "maximum": 16
+    },
+    "level_40-6": {
+      "type": "level",
+      "base": "0x40",
+      "maximum": 6
+    },
+    "level_A0-8": {
+      "type": "level",
+      "base": "0xA0",
+      "maximum": 8
+    },
+    "level_A0-32": {
+      "type": "level",
+      "base": "0xA0",
+      "maximum": 32
+    },
+    "level_A1-8": {
+      "type": "level",
+      "base": "0xA1",
+      "maximum": 8
+    },
+    "level_C0-8": {
+      "type": "level",
+      "base": "0xC0",
+      "maximum": 8
+    },
+    "level_C0-32": {
+      "type": "level",
+      "base": "0xC0",
+      "maximum": 32
+    },
+    "level_C1-8": {
+      "type": "level",
+      "base": "0xC1",
+      "maximum": 8
+    },
+    "level_3000-17": {
+      "type": "level",
+      "base": "0x3000",
+      "maximum": 17
+    },
+    "level_A000-60": {
+      "type": "level",
+      "base": "0xA000",
+      "maximum": 60
+    },
+    "level_A000-2048": {
+      "type": "level",
+      "base": "0xA000",
+      "maximum": 2048
+    },
+    "level_A001-8": {
+      "type": "level",
+      "base": "0xA001",
+      "maximum": 8
+    },
+    "level_C000-60": {
+      "type": "level",
+      "base": "0xC000",
+      "maximum": 60
+    },
+    "level_C000-2048": {
+      "type": "level",
+      "base": "0xC000",
+      "maximum": 2048
+    },
+    "level_C001-8": {
+      "type": "level",
+      "base": "0xC001",
+      "maximum": 8
+    },
+    "raw_1": {
+      "type": "raw",
+      "minSize": 1,
+      "maxSize": 1
+    },
+    "raw_2": {
+      "type": "raw",
+      "minSize": 2,
+      "maxSize": 2
+    },
+    "raw_3": {
+      "type": "raw",
+      "minSize": 3,
+      "maxSize": 3
+    },
+    "raw_4": {
+      "type": "raw",
+      "minSize": 4,
+      "maxSize": 4
+    },
+    "raw_6": {
+      "type": "raw",
+      "minSize": 6,
+      "maxSize": 6
+    },
+    "raw_8": {
+      "type": "raw",
+      "minSize": 8,
+      "maxSize": 8
+    },
+    "raw_10": {
+      "type": "raw",
+      "minSize": 10,
+      "maxSize": 10
+    },
+    "raw_11": {
+      "type": "raw",
+      "minSize": 11,
+      "maxSize": 11
+    },
+    "raw_12": {
+      "type": "raw",
+      "minSize": 12,
+      "maxSize": 12
+    },
+    "raw_14": {
+      "type": "raw",
+      "minSize": 14,
+      "maxSize": 14
+    },
+    "raw_16": {
+      "type": "raw",
+      "minSize": 16,
+      "maxSize": 16
+    },
+    "raw_17": {
+      "type": "raw",
+      "minSize": 17,
+      "maxSize": 17
+    },
+    "raw_24": {
+      "type": "raw",
+      "minSize": 24,
+      "maxSize": 24
+    },
+    "raw_27": {
+      "type": "raw",
+      "minSize": 27,
+      "maxSize": 27
+    },
+    "raw_40": {
+      "type": "raw",
+      "minSize": 40,
+      "maxSize": 40
+    },
+    "raw_109": {
+      "type": "raw",
+      "minSize": 109,
+      "maxSize": 109
+    },
+    "raw_194": {
+      "type": "raw",
+      "minSize": 194,
+      "maxSize": 194
+    },
+    "raw_1-12": {
+      "type": "raw",
+      "minSize": 1,
+      "maxSize": 12
+    },
+    "raw_1-17": {
+      "type": "raw",
+      "minSize": 1,
+      "maxSize": 17
+    },
+    "raw_1-31": {
+      "type": "raw",
+      "minSize": 1,
+      "maxSize": 31
+    },
+    "raw_1-40": {
+      "type": "raw",
+      "minSize": 1,
+      "maxSize": 40
+    },
+    "raw_1-101": {
+      "type": "raw",
+      "minSize": 1,
+      "maxSize": 101
+    },
+    "raw_1-165": {
+      "type": "raw",
+      "minSize": 1,
+      "maxSize": 165
+    },
+    "raw_1-231": {
+      "type": "raw",
+      "minSize": 1,
+      "maxSize": 231
+    },
+    "raw_1-244": {
+      "type": "raw",
+      "minSize": 1,
+      "maxSize": 244
+    },
+    "raw_1-247": {
+      "type": "raw",
+      "minSize": 1,
+      "maxSize": 247
+    },
+    "raw_1-253": {
+      "type": "raw",
+      "minSize": 1,
+      "maxSize": 253
     },
     "object_PDB_01": {
       "type": "object",
@@ -942,736 +1292,1372 @@ const jsonData = {
       ]
     }
   },
-    "nodeProfile": {
+  "nodeProfile": {
+    "validRelease": {
+      "from": "A",
+      "to": "latest"
+    },
+    "className": {
+      "ja": "ノードプロファイル",
+      "en": "Node profile"
+    },
+    "shortName": "nodeProfile",
+    "elProperties": {
+      "0x80": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "動作状態",
+          "en": "Operating status"
+        },
+        "shortName": "operatingStatus",
+        "accessRule": {
+          "get": "required",
+          "set": "optional",
+          "inf": "required"
+        },
+        "data": {
+          "type": "state",
+          "size": 1,
+          "enum": [
+            {
+              "edt": "0x30",
+              "name": "yes",
+              "descriptions": {
+                "ja": "起動中",
+                "en": "Booting"
+              }
+            },
+            {
+              "edt": "0x31",
+              "name": "no",
+              "descriptions": {
+                "ja": "未起動中",
+                "en": "not booting"
+              }
+            }
+          ]
+        }
+      },
+      "0x82": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "Version情報",
+          "en": "Version information"
+        },
+        "shortName": "version",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_4"
+        },
+        "note": {
+          "ja": "1バイト目：メジャーバージョン。2バイト目：マイナーバージョン。3バイト目：電文形式をbitmapで示す。４バイト目：0x00",
+          "en": "1st byte: major version, 2nd byte: minor version, 3rd data: bitmap of data format, 4th byte: 0x00"
+        }
+      },
+      "0x83": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "shortName": "id",
+        "propertyName": {
+          "ja": "識別番号",
+          "en": "Identification number"
+        },
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_17"
+        },
+        "note": {
+          "ja": "1バイト目は0xFE。2〜4バイト目はメーカコード。残りは機器毎のユニーク値",
+          "en": "1st data is 0xFE. 2nd to 4th data is manufacture code. The rest should be unique to each device."
+        }
+      },
+      "0x88": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "異常発生状態",
+          "en": "Fault status"
+        },
+        "shortName": "faultStatus",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "type": "state",
+          "size": 1,
+          "enum": [
+            {
+              "edt": "0x41",
+              "name": "yes",
+              "descriptions": {
+                "ja": "異常あり",
+                "en": "Fault occurred"
+              }
+            },
+            {
+              "edt": "0x42",
+              "name": "no",
+              "descriptions": {
+                "ja": "異常なし",
+                "en": "No fault has occurred"
+              }
+            }
+          ]
+        }
+      },
+      "0x89": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "異常内容",
+          "en": "Fault description"
+        },
+        "shortName": "faultDescription",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/number_0-1004"
+        }
+      },
+      "0x8A": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "メーカコード",
+          "en": "Manufacture code"
+        },
+        "shortName": "manufacturer",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_3"
+        },
+        "note": {
+          "ja": "0xFFFFFF:実験用, 0x000077:神奈川工科大学",
+          "en": "0xFFFFFF:For experimental, 0x000077:KAIT"
+        }
+      },
+      "0x8B": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "shortName": "businessFacilityCode",
+        "propertyName": {
+          "ja": "事業場コード",
+          "en": "Business facility code"
+        },
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_3"
+        }
+      },
+      "0x8C": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "商品コード",
+          "en": "Product code"
+        },
+        "shortName": "productCode",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_12"
+        }
+      },
+      "0x8D": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "製造番号",
+          "en": "Production number"
+        },
+        "shortName": "serialNumber",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_12"
+        }
+      },
+      "0x8E": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "製造年月日",
+          "en": "Production date"
+        },
+        "shortName": "productionDate",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "type": "date-time",
+          "size": 4
+        }
+      },
+      "0x9D": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "状変アナウンスプロパティマップ",
+          "en": "Status change announcement property map"
+        },
+        "shortName": "statusChangeAnnouncementPropertyMap",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_1-17"
+        },
+        "note": {
+          "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap",
+          "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap."
+        }
+      },
+      "0x9E": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "Setプロパティマップ",
+          "en": "Set property map"
+        },
+        "shortName": "setPropertyMap",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_1-17"
+        },
+        "note": {
+          "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap",
+          "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap."
+        }
+      },
+      "0x9F": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "Getプロパティマップ",
+          "en": "Get property map"
+        },
+        "shortName": "getPropertyMap",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_1-17"
+        },
+        "note": {
+          "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap",
+          "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap."
+        }
+      },
+      "0xBF": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "個体識別情報",
+          "en": "Unique identifier data"
+        },
+        "shortName": "uniqueIdData",
+        "accessRule": {
+          "get": "optional",
+          "set": "optional",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/number_0-254"
+        },
+        "note": {
+          "ja": "ECHONET Lite SPECIFICATION 第２部6.11.1参照",
+          "en": "See ECHONET Lite SPECIFICATION Part 2 Chapter 6.11.1."
+        }
+      },
+      "0xD3": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "自ノードインスタンス数",
+          "en": "Number of self-node instances"
+        },
+        "shortName": "selfNodeInstances",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "type": "raw",
+          "minSize": 2,
+          "maxSize": 2
+        },
+        "note": {
+          "ja": "3 byteで数値を表す。ノードプロファイルオブジェクトのインスタンスは含まない",
+          "en": "3 byte data for integer. excluding node profile object instance"
+        }
+      },
+      "0xD4": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "自ノードクラス数",
+          "en": "Number of self-node classes"
+        },
+        "shortName": "selfNodeClasses",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/number_1-253_u16"
+        },
+        "note": {
+          "ja": "ノードプロファイルクラスを含む",
+          "en": "including node profile class"
+        }
+      },
+      "0xD5": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "インスタンスリスト通知",
+          "en": "Instance list notification"
+        },
+        "shortName": "instanceListNotification",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "required"
+        },
+        "data": {
+          "type": "object",
+          "properties": [
+            {
+              "name": "numberOfinstances",
+              "element": {
+                "$ref": "#/definitions/number_0-84"
+              }
+            },
+            {
+              "name": "instanceList",
+              "element": {
+                "type": "array",
+                "itemSize": 3,
+                "maxItems": 84,
+                "items": {
+                  "$ref": "#/definitions/raw_3"
+                }
+              }
+            }
+          ]
+        },
+        "note": {
+          "ja": "インスタンスリストは機器オブジェクトの３バイトのEOJを列挙する",
+          "en": "Instance list is an array of EOJ (3 bytes)"
+        }
+      },
+      "0xD6": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "自ノードインスタンスリストS",
+          "en": "Self-node instance list S"
+        },
+        "shortName": "selfNodeInstanceListS",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "type": "object",
+          "properties": [
+            {
+              "name": "numberOfInstances",
+              "element": {
+                "$ref": "#/definitions/number_0-84"
+              }
+            },
+            {
+              "name": "instanceList",
+              "element": {
+                "type": "array",
+                "itemSize": 3,
+                "maxItems": 84,
+                "items": {
+                  "$ref": "#/definitions/raw_3"
+                }
+              }
+            }
+          ]
+        },
+        "note": {
+          "ja": "インスタンスリストは３バイトのEOJを列挙する",
+          "en": "Instance list is an array of EOJ (3 bytes)"
+        }
+      },
+      "0xD7": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "自ノードクラスリストS",
+          "en": "Self-node class list S"
+        },
+        "shortName": "selfNodeClassListS",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "type": "object",
+          "properties": [
+            {
+              "name": "numberOfClasses",
+              "element": {
+                "$ref": "#/definitions/number_1-8"
+              }
+            },
+            {
+              "name": "classList",
+              "element": {
+                "type": "array",
+                "itemSize": 2,
+                "maxItems": 8,
+                "items": {
+                  "$ref": "#/definitions/raw_2"
+                }
+              }
+            }
+          ]
+        },
+        "note": {
+          "ja": "ノードプロファイルクラスは除く",
+          "en": "Excluding node profile class"
+        }
+      }
+    }
+  },
+  "superClass": {
+    "validRelease": {
+      "from": "A",
+      "to": "latest"
+    },
+    "className": {
+      "ja": "スーパークラス",
+      "en": "Super class"
+    },
+    "shortName": "superClass",
+    "elProperties": {
+      "0x80": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "動作状態",
+          "en": "Operation status"
+        },
+        "shortName": "operationStatus",
+        "accessRule": {
+          "get": "required",
+          "set": "optional",
+          "inf": "required"
+        },
+        "data": {
+          "type": "state",
+          "size": 1,
+          "enum": [
+            {
+              "edt": "0x30",
+              "name": "yes",
+              "descriptions": {
+                "ja": "ON",
+                "en": "ON"
+              }
+            },
+            {
+              "edt": "0x31",
+              "name": "no",
+              "descriptions": {
+                "ja": "OFF",
+                "en": "OFF"
+              }
+            }
+          ]
+        }
+      },
+      "0x81": {
+        "oneOf": [
+          {
+            "validRelease": {
+              "from": "A",
+              "to": "B"
+            },
+            "propertyName": {
+              "ja": "設置場所",
+              "en": "Installation location"
+            },
+            "shortName": "installationLocation",
+            "accessRule": {
+              "get": "required",
+              "set": "required",
+              "inf": "required"
+            },
+            "data": {
+              "$ref": "#/definitions/raw_1"
+            },
+            "note": {
+              "ja": "bitmap（例 0x00: 未設定（初期値）, 0x08: リビング）",
+              "en": "bitmap (eg. 0x00: undefined (initial data), 0x08: living)"
+            }
+          },
+          {
+            "validRelease": {
+              "from": "C",
+              "to": "latest"
+            },
+            "propertyName": {
+              "ja": "設置場所",
+              "en": "Installation location"
+            },
+            "shortName": "installationLocation",
+            "accessRule": {
+              "get": "required",
+              "set": "required",
+              "inf": "required"
+            },
+            "data": {
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/raw_1"
+                },
+                {
+                  "$ref": "#/definitions/raw_17"
+                }
+              ]
+            },
+            "note": {
+              "ja": "1byte bitmap（例 0x00: 未設定（初期値）, 0x08: リビング）または0x01で始まる17 byte data",
+              "en": "1byte bitmap (eg. 0x00: undefined (initial data), 0x08: living) or 17 bytes data starting from 0x01"
+            }
+          }
+        ]
+      },
+      "0x82": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "規格Version情報",
+          "en": "Standard version information"
+        },
+        "shortName": "protocol",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_4"
+        },
+        "note": {
+          "ja": "1,2,4バイト目は0x00。3バイト目は機器オブジェクトのリリースバージョンをASCIIで表す。リリース Aのみ小文字で0x61, B以降は大文字で0x42, 0x43...",
+          "en": "1st, 2nd and 4th data is 0x00. 3rd data is the release version of Device Object in ASCII. Only release A utilize lower case letter 0x61, Release B and later utilize upper case letter such as 0x42, 0x43..."
+        }
+      },
+      "0x83": {
+        "oneOf": [
+          {
+            "validRelease": {
+              "from": "A",
+              "to": "A"
+            },
+            "propertyName": {
+              "ja": "識別番号",
+              "en": "Identification number"
+            },
+            "shortName": "id",
+            "accessRule": {
+              "get": "optional",
+              "set": "optional",
+              "inf": "optional"
+            },
+            "data": {
+              "$ref": "#/definitions/raw_17"
+            },
+            "note": {
+              "ja": "1バイト目は0xFE。2〜4バイト目はメーカコード。残りは機器毎のユニーク値",
+              "en": "1st data is 0xFE. 2nd to 4th data is manufacture code. The rest should be unique to each device."
+            }
+          },
+          {
+            "validRelease": {
+              "from": "B",
+              "to": "latest"
+            },
+            "propertyName": {
+              "ja": "識別番号",
+              "en": "Identification number"
+            },
+            "shortName": "id",
+            "accessRule": {
+              "get": "optional",
+              "set": "notApplicable",
+              "inf": "optional"
+            },
+            "data": {
+              "$ref": "#/definitions/raw_17"
+            },
+            "note": {
+              "ja": "1バイト目は0xFE。2〜4バイト目はメーカコード。残りは機器毎のユニーク値",
+              "en": "1st data is 0xFE. 2nd to 4th data is manufacture code. The rest should be unique to each device."
+            }
+          }
+        ]
+      },
+      "0x84": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "瞬時消費電力計測値",
+          "en": "Measured instantaneous power consumption"
+        },
+        "shortName": "instantaneousElectricPowerConsumption",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/number_0-65533",
+          "unit": "W"
+        }
+      },
+      "0x85": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "積算消費電力計測値",
+          "en": "Measured cumulative power consumption"
+        },
+        "shortName": "cumulativeElectricEnergy",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/number_0-999999999",
+          "unit": "kWh",
+          "multipleOf": 0.001
+        }
+      },
+      "0x86": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "メーカ異常コード",
+          "en": "Manufacturer’s fault code"
+        },
+        "shortName": "manufacturerFaultCode",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "type": "raw",
+          "minSize": 1,
+          "maxSize": 225
+        }
+      },
+      "0x87": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "電流制限設定",
+          "en": "Current limit setting"
+        },
+        "shortName": "currentLimit",
+        "accessRule": {
+          "get": "optional",
+          "set": "optional",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/number_0-100%"
+        }
+      },
+      "0x88": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "異常発生状態",
+          "en": "Fault status"
+        },
+        "shortName": "faultStatus",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "required"
+        },
+        "data": {
+          "type": "state",
+          "size": 1,
+          "enum": [
+            {
+              "edt": "0x41",
+              "name": "yes",
+              "descriptions": {
+                "ja": "異常あり",
+                "en": "Fault occurred"
+              }
+            },
+            {
+              "edt": "0x42",
+              "name": "no",
+              "descriptions": {
+                "ja": "異常なし",
+                "en": "No fault has occurred"
+              }
+            }
+          ]
+        }
+      },
+      "0x89": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "異常内容",
+          "en": "Fault description"
+        },
+        "shortName": "faultDescription",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_2"
+        },
+        "note": {
+          "ja": "Appendixの2.5章 異常内容プロパティ参照",
+          "en": "See Chapter 2.5 'Fault Description' Property of the Appendix"
+        }
+      },
+      "0x8A": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "メーカコード",
+          "en": "Manufacture code"
+        },
+        "shortName": "manufacturer",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_3"
+        }
+      },
+      "0x8B": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "事業場コード",
+          "en": "Business facility code"
+        },
+        "shortName": "businessFacilityCode",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_3"
+        }
+      },
+      "0x8C": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "商品コード",
+          "en": "Product code"
+        },
+        "shortName": "productCode",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_12"
+        }
+      },
+      "0x8D": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "製造番号",
+          "en": "Production number"
+        },
+        "shortName": "serialNumber",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_12"
+        }
+      },
+      "0x8E": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "shortName": "productionDate",
+        "propertyName": {
+          "ja": "製造年月日",
+          "en": "Production date"
+        },
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "type": "date-time",
+          "size": 4
+        }
+      },
+      "0x8F": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "節電動作設定",
+          "en": "Power-saving operation setting"
+        },
+        "shortName": "powerSaving",
+        "accessRule": {
+          "get": "optional",
+          "set": "optional",
+          "inf": "optional"
+        },
+        "data": {
+          "type": "state",
+          "size": 1,
+          "enum": [
+            {
+              "edt": "0x41",
+              "name": "yes",
+              "descriptions": {
+                "ja": "節電動作中",
+                "en": "Power Saving"
+              }
+            },
+            {
+              "edt": "0x42",
+              "name": "no",
+              "descriptions": {
+                "ja": "通常動作中",
+                "en": "No Power Saving"
+              }
+            }
+          ]
+        }
+      },
+      "0x93": {
+        "oneOf": [
+          {
+            "validRelease": {
+              "from": "A",
+              "to": "A"
+            },
+            "propertyName": {
+              "ja": "位置情報",
+              "en": "Location information"
+            },
+            "shortName": "locationInformation",
+            "accessRule": {
+              "get": "optional",
+              "set": "optional",
+              "inf": "optional"
+            },
+            "data": {
+              "$ref": "#/definitions/raw_16"
+            }
+          },
+          {
+            "validRelease": {
+              "from": "B",
+              "to": "B"
+            },
+            "propertyName": {
+              "ja": "位置情報",
+              "en": "Location information"
+            },
+            "shortName": "locationInformation",
+            "accessRule": {
+              "get": "optional",
+              "set": "optional",
+              "inf": "required"
+            },
+            "data": {
+              "$ref": "#/definitions/raw_16"
+            }
+          },
+          {
+            "validRelease": {
+              "from": "C",
+              "to": "G"
+            },
+            "propertyName": {
+              "ja": "遠隔操作設定",
+              "en": "Remote controll setting"
+            },
+            "shortName": "remoteControlSetting",
+            "accessRule": {
+              "get": "optional",
+              "set": "optional",
+              "inf": "optional"
+            },
+            "data": {
+              "type": "state",
+              "size": 1,
+              "enum": [
+                {
+                  "edt": "0x41",
+                  "name": "notThroughPublicNetwork",
+                  "descriptions": {
+                    "ja": "公衆回線未経由操作",
+                    "en": "Not through a public network"
+                  }
+                },
+                {
+                  "edt": "0x42",
+                  "name": "throughPublicNetwork",
+                  "descriptions": {
+                    "ja": "公衆回線経由操作",
+                    "en": "Through a public network"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "validRelease": {
+              "from": "H",
+              "to": "latest"
+            },
+            "propertyName": {
+              "ja": "遠隔操作設定",
+              "en": "Remote controll setting"
+            },
+            "shortName": "remoteControlSetting",
+            "accessRule": {
+              "get": "optional",
+              "set": "optional",
+              "inf": "optional"
+            },
+            "data": {
+              "type": "state",
+              "size": 1,
+              "enum": [
+                {
+                  "edt": "0x41",
+                  "name": "notThroughPublicNetwork",
+                  "descriptions": {
+                    "ja": "公衆回線未経由操作",
+                    "en": "Not through a public network"
+                  }
+                },
+                {
+                  "edt": "0x42",
+                  "name": "throughPublicNetwork",
+                  "descriptions": {
+                    "ja": "公衆回線経由操作",
+                    "en": "Through a public network"
+                  }
+                },
+                {
+                  "edt": "0x61",
+                  "name": "notPossible",
+                  "descriptions": {
+                    "ja": "通信回線正常（公衆回線経由の操作不可）",
+                    "en": "Communication line is normal (operation through a public network is not possible)"
+                  }
+                },
+                {
+                  "edt": "0x62",
+                  "name": "possible",
+                  "descriptions": {
+                    "ja": "通信回線正常（公衆回線経由の操作可能）",
+                    "en": "Communication line is normal (operation through a public network is possible)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "0x97": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "現在時刻設定",
+          "en": "Current time setting"
+        },
+        "shortName": "currentTime",
+        "accessRule": {
+          "get": "optional",
+          "set": "optional",
+          "inf": "optional"
+        },
+        "data": {
+          "type": "time",
+          "size": 2
+        }
+      },
+      "0x98": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "現在年月日設定",
+          "en": "Current date setting"
+        },
+        "shortName": "currentDate",
+        "accessRule": {
+          "get": "optional",
+          "set": "optional",
+          "inf": "optional"
+        },
+        "data": {
+          "type": "date-time",
+          "size": 4
+        }
+      },
+      "0x99": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "電力制限設定",
+          "en": "Power limit setting"
+        },
+        "shortName": "powerLimit",
+        "accessRule": {
+          "get": "optional",
+          "set": "optional",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/number_0-65535",
+          "unit": "W"
+        }
+      },
+      "0x9A": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "積算運転時間",
+          "en": "Cumulative operating time"
+        },
+        "shortName": "hourMeter",
+        "accessRule": {
+          "get": "optional",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "type": "object",
+          "properties": [
+            {
+              "name": "unit",
+              "element": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "second",
+                    "descriptions": {
+                      "ja": "秒",
+                      "en": "second"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "minute",
+                    "descriptions": {
+                      "ja": "分",
+                      "en": "minute"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "hour",
+                    "descriptions": {
+                      "ja": "時",
+                      "en": "hour"
+                    }
+                  },
+                  {
+                    "edt": "0x44",
+                    "name": "day",
+                    "descriptions": {
+                      "ja": "日",
+                      "en": "day"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "time",
+              "element": {
+                "$ref": "#/definitions/number_0-4294967295"
+              }
+            }
+          ]
+        }
+      },
+      "0x9D": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "状変アナウンスプロパティマップ",
+          "en": "Status change announcement property map"
+        },
+        "shortName": "statusChangeAnnouncementPropertyMap",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_1-17"
+        },
+        "note": {
+          "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap。Appendixの付録1 参照",
+          "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap. See Annex 1 of the Appendix"
+        }
+      },
+      "0x9E": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "Setプロパティマップ",
+          "en": "Set property map"
+        },
+        "shortName": "setPropertyMap",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_1-17"
+        },
+        "note": {
+          "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap。Appendixの付録1 参照",
+          "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap. See Annex 1 of the Appendix"
+        }
+      },
+      "0x9F": {
+        "validRelease": {
+          "from": "A",
+          "to": "latest"
+        },
+        "propertyName": {
+          "ja": "Getプロパティマップ",
+          "en": "Get property map"
+        },
+        "shortName": "getPropertyMap",
+        "accessRule": {
+          "get": "required",
+          "set": "notApplicable",
+          "inf": "optional"
+        },
+        "data": {
+          "$ref": "#/definitions/raw_1-17"
+        },
+        "note": {
+          "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap。Appendixの付録1 参照",
+          "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap. See Annex 1 of the Appendix"
+        }
+      }
+    }
+  },
+  "devices": {
+    "0x0011": {
       "validRelease": {
         "from": "A",
         "to": "latest"
       },
       "className": {
-        "ja": "ノードプロファイル",
-        "en": "Node profile"
+        "ja": "温度センサ",
+        "en": "Temperature sensor"
       },
-      "shortName": "nodeProfile",
+      "shortName": "temperatureSensor",
       "elProperties": {
-        "0x80": {
+        "0xE0": {
           "validRelease": {
             "from": "A",
             "to": "latest"
           },
           "propertyName": {
-            "ja": "動作状態",
-            "en": "Operating status"
+            "ja": "温度計測値",
+            "en": "Measured temperature value"
           },
-          "shortName": "operatingStatus",
-          "accessRule": {
-            "get": "required",
-            "set": "optional",
-            "inf": "required"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x30",
-                "name": "yes",
-                "descriptions": {
-                  "ja": "起動中",
-                  "en": "Booting"
-                }
-              },
-              {
-                "edt": "0x31",
-                "name": "no",
-                "descriptions": {
-                  "ja": "未起動中",
-                  "en": "not booting"
-                }
-              }
-            ]
-          }
-        },
-        "0x82": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "Version情報",
-            "en": "Version information"
-          },
-          "shortName": "version",
+          "shortName": "value",
           "accessRule": {
             "get": "required",
             "set": "notApplicable",
             "inf": "optional"
           },
           "data": {
-            "$ref": "#/definitions/raw_4"
-          },
-          "note": {
-            "ja": "1バイト目：メジャーバージョン。2バイト目：マイナーバージョン。3バイト目：電文形式をbitmapで示す。4バイト目：0x00",
-            "en": "1st byte: major version, 2nd byte: minor version, 3rd data: bitmap of data format, 4th byte: 0x00"
-          }
-        },
-        "0x83": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "shortName": "id",
-          "propertyName": {
-            "ja": "識別番号",
-            "en": "Identification number"
-          },
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_17"
-          },
-          "note": {
-            "ja": "1バイト目は0xFE。2〜4バイト目はメーカコード。残りは機器毎のユニーク値",
-            "en": "1st data is 0xFE. 2nd to 4th data is manufacture code. The rest should be unique to each device."
-          }
-        },
-        "0x88": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "異常発生状態",
-            "en": "Fault status"
-          },
-          "shortName": "faultStatus",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "yes",
-                "descriptions": {
-                  "ja": "異常あり",
-                  "en": "Fault occurred"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "no",
-                "descriptions": {
-                  "ja": "異常なし",
-                  "en": "No fault has occurred"
-                }
-              }
-            ]
-          }
-        },
-        "0x89": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "異常内容",
-            "en": "Fault description"
-          },
-          "shortName": "faultDescription",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/number_0-1004"
-          }
-        },
-        "0x8A": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "メーカコード",
-            "en": "Manufacture code"
-          },
-          "shortName": "manufacturer",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_3"
-          },
-          "note": {
-            "ja": "0xFFFFFF: 実験用、0x000077: 神奈川工科大学",
-            "en": "0xFFFFFF: For experimental, 0x000077: KAIT"
-          }
-        },
-        "0x8B": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "shortName": "businessFacilityCode",
-          "propertyName": {
-            "ja": "事業場コード",
-            "en": "Business facility code"
-          },
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_3"
-          }
-        },
-        "0x8C": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "商品コード",
-            "en": "Product code"
-          },
-          "shortName": "productCode",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_12"
-          }
-        },
-        "0x8D": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "製造番号",
-            "en": "Production number"
-          },
-          "shortName": "serialNumber",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_12"
-          }
-        },
-        "0x8E": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "製造年月日",
-            "en": "Production date"
-          },
-          "shortName": "productionDate",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "date-time",
-            "size": 4
-          }
-        },
-        "0x9D": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "状変アナウンスプロパティマップ",
-            "en": "Status change announcement property map"
-          },
-          "shortName": "statusChangeAnnouncementPropertyMap",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_1-17"
-          },
-          "note": {
-            "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap",
-            "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap."
-          }
-        },
-        "0x9E": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "Setプロパティマップ",
-            "en": "Set property map"
-          },
-          "shortName": "setPropertyMap",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_1-17"
-          },
-          "note": {
-            "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap",
-            "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap."
-          }
-        },
-        "0x9F": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "Getプロパティマップ",
-            "en": "Get property map"
-          },
-          "shortName": "getPropertyMap",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_1-17"
-          },
-          "note": {
-            "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap",
-            "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap."
-          }
-        },
-        "0xBF": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "個体識別情報",
-            "en": "Unique identifier data"
-          },
-          "shortName": "uniqueIdData",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/number_0-254"
-          },
-          "note": {
-            "ja": "ECHONET Lite SPECIFICATION 第2部6.11.1参照",
-            "en": "See ECHONET Lite SPECIFICATION Part 2 Chapter 6.11.1."
-          }
-        },
-        "0xD3": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "自ノードインスタンス数",
-            "en": "Number of self-node instances"
-          },
-          "shortName": "selfNodeInstances",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "raw",
-            "minSize": 2,
-            "maxSize": 2
-          },
-          "note": {
-            "ja": "3 byteで数値を表す。ノードプロファイルオブジェクトのインスタンスは含まない",
-            "en": "3 byte data for integer. excluding node profile object instance"
-          }
-        },
-        "0xD4": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "自ノードクラス数",
-            "en": "Number of self-node classes"
-          },
-          "shortName": "selfNodeClasses",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/number_1-253_u16"
-          },
-          "note": {
-            "ja": "ノードプロファイルクラスを含む",
-            "en": "Including node profile class"
-          }
-        },
-        "0xD5": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "インスタンスリスト通知",
-            "en": "Instance list notification"
-          },
-          "shortName": "instanceListNotification",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "required"
-          },
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "numberOfinstances",
-                "element": {
-                  "$ref": "#/definitions/number_0-84"
-                }
-              },
-              {
-                "name": "instanceList",
-                "element": {
-                  "type": "array",
-                  "itemSize": 3,
-                  "maxItems": 84,
-                  "items": {
-                    "$ref": "#/definitions/raw_3"
-                  }
-                }
-              }
-            ]
-          },
-          "note": {
-            "ja": "インスタンスリストは機器オブジェクトの３バイトのEOJを列挙する",
-            "en": "Instance list is an array of EOJ (3 bytes)"
-          }
-        },
-        "0xD6": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "自ノードインスタンスリストS",
-            "en": "Self-node instance list S"
-          },
-          "shortName": "selfNodeInstanceListS",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "numberOfInstances",
-                "element": {
-                  "$ref": "#/definitions/number_0-84"
-                }
-              },
-              {
-                "name": "instanceList",
-                "element": {
-                  "type": "array",
-                  "itemSize": 3,
-                  "maxItems": 84,
-                  "items": {
-                    "$ref": "#/definitions/raw_3"
-                  }
-                }
-              }
-            ]
-          },
-          "note": {
-            "ja": "インスタンスリストは3バイトのEOJを列挙する",
-            "en": "Instance list is an array of EOJ (3 bytes)"
-          }
-        },
-        "0xD7": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "自ノードクラスリストS",
-            "en": "Self-node class list S"
-          },
-          "shortName": "selfNodeClassListS",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "numberOfClasses",
-                "element": {
-                  "$ref": "#/definitions/number_1-8"
-                }
-              },
-              {
-                "name": "classList",
-                "element": {
-                  "type": "array",
-                  "itemSize": 2,
-                  "maxItems": 8,
-                  "items": {
-                    "$ref": "#/definitions/raw_2"
-                  }
-                }
-              }
-            ]
-          },
-          "note": {
-            "ja": "ノードプロファイルクラスは除く",
-            "en": "Excluding node profile class"
+            "$ref": "#/definitions/number_-2732-32766",
+            "unit": "Celsius",
+            "multipleOf": 0.1
           }
         }
       }
     },
-    "superClass": {
+    "0x0022": {
       "validRelease": {
         "from": "A",
         "to": "latest"
       },
       "className": {
-        "ja": "スーパークラス",
-        "en": "Super class"
+        "ja": "電力量センサ",
+        "en": "Electric energy sensor"
       },
-      "shortName": "superClass",
+      "shortName": "electricEnergySensor",
       "elProperties": {
-        "0x80": {
+        "0xE0": {
           "validRelease": {
             "from": "A",
             "to": "latest"
           },
           "propertyName": {
-            "ja": "動作状態",
-            "en": "Operation status"
-          },
-          "shortName": "operationStatus",
-          "accessRule": {
-            "get": "required",
-            "set": "optional",
-            "inf": "required"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x30",
-                "name": "yes",
-                "descriptions": {
-                  "ja": "ON",
-                  "en": "ON"
-                }
-              },
-              {
-                "edt": "0x31",
-                "name": "no",
-                "descriptions": {
-                  "ja": "OFF",
-                  "en": "OFF"
-                }
-              }
-            ]
-          }
-        },
-        "0x81": {
-          "oneOf": [
-            {
-              "validRelease": {
-                "from": "A",
-                "to": "B"
-              },
-              "propertyName": {
-                "ja": "設置場所",
-                "en": "Installation location"
-              },
-              "shortName": "installationLocation",
-              "accessRule": {
-                "get": "required",
-                "set": "required",
-                "inf": "required"
-              },
-              "data": {
-                "$ref": "#/definitions/raw_1"
-              },
-              "note": {
-                "ja": "bitmap（例 0x00: 未設定（初期値）、0x08: リビング）",
-                "en": "bitmap (eg. 0x00: undefined (initial data), 0x08: living)"
-              }
-            },
-            {
-              "validRelease": {
-                "from": "C",
-                "to": "latest"
-              },
-              "propertyName": {
-                "ja": "設置場所",
-                "en": "Installation location"
-              },
-              "accessRule": {
-                "get": "required",
-                "set": "required",
-                "inf": "required"
-              },
-              "data": {
-                "oneOf": [
-                  {
-                    "$ref": "#/definitions/raw_1"
-                  },
-                  {
-                    "$ref": "#/definitions/raw_17"
-                  }
-                ]
-              },
-              "note": {
-                "ja": "1byte bitmap（例 0x00: 未設定（初期値）、0x08: リビング）または0x01で始まる17 byte data",
-                "en": "1byte bitmap (eg. 0x00: undefined (initial data), 0x08: living) or 17 bytes data starting from 0x01"
-              }
-            }
-          ]
-        },
-        "0x82": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "規格Version情報",
-            "en": "Standard version information"
-          },
-          "shortName": "protocol",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_4"
-          },
-          "note": {
-            "ja": "1,2,4バイト目は0x00。3バイト目は機器オブジェクトのリリースバージョンをASCIIで表す。リリース Aのみ小文字で0x61, B以降は大文字で0x42, 0x43...",
-            "en": "1st, 2nd and 4th data is 0x00. 3rd data is the release version of Device Object in ASCII. Only release A utilize lower case letter 0x61, Release B and later utilize upper case letter such as 0x42, 0x43..."
-          }
-        },
-        "0x83": {
-          "oneOf": [
-            {
-              "validRelease": {
-                "from": "A",
-                "to": "A"
-              },
-              "propertyName": {
-                "ja": "識別番号",
-                "en": "Identification number"
-              },
-              "shortName": "id",
-              "accessRule": {
-                "get": "optional",
-                "set": "optional",
-                "inf": "optional"
-              },
-              "data": {
-                "$ref": "#/definitions/raw_17"
-              },
-              "note": {
-                "ja": "1バイト目は0xFE。2〜4バイト目はメーカコード。残りは機器毎のユニーク値",
-                "en": "1st data is 0xFE. 2nd to 4th data is manufacture code. The rest should be unique to each device."
-              }
-            },
-            {
-              "validRelease": {
-                "from": "B",
-                "to": "latest"
-              },
-              "propertyName": {
-                "ja": "識別番号",
-                "en": "Identification number"
-              },
-              "shortName": "id",
-              "accessRule": {
-                "get": "optional",
-                "set": "notApplicable",
-                "inf": "optional"
-              },
-              "data": {
-                "$ref": "#/definitions/raw_17"
-              },
-              "note": {
-                "ja": "1バイト目は0xFE。2〜4バイト目はメーカコード。残りは機器毎のユニーク値",
-                "en": "1st data is 0xFE. 2nd to 4th data is manufacture code. The rest should be unique to each device."
-              }
-            }
-          ]
-        },
-        "0x84": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "瞬時消費電力計測値",
-            "en": "Measured instantaneous power consumption"
-          },
-          "shortName": "instantaneousElectricPowerConsumption",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/number_0-65533",
-            "unit": "W"
-          }
-        },
-        "0x85": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算消費電力計測値",
-            "en": "Measured cumulative power consumption"
+            "ja": "積算電力量計測値",
+            "en": "Cumulative amounts of electric energy"
           },
           "shortName": "cumulativeElectricEnergy",
           "accessRule": {
-            "get": "optional",
+            "get": "required",
             "set": "notApplicable",
             "inf": "optional"
           },
@@ -1679,577 +2665,253 @@ const jsonData = {
             "$ref": "#/definitions/number_0-999999999",
             "unit": "kWh",
             "multipleOf": 0.001
-          }
-        },
-        "0x86": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "メーカ異常コード",
-            "en": "Manufacturer’s fault code"
-          },
-          "shortName": "manufacturerFaultCode",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "raw",
-            "minSize": 1,
-            "maxSize": 225
-          }
-        },
-        "0x87": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "電流制限設定",
-            "en": "Current limit setting"
-          },
-          "shortName": "currentLimit",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/number_0-100%"
-          }
-        },
-        "0x88": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "異常発生状態",
-            "en": "Fault status"
-          },
-          "shortName": "faultStatus",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "required"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "yes",
-                "descriptions": {
-                  "ja": "異常あり",
-                  "en": "Fault occurred"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "no",
-                "descriptions": {
-                  "ja": "異常なし",
-                  "en": "No fault has occurred"
-                }
-              }
-            ]
-          }
-        },
-        "0x89": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "異常内容",
-            "en": "Fault description"
-          },
-          "shortName": "faultDescription",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_2"
           },
           "note": {
-            "ja": "Appendixの2.5章 異常内容プロパティ参照",
-            "en": "See Chapter 2.5 'Fault Description' Property of the Appendix"
+            "ja": "オーバーフロー時は0にリセット",
+            "en": "The value is reset to 0 after overflow"
           }
         },
-        "0x8A": {
+        "0xE1": {
           "validRelease": {
-            "from": "A",
+            "from": "B",
             "to": "latest"
           },
           "propertyName": {
-            "ja": "メーカコード",
-            "en": "Manufacture code"
+            "ja": "中容量センサ瞬時電力値計測値",
+            "en": "Medium-capacity sensor instantaneous electric energy"
           },
-          "shortName": "manufacturer",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_3"
-          }
-        },
-        "0x8B": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "事業場コード",
-            "en": "Business facility code"
-          },
-          "shortName": "businessFacilityCode",
+          "shortName": "mediumCapacitySensorValue",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
             "inf": "optional"
           },
           "data": {
-            "$ref": "#/definitions/raw_3"
+            "$ref": "#/definitions/number_-999999999-999999999",
+            "unit": "W"
           }
         },
-        "0x8C": {
+        "0xE2": {
           "validRelease": {
             "from": "A",
             "to": "latest"
           },
           "propertyName": {
-            "ja": "商品コード",
-            "en": "Product code"
+            "ja": "小容量センサ瞬時電力値計測値",
+            "en": "Small-capacity sensor instantaneous electric energy"
           },
-          "shortName": "productCode",
+          "shortName": "smallCapacitySensorValue",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
             "inf": "optional"
           },
           "data": {
-            "$ref": "#/definitions/raw_12"
+            "$ref": "#/definitions/number_-32767-32766",
+            "unit": "W",
+            "multipleOf": 0.1
           }
         },
-        "0x8D": {
+        "0xE3": {
           "validRelease": {
             "from": "A",
             "to": "latest"
           },
           "propertyName": {
-            "ja": "製造番号",
-            "en": "Production number"
+            "ja": "大容量センサ瞬時電力値計測値",
+            "en": "Large-capacity sensor instantaneous electric energy"
           },
-          "shortName": "serialNumber",
+          "shortName": "largeCapacitySensorValue",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
             "inf": "optional"
           },
           "data": {
-            "$ref": "#/definitions/raw_12"
+            "$ref": "#/definitions/number_-32767-32766",
+            "unit": "kW",
+            "multipleOf": 0.1
           }
         },
-        "0x8E": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "shortName": "productionDate",
-          "propertyName": {
-            "ja": "製造年月日",
-            "en": "Production date"
-          },
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "date-time",
-            "size": 4
-          }
-        },
-        "0x8F": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "節電動作設定",
-            "en": "Power-saving operation setting"
-          },
-          "shortName": "powerSaving",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "yes",
-                "descriptions": {
-                  "ja": "節電動作中",
-                  "en": "Power saving"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "no",
-                "descriptions": {
-                  "ja": "通常動作中",
-                  "en": "No power saving"
-                }
-              }
-            ]
-          }
-        },
-        "0x93": {
+        "0xE4": {
           "oneOf": [
             {
               "validRelease": {
                 "from": "A",
-                "to": "A"
+                "to": "K"
               },
               "propertyName": {
-                "ja": "位置情報",
-                "en": "Location information"
+                "ja": "積算電力量計測履歴情報",
+                "en": "Cumulative amounts of electric energy measurement log"
               },
-              "shortName": "locationInformation",
+              "shortName": "log",
               "accessRule": {
                 "get": "optional",
-                "set": "optional",
+                "set": "notApplicable",
                 "inf": "optional"
               },
               "data": {
-                "$ref": "#/definitions/raw_16"
+                "type": "array",
+                "itemSize": 4,
+                "minItems": 48,
+                "maxItems": 48,
+                "items": {
+                  "$ref": "#/definitions/number_0-999999999",
+                  "unit": "kWh",
+                  "multipleOf": 0.001
+                }
               }
             },
             {
               "validRelease": {
-                "from": "B",
-                "to": "B"
-              },
-              "propertyName": {
-                "ja": "位置情報",
-                "en": "Location information"
-              },
-              "shortName": "locationInformation",
-              "accessRule": {
-                "get": "optional",
-                "set": "optional",
-                "inf": "required"
-              },
-              "data": {
-                "$ref": "#/definitions/raw_16"
-              }
-            },
-            {
-              "validRelease": {
-                "from": "C",
-                "to": "G"
-              },
-              "propertyName": {
-                "ja": "遠隔操作設定",
-                "en": "Remote controll setting"
-              },
-              "shortName": "remoteControlSetting",
-              "accessRule": {
-                "get": "optional",
-                "set": "optional",
-                "inf": "optional"
-              },
-              "data": {
-                "type": "state",
-                "size": 1,
-                "enum": [
-                  {
-                    "edt": "0x41",
-                    "name": "notThroughPublicNetwork",
-                    "descriptions": {
-                      "ja": "公衆回線未経由操作",
-                      "en": "Not through a public network"
-                    }
-                  },
-                  {
-                    "edt": "0x42",
-                    "name": "throughPublicNetwork",
-                    "descriptions": {
-                      "ja": "公衆回線経由操作",
-                      "en": "Through a public network"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "validRelease": {
-                "from": "H",
+                "from": "L",
                 "to": "latest"
               },
               "propertyName": {
-                "ja": "遠隔操作設定",
-                "en": "Remote controll setting"
+                "ja": "積算電力量計測履歴情報",
+                "en": "Cumulative amounts of electric energy measurement log"
               },
-              "shortName": "remoteControlSetting",
+              "shortName": "log",
               "accessRule": {
                 "get": "optional",
-                "set": "optional",
+                "set": "notApplicable",
                 "inf": "optional"
               },
               "data": {
-                "type": "state",
-                "size": 1,
-                "enum": [
-                  {
-                    "edt": "0x41",
-                    "name": "notThroughPublicNetwork",
-                    "descriptions": {
-                      "ja": "公衆回線未経由操作",
-                      "en": "Not through a public network"
+                "type": "array",
+                "itemSize": 4,
+                "minItems": 48,
+                "maxItems": 48,
+                "items": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/definitions/number_0-999999999",
+                      "unit": "kWh",
+                      "multipleOf": 0.001
+                    },
+                    {
+                      "type": "state",
+                      "size": 4,
+                      "enum": [
+                        {
+                          "edt": "0xFFFFFFFE",
+                          "name": "noData",
+                          "descriptions": {
+                            "ja": "未計測",
+                            "en": "not measured"
+                          }
+                        }
+                      ]
                     }
-                  },
-                  {
-                    "edt": "0x42",
-                    "name": "throughPublicNetwork",
-                    "descriptions": {
-                      "ja": "公衆回線経由操作",
-                      "en": "Through a public network"
-                    }
-                  },
-                  {
-                    "edt": "0x61",
-                    "name": "notPossible",
-                    "descriptions": {
-                      "ja": "通信回線正常（公衆回線経由の操作不可）",
-                      "en": "Communication line is normal (operation through a public network is not possible)"
-                    }
-                  },
-                  {
-                    "edt": "0x62",
-                    "name": "possible",
-                    "descriptions": {
-                      "ja": "通信回線正常（公衆回線経由の操作可能）",
-                      "en": "Communication line is normal (operation through a public network is possible)"
-                    }
-                  }
-                ]
+                  ]
+                }
               }
             }
           ]
         },
-        "0x97": {
+        "0xE5": {
           "validRelease": {
             "from": "A",
             "to": "latest"
           },
           "propertyName": {
-            "ja": "現在時刻設定",
-            "en": "Current time setting"
+            "ja": "実効電圧値計測値",
+            "en": "Effective voltage value"
           },
-          "shortName": "currentTime",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "time",
-            "size": 2
-          }
-        },
-        "0x98": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "現在年月日設定",
-            "en": "Current date setting"
-          },
-          "shortName": "currentDate",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "date-time",
-            "size": 4
-          }
-        },
-        "0x99": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "電力制限設定",
-            "en": "Power limit setting"
-          },
-          "shortName": "powerLimit",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/number_0-65535",
-            "unit": "W"
-          }
-        },
-        "0x9A": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算運転時間",
-            "en": "Cumulative operating time"
-          },
-          "shortName": "hourMeter",
+          "shortName": "effectiveVoltageValue",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
             "inf": "optional"
           },
           "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "unit",
-                "element": {
-                  "type": "state",
-                  "size": 1,
-                  "enum": [
-                    {
-                      "edt": "0x41",
-                      "name": "second",
-                      "descriptions": {
-                        "ja": "秒",
-                        "en": "second"
-                      }
-                    },
-                    {
-                      "edt": "0x42",
-                      "name": "minute",
-                      "descriptions": {
-                        "ja": "分",
-                        "en": "minute"
-                      }
-                    },
-                    {
-                      "edt": "0x43",
-                      "name": "hour",
-                      "descriptions": {
-                        "ja": "時",
-                        "en": "hour"
-                      }
-                    },
-                    {
-                      "edt": "0x44",
-                      "name": "day",
-                      "descriptions": {
-                        "ja": "日",
-                        "en": "day"
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "name": "time",
-                "element": {
-                  "$ref": "#/definitions/number_0-4294967295"
-                }
-              }
-            ]
-          }
-        },
-        "0x9D": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "状変アナウンスプロパティマップ",
-            "en": "Status change announcement property map"
-          },
-          "shortName": "statusChangeAnnouncementPropertyMap",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_1-17"
-          },
-          "note": {
-            "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap。Appendixの付録1参照",
-            "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap. See Annex 1 of the Appendix"
-          }
-        },
-        "0x9E": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "Setプロパティマップ",
-            "en": "Set property map"
-          },
-          "shortName": "setPropertyMap",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_1-17"
-          },
-          "note": {
-            "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap。Appendixの付録1参照",
-            "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap. See Annex 1 of the Appendix"
-          }
-        },
-        "0x9F": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "Getプロパティマップ",
-            "en": "Get property map"
-          },
-          "shortName": "getPropertyMap",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/raw_1-17"
-          },
-          "note": {
-            "ja": "１バイト目は個数。プロパティ数が15個以下の場合は列挙、16個以上の場合はbitmap。Appendixの付録1参照",
-            "en": "1st byte is count of property. If the count is less than 16, enumerate. Else, bitmap. See Annex 1 of the Appendix"
+            "$ref": "#/definitions/number_0-65533",
+            "unit": "V"
           }
         }
       }
     },
-  "devices":{
+    "0x0023": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "電流値センサ",
+        "en": "Current value sensor"
+      },
+      "shortName": "currentSensor",
+      "elProperties": {
+        "0xE0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "電流値計測値１",
+            "en": "Measured current value 1"
+          },
+          "shortName": "unsignedValue",
+          "accessRule": {
+            "get": "required_c",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-4294967293",
+            "unit": "mA"
+          },
+          "note": {
+            "ja": "0xE0または0xE2のいずれかが必須",
+            "en": "either 0xE0 or 0xE2 is required"
+          }
+        },
+        "0xE1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "計測対象定格電圧値",
+            "en": "Rated voltage to be measured"
+          },
+          "shortName": "ratedVoltage",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-65533",
+            "unit": "V"
+          }
+        },
+        "0xE2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "電流値計測値２",
+            "en": "Measured current value 2"
+          },
+          "shortName": "signedValue",
+          "accessRule": {
+            "get": "required_c",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_-2147483647-2147483646",
+            "unit": "mA"
+          },
+          "note": {
+            "ja": "0xE0または0xE2のいずれかが必須",
+            "en": "either 0xE0 or 0xE2 is required"
+          }
+        }
+      }
+    },
     "0x0130": {
       "validRelease": {
         "from": "A",
@@ -7268,1171 +7930,6 @@ const jsonData = {
         }
       }
     },
-    "0x03B7": {
-      "validRelease": {
-        "from": "A",
-        "to": "latest"
-      },
-      "className": {
-        "ja": "冷凍冷蔵庫",
-        "en": "Refrigerator"
-      },
-      "shortName": "refrigerator",
-      "elProperties": {
-        "0xA0": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "急速冷凍動作設定",
-            "en": "Quick freeze function setting"
-          },
-          "shortName": "quickFreeze",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "normal",
-                "descriptions": {
-                  "ja": "通常冷凍",
-                  "en": "Normal operation"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "quick",
-                "descriptions": {
-                  "ja": "急速冷凍",
-                  "en": "Quick freeze"
-                }
-              },
-              {
-                "edt": "0x43",
-                "name": "standby",
-                "descriptions": {
-                  "ja": "急速冷凍待機",
-                  "en": "Standby for quick freezing"
-                }
-              }
-            ]
-          }
-        },
-        "0xA1": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "急速冷蔵動作設定",
-            "en": "Quick refrigeration function setting"
-          },
-          "shortName": "quickRefrigeration",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "normal",
-                "descriptions": {
-                  "ja": "通常冷蔵",
-                  "en": "Normal operation"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "quick",
-                "descriptions": {
-                  "ja": "急速冷蔵",
-                  "en": "Quick refrigeration"
-                }
-              },
-              {
-                "edt": "0x43",
-                "name": "standby",
-                "descriptions": {
-                  "ja": "急速冷蔵待機",
-                  "en": "Standby for quick refrigeration"
-                }
-              }
-            ]
-          }
-        },
-        "0xA4": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "製氷許可設定",
-            "en": "Icemaker setting"
-          },
-          "shortName": "icemaker",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "enable",
-                "descriptions": {
-                  "ja": "製氷許可",
-                  "en": "Enable icemaker"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "disable",
-                "descriptions": {
-                  "ja": "製氷禁止",
-                  "en": "Disable icemaker"
-                }
-              },
-              {
-                "edt": "0x43",
-                "name": "standby",
-                "descriptions": {
-                  "ja": "製氷一定時間禁止",
-                  "en": "Temporarily disable icemaker"
-                }
-              }
-            ]
-          }
-        },
-        "0xA5": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "製氷動作状態",
-            "en": "Icemaker operation status"
-          },
-          "shortName": "icemakerStatus",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "running",
-                "descriptions": {
-                  "ja": "運転中",
-                  "en": "Ice-making in progress"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "stopped",
-                "descriptions": {
-                  "ja": "停止中",
-                  "en": "Ice-making stopped"
-                }
-              }
-            ]
-          }
-        },
-        "0xA6": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "製氷用給水タンク状態",
-            "en": "Icemaker tank status"
-          },
-          "shortName": "icemakerTankStatus",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "normal",
-                "descriptions": {
-                  "ja": "水あり",
-                  "en": "Water in tank"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "warning",
-                "descriptions": {
-                  "ja": "水なし",
-                  "en": "No water"
-                }
-              }
-            ]
-          }
-        },
-        "0xA8": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "冷蔵室加湿動作設定",
-            "en": "Refrigerator compartment humidification function setting"
-          },
-          "shortName": "refrigeratorHumidification",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "on",
-                "descriptions": {
-                  "ja": "加湿ON",
-                  "en": "ON"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "off",
-                "descriptions": {
-                  "ja": "加湿OFF",
-                  "en": "OFF"
-                }
-              }
-            ]
-          }
-        },
-        "0xA9": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "野菜室加湿動作設定",
-            "en": "Vegetable compartment humidification function setting"
-          },
-          "shortName": "vegetableHumidification",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "on",
-                "descriptions": {
-                  "ja": "加湿ON",
-                  "en": "ON"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "off",
-                "descriptions": {
-                  "ja": "加湿OFF",
-                  "en": "OFF"
-                }
-              }
-            ]
-          }
-        },
-        "0xAD": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "脱臭動作設定",
-            "en": "Deodorization function setting"
-          },
-          "shortName": "deodorization",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "on",
-                "descriptions": {
-                  "ja": "脱臭ON",
-                  "en": "ON"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "off",
-                "descriptions": {
-                  "ja": "脱臭OFF",
-                  "en": "OFF"
-                }
-              }
-            ]
-          }
-        },
-        "0xB0": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "ドア開閉状態",
-            "en": "Door open/close status"
-          },
-          "shortName": "doorOpenCloseStatus",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "anyOpen",
-                "descriptions": {
-                  "ja": "ドア開",
-                  "en": "Door open"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "allClose",
-                "descriptions": {
-                  "ja": "ドア閉",
-                  "en": "Door close"
-                }
-              }
-            ]
-          }
-        },
-        "0xB1": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "ドア開放警告状態",
-            "en": "Door open warning"
-          },
-          "shortName": "doorOpenWarning",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "required"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "true",
-                "descriptions": {
-                  "ja": "ドア開放警告有",
-                  "en": "Door open warning found"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "false",
-                "descriptions": {
-                  "ja": "ドア開放警告無",
-                  "en": "Door open warning not found"
-                }
-              }
-            ]
-          }
-        },
-        "0xB2": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "冷蔵室ドア開閉状態",
-            "en": "Refrigerator compartment door status"
-          },
-          "shortName": "refrigeratorCompartmentDoorStatus",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "open",
-                "descriptions": {
-                  "ja": "ドア開",
-                  "en": "Open"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "close",
-                "descriptions": {
-                  "ja": "ドア閉",
-                  "en": "Closed"
-                }
-              }
-            ]
-          }
-        },
-        "0xB3": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "冷凍室ドア開閉状態",
-            "en": "Freezer compartment door status"
-          },
-          "shortName": "freezerCompartmentDoorStatus",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "open",
-                "descriptions": {
-                  "ja": "ドア開",
-                  "en": "Open"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "close",
-                "descriptions": {
-                  "ja": "ドア閉",
-                  "en": "Closed"
-                }
-              }
-            ]
-          }
-        },
-        "0xB4": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "氷温室ドア開閉状態",
-            "en": "Ice compartment door status"
-          },
-          "shortName": "iceCompartmentDoorStatus",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "open",
-                "descriptions": {
-                  "ja": "ドア開",
-                  "en": "Open"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "close",
-                "descriptions": {
-                  "ja": "ドア閉",
-                  "en": "Closed"
-                }
-              }
-            ]
-          }
-        },
-        "0xB5": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "野菜室ドア開閉状態",
-            "en": "Vegetable compartment door status"
-          },
-          "shortName": "vegetableCompartmentDoorStatus",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "open",
-                "descriptions": {
-                  "ja": "ドア開",
-                  "en": "Open"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "close",
-                "descriptions": {
-                  "ja": "ドア閉",
-                  "en": "Closed"
-                }
-              }
-            ]
-          }
-        },
-        "0xB6": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "切換室ドア開閉状態",
-            "en": "Multi-refrigerating mode compartment door status"
-          },
-          "shortName": "multiModeCompartmentDoorStatus",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "state",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x41",
-                "name": "open",
-                "descriptions": {
-                  "ja": "ドア開",
-                  "en": "Open"
-                }
-              },
-              {
-                "edt": "0x42",
-                "name": "close",
-                "descriptions": {
-                  "ja": "ドア閉",
-                  "en": "Closed"
-                }
-              }
-            ]
-          }
-        },
-        "0xD1": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "冷蔵室温度計測値",
-            "en": "Measured refrigerator compartment temperature"
-          },
-          "shortName": "measuredRefrigeratorTemperature",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "int8",
-            "unit": "Celsius",
-            "minimum": -127,
-            "maximum": 126
-          }
-        },
-        "0xD2": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "冷凍室温度計測値",
-            "en": "Measured freezer compartment temperature"
-          },
-          "shortName": "measuredFreezerTemperature",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "int8",
-            "unit": "Celsius",
-            "minimum": -127,
-            "maximum": 126
-          }
-        },
-        "0xD3": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "氷温室温度計測値",
-            "en": "Measured subzero-fresh compartment temperature"
-          },
-          "shortName": "measuredIceTemperature",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "int8",
-            "unit": "Celsius",
-            "minimum": -127,
-            "maximum": 126
-          }
-        },
-        "0xD4": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "野菜室温度計測値",
-            "en": "Measured vegetable compartment temperature"
-          },
-          "shortName": "measuredVegetableTemperature",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "int8",
-            "unit": "Celsius",
-            "minimum": -127,
-            "maximum": 126
-          }
-        },
-        "0xD5": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "切替室室温度計測値",
-            "en": "Measured multi-refrigerating mode compartment temperature"
-          },
-          "shortName": "measuredMultiModeTemperature",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "int8",
-            "unit": "Celsius",
-            "minimum": -127,
-            "maximum": 126
-          }
-        },
-        "0xD8": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "圧縮機回転数レベル",
-            "en": "Compressor rotation speed"
-          },
-          "shortName": "compressorRotationSpeed",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "maxLevel",
-                "element": {
-                  "type": "number",
-                  "format": "uint8",
-                  "minimum": 1,
-                  "maximum": 255
-                },
-                "descriptions": {
-                  "ja": "最大回転数レベル",
-                  "en": "Maximum rotation speed"
-                }
-              },
-              {
-                "name": "level",
-                "element": {
-                  "type": "number",
-                  "format": "uint8",
-                  "minimum": 0,
-                  "maximum": 255
-                },
-                "descriptions": {
-                  "ja": "回転数レベル",
-                  "en": "Rotation speed of the actual compressor"
-                }
-              }
-            ]
-          },
-          "note": {
-            "ja": "0x00:停止",
-            "en": "0x00:Stopped"
-          }
-        },
-        "0xDA": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "消費電流計測値",
-            "en": "Measured electric current consumption"
-          },
-          "shortName": "electricCurrentConsumption",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "uint16",
-            "minimum": 0,
-            "maximum": 65533,
-            "unit": "A",
-            "multipleOf": 0.1
-          }
-        },
-        "0xDC": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "定格消費電力値",
-            "en": "Rated power consumption"
-          },
-          "shortName": "ratedPowerConsumption",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "uint16",
-            "minimum": 0,
-            "maximum": 65533,
-            "unit": "W"
-          }
-        },
-        "0xE0": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "設定可能温度レベル最大値",
-            "en": "Maximum allowable temperature setting level"
-          },
-          "shortName": "maximumAllowableTemperatureLevel",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "refrigerator",
-                "element": {
-                  "type": "number",
-                  "format": "uint8",
-                  "minimum": 0,
-                  "maximum": 255
-                },
-                "descriptions": {
-                  "ja": "冷蔵室",
-                  "en": "Refrigerator compartment"
-                }
-              },
-              {
-                "name": "freezer",
-                "element": {
-                  "type": "number",
-                  "format": "uint8",
-                  "minimum": 0,
-                  "maximum": 255
-                },
-                "descriptions": {
-                  "ja": "冷凍室",
-                  "en": "Freezer compartment"
-                }
-              },
-              {
-                "name": "ice",
-                "element": {
-                  "type": "number",
-                  "format": "uint8",
-                  "minimum": 0,
-                  "maximum": 255
-                },
-                "descriptions": {
-                  "ja": "氷温室",
-                  "en": "Subzero-fresh compartment"
-                }
-              },
-              {
-                "name": "vegetable",
-                "element": {
-                  "type": "number",
-                  "format": "uint8",
-                  "minimum": 0,
-                  "maximum": 255
-                },
-                "descriptions": {
-                  "ja": "野菜室",
-                  "en": "Vegetable compartment"
-                }
-              },
-              {
-                "name": "multi",
-                "element": {
-                  "type": "number",
-                  "format": "uint8",
-                  "minimum": 0,
-                  "maximum": 255
-                },
-                "descriptions": {
-                  "ja": "切換室",
-                  "en": "Multi-refrigerating mode compartment"
-                }
-              },
-              {
-                "name": "reserved",
-                "element": {
-                  "$ref": "#/definitions/raw_3"
-                },
-                "descriptions": {
-                  "ja": "for future reserved",
-                  "en": "Reserved for future use"
-                }
-              }
-            ]
-          },
-          "note": {
-            "ja": "0x00:室を搭載していない場合",
-            "en": "0x00:no compartment"
-          }
-        },
-        "0xE2": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "冷蔵室温度設定値",
-            "en": "Refrigerator compartment temperature setting"
-          },
-          "shortName": "refrigeratorTemperature",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "int8",
-            "unit": "Celsius",
-            "minimum": -127,
-            "maximum": 126
-          }
-        },
-        "0xE3": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "冷凍室温度設定値",
-            "en": "Freezer compartment temperature setting"
-          },
-          "shortName": "freezerTemperature",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "int8",
-            "unit": "Celsius",
-            "minimum": -127,
-            "maximum": 126
-          }
-        },
-        "0xE4": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "氷温室温度設定値",
-            "en": "Ice temperature setting"
-          },
-          "shortName": "iceTemperature",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "int8",
-            "unit": "Celsius",
-            "minimum": -127,
-            "maximum": 126
-          }
-        },
-        "0xE5": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "野菜室温度設定値",
-            "en": "Vegetable compartment temperature setting"
-          },
-          "shortName": "vegetableTemperature",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "int8",
-            "unit": "Celsius",
-            "minimum": -127,
-            "maximum": 126
-          }
-        },
-        "0xE6": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "切換室温度設定値",
-            "en": "Multi-refrigerating mode compartment temperature setting"
-          },
-          "shortName": "multiModeTemperature",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "int8",
-            "unit": "Celsius",
-            "minimum": -127,
-            "maximum": 126
-          }
-        },
-        "0xE9": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "冷蔵室温度レベル設定",
-            "en": "Refrigerator compartment temperature level setting"
-          },
-          "shortName": "refrigeratorTemperatureLevel",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "uint8",
-            "minimum": 1,
-            "maximum": 255
-          },
-          "note": {
-            "ja": "最大値はEPC=0xE0の値",
-            "en": "maximum value is at EPC=0xE0"
-          }
-        },
-        "0xEA": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "冷凍室温度レベル設定",
-            "en": "Freezer compartment temperature level setting"
-          },
-          "shortName": "freezerTemperatureLevel",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "uint8",
-            "minimum": 1,
-            "maximum": 255
-          },
-          "note": {
-            "ja": "最大値はEPC=0xE0の値",
-            "en": "maximum value is at EPC=0xE0"
-          }
-        },
-        "0xEB": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "氷温室温度レベル設定",
-            "en": "ice compartment temperature level setting"
-          },
-          "shortName": "iceTemperatureLevel",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "uint8",
-            "minimum": 1,
-            "maximum": 255
-          },
-          "note": {
-            "ja": "最大値はEPC=0xE0の値",
-            "en": "maximum value is at EPC=0xE0"
-          }
-        },
-        "0xEC": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "野菜室温度レベル設定",
-            "en": "Vegetable compartment temperature level setting"
-          },
-          "shortName": "vegetableTemperatureLevel",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "uint8",
-            "minimum": 1,
-            "maximum": 255
-          },
-          "note": {
-            "ja": "最大値はEPC=0xE0の値",
-            "en": "maximum value is at EPC=0xE0"
-          }
-        },
-        "0xED": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "切換室温度レベル設定",
-            "en": "Multi-refrigerating mode compartment temperature level setting"
-          },
-          "shortName": "multiModeTemperatureLevel",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "number",
-            "format": "uint8",
-            "minimum": 1,
-            "maximum": 255
-          },
-          "note": {
-            "ja": "最大値はEPC=0xE0の値",
-            "en": "maximum value is at EPC=0xE0"
-          }
-        }
-      }
-    },
     "0x026B": {
       "validRelease": {
         "from": "A",
@@ -8489,7 +7986,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ONタイマ時刻設定値",
-            "en": "ON timer setting (time)"
+            "en": "ON timer setting(time)"
           },
           "shortName": "onTimerTime",
           "accessRule": {
@@ -8544,7 +8041,7 @@ const jsonData = {
                     "name": "munualHeating",
                     "descriptions": {
                       "ja": "手動沸き上げ",
-                      "en": "Non-automatic water heating function used"
+                      "en": "Non-automatic water heating function used:"
                     }
                   }
                 ]
@@ -8590,7 +8087,7 @@ const jsonData = {
                     "name": "munualHeating",
                     "descriptions": {
                       "ja": "手動沸き上げ",
-                      "en": "Non-automatic water heating function used"
+                      "en": "Non-automatic water heating function used:"
                     }
                   }
                 ]
@@ -8769,7 +8266,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0xFD",
-                    "descriptions": {
+                    "state": {
                       "ja": "無限",
                       "en": "No time limit"
                     }
@@ -8979,14 +8476,14 @@ const jsonData = {
                   "enum": [
                     {
                       "edt": 0,
-                      "descriptions": {
+                      "state": {
                         "ja": "正常",
                         "en": "No Alarm"
                       }
                     },
                     {
                       "edt": 1,
-                      "descriptions": {
+                      "state": {
                         "ja": "発生",
                         "en": "Alarm"
                       }
@@ -9010,14 +8507,14 @@ const jsonData = {
                   "enum": [
                     {
                       "edt": 0,
-                      "descriptions": {
+                      "state": {
                         "ja": "正常",
                         "en": "No Alarm"
                       }
                     },
                     {
                       "edt": 1,
-                      "descriptions": {
+                      "state": {
                         "ja": "発生",
                         "en": "Alarm"
                       }
@@ -9041,14 +8538,14 @@ const jsonData = {
                   "enum": [
                     {
                       "edt": 0,
-                      "descriptions": {
+                      "state": {
                         "ja": "正常",
                         "en": "No Alarm"
                       }
                     },
                     {
                       "edt": 1,
-                      "descriptions": {
+                      "state": {
                         "ja": "発生",
                         "en": "Alarm"
                       }
@@ -9234,7 +8731,7 @@ const jsonData = {
                   {
                     "edt": "0x09",
                     "name": "09:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "9時",
                       "en": "9:00"
                     }
@@ -9242,7 +8739,7 @@ const jsonData = {
                   {
                     "edt": "0x0A",
                     "name": "10:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "10時",
                       "en": "10:00"
                     }
@@ -9250,7 +8747,7 @@ const jsonData = {
                   {
                     "edt": "0x0B",
                     "name": "11:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "11時",
                       "en": "11:00"
                     }
@@ -9258,7 +8755,7 @@ const jsonData = {
                   {
                     "edt": "0x0C",
                     "name": "12:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "12時",
                       "en": "12:00"
                     }
@@ -9266,7 +8763,7 @@ const jsonData = {
                   {
                     "edt": "0x0D",
                     "name": "13:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "13時",
                       "en": "13:00"
                     }
@@ -9274,7 +8771,7 @@ const jsonData = {
                   {
                     "edt": "0x0E",
                     "name": "14:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "14時",
                       "en": "14:00"
                     }
@@ -9282,7 +8779,7 @@ const jsonData = {
                   {
                     "edt": "0x0F",
                     "name": "15:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "15時",
                       "en": "15:00"
                     }
@@ -9290,7 +8787,7 @@ const jsonData = {
                   {
                     "edt": "0x10",
                     "name": "16:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "16時",
                       "en": "16:00"
                     }
@@ -9298,9 +8795,9 @@ const jsonData = {
                   {
                     "edt": "0x11",
                     "name": "17:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "17時（エネルギーシフト回数が2回の場合はこの値無効になる）",
-                      "en": "17:00 (this value is nullified if energy shifts occur twice)"
+                      "en": "17:00(this value is nullified if energy shifts occur twice)"
                     }
                   }
                 ]
@@ -9311,7 +8808,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x00",
-                    "descriptions": {
+                    "state": {
                       "ja": "クリア状態",
                       "en": "Undefined"
                     }
@@ -9443,7 +8940,7 @@ const jsonData = {
                   {
                     "edt": "0x0A",
                     "name": "10:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "10時",
                       "en": "10:00"
                     }
@@ -9451,7 +8948,7 @@ const jsonData = {
                   {
                     "edt": "0x0B",
                     "name": "11:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "11時",
                       "en": "11:00"
                     }
@@ -9459,7 +8956,7 @@ const jsonData = {
                   {
                     "edt": "0x0C",
                     "name": "12:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "12時",
                       "en": "12:00"
                     }
@@ -9467,7 +8964,7 @@ const jsonData = {
                   {
                     "edt": "0x0D",
                     "name": "13:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "13時",
                       "en": "13:00"
                     }
@@ -9475,7 +8972,7 @@ const jsonData = {
                   {
                     "edt": "0x0E",
                     "name": "14:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "14時",
                       "en": "14:00"
                     }
@@ -9483,7 +8980,7 @@ const jsonData = {
                   {
                     "edt": "0x0F",
                     "name": "15:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "15時",
                       "en": "15:00"
                     }
@@ -9491,7 +8988,7 @@ const jsonData = {
                   {
                     "edt": "0x10",
                     "name": "16:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "16時",
                       "en": "16:00"
                     }
@@ -9499,7 +8996,7 @@ const jsonData = {
                   {
                     "edt": "0x11",
                     "name": "17:00:00",
-                    "descriptions": {
+                    "state": {
                       "ja": "17時",
                       "en": "17:00"
                     }
@@ -9512,8 +9009,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x00",
-                    "name": "undefined",
-                    "descriptions": {
+                    "state": {
                       "ja": "クリア状態",
                       "en": "Undefined"
                     }
@@ -9670,8 +9166,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "風呂湯量設定4設定可能最大レベル",
-            "en": "Bath water volume setting 4 maximum settable level"
+            "ja": "風呂湯量設定４設定可能最大レベル",
+            "en": "Bath water volume setting4 maximum settable level"
           },
           "shortName": "maximumAllowableWaterVolume4",
           "accessRule": {
@@ -9816,7 +9312,7 @@ const jsonData = {
                         "enum": [
                           {
                             "edt": "0x8000",
-                            "descriptions": {
+                            "state": {
                               "ja": "無効値",
                               "en": "Invalid data"
                             }
@@ -9956,7 +9452,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "風呂自動モード設定",
-            "en": "Automatic bath water heating mode setting"
+            "en": "Automatic Bath Water Heating Mode Setting"
           },
           "shortName": "automaticBathOperation",
           "accessRule": {
@@ -10011,7 +9507,7 @@ const jsonData = {
                 "name": "yes",
                 "descriptions": {
                   "ja": "自動入",
-                  "en": "\"Automatic bath water heating\" mode ON"
+                  "en": "“Automatic bath water heating”　mode ON"
                 }
               },
               {
@@ -10019,7 +9515,7 @@ const jsonData = {
                 "name": "no",
                 "descriptions": {
                   "ja": "自動解除",
-                  "en": "\"Automatic bath water heating\" mode OFF"
+                  "en": "“Automatic bath water heating”　mode OFF"
                 }
               }
             ]
@@ -10051,7 +9547,7 @@ const jsonData = {
                     "name": "yes",
                     "descriptions": {
                       "ja": "足し湯",
-                      "en": "\"Addition of hot water\" function ON"
+                      "en": "“Addition of hot water” function ON"
                     }
                   },
                   {
@@ -10059,7 +9555,7 @@ const jsonData = {
                     "name": "no",
                     "descriptions": {
                       "ja": "足し湯切",
-                      "en": "\"Addition of hot water\" function OFF"
+                      "en": "“Addition of hot water” function OFF"
                     }
                   }
                 ]
@@ -10089,7 +9585,7 @@ const jsonData = {
                     "name": "yes",
                     "descriptions": {
                       "ja": "足し湯",
-                      "en": "\"Addition of hot water\" function ON"
+                      "en": "“Addition of hot water” function ON"
                     }
                   },
                   {
@@ -10097,7 +9593,7 @@ const jsonData = {
                     "name": "no",
                     "descriptions": {
                       "ja": "足し湯切",
-                      "en": "\"Addition of hot water\" function OFF"
+                      "en": "“Addition of hot water” function OFF"
                     }
                   }
                 ]
@@ -10131,7 +9627,7 @@ const jsonData = {
                     "name": "yes",
                     "descriptions": {
                       "ja": "ぬるめ入",
-                      "en": "\"Lukewarm water temperature\" function ON"
+                      "en": "“Lukewarm water temperature” function ON"
                     }
                   },
                   {
@@ -10139,7 +9635,7 @@ const jsonData = {
                     "name": "no",
                     "descriptions": {
                       "ja": "ぬるめ切",
-                      "en": "\"Lukewarm water temperature\" function OFF"
+                      "en": "“Lukewarm water temperature” function OFF"
                     }
                   }
                 ]
@@ -10169,7 +9665,7 @@ const jsonData = {
                     "name": "yes",
                     "descriptions": {
                       "ja": "足し湯",
-                      "en": "\"Addition of hot water\" function ON"
+                      "en": "“Addition of hot water” function ON"
                     }
                   },
                   {
@@ -10177,7 +9673,7 @@ const jsonData = {
                     "name": "no",
                     "descriptions": {
                       "ja": "足し湯切",
-                      "en": "\"Addition of hot water\" function OFF"
+                      "en": "“Addition of hot water” function OFF"
                     }
                   }
                 ]
@@ -10191,8 +9687,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "風呂湯量設定1",
-            "en": "Bath water volume setting 1"
+            "ja": "風呂湯量設定１",
+            "en": "Bath water volume setting1"
           },
           "shortName": "bathWaterVolume1",
           "accessRule": {
@@ -10211,8 +9707,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "風呂湯量設定2",
-            "en": "Bath water volume setting 2"
+            "ja": "風呂湯量設定２",
+            "en": "Bath water volume setting2"
           },
           "shortName": "bathWaterVolume2",
           "accessRule": {
@@ -10269,7 +9765,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "風呂動作状態監視",
-            "en": "Bath operation status monitor"
+            "en": "Bath Operation Status Monitor"
           },
           "shortName": "bathOperationStatusMonitor",
           "accessRule": {
@@ -10314,8 +9810,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "風呂湯量設定3",
-            "en": "Bath water volume setting 3"
+            "ja": "風呂湯量設定３",
+            "en": "Bath water volume setting3"
           },
           "shortName": "bathWaterVolume3",
           "accessRule": {
@@ -10540,7 +10036,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "風呂湯量設定4 設定可能最大レベル",
-            "en": "Bath water volume setting 4: Maximum settable level"
+            "en": "Bath water volume setting 4- Maximum settable level"
           },
           "shortName": "maximumAllowableWaterVolume4",
           "accessRule": {
@@ -10616,7 +10112,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "自動運転時間設定値",
-            "en": "Duration of automatic operation setting"
+            "en": "Duration of Automatic operation setting"
           },
           "shortName": "tergetAutomaticOprationTime",
           "accessRule": {
@@ -10650,7 +10146,7 @@ const jsonData = {
         "0xDB": {
           "propertyName": {
             "ja": "自動運転残時間",
-            "en": "Remaining automatic operation time"
+            "en": "Remaining Automatic operation time"
           },
           "shortName": "remainingAutomaticOperationTime",
           "validRelease": {
@@ -10749,7 +10245,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "風呂自動モード設定",
-            "en": "Bath auto mode setting"
+            "en": "Bath Auto mode setting"
           },
           "shortName": "automaticBathOperation",
           "accessRule": {
@@ -10789,7 +10285,7 @@ const jsonData = {
             "ja": "風呂追い炊き動作設定",
             "en": "Bath additional boil-up operation setting"
           },
-          "shortName": "tergetBathAdditionalBoilUpOperation",
+          "shortName": "tergetBathAdditionalBoil-upOperation",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -11271,7 +10767,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ONタイマ時刻設定値",
-            "en": "ON timer setting (time)"
+            "en": "ON timer setting(time)"
           },
           "shortName": "onTimer",
           "accessRule": {
@@ -11291,7 +10787,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ONタイマ相対時間設定値",
-            "en": "ON timer setting (relative time)"
+            "en": "ON timer setting(relative time)"
           },
           "shortName": "onRelativeTimer",
           "accessRule": {
@@ -11349,7 +10845,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "OFFタイマ時刻設定値",
-            "en": "OFF timer setting (time)"
+            "en": "OFF timer setting(time)"
           },
           "shortName": "offTimer",
           "accessRule": {
@@ -11369,7 +10865,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "OFFタイマ相対時間設定値",
-            "en": "OFF timer setting (relative time)"
+            "en": "OFF timer setting(relative time)"
           },
           "shortName": "offRelativeTimer",
           "accessRule": {
@@ -11645,7 +11141,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "入浴前予備暖房運転設定",
-                "en": "Bathroom pre-warmer operation setting"
+                "en": "Bathroom pre-warmer_operation setting"
               },
               "shortName": "bathroomPrewarming",
               "accessRule": {
@@ -12252,7 +11748,7 @@ const jsonData = {
       },
       "className": {
         "ja": "床暖房",
-        "en": "Floor heater"
+        "en": "floor heater"
       },
       "shortName": "floorHeater",
       "elProperties": {
@@ -12262,7 +11758,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "ONタイマ予約設定",
+            "ja": "ON タイマ予約設定",
             "en": "ON timer reservation setting"
           },
           "shortName": "reservationOfOnTimer",
@@ -12300,7 +11796,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "ONタイマ時刻設定値",
+            "ja": "ON タイマ時刻設定値",
             "en": "Time set by ON timer"
           },
           "shortName": "timeOfOnTimer",
@@ -12312,6 +11808,10 @@ const jsonData = {
           "data": {
             "type": "time",
             "size": 2
+          },
+          "note": {
+            "ja": "秒の指定は無視される",
+            "en": "number of seconds is ignored"
           }
         },
         "0x92": {
@@ -12320,7 +11820,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "ONタイマ相対時間設定値",
+            "ja": "ON タイマ相対時間設定値",
             "en": "Relative ON timer setting"
           },
           "shortName": "relativeTimeOfOnTimer",
@@ -12332,6 +11832,10 @@ const jsonData = {
           "data": {
             "type": "time",
             "size": 2
+          },
+          "note": {
+            "ja": "秒の指定は無視される",
+            "en": "number of seconds is ignored"
           }
         },
         "0x94": {
@@ -12340,7 +11844,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "OFFタイマ予約設定",
+            "ja": "OFF タイマ予約設定",
             "en": "OFF timer reservation setting"
           },
           "shortName": "reservationOfOffTimer",
@@ -12378,7 +11882,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "OFFタイマ時刻設定値",
+            "ja": "OFF タイマ時刻設定値",
             "en": "Time set by OFF timer"
           },
           "shortName": "timeOfOffTimer",
@@ -12390,6 +11894,10 @@ const jsonData = {
           "data": {
             "type": "time",
             "size": 2
+          },
+          "note": {
+            "ja": "秒の指定は無視される",
+            "en": "number of seconds is ignored"
           }
         },
         "0x96": {
@@ -12410,6 +11918,10 @@ const jsonData = {
           "data": {
             "type": "time",
             "size": 2
+          },
+          "note": {
+            "ja": "秒の指定は無視される",
+            "en": "number of seconds is ignored"
           }
         },
         "0xD1": {
@@ -12418,8 +11930,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "温度設定2 設定可能最大レベル",
-            "en": "Maximum allowable setting level for temperature setting 2"
+            "ja": "温度設定２設定可能最大レベル",
+            "en": "Maximum temperature level"
           },
           "shortName": "maximumTargetTemperature2",
           "accessRule": {
@@ -12430,8 +11942,9 @@ const jsonData = {
           "data": {
             "type": "number",
             "format": "uint8",
-            "minimum": 49,
-            "maximum": 63
+            "minimum": 1,
+            "maximum": 15,
+            "multipleOf": 1
           }
         },
         "0xE0": {
@@ -12440,8 +11953,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "温度設定1",
-            "en": "Temperature 1"
+            "ja": "温度設定１",
+            "en": "Set temperature value"
           },
           "shortName": "targetTemperature1",
           "accessRule": {
@@ -12456,7 +11969,8 @@ const jsonData = {
                 "format": "uint8",
                 "unit": "Celsius",
                 "minimum": 0,
-                "maximum": 50
+                "maximum": 50,
+                "multipleOf": 1
               },
               {
                 "type": "state",
@@ -12485,8 +11999,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "温度設定2",
-            "en": "Temperature 2"
+            "ja": "温度設定２",
+            "en": "Set temperature level by 15 steps"
           },
           "shortName": "targetTemperature2",
           "accessRule": {
@@ -12499,7 +12013,8 @@ const jsonData = {
               {
                 "type": "level",
                 "base": "0x31",
-                "maximum": 15
+                "maximum": 15,
+                "multipleOf": 1
               },
               {
                 "type": "state",
@@ -12544,7 +12059,8 @@ const jsonData = {
                 "format": "int8",
                 "unit": "Celsius",
                 "minimum": -127,
-                "maximum": 125
+                "maximum": 125,
+                "multipleOf": 1
               },
               {
                 "type": "state",
@@ -12552,7 +12068,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x7E",
-                    "name": "undefined",
+                    "name": "undefine",
                     "descriptions": {
                       "ja": "不明",
                       "en": "Undefined"
@@ -12596,7 +12112,7 @@ const jsonData = {
                     "enum": [
                       {
                         "edt": "0x7E",
-                        "name": "undefined",
+                        "name": "undefine",
                         "descriptions": {
                           "ja": "不明",
                           "en": "Undefined"
@@ -12630,7 +12146,8 @@ const jsonData = {
                     "format": "int8",
                     "unit": "Celsius",
                     "minimum": -127,
-                    "maximum": 125
+                    "maximum": 125,
+                    "multipleOf": 1
                   },
                   {
                     "type": "state",
@@ -12638,7 +12155,7 @@ const jsonData = {
                     "enum": [
                       {
                         "edt": "0x7E",
-                        "name": "undefined",
+                        "name": "undefine",
                         "descriptions": {
                           "ja": "不明",
                           "en": "Undefined"
@@ -12668,13 +12185,278 @@ const jsonData = {
             "inf": "optional"
           },
           "data": {
-            "type": "raw",
-            "minSize": 1,
-            "maxSize": 1
+            "type": "bitmap",
+            "size": 1,
+            "bitmaps": [
+              {
+                "name": "zone0",
+                "descriptions": {
+                  "ja": "ゾーン0",
+                  "en": "Zone 0"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "制御有り",
+                        "en": "with control"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "制御無し",
+                        "en": "without control"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "zone1",
+                "descriptions": {
+                  "ja": "ゾーン1",
+                  "en": "Zone 1"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "制御有り",
+                        "en": "with control"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "制御無し",
+                        "en": "without control"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "zone2",
+                "descriptions": {
+                  "ja": "ゾーン2",
+                  "en": "Zone 2"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "制御有り",
+                        "en": "with control"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "制御無し",
+                        "en": "without control"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "zone3",
+                "descriptions": {
+                  "ja": "ゾーン3",
+                  "en": "Zone 3"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "制御有り",
+                        "en": "with control"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "制御無し",
+                        "en": "without control"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "zone4",
+                "descriptions": {
+                  "ja": "ゾーン4",
+                  "en": "Zone 4"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "制御有り",
+                        "en": "with control"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "制御無し",
+                        "en": "without control"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "zone5",
+                "descriptions": {
+                  "ja": "ゾーン5",
+                  "en": "Zone 5"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "制御有り",
+                        "en": "with control"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "制御無し",
+                        "en": "without control"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "zone6",
+                "descriptions": {
+                  "ja": "ゾーン6",
+                  "en": "Zone 6"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "制御有り",
+                        "en": "with control"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "制御無し",
+                        "en": "without control"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "zone7",
+                "descriptions": {
+                  "ja": "ゾーン7",
+                  "en": "Zone 7"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "制御有り",
+                        "en": "with control"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "制御無し",
+                        "en": "without control"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
           },
           "note": {
-            "ja": "b0〜b7を各々ゾーン0〜7に割当各ビット 1:制御有り、0:制御無し",
-            "en": "Assign b0-b7 to zone0-zone7, 1: yes, 0: no"
+            "ja": "対象となるフロアを最大８ゾーンに分割し制御する場合に、制御するゾーンを設定し、設定可能なゾーンを取得する。",
+            "en": "Sets the target zone for control and gets the number of controllable zones. The maximum number of zones for the floor is 8."
           }
         },
         "0xE5": {
@@ -12717,7 +12499,7 @@ const jsonData = {
                 "name": "highPower",
                 "descriptions": {
                   "ja": "ハイパワー運転",
-                  "en": "Highpower"
+                  "en": "highpower"
                 }
               }
             ]
@@ -12744,7 +12526,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x40",
-                "name": "OFF",
+                "name": "timerOFF",
                 "descriptions": {
                   "ja": "タイマー切",
                   "en": "OFF"
@@ -12754,16 +12536,16 @@ const jsonData = {
                 "edt": "0x41",
                 "name": "timer1",
                 "descriptions": {
-                  "ja": "タイマー１",
-                  "en": "Timer1"
+                  "ja": "タイマー1",
+                  "en": "timer1"
                 }
               },
               {
                 "edt": "0x42",
                 "name": "timer2",
                 "descriptions": {
-                  "ja": "タイマー２",
-                  "en": "Timer2"
+                  "ja": "タイマー2",
+                  "en": "timer2"
                 }
               }
             ]
@@ -12775,7 +12557,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "デイリータイマー1設定",
+            "ja": "デイリータイマー１設定",
             "en": "Daily timer setting 1"
           },
           "shortName": "workedDailyTimer1",
@@ -12785,13 +12567,1598 @@ const jsonData = {
             "inf": "optional"
           },
           "data": {
-            "type": "raw",
-            "minSize": 6,
-            "maxSize": 6
+            "type": "bitmap",
+            "size": 6,
+            "bitmaps": [
+              {
+                "name": "00:00:00",
+                "descriptions": {
+                  "ja": "00:00-00:29",
+                  "en": "00:00-00:29"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "00:30:00",
+                "descriptions": {
+                  "ja": "00:30-00:59",
+                  "en": "00:30-00:59"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "01:00:00",
+                "descriptions": {
+                  "ja": "01:00-01:29",
+                  "en": "01:00-01:29"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "01:30:00",
+                "descriptions": {
+                  "ja": "01:30-01:59",
+                  "en": "01:30-01:59"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "02:00:00",
+                "descriptions": {
+                  "ja": "02:00-02:29",
+                  "en": "02:00-02:29"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "02:30:00",
+                "descriptions": {
+                  "ja": "02:30-02:59",
+                  "en": "02:30-02:59"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "03:00:00",
+                "descriptions": {
+                  "ja": "03:00-03:29",
+                  "en": "03:00-03:29"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "03:30:00",
+                "descriptions": {
+                  "ja": "03:30-03:59",
+                  "en": "03:30-03:59"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "04:00:00",
+                "descriptions": {
+                  "ja": "04:00-04:29",
+                  "en": "04:00-04:29"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "04:30:00",
+                "descriptions": {
+                  "ja": "04:30-04:59",
+                  "en": "04:30-04:59"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "05:00:00",
+                "descriptions": {
+                  "ja": "05:00-05:29",
+                  "en": "05:00-05:29"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "05:30:00",
+                "descriptions": {
+                  "ja": "05:30-05:59",
+                  "en": "05:30-05:59"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "06:00:00",
+                "descriptions": {
+                  "ja": "06:00-06:29",
+                  "en": "06:00-06:29"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "06:30:00",
+                "descriptions": {
+                  "ja": "06:30-06:59",
+                  "en": "06:30-06:59"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "07:00:00",
+                "descriptions": {
+                  "ja": "07:00-07:29",
+                  "en": "07:00-07:29"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "07:30:00",
+                "descriptions": {
+                  "ja": "07:30-07:59",
+                  "en": "07:30-07:59"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "08:00:00",
+                "descriptions": {
+                  "ja": "08:00-08:29",
+                  "en": "08:00-08:29"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "08:30:00",
+                "descriptions": {
+                  "ja": "08:30-08:59",
+                  "en": "08:30-08:59"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "09:00:00",
+                "descriptions": {
+                  "ja": "09:00-09:29",
+                  "en": "09:00-09:29"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "09:30:00",
+                "descriptions": {
+                  "ja": "09:30-09:59",
+                  "en": "09:30-09:59"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "10:00:00",
+                "descriptions": {
+                  "ja": "10:00-10:29",
+                  "en": "10:00-10:29"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "10:30:00",
+                "descriptions": {
+                  "ja": "10:30-10:59",
+                  "en": "10:30-10:59"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "11:00:00",
+                "descriptions": {
+                  "ja": "11:00-11:29",
+                  "en": "11:00-11:29"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "11:30:00",
+                "descriptions": {
+                  "ja": "11:30-11:59",
+                  "en": "11:30-11:59"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "12:00:00",
+                "descriptions": {
+                  "ja": "12:00-12:29",
+                  "en": "12:00-12:29"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "12:30:00",
+                "descriptions": {
+                  "ja": "12:30-12:59",
+                  "en": "12:30-12:59"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "13:00:00",
+                "descriptions": {
+                  "ja": "13:00-13:29",
+                  "en": "13:00-13:29"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "13:30:00",
+                "descriptions": {
+                  "ja": "13:30-13:59",
+                  "en": "13:30-13:59"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "14:00:00",
+                "descriptions": {
+                  "ja": "14:00-14:29",
+                  "en": "14:00-14:29"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "14:30:00",
+                "descriptions": {
+                  "ja": "14:30-14:59",
+                  "en": "14:30-14:59"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "15:00:00",
+                "descriptions": {
+                  "ja": "15:00-15:29",
+                  "en": "15:00-15:29"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "15:30:00",
+                "descriptions": {
+                  "ja": "15:30-15:59",
+                  "en": "15:30-15:59"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "16:00:00",
+                "descriptions": {
+                  "ja": "16:00-16:29",
+                  "en": "16:00-16:29"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "16:30:00",
+                "descriptions": {
+                  "ja": "16:30-16:59",
+                  "en": "16:30-16:59"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "17:00:00",
+                "descriptions": {
+                  "ja": "17:00-17:29",
+                  "en": "17:00-17:29"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "17:30:00",
+                "descriptions": {
+                  "ja": "17:30-17:59",
+                  "en": "17:30-17:59"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "18:00:00",
+                "descriptions": {
+                  "ja": "18:00-18:29",
+                  "en": "18:00-18:29"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "18:30:00",
+                "descriptions": {
+                  "ja": "18:30-18:59",
+                  "en": "18:30-18:59"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "19:00:00",
+                "descriptions": {
+                  "ja": "19:00-19:29",
+                  "en": "19:00-19:29"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "19:30:00",
+                "descriptions": {
+                  "ja": "19:30-19:59",
+                  "en": "19:30-19:59"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "20:00:00",
+                "descriptions": {
+                  "ja": "20:00-20:29",
+                  "en": "20:00-20:29"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "20:30:00",
+                "descriptions": {
+                  "ja": "20:30-20:59",
+                  "en": "20:30-20:59"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "21:00:00",
+                "descriptions": {
+                  "ja": "21:00-21:29",
+                  "en": "21:00-21:29"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "21:30:00",
+                "descriptions": {
+                  "ja": "21:30-21:59",
+                  "en": "21:30-21:59"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "22:00:00",
+                "descriptions": {
+                  "ja": "22:00-22:29",
+                  "en": "22:00-22:29"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "22:30:00",
+                "descriptions": {
+                  "ja": "22:30-22:59",
+                  "en": "22:30-22:59"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "23:00:00",
+                "descriptions": {
+                  "ja": "23:00-23:29",
+                  "en": "23:00-23:29"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "23:30:00",
+                "descriptions": {
+                  "ja": "23:30-23:59",
+                  "en": "23:30-23:59"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
           },
           "note": {
-            "ja": "24時間を30分単位で分割、全6バイトを割り当てて、各bit 1: 運転、0: 停止",
-            "en": "Every bit of 6 byte is assigned to 30 minute duration of 24H, 0: operation, 1: no operation"
+            "ja": "24 時間を30 分単位で分割、全6 バイトを使用し、各ビット １：運転 ０：停止 とする",
+            "en": "24 hours is divided by 30 minutes. The timer is set in the unit of 30 minutes and allocated 6 bytes. 1:operated or 0:stopped is indicated for each bit."
           }
         },
         "0xE8": {
@@ -12810,13 +14177,1598 @@ const jsonData = {
             "inf": "optional"
           },
           "data": {
-            "type": "raw",
-            "minSize": 6,
-            "maxSize": 6
+            "type": "bitmap",
+            "size": 6,
+            "bitmaps": [
+              {
+                "name": "00:00:00",
+                "descriptions": {
+                  "ja": "00:00-00:29",
+                  "en": "00:00-00:29"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "00:30:00",
+                "descriptions": {
+                  "ja": "00:30-00:59",
+                  "en": "00:30-00:59"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "01:00:00",
+                "descriptions": {
+                  "ja": "01:00-01:29",
+                  "en": "01:00-01:29"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "01:30:00",
+                "descriptions": {
+                  "ja": "01:30-01:59",
+                  "en": "01:30-01:59"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "02:00:00",
+                "descriptions": {
+                  "ja": "02:00-02:29",
+                  "en": "02:00-02:29"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "02:30:00",
+                "descriptions": {
+                  "ja": "02:30-02:59",
+                  "en": "02:30-02:59"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "03:00:00",
+                "descriptions": {
+                  "ja": "03:00-03:29",
+                  "en": "03:00-03:29"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "03:30:00",
+                "descriptions": {
+                  "ja": "03:30-03:59",
+                  "en": "03:30-03:59"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "04:00:00",
+                "descriptions": {
+                  "ja": "04:00-04:29",
+                  "en": "04:00-04:29"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "04:30:00",
+                "descriptions": {
+                  "ja": "04:30-04:59",
+                  "en": "04:30-04:59"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "05:00:00",
+                "descriptions": {
+                  "ja": "05:00-05:29",
+                  "en": "05:00-05:29"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "05:30:00",
+                "descriptions": {
+                  "ja": "05:30-05:59",
+                  "en": "05:30-05:59"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "06:00:00",
+                "descriptions": {
+                  "ja": "06:00-06:29",
+                  "en": "06:00-06:29"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "06:30:00",
+                "descriptions": {
+                  "ja": "06:30-06:59",
+                  "en": "06:30-06:59"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "07:00:00",
+                "descriptions": {
+                  "ja": "07:00-07:29",
+                  "en": "07:00-07:29"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "07:30:00",
+                "descriptions": {
+                  "ja": "07:30-07:59",
+                  "en": "07:30-07:59"
+                },
+                "position": {
+                  "index": 1,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "08:00:00",
+                "descriptions": {
+                  "ja": "08:00-08:29",
+                  "en": "08:00-08:29"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "08:30:00",
+                "descriptions": {
+                  "ja": "08:30-08:59",
+                  "en": "08:30-08:59"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "09:00:00",
+                "descriptions": {
+                  "ja": "09:00-09:29",
+                  "en": "09:00-09:29"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "09:30:00",
+                "descriptions": {
+                  "ja": "09:30-09:59",
+                  "en": "09:30-09:59"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "10:00:00",
+                "descriptions": {
+                  "ja": "10:00-10:29",
+                  "en": "10:00-10:29"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "10:30:00",
+                "descriptions": {
+                  "ja": "10:30-10:59",
+                  "en": "10:30-10:59"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "11:00:00",
+                "descriptions": {
+                  "ja": "11:00-11:29",
+                  "en": "11:00-11:29"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "11:30:00",
+                "descriptions": {
+                  "ja": "11:30-11:59",
+                  "en": "11:30-11:59"
+                },
+                "position": {
+                  "index": 2,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "12:00:00",
+                "descriptions": {
+                  "ja": "12:00-12:29",
+                  "en": "12:00-12:29"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "12:30:00",
+                "descriptions": {
+                  "ja": "12:30-12:59",
+                  "en": "12:30-12:59"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "13:00:00",
+                "descriptions": {
+                  "ja": "13:00-13:29",
+                  "en": "13:00-13:29"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "13:30:00",
+                "descriptions": {
+                  "ja": "13:30-13:59",
+                  "en": "13:30-13:59"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "14:00:00",
+                "descriptions": {
+                  "ja": "14:00-14:29",
+                  "en": "14:00-14:29"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "14:30:00",
+                "descriptions": {
+                  "ja": "14:30-14:59",
+                  "en": "14:30-14:59"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "15:00:00",
+                "descriptions": {
+                  "ja": "15:00-15:29",
+                  "en": "15:00-15:29"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "15:30:00",
+                "descriptions": {
+                  "ja": "15:30-15:59",
+                  "en": "15:30-15:59"
+                },
+                "position": {
+                  "index": 3,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "16:00:00",
+                "descriptions": {
+                  "ja": "16:00-16:29",
+                  "en": "16:00-16:29"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "16:30:00",
+                "descriptions": {
+                  "ja": "16:30-16:59",
+                  "en": "16:30-16:59"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "17:00:00",
+                "descriptions": {
+                  "ja": "17:00-17:29",
+                  "en": "17:00-17:29"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "17:30:00",
+                "descriptions": {
+                  "ja": "17:30-17:59",
+                  "en": "17:30-17:59"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "18:00:00",
+                "descriptions": {
+                  "ja": "18:00-18:29",
+                  "en": "18:00-18:29"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "18:30:00",
+                "descriptions": {
+                  "ja": "18:30-18:59",
+                  "en": "18:30-18:59"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "19:00:00",
+                "descriptions": {
+                  "ja": "19:00-19:29",
+                  "en": "19:00-19:29"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "19:30:00",
+                "descriptions": {
+                  "ja": "19:30-19:59",
+                  "en": "19:30-19:59"
+                },
+                "position": {
+                  "index": 4,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "20:00:00",
+                "descriptions": {
+                  "ja": "20:00-20:29",
+                  "en": "20:00-20:29"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "20:30:00",
+                "descriptions": {
+                  "ja": "20:30-20:59",
+                  "en": "20:30-20:59"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "21:00:00",
+                "descriptions": {
+                  "ja": "21:00-21:29",
+                  "en": "21:00-21:29"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "21:30:00",
+                "descriptions": {
+                  "ja": "21:30-21:59",
+                  "en": "21:30-21:59"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "22:00:00",
+                "descriptions": {
+                  "ja": "22:00-22:29",
+                  "en": "22:00-22:29"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "22:30:00",
+                "descriptions": {
+                  "ja": "22:30-22:59",
+                  "en": "22:30-22:59"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "23:00:00",
+                "descriptions": {
+                  "ja": "23:00-23:29",
+                  "en": "23:00-23:29"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "23:30:00",
+                "descriptions": {
+                  "ja": "23:30-23:59",
+                  "en": "23:30-23:59"
+                },
+                "position": {
+                  "index": 5,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": "0x01",
+                      "name": "true",
+                      "descriptions": {
+                        "ja": "運転",
+                        "en": "operate"
+                      }
+                    },
+                    {
+                      "edt": "0x00",
+                      "name": "false",
+                      "descriptions": {
+                        "ja": "停止",
+                        "en": "stop"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
           },
           "note": {
-            "ja": "24時間を30分単位で分割、全6バイトを割り当てて、各bit 1: 運転、0: 停止",
-            "en": "Every bit of 6 byte is assigned to 30 minute duration of 24H, 0: operation, 1: no operation"
+            "ja": "24 時間を30 分単位で分割、全6 バイトを使用し、各ビット １：運転 ０：停止 とする",
+            "en": "24 hours is divided by 30 minutes. The timer is set in the unit of 30 minutes and allocated 6 bytes. 1:operated or 0:stopped is indicated for each bit."
           }
         },
         "0xE9": {
@@ -12839,6 +15791,7 @@ const jsonData = {
             "format": "uint16",
             "minimum": 0,
             "maximum": 65533,
+            "multipleOf": 1,
             "unit": "W"
           }
         },
@@ -12879,13 +15832,1115 @@ const jsonData = {
               },
               {
                 "edt": "0x43",
-                "name": "other",
+                "name": "instance",
                 "descriptions": {
                   "ja": "インスタンス単位",
                   "en": "Instance unit"
                 }
               }
             ]
+          }
+        }
+      }
+    },
+    "0x027C": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "燃料電池",
+        "en": "Fuel cell"
+      },
+      "shortName": "fuelCell",
+      "elProperties": {
+        "0x80": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "動作状態",
+            "en": "Operation status"
+          },
+          "shortName": "operationStatus",
+          "accessRule": {
+            "get": "required",
+            "set": "optional",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x30",
+                "name": "yes",
+                "descriptions": {
+                  "ja": "ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x31",
+                "name": "no",
+                "descriptions": {
+                  "ja": "OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0x90": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "ONタイマ予約設定",
+            "en": "ON timer setting"
+          },
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/state_ON-OFF-4142"
+          }
+        },
+        "0x91": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "ONタイマ時刻設定値",
+            "en": "ON timer setting(time)"
+          },
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "time",
+            "size": 2
+          }
+        },
+        "0xB1": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "沸き上げ湯温自動設定",
+            "en": ""
+          },
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/raw_1"
+          }
+        },
+        "0xB2": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "沸き上げ中状態",
+            "en": ""
+          },
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/raw_1"
+          }
+        },
+        "0xB3": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "沸き上げ湯温設定値",
+            "en": ""
+          },
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/raw_1"
+          }
+        },
+        "0xC1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "温水器湯温計測値",
+            "en": "Measured temperature of water in water heater"
+          },
+          "shortName": "waterTemperatureInWaterHeater",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-100Celsius"
+          }
+        },
+        "0xC2": {
+          "oneOf": [
+            {
+              "validRelease": {
+                "from": "A",
+                "to": "I"
+              },
+              "propertyName": {
+                "ja": "定格発電量",
+                "en": "Rated power generation output"
+              },
+              "shortName": "ratedElectricPowerOfGeneration",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-65533",
+                "unit": "W"
+              }
+            },
+            {
+              "validRelease": {
+                "from": "J",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "定格発電出力",
+                "en": "Rated power generation output"
+              },
+              "shortName": "ratedElectricPowerOfGeneration",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-65533",
+                "unit": "W"
+              }
+            }
+          ]
+        },
+        "0xC3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "貯湯槽熱量",
+            "en": "Heating value of hot water storage tank"
+          },
+          "shortName": "heatCapacityOfStorageTank",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-65533",
+            "unit": "MJ"
+          }
+        },
+        "0xC4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "瞬時発電電力計測値",
+            "en": "Measured instantaneous power generation output"
+          },
+          "shortName": "instantaneousElectricPowerOfGeneration",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-65533",
+            "unit": "W"
+          }
+        },
+        "0xC5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "積算発電電力量計測値",
+            "en": "Measured cumulative power generation output"
+          },
+          "shortName": "cumulativeElectricEnergyOfGeneration",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-999999999",
+            "unit": "kWh",
+            "multipleOf": 0.001
+          },
+          "note": {
+            "ja": "オーバーフロー時は0にリセット",
+            "en": "The value is reset to 0 after overflow"
+          }
+        },
+        "0xC6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "積算発電電力量リセット設定",
+            "en": "Cumulative power generation output reset setting"
+          },
+          "shortName": "cumulativePowerGenerationOutputReset",
+          "accessRule": {
+            "get": "notApplicable",
+            "set": "optional",
+            "inf": "notApplicable"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x00",
+                "name": "reset",
+                "descriptions": {
+                  "ja": "リセット",
+                  "en": "Reset"
+                }
+              }
+            ]
+          }
+        },
+        "0xC7": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "瞬時ガス消費量計測値",
+            "en": "Measured instantaneous gas consumption"
+          },
+          "shortName": "instantaneousGasConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-65533",
+            "unit": "m3/h",
+            "multipleOf": 0.001
+          }
+        },
+        "0xC8": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "積算ガス消費量計測値",
+            "en": "Measured cumulative gas consumption"
+          },
+          "shortName": "cumulativeGasConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-999999999",
+            "unit": "m3",
+            "multipleOf": 0.001
+          },
+          "note": {
+            "ja": "オーバーフロー時は0にリセット",
+            "en": "The value is reset to 0 after overflow"
+          }
+        },
+        "0xC9": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "積算ガス消費量リセット設定",
+            "en": "Cumulative gas consumption reset setting"
+          },
+          "shortName": "cumulativeGasConsumptionReset",
+          "accessRule": {
+            "get": "notApplicable",
+            "set": "optional",
+            "inf": "notApplicable"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x00",
+                "name": "reset",
+                "descriptions": {
+                  "ja": "リセット",
+                  "en": "Reset"
+                }
+              }
+            ]
+          }
+        },
+        "0xCA": {
+          "oneOf": [
+            {
+              "validRelease": {
+                "from": "A",
+                "to": "B"
+              },
+              "propertyName": {
+                "ja": "発電動作設定",
+                "en": "Power generation setting"
+              },
+              "shortName": "powerGenerationSetting",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "generationOn",
+                    "descriptions": {
+                      "ja": "発電動作",
+                      "en": "Power generation ON"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "generationOff",
+                    "descriptions": {
+                      "ja": "発電停止",
+                      "en": "Power generation OFF"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "validRelease": {
+                "from": "C",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "発電動作設定",
+                "en": "Power generation setting"
+              },
+              "shortName": "powerGenerationSetting",
+              "accessRule": {
+                "get": "notApplicable",
+                "set": "optional",
+                "inf": "notApplicable"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "generationOn",
+                    "descriptions": {
+                      "ja": "発電動作",
+                      "en": "Power generation ON"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "generationOff",
+                    "descriptions": {
+                      "ja": "発電停止",
+                      "en": "Power generation OFF"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "発電動作設定",
+                "en": "Power generation setting"
+              },
+              "shortName": "powerGenerationSetting",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "generationOn",
+                    "descriptions": {
+                      "ja": "発電動作",
+                      "en": "Power generation ON"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "generationOff",
+                    "descriptions": {
+                      "ja": "発電停止",
+                      "en": "Power generation OFF"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "0xCB": {
+          "oneOf": [
+            {
+              "validRelease": {
+                "from": "C",
+                "to": "I"
+              },
+              "propertyName": {
+                "ja": "発電動作状態",
+                "en": "Power generation status"
+              },
+              "shortName": "powerGenerationStatus",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "generating",
+                    "descriptions": {
+                      "ja": "発電中",
+                      "en": "Generating"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "stopped",
+                    "descriptions": {
+                      "ja": "停止中",
+                      "en": "Stopped"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "starting",
+                    "descriptions": {
+                      "ja": "起動中",
+                      "en": "Starting"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "stopping",
+                    "descriptions": {
+                      "ja": "停止動作中",
+                      "en": "Stopping"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "idling",
+                    "descriptions": {
+                      "ja": "アイドル中",
+                      "en": "idling"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "validRelease": {
+                "from": "J",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "発電動作状態",
+                "en": "Power generation status"
+              },
+              "shortName": "powerGenerationStatus",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "required"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "generating",
+                    "descriptions": {
+                      "ja": "発電中",
+                      "en": "Generating"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "stopped",
+                    "descriptions": {
+                      "ja": "停止中",
+                      "en": "Stopped"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "starting",
+                    "descriptions": {
+                      "ja": "起動中",
+                      "en": "Starting"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "stopping",
+                    "descriptions": {
+                      "ja": "停止動作中",
+                      "en": "Stopping"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "idling",
+                    "descriptions": {
+                      "ja": "アイドル中",
+                      "en": "idling"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "0xCC": {
+          "validRelease": {
+            "from": "C",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "宅内瞬時消費電力計測値",
+            "en": "Measured in-house instantaneous power consumption"
+          },
+          "shortName": "inHouseInstantaneousPowerConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-65533",
+            "unit": "W"
+          }
+        },
+        "0xCD": {
+          "validRelease": {
+            "from": "C",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "宅内積算消費電力量計測値",
+            "en": "Measured in-house cumulative power consumption"
+          },
+          "shortName": "inHouseCumulativePowerConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-999999999",
+            "unit": "kWh",
+            "multipleOf": 0.001
+          },
+          "note": {
+            "ja": "オーバーフロー時は0にリセット",
+            "en": "The value is reset to 0 after overflow"
+          }
+        },
+        "0xCE": {
+          "validRelease": {
+            "from": "C",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "宅内積算消費電力量リセット設定",
+            "en": "In-house cumulative power consumption reset"
+          },
+          "shortName": "inHouseCumulativePowerConsumptionReset",
+          "accessRule": {
+            "get": "notApplicable",
+            "set": "optional",
+            "inf": "notApplicable"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x00",
+                "name": "reset",
+                "descriptions": {
+                  "ja": "リセット",
+                  "en": "Reset"
+                }
+              }
+            ]
+          }
+        },
+        "0xD0": {
+          "oneOf": [
+            {
+              "validRelease": {
+                "from": "B",
+                "to": "I"
+              },
+              "propertyName": {
+                "ja": "系統連系状態",
+                "en": "System interconnected type"
+              },
+              "shortName": "powerSystemInterconnectionStatus",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x00",
+                    "name": "reverseFlowAcceptable",
+                    "descriptions": {
+                      "ja": "系統連系（逆潮流可）",
+                      "en": "System-interconnected type(reverse power flow acceptable)"
+                    }
+                  },
+                  {
+                    "edt": "0x01",
+                    "name": "independent",
+                    "descriptions": {
+                      "ja": "独立",
+                      "en": "Independent type"
+                    }
+                  },
+                  {
+                    "edt": "0x02",
+                    "name": "reverseFlowNotAcceptable",
+                    "descriptions": {
+                      "ja": "系統連系（逆潮流不可）",
+                      "en": "System-interconnected type(reverse power flow not acceptable)"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "validRelease": {
+                "from": "J",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "系統連系状態",
+                "en": "System interconnected type"
+              },
+              "shortName": "powerSystemInterconnectionStatus",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x00",
+                    "name": "reverseFlowAcceptable",
+                    "descriptions": {
+                      "ja": "系統連系（逆潮流可）",
+                      "en": "System-interconnected type(reverse power flow acceptable)"
+                    }
+                  },
+                  {
+                    "edt": "0x01",
+                    "name": "independent",
+                    "descriptions": {
+                      "ja": "独立",
+                      "en": "Independent type"
+                    }
+                  },
+                  {
+                    "edt": "0x02",
+                    "name": "reverseFlowNotAcceptable",
+                    "descriptions": {
+                      "ja": "系統連系（逆潮流不可）",
+                      "en": "System-interconnected type(reverse power flow not acceptable)"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "0xD1": {
+          "oneOf": [
+            {
+              "validRelease": {
+                "from": "A",
+                "to": "B"
+              },
+              "propertyName": {
+                "ja": "給湯温度設定値",
+                "en": "Temperature of supplied water setting"
+              },
+              "shortName": "targetWaterTemperature",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            {
+              "validRelease": {
+                "from": "J",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "発電要請時刻設定",
+                "en": "Power generation request time setting"
+              },
+              "shortName": "requestedTimeOfGeneration",
+              "accessRule": {
+                "get": "required",
+                "set": "required",
+                "inf": "optional"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": [
+                      {
+                        "name": "start",
+                        "element": {
+                          "type": "time",
+                          "size": 2
+                        },
+                        "descriptions": {
+                          "ja": "開始時刻",
+                          "en": "Start time"
+                        }
+                      },
+                      {
+                        "name": "end",
+                        "element": {
+                          "type": "time",
+                          "size": 2
+                        },
+                        "descriptions": {
+                          "ja": "終了時刻",
+                          "en": "End time"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "state",
+                    "size": 4,
+                    "enum": [
+                      {
+                        "edt": "0xFFFFFFFF",
+                        "name": "undefined",
+                        "descriptions": {
+                          "ja": "未設定",
+                          "en": "undefined"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "0xD2": {
+          "validRelease": {
+            "from": "J",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "指定発電状態",
+            "en": "Designated power generation status"
+          },
+          "shortName": "powerGenerationMode",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "maximumRating",
+                "descriptions": {
+                  "ja": "定格最大での発電",
+                  "en": "Power generation at the maximum rating"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "loadFollowing",
+                "descriptions": {
+                  "ja": "負荷追従での発電",
+                  "en": "Load following power generation"
+                }
+              }
+            ]
+          }
+        },
+        "0xD3": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "風呂温度設定値",
+            "en": ""
+          },
+          "shortName": "targetBathTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/raw_1"
+          }
+        },
+        "0xE0": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "沸き上げ湯量設定値",
+            "en": ""
+          },
+          "shortName": "targetWaterTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/raw_1"
+          }
+        },
+        "0xE1": {
+          "propertyName": {
+            "ja": "残湯量計測値",
+            "en": "Measured remaining hot water amount"
+          },
+          "shortName": "remainingHotWaterAmount",
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-65533",
+            "unit": "L"
+          }
+        },
+        "0xE2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "タンク容量値",
+            "en": "Tank capacity"
+          },
+          "shortName": "tankCapacity",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/number_0-65533",
+            "unit": "L"
+          }
+        },
+        "0xE3": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "風呂自動モード設定",
+            "en": ""
+          },
+          "shortName": "bathAutoMode",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/raw_1"
+          }
+        },
+        "0xE4": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "追い焚き",
+            "en": ""
+          },
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/raw_1"
+          }
+        },
+        "0xE5": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "風呂足し湯動作設定",
+            "en": ""
+          },
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/raw_1"
+          }
+        },
+        "0xE6": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "風呂ぬるめ動作設定",
+            "en": ""
+          },
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/raw_1"
+          }
+        },
+        "0xE8": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "風呂湯量設定２",
+            "en": ""
+          },
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/raw_1"
+          }
+        },
+        "0xEE": {
+          "validRelease": {
+            "from": "A",
+            "to": "B"
+          },
+          "propertyName": {
+            "ja": "風呂湯量設定３",
+            "en": ""
+          },
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "$ref": "#/definitions/raw_2"
           }
         }
       }
@@ -12973,7 +17028,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "AC実効容量（充電）",
-            "en": "AC effective capacity (charging)"
+            "en": "AC effective capacity(charging)"
           },
           "shortName": "ACEffectiveChargingCapacity",
           "accessRule": {
@@ -12996,7 +17051,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "AC実効容量（放電）",
-            "en": "AC effective capacity (discharging)"
+            "en": "AC effective capacity(discharging)"
           },
           "shortName": "ACEffectiveDischargingCapacity",
           "accessRule": {
@@ -14188,7 +18243,7 @@ const jsonData = {
             "ja": "積算放電電力量リセット設定",
             "en": "\"Measured cumulative discharging electric energy\" reset setting"
           },
-          "shortName": "cumulativeDischargingElectricEnergyReset",
+          "shortName": "\"cumulativeDischargingElectricEnergy\"Reset",
           "accessRule": {
             "get": "notApplicable",
             "set": "optional",
@@ -14242,7 +18297,7 @@ const jsonData = {
             "ja": "積算充電電力量リセット設定",
             "en": "\"Measured cumulative charging electric energy\" reset setting"
           },
-          "shortName": "cumulativeChargingElectricEnergyReset",
+          "shortName": "\"cumulativeChargingElectricEnergy\"Reset",
           "accessRule": {
             "get": "notApplicable",
             "set": "optional",
@@ -14597,7 +18652,7 @@ const jsonData = {
                     "name": "reversePowerFlowAcceptable",
                     "descriptions": {
                       "ja": "系統連系（逆潮流可）",
-                      "en": "System interconnection (reverse power flow acceptable)"
+                      "en": "System interconnection(reverse power flow acceptable)"
                     }
                   },
                   {
@@ -14613,7 +18668,7 @@ const jsonData = {
                     "name": "reversePowerFlowNotAcceptable",
                     "descriptions": {
                       "ja": "系統連系（逆潮流不可）",
-                      "en": "System-interconnected type (reverse power flow not acceptable)"
+                      "en": "System-interconnected type(reverse power flow not acceptable)"
                     }
                   }
                 ]
@@ -14643,7 +18698,7 @@ const jsonData = {
                     "name": "reversePowerFlowAcceptable",
                     "descriptions": {
                       "ja": "系統連系（逆潮流可）",
-                      "en": "System interconnection (reverse power flow acceptable)"
+                      "en": "System interconnection(reverse power flow acceptable)"
                     }
                   },
                   {
@@ -14659,7 +18714,7 @@ const jsonData = {
                     "name": "reversePowerFlowNotAcceptable",
                     "descriptions": {
                       "ja": "系統連系（逆潮流不可）",
-                      "en": "System-interconnected type (reverse power flow not acceptable)"
+                      "en": "System-interconnected type(reverse power flow not acceptable)"
                     }
                   }
                 ]
@@ -14909,7 +18964,7 @@ const jsonData = {
             ],
             "note": {
               "ja": "EPC=0xE0を実装する場合は、EPC=0xE1,E7,E8,E9,EAを実装しない。プラス値：充電　マイナス値：放電。",
-              "en": "In case EPC=0xE0 is implemented, EPC=0xE1,E7,E8,E9,EA should not be implemented. Positive value: Charging, Negative value: Discharging."
+              "en": "In case EPC=0xE0 is implemented, EPC=0xE1,E7,E8,E9,EA should not be implemented. Positive value : Charging, Negative value : Discharging."
             }
           }
         },
@@ -14957,7 +19012,7 @@ const jsonData = {
             ],
             "note": {
               "ja": "EPC=0xE1を実装する場合は、EPC=0xE0,E7,E8,E9,EAを実装しない。プラス値：充電　マイナス値：放電。",
-              "en": "In case EPC=0xE1 is implemented, EPC=0xE0,E7,E8,E9,EA should not be implemented. Positive value: Charging, Negative value: Discharging."
+              "en": "In case EPC=0xE1 is implemented, EPC=0xE0,E7,E8,E9,EA should not be implemented. Positive value : Charging, Negative value : Discharging."
             }
           }
         },
@@ -15373,6 +19428,2316 @@ const jsonData = {
         }
       }
     },
+    "0x027E": {
+      "oneOf": [
+        {
+          "validRelease": {
+            "from": "B",
+            "to": "C"
+          },
+          "className": {
+            "ja": "電気自動車充放電システム",
+            "en": "EV charge and discharge system"
+          },
+          "shortName": "evChargerDischarger",
+          "elProperties": {
+            "0xC0": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "V2H使用可能容量値１",
+                "en": "V2H stored electricity 1"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xC1": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "V2H使用可能容量値２",
+                "en": "V2H stored electricity 2"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_2"
+              }
+            },
+            "0xC2": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "V2H使用可能残容量１",
+                "en": "V2H remaining available capacity 1"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xC3": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "V2H使用可能残容量２",
+                "en": "V2H remaining available capacity 2"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_2"
+              }
+            },
+            "0xC4": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "V2H使用可能残容量３",
+                "en": "V2H remaining available capacity 3"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xC5": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "定格充電能力",
+                "en": "Rated charge capacity"
+              },
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xC6": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "定格放電能力",
+                "en": "Rated discharge capacity"
+              },
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xC7": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "充放電可否状態",
+                "en": "Chargeable/dischargeable status"
+              },
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "required"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xC8": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "最小最大充電電力値",
+                "en": "Min/max charge electric energy"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_8"
+              }
+            },
+            "0xC9": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "最小最大放電電力値",
+                "en": "Min/max discharge electric energy"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_8"
+              }
+            },
+            "0xCA": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "最小最大充電電流値",
+                "en": "Minimum/maximum charging current"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xCB": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "最小最大放電電流値",
+                "en": "Minimum/maximum discharging current"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xD0": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "使用容量値１",
+                "en": "Used capacity 1"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xD1": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "使用容量値２",
+                "en": "Used capacity 2"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_2"
+              }
+            },
+            "0xD2": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "定格電圧",
+                "en": "Rated voltage"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_2"
+              }
+            },
+            "0xD3": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "瞬時充放電電力計測値",
+                "en": "Measured instantaneous charge/discharge electric energy"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xD4": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "瞬時充放電電流計測値",
+                "en": "Measured instantaneous charge/discharge current"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_2"
+              }
+            },
+            "0xD5": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "瞬時充放電電圧計測値",
+                "en": "Measured instantaneous charge/discharge voltage"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_2"
+              }
+            },
+            "0xD6": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "積算放電電力量計測値",
+                "en": "Measured cumulative discharge electric energy"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xD7": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "積算放電電力量リセット設定",
+                "en": "Cumulative discharge electric energy reset setting"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xD8": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "積算充電電力量計測値",
+                "en": "Measured cumulative charge electric energy"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xD9": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "積算充電電力量リセット設定",
+                "en": "Cumulative charge electric energy reset setting"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xDA": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "運転モード設定",
+                "en": "Operation mode setting"
+              },
+              "accessRule": {
+                "get": "required",
+                "set": "required",
+                "inf": "required"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xDB": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "系統連携状態",
+                "en": "System-interconnected type"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xE2": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "電池残容量１",
+                "en": "Remaining battery capacity 1"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xE3": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "電池残容量２",
+                "en": "Remaining battery capacity 2"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_2"
+              }
+            },
+            "0xE4": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "電池残容量３",
+                "en": "Remaining battery capacity 3"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xE5": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "劣化状態",
+                "en": "Deterioration status"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xE7": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "充電量設定値１",
+                "en": "Charging amount setting 1"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xE8": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "放電量設定値１",
+                "en": "Discharging amount setting 1"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xE9": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "充電量設定値２",
+                "en": "Charging amount setting 2"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_2"
+              }
+            },
+            "0xEA": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "放電量設定値２",
+                "en": "Discharging amount setting 2"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_2"
+              }
+            },
+            "0xEB": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "充電電力設定値",
+                "en": "Charge electric energy setting"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xEC": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "放電電力設定値",
+                "en": "Discharge electric energy setting"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xED": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "充電電流設定値",
+                "en": "Charge current setting"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_2"
+              }
+            },
+            "0xEE": {
+              "validRelease": {
+                "from": "B",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "放電電流設定値",
+                "en": "Disharge current setting"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_2"
+              }
+            }
+          }
+        },
+        {
+          "validRelease": {
+            "from": "D",
+            "to": "latest"
+          },
+          "className": {
+            "ja": "電気自動車充放電器",
+            "en": "EV charger and discharger"
+          },
+          "shortName": "evChargerDischarger",
+          "elProperties": {
+            "0xC0": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "車載電池の放電可能容量値1",
+                "en": "Dischargeable capacity of vehicle mounted battery 1"
+              },
+              "shortName": "dischargeableCapacity1",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "Wh"
+              },
+              "note": {
+                "ja": "車載電池の放電可能容量値1 は、電気自動車充放電器に接続された電気自動車から出力される場合、搭載を必須とする。応答できない状況にある場合、不可応答を返す。",
+                "en": "The installation of \"Dischargeable capacity of vehicle mounted battery 1\" is mandatory in case of output from an electric vehicle connected to an electric vehicle charger/discharger. Where no response can be returned, \"Response impossible\" is returned."
+              }
+            },
+            "0xC1": {
+              "oneOf": [
+                {
+                  "validRelease": {
+                    "from": "D",
+                    "to": "F"
+                  },
+                  "propertyName": {
+                    "ja": "車載電池の放電可能容量値2",
+                    "en": "Dischargeable capacity of vehicle mounted battery 2"
+                  },
+                  "shortName": "dischargeableCapacity2",
+                  "accessRule": {
+                    "get": "required_c",
+                    "set": "notApplicable",
+                    "inf": "optional"
+                  },
+                  "data": {
+                    "$ref": "#/definitions/number_0-32766",
+                    "unit": "Ah",
+                    "multipleOf": 0.1
+                  }
+                },
+                {
+                  "validRelease": {
+                    "from": "G",
+                    "to": "latest"
+                  },
+                  "propertyName": {
+                    "ja": "車載電池の放電可能容量値2",
+                    "en": "Dischargeable capacity of vehicle mounted battery 2"
+                  },
+                  "shortName": "dischargeableCapacity2",
+                  "accessRule": {
+                    "get": "optional",
+                    "set": "notApplicable",
+                    "inf": "optional"
+                  },
+                  "data": {
+                    "$ref": "#/definitions/number_0-32766",
+                    "unit": "Ah",
+                    "multipleOf": 0.1
+                  }
+                }
+              ]
+            },
+            "0xC2": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "車載電池の放電可能残容量1",
+                "en": "Remaining dischargeable capacity of vehicle mounted battery 1"
+              },
+              "shortName": "remainingDischargeableCapacity1",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "Wh"
+              },
+              "note": {
+                "ja": "車載電池の放電可能残容量1、車載電池の放電可能残容量3 は、電気自動車充放電器に接続された電気自動車から出力される場合、いずれかの搭載を必須とする。応答できない状況にある場合、不可応答を返す。",
+                "en": "The installation of \"Remaining dischargeable capacity of vehicle mounted battery 1\" or \"Remaining dischargeable capacity of vehicle mounted battery 3\" is mandatory in case of output from an electric vehicle connected to an electric vehicle charger/discharger. Where no response can be returned, \"Response impossible\" is returned."
+              }
+            },
+            "0xC3": {
+              "oneOf": [
+                {
+                  "validRelease": {
+                    "from": "D",
+                    "to": "F"
+                  },
+                  "propertyName": {
+                    "ja": "車載電池の放電可能残容量2",
+                    "en": "Remaining dischargeable capacity of vehicle mounted battery 2"
+                  },
+                  "shortName": "remainingDischargeableCapacity2",
+                  "accessRule": {
+                    "get": "required_c",
+                    "set": "notApplicable",
+                    "inf": "optional"
+                  },
+                  "data": {
+                    "$ref": "#/definitions/number_0-32766",
+                    "unit": "Ah",
+                    "multipleOf": 0.1
+                  }
+                },
+                {
+                  "validRelease": {
+                    "from": "G",
+                    "to": "latest"
+                  },
+                  "propertyName": {
+                    "ja": "車載電池の放電可能残容量2",
+                    "en": "Remaining dischargeable capacity of vehicle mounted battery 2"
+                  },
+                  "shortName": "remainingDischargeableCapacity2",
+                  "accessRule": {
+                    "get": "optional",
+                    "set": "notApplicable",
+                    "inf": "optional"
+                  },
+                  "data": {
+                    "$ref": "#/definitions/number_0-32766",
+                    "unit": "Ah",
+                    "multipleOf": 0.1
+                  }
+                }
+              ]
+            },
+            "0xC4": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "車載電池の放電可能残容量3",
+                "en": "Remaining dischargeable capacity of vehicle mounted battery 3"
+              },
+              "shortName": "remainingDischargeableCapacity3",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-100%"
+              },
+              "note": {
+                "ja": "車載電池の放電可能残容量1、車載電池の放電可能残容量3 は、電気自動車充放電器に接続された電気自動車から出力される場合、いずれかの搭載を必須とする。応答できない状況にある場合、不可応答を返す。",
+                "en": "The installation of \"Remaining dischargeable capacity of vehicle mounted battery 1\" or \"Remaining dischargeable capacity of vehicle mounted battery 3\" is mandatory in case of output from an electric vehicle connected to an electric vehicle charger/discharger. Where no response can be returned, \"Response impossible\" is returned."
+              }
+            },
+            "0xC5": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "定格充電能力",
+                "en": "Rated charge capacity"
+              },
+              "shortName": "ratedChargeElectricPower",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "W"
+              }
+            },
+            "0xC6": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "定格放電能力",
+                "en": "Rated discharge capacity"
+              },
+              "shortName": "ratedDischargeElectricPower",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "W"
+              }
+            },
+            "0xC7": {
+              "oneOf": [
+                {
+                  "validRelease": {
+                    "from": "D",
+                    "to": "F"
+                  },
+                  "propertyName": {
+                    "ja": "車両接続・充放電可否状態",
+                    "en": "Vehicle connection and chargeable/dischargeable status"
+                  },
+                  "shortName": "chargeDischargeStatus",
+                  "accessRule": {
+                    "get": "required",
+                    "set": "notApplicable",
+                    "inf": "required"
+                  },
+                  "atomic": "0xCD",
+                  "data": {
+                    "type": "state",
+                    "size": 1,
+                    "enum": [
+                      {
+                        "edt": "0x30",
+                        "name": "notConnected",
+                        "descriptions": {
+                          "ja": "車両未接続",
+                          "en": "Not Connected"
+                        }
+                      },
+                      {
+                        "edt": "0x40",
+                        "name": "connected",
+                        "descriptions": {
+                          "ja": "車両接続・充電不可・放電不可",
+                          "en": "Connected"
+                        }
+                      },
+                      {
+                        "edt": "0x41",
+                        "name": "chargeable",
+                        "descriptions": {
+                          "ja": "車両接続・充電可・放電不可",
+                          "en": "Chargeable"
+                        }
+                      },
+                      {
+                        "edt": "0x42",
+                        "name": "dischargeable",
+                        "descriptions": {
+                          "ja": "車両接続・充電不可・放電可",
+                          "en": "Dischargeable"
+                        }
+                      },
+                      {
+                        "edt": "0x43",
+                        "name": "chargeableDischargeable",
+                        "descriptions": {
+                          "ja": "車両接続・充電可・放電可",
+                          "en": "Chargeable and Dischargeable"
+                        }
+                      }
+                    ]
+                  },
+                  "note": {
+                    "ja": "Atomic operation with EPC=0xCD",
+                    "en": "Atomic operation with EPC=0xCD"
+                  }
+                },
+                {
+                  "validRelease": {
+                    "from": "G",
+                    "to": "I"
+                  },
+                  "propertyName": {
+                    "ja": "車両接続・充放電可否状態",
+                    "en": "Vehicle connection and chargeable/dischargeable status"
+                  },
+                  "shortName": "chargeDischargeStatus",
+                  "accessRule": {
+                    "get": "required",
+                    "set": "notApplicable",
+                    "inf": "required"
+                  },
+                  "atomic": "0xCD",
+                  "data": {
+                    "type": "state",
+                    "size": 1,
+                    "enum": [
+                      {
+                        "edt": "0x30",
+                        "name": "notConnected",
+                        "descriptions": {
+                          "ja": "車両未接続",
+                          "en": "Not Connected"
+                        }
+                      },
+                      {
+                        "edt": "0x40",
+                        "name": "connected",
+                        "descriptions": {
+                          "ja": "車両接続・充電不可・放電不可",
+                          "en": "Connected"
+                        }
+                      },
+                      {
+                        "edt": "0x41",
+                        "name": "chargeable",
+                        "descriptions": {
+                          "ja": "車両接続・充電可・放電不可",
+                          "en": "Chargeable"
+                        }
+                      },
+                      {
+                        "edt": "0x42",
+                        "name": "dischargeable",
+                        "descriptions": {
+                          "ja": "車両接続・充電不可・放電可",
+                          "en": "Dischargeable"
+                        }
+                      },
+                      {
+                        "edt": "0x43",
+                        "name": "chargeableDischargeable",
+                        "descriptions": {
+                          "ja": "車両接続・充電可・放電可",
+                          "en": "Chargeable and Dischargeable"
+                        }
+                      },
+                      {
+                        "edt": "0xFF",
+                        "name": "undefined",
+                        "descriptions": {
+                          "ja": "不定",
+                          "en": "Undefined"
+                        }
+                      }
+                    ]
+                  },
+                  "note": {
+                    "ja": "Atomic operation with EPC=0xCD",
+                    "en": "Atomic operation with EPC=0xCD"
+                  }
+                },
+                {
+                  "validRelease": {
+                    "from": "J",
+                    "to": "latest"
+                  },
+                  "propertyName": {
+                    "ja": "車両接続・充放電可否状態",
+                    "en": "Vehicle connection and chargeable/dischargeable status"
+                  },
+                  "shortName": "chargeDischargeStatus",
+                  "accessRule": {
+                    "get": "required",
+                    "set": "notApplicable",
+                    "inf": "required"
+                  },
+                  "atomic": "0xCD",
+                  "data": {
+                    "type": "state",
+                    "size": 1,
+                    "enum": [
+                      {
+                        "edt": "0x30",
+                        "name": "notConnected",
+                        "descriptions": {
+                          "ja": "車両未接続",
+                          "en": "Not Connected"
+                        }
+                      },
+                      {
+                        "edt": "0x40",
+                        "name": "connected",
+                        "descriptions": {
+                          "ja": "車両接続・充電不可・放電不可",
+                          "en": "Connected"
+                        }
+                      },
+                      {
+                        "edt": "0x41",
+                        "name": "chargeable",
+                        "descriptions": {
+                          "ja": "車両接続・充電可・放電不可",
+                          "en": "Chargeable"
+                        }
+                      },
+                      {
+                        "edt": "0x42",
+                        "name": "dischargeable",
+                        "descriptions": {
+                          "ja": "車両接続・充電不可・放電可",
+                          "en": "Dischargeable"
+                        }
+                      },
+                      {
+                        "edt": "0x43",
+                        "name": "chargeableDischargeable",
+                        "descriptions": {
+                          "ja": "車両接続・充電可・放電可",
+                          "en": "Chargeable and Dischargeable"
+                        }
+                      },
+                      {
+                        "edt": "0x44",
+                        "name": "unknown",
+                        "descriptions": {
+                          "ja": "車両接続・充電可否不明",
+                          "en": "Unknown of Chargeability"
+                        }
+                      },
+                      {
+                        "edt": "0xFF",
+                        "name": "undefined",
+                        "descriptions": {
+                          "ja": "不定",
+                          "en": "Undefined"
+                        }
+                      }
+                    ]
+                  },
+                  "note": {
+                    "ja": "Atomic operation with EPC=0xCD",
+                    "en": "Atomic operation with EPC=0xCD"
+                  }
+                }
+              ]
+            },
+            "0xC8": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "最小最大充電電力値",
+                "en": "Minimum/maximum charging electric energy"
+              },
+              "shortName": "minimumAndMaximumChargingElectricPower",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "minValue",
+                    "element": {
+                      "$ref": "#/definitions/number_0-999999999",
+                      "unit": "W"
+                    },
+                    "descriptions": {
+                      "ja": "最小充電電力値",
+                      "en": "Minimum charging electric energy"
+                    }
+                  },
+                  {
+                    "name": "maxValue",
+                    "element": {
+                      "$ref": "#/definitions/number_0-999999999",
+                      "unit": "W"
+                    },
+                    "descriptions": {
+                      "ja": "最大充電電力値",
+                      "en": "Maxmum charging electric energy"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xC9": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "最小最大放電電力値",
+                "en": "Minimum/maximum discharging electric energy"
+              },
+              "shortName": "minimumAndMaximumDischargingElectricPower",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "minValue",
+                    "element": {
+                      "$ref": "#/definitions/number_0-999999999",
+                      "unit": "W"
+                    },
+                    "descriptions": {
+                      "ja": "最小放電電力値",
+                      "en": "Minimum discharging electric energy"
+                    }
+                  },
+                  {
+                    "name": "maxValue",
+                    "element": {
+                      "$ref": "#/definitions/number_0-999999999",
+                      "unit": "W"
+                    },
+                    "descriptions": {
+                      "ja": "最大放電電力値",
+                      "en": "Maximum discharging electric energy"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xCA": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "最小最大充電電流値",
+                "en": "Minimum/maximum charging current"
+              },
+              "shortName": "minimumAndMaximumChargingCurrent",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "minValue",
+                    "element": {
+                      "$ref": "#/definitions/number_0-32766",
+                      "unit": "A",
+                      "multipleOf": 0.1
+                    },
+                    "descriptions": {
+                      "ja": "最小充電電流値",
+                      "en": "Minimum charging current"
+                    }
+                  },
+                  {
+                    "name": "maxValue",
+                    "element": {
+                      "$ref": "#/definitions/number_0-32766",
+                      "unit": "A",
+                      "multipleOf": 0.1
+                    },
+                    "descriptions": {
+                      "ja": "最大充電電流値",
+                      "en": "Maximum charging current"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xCB": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "最小最大放電電流値",
+                "en": "Minimum/maximum discharging current"
+              },
+              "shortName": "minimumAndMaximumDischargingCurrent",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "minValue",
+                    "element": {
+                      "$ref": "#/definitions/number_0-32766",
+                      "unit": "A",
+                      "multipleOf": 0.1
+                    },
+                    "descriptions": {
+                      "ja": "最小放電電流値",
+                      "en": "Minimum discharging current"
+                    }
+                  },
+                  {
+                    "name": "maxValue",
+                    "element": {
+                      "$ref": "#/definitions/number_0-32766",
+                      "unit": "A",
+                      "multipleOf": 0.1
+                    },
+                    "descriptions": {
+                      "ja": "最大放電電流値",
+                      "en": "Maximum discharging current"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xCC": {
+              "validRelease": {
+                "from": "G",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "充放電器タイプ",
+                "en": "Charger/Discharger type"
+              },
+              "shortName": "equipmentType",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x11",
+                    "name": "AC_CPLT",
+                    "descriptions": {
+                      "ja": "AC_CPLT",
+                      "en": "AC_CPLT"
+                    }
+                  },
+                  {
+                    "edt": "0x12",
+                    "name": "AC_HLC_Charge",
+                    "descriptions": {
+                      "ja": "AC_HLC（充電のみ）",
+                      "en": "AC_HLC_Charge"
+                    }
+                  },
+                  {
+                    "edt": "0x13",
+                    "name": "AC_HLC_ChargeDischarge",
+                    "descriptions": {
+                      "ja": "AC_HLC（充放電可）",
+                      "en": "AC_HLC_ChargeDischarge"
+                    }
+                  },
+                  {
+                    "edt": "0x21",
+                    "name": "DC_AA_Charge",
+                    "descriptions": {
+                      "ja": "DCタイプ_AA（充電のみ）",
+                      "en": "DC_AA_Charge"
+                    }
+                  },
+                  {
+                    "edt": "0x22",
+                    "name": "DC_AA_ChargeDischarge",
+                    "descriptions": {
+                      "ja": "DCタイプ_AA（充放電可）",
+                      "en": "DC_AA_ChargeDischarge"
+                    }
+                  },
+                  {
+                    "edt": "0x23",
+                    "name": "DC_AA_Discharge",
+                    "descriptions": {
+                      "ja": "DCタイプ_AA（放電のみ）",
+                      "en": "DC_AA_Discharge"
+                    }
+                  },
+                  {
+                    "edt": "0x31",
+                    "name": "DC_BB_Charge",
+                    "descriptions": {
+                      "ja": "DCタイプ_BB（充電のみ）",
+                      "en": "DC_BB_Charge"
+                    }
+                  },
+                  {
+                    "edt": "0x32",
+                    "name": "DC_BB_ChargeDischarge",
+                    "descriptions": {
+                      "ja": "DCタイプ_BB（充放電可）",
+                      "en": "DC_BB_ChargeDischarge"
+                    }
+                  },
+                  {
+                    "edt": "0x33",
+                    "name": "DC_BB_Discharge",
+                    "descriptions": {
+                      "ja": "DCタイプ_BB（放電のみ）",
+                      "en": "DC_BB_Discharge"
+                    }
+                  },
+                  {
+                    "edt": "0x41",
+                    "name": "DC_EE_Charge",
+                    "descriptions": {
+                      "ja": "DCタイプ_EE（充電のみ）",
+                      "en": "DC_EE_Charge"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "DC_EE_ChargeDischarge",
+                    "descriptions": {
+                      "ja": "DCタイプ_EE（充放電可）",
+                      "en": "DC_EE_ChargeDischarge"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "DC_EE_Discharge",
+                    "descriptions": {
+                      "ja": "DCタイプ_EE（放電のみ）",
+                      "en": "DC_EE_Discharge"
+                    }
+                  },
+                  {
+                    "edt": "0x51",
+                    "name": "DC_FF_Charge",
+                    "descriptions": {
+                      "ja": "DCタイプ_FF（充電のみ）",
+                      "en": "DC_FF_Charge"
+                    }
+                  },
+                  {
+                    "edt": "0x52",
+                    "name": "DC_FF_ChargeDischarge",
+                    "descriptions": {
+                      "ja": "DCタイプ_FF（充放電可）",
+                      "en": "DC_FF_ChargeDischarge"
+                    }
+                  },
+                  {
+                    "edt": "0x53",
+                    "name": "DC_FF_Discharge",
+                    "descriptions": {
+                      "ja": "DCタイプ_FF（放電のみ）",
+                      "en": "DC_FF_Discharge"
+                    }
+                  }
+                ]
+              },
+              "note": {
+                "ja": "充放電器タイプのDC_タイプAA、DC_タイプBB、DC_タイプEE 及びDC_タイプFFは、IEC 62196-3 にて規定されているConfiguration AA、Configuration BB、Configuration EE 及びConfiguration FF に記載の形状のコネクタを有する電気自動車充放電器とする。",
+                "en": "DC_type AA, DC_type BB, DC_type EE and DC_type FF chargers/dischargers shall be electric vehicle chargers/dischargers with connectors of the shape specified in Configuration AA, Configuration BB, Configuration EE and Configuration FF as defined in IEC 62196-3."
+              }
+            },
+            "0xCD": {
+              "validRelease": {
+                "from": "G",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "車両接続確認",
+                "en": "Vehicle connection confirmation"
+              },
+              "shortName": "vehicleConnectionConfirmation",
+              "accessRule": {
+                "get": "notApplicable",
+                "set": "required",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x10",
+                    "name": "confirmation",
+                    "descriptions": {
+                      "ja": "接続確認",
+                      "en": "Connection confirmation"
+                    }
+                  }
+                ]
+              },
+              "note": {
+                "ja": "車両接続確認は充放電器タイプがDC_タイプAA の場合のみ必須とする。",
+                "en": "Vehicle connection confirmation is only mandatory when the charger/discharger type is DC_type AA."
+              }
+            },
+            "0xCE": {
+              "validRelease": {
+                "from": "J",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "車載電池の充電可能容量値",
+                "en": "Chargeable capacity of vehicle mounted battery"
+              },
+              "shortName": "chargeableCapacity",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "Wh"
+              },
+              "note": {
+                "ja": "車載電池の充電可能容量値、車載電池の充電可能残容量値は電気自動車充放電器に接続された電気自動車から出力される場合、搭載を必須とする。",
+                "en": "The installation of \"chargeable capacity of vehicle mounted battery\" and \"chargeable capacity of vehicle mounted battery\" is mandatory in case of output from an electric vehicle connected to an electric vehicle charger/discharger."
+              }
+            },
+            "0xCF": {
+              "validRelease": {
+                "from": "J",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "車載電池の充電可能残容量値",
+                "en": "Remaining chargeable capacity of vehicle mounted battery"
+              },
+              "shortName": "remainingChargeableCapacity",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "Wh"
+              },
+              "note": {
+                "ja": "車載電池の充電可能容量値、車載電池の充電可能残容量値は電気自動車充放電器に接続された電気自動車から出力される場合、搭載を必須とする。",
+                "en": "The installation of \"chargeable capacity of vehicle mounted battery\" and \"chargeable capacity of vehicle mounted battery\" is mandatory in case of output from an electric vehicle connected to an electric vehicle charger/discharger."
+              }
+            },
+            "0xD0": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "車載電池の使用容量値1",
+                "en": "Used capacity of vehicle mounted battery 1 "
+              },
+              "shortName": "usedCapacity1",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "Wh"
+              },
+              "note": {
+                "ja": "車載電池の使用容量値1 は、電気自動車充放電器に接続された電気自動車から出力される場合、搭載を必須とする。応答できない状況にある場合、不可応答を返す。",
+                "en": "The installation of \"Used capacity of vehicle mounted battery 1\" is mandatory in case of output from an electric vehicle connected to an electric vehicle charger/discharger. Where no response can be returned, \"Response impossible\" is returned."
+              }
+            },
+            "0xD1": {
+              "oneOf": [
+                {
+                  "validRelease": {
+                    "from": "D",
+                    "to": "F"
+                  },
+                  "propertyName": {
+                    "ja": "車載電池の使用容量値2",
+                    "en": "Used capacity of vehicle mounted battery 2"
+                  },
+                  "shortName": "usedCapacity2",
+                  "accessRule": {
+                    "get": "required_c",
+                    "set": "notApplicable",
+                    "inf": "optional"
+                  },
+                  "data": {
+                    "$ref": "#/definitions/number_0-32766",
+                    "unit": "Ah",
+                    "multipleOf": 0.1
+                  }
+                },
+                {
+                  "validRelease": {
+                    "from": "G",
+                    "to": "latest"
+                  },
+                  "propertyName": {
+                    "ja": "車載電池の使用容量値2",
+                    "en": "Used capacity of vehicle mounted battery 2"
+                  },
+                  "shortName": "usedCapacity2",
+                  "accessRule": {
+                    "get": "optional",
+                    "set": "notApplicable",
+                    "inf": "optional"
+                  },
+                  "data": {
+                    "$ref": "#/definitions/number_0-32766",
+                    "unit": "Ah",
+                    "multipleOf": 0.1
+                  }
+                }
+              ]
+            },
+            "0xD2": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "定格電圧",
+                "en": "Rated voltage"
+              },
+              "shortName": "ratedVoltage",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-32766",
+                "unit": "V"
+              }
+            },
+            "0xD3": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "瞬時充放電電力計測値",
+                "en": "Measured instantaneous charging/discharging electric energy"
+              },
+              "shortName": "instantaneousElectricPower",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_-999999999-999999999",
+                "unit": "W"
+              }
+            },
+            "0xD4": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "瞬時充放電電流計測値",
+                "en": "Measured instantaneous charging/discharging current"
+              },
+              "shortName": "instantaneousCurrent",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_-32767-32766",
+                "unit": "Ah",
+                "multipleOf": 0.1
+              }
+            },
+            "0xD5": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "瞬時充放電電圧計測値",
+                "en": "Measured instantaneous charging/discharging voltage"
+              },
+              "shortName": "instantaneousVoltage",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_-32767-32766",
+                "unit": "V"
+              }
+            },
+            "0xD6": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算放電電力量計測値",
+                "en": "Measured cumulative amount of discharging electric energy"
+              },
+              "shortName": "cumulativeDischargingElectricEnergy",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "kWh",
+                "multipleOf": 0.001
+              }
+            },
+            "0xD7": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算放電電力量リセット設定",
+                "en": "Cumulative amount of discharging electric energy reset setting"
+              },
+              "shortName": "cumulativeDischargingElectricEnergyReset",
+              "accessRule": {
+                "get": "notApplicable",
+                "set": "optional",
+                "inf": "notApplicable"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x00",
+                    "name": "reset",
+                    "descriptions": {
+                      "ja": "リセット",
+                      "en": "Reset"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xD8": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算充電電力量計測値",
+                "en": "Measured cumulative amount of charging electric energy"
+              },
+              "shortName": "cumulativeChargingElectricEnergy",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "kWh",
+                "multipleOf": 0.001
+              }
+            },
+            "0xD9": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算充電電力量リセット設定",
+                "en": "Cumulative amount of charging electric energy reset setting"
+              },
+              "shortName": "cumulativeChargingElectricEnergyReset",
+              "accessRule": {
+                "get": "notApplicable",
+                "set": "optional",
+                "inf": "notApplicable"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x00",
+                    "name": "reset",
+                    "descriptions": {
+                      "ja": "リセット",
+                      "en": "Reset"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xDA": {
+              "oneOf": [
+                {
+                  "validRelease": {
+                    "from": "D",
+                    "to": "F"
+                  },
+                  "propertyName": {
+                    "ja": "運転モード設定",
+                    "en": "Operation mode setting"
+                  },
+                  "shortName": "operationMode",
+                  "accessRule": {
+                    "get": "required",
+                    "set": "required",
+                    "inf": "required"
+                  },
+                  "data": {
+                    "type": "state",
+                    "size": 1,
+                    "enum": [
+                      {
+                        "edt": "0x41",
+                        "name": "rapidCharge",
+                        "descriptions": {
+                          "ja": "急速充電",
+                          "en": "Rapid charge"
+                        }
+                      },
+                      {
+                        "edt": "0x42",
+                        "name": "charge",
+                        "descriptions": {
+                          "ja": "充電",
+                          "en": "Charge"
+                        }
+                      },
+                      {
+                        "edt": "0x43",
+                        "name": "discharge",
+                        "descriptions": {
+                          "ja": "放電",
+                          "en": "Discharge"
+                        }
+                      },
+                      {
+                        "edt": "0x44",
+                        "name": "standby",
+                        "descriptions": {
+                          "ja": "待機",
+                          "en": "standby"
+                        }
+                      },
+                      {
+                        "edt": "0x45",
+                        "name": "test",
+                        "descriptions": {
+                          "ja": "テスト",
+                          "en": "Test"
+                        }
+                      },
+                      {
+                        "edt": "0x40",
+                        "name": "other",
+                        "descriptions": {
+                          "ja": "その他",
+                          "en": "Other"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "validRelease": {
+                    "from": "G",
+                    "to": "latest"
+                  },
+                  "propertyName": {
+                    "ja": "運転モード設定",
+                    "en": "Operation mode setting"
+                  },
+                  "shortName": "operationMode",
+                  "accessRule": {
+                    "get": "required",
+                    "set": "required",
+                    "inf": "required"
+                  },
+                  "data": {
+                    "type": "state",
+                    "size": 1,
+                    "enum": [
+                      {
+                        "edt": "0x42",
+                        "name": "charge",
+                        "descriptions": {
+                          "ja": "充電",
+                          "en": "Charge"
+                        }
+                      },
+                      {
+                        "edt": "0x43",
+                        "name": "discharge",
+                        "descriptions": {
+                          "ja": "放電",
+                          "en": "Discharge"
+                        }
+                      },
+                      {
+                        "edt": "0x44",
+                        "name": "standby",
+                        "descriptions": {
+                          "ja": "待機",
+                          "en": "standby"
+                        }
+                      },
+                      {
+                        "edt": "0x47",
+                        "name": "idle",
+                        "descriptions": {
+                          "ja": "停止",
+                          "en": "Idle"
+                        }
+                      },
+                      {
+                        "edt": "0x40",
+                        "name": "other",
+                        "descriptions": {
+                          "ja": "その他",
+                          "en": "Other"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "0xDB": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "系統連系状態",
+                "en": "System-interconnected type"
+              },
+              "shortName": "powerSystemInterconnectionStatus",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x00",
+                    "name": "reversePowerFlowAcceptable",
+                    "descriptions": {
+                      "ja": "系統連系（逆潮流可）",
+                      "en": "Grid connection(reverse flow acceptable)"
+                    }
+                  },
+                  {
+                    "edt": "0x01",
+                    "name": "independent",
+                    "descriptions": {
+                      "ja": "独立",
+                      "en": "Independent operation"
+                    }
+                  },
+                  {
+                    "edt": "0x02",
+                    "name": "reversePowerFlowNotAcceptable",
+                    "descriptions": {
+                      "ja": "系統連系（逆潮流不可）",
+                      "en": "Grid connection(reverse flow not acceptable)"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xE2": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "車載電池の電池残容量1",
+                "en": "Remaining stored electricity of vehicle mounted battery1"
+              },
+              "shortName": "remainingCapacity1",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "Wh"
+              },
+              "note": {
+                "ja": "車載電池の電池残容量1、車載電池の電池残容量3 は、電気自動車充放電器に接続された電気自動車から出力される場合、いずれかの搭載を必須とする。応答できない状況にある場合、不可応答を返す。",
+                "en": "The installation of \"Remaining stored electricity of vehicle mounted battery 1\" or \"Remaining stored electricity of vehicle mounted battery 3\" is mandatory in case of output from an electric vehicle connected to an electric vehicle charger/discharger. Where no response can be returned, \"Response impossible\" is returned."
+              }
+            },
+            "0xE3": {
+              "oneOf": [
+                {
+                  "validRelease": {
+                    "from": "D",
+                    "to": "F"
+                  },
+                  "propertyName": {
+                    "ja": "車載電池の電池残容量2",
+                    "en": "Remaining stored electricity of vehicle mounted battery2"
+                  },
+                  "shortName": "remainingCapacity2",
+                  "accessRule": {
+                    "get": "required_c",
+                    "set": "notApplicable",
+                    "inf": "optional"
+                  },
+                  "data": {
+                    "$ref": "#/definitions/number_0-32766",
+                    "unit": "Ah",
+                    "multipleOf": 0.1
+                  }
+                },
+                {
+                  "validRelease": {
+                    "from": "G",
+                    "to": "latest"
+                  },
+                  "propertyName": {
+                    "ja": "車載電池の電池残容量2",
+                    "en": "Remaining stored electricity of vehicle mounted battery2"
+                  },
+                  "shortName": "remainingCapacity2",
+                  "accessRule": {
+                    "get": "optional",
+                    "set": "notApplicable",
+                    "inf": "optional"
+                  },
+                  "data": {
+                    "$ref": "#/definitions/number_0-32766",
+                    "unit": "Ah",
+                    "multipleOf": 0.1
+                  }
+                }
+              ]
+            },
+            "0xE4": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "車載電池の電池残容量3",
+                "en": "Remaining stored electricity of vehicle mounted battery3"
+              },
+              "shortName": "remainingCapacity3",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-100%"
+              },
+              "note": {
+                "ja": "車載電池の電池残容量1、車載電池の電池残容量3 は、電気自動車充放電器に接続された電気自動車から出力される場合、いずれかの搭載を必須とする。応答できない状況にある場合、不可応答を返す。",
+                "en": "The installation of \"Remaining stored electricity of vehicle mounted battery 1\" or \"Remaining stored electricity of vehicle mounted battery 3\" is mandatory in case of output from an electric vehicle connected to an electric vehicle charger/discharger. Where no response can be returned, \"Response impossible\" is returned."
+              }
+            },
+            "0xE6": {
+              "validRelease": {
+                "from": "J",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "車両ID",
+                "en": "Vehcle ID"
+              },
+              "shortName": "vehicleId",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "dataSize",
+                    "element": {
+                      "$ref": "#/definitions/number_0-24"
+                    },
+                    "descriptions": {
+                      "ja": "車両ＩＤ情報データサイズ。ＩＤ情報がない場合は、0x00",
+                      "en": "data size for vehicle ID information. 0x00 if no vehicle ID is available."
+                    }
+                  },
+                  {
+                    "name": "id",
+                    "element": {
+                      "type": "raw",
+                      "minSize": 0,
+                      "maxSize": 24
+                    },
+                    "descriptions": {
+                      "ja": "車両ＩＤ情報。車両毎に規定されたデータ。",
+                      "en": "vehicle ID informationdata specified for each vehicle."
+                    }
+                  }
+                ]
+              }
+            },
+            "0xE7": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "充電量設定値1",
+                "en": "Charging amount setting 1"
+              },
+              "shortName": "targetChargingElectricEnergy1",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "$ref": "#/definitions/number_0-999999999",
+                    "unit": "Wh"
+                  },
+                  {
+                    "type": "state",
+                    "size": 4,
+                    "enum": [
+                      {
+                        "edt": "0x00000000",
+                        "name": "undefined",
+                        "descriptions": {
+                          "ja": "未設定",
+                          "en": "Not set"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "note": {
+                "ja": "充電量設定値1（または2）を使用する場合は充電量設定値2（または1）を使用しない。",
+                "en": "When \"Charging amount setting 1 (or 2)\" is used, \"Charging amount setting 2 (or 1)\" shall not be used."
+              }
+            },
+            "0xE9": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "充電量設定値2",
+                "en": "Charging amount setting 2"
+              },
+              "shortName": "targetChargingElectricEnergy2",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "$ref": "#/definitions/number_0-32766",
+                    "unit": "Ah",
+                    "multipleOf": 0.1
+                  },
+                  {
+                    "type": "state",
+                    "size": 4,
+                    "enum": [
+                      {
+                        "edt": "0x00000000",
+                        "name": "undefined",
+                        "descriptions": {
+                          "ja": "未設定",
+                          "en": "Not set"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "note": {
+                "ja": "充電量設定値1（または2）を使用する場合は充電量設定値2（または1）を使用しない。",
+                "en": "When \"Charging amount setting 1 (or 2)\" is used, \"Charging amount setting 2 (or 1)\" shall not be used."
+              }
+            },
+            "0xEA": {
+              "validRelease": {
+                "from": "J",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "放電量設定値",
+                "en": "Discharging electric energy setting"
+              },
+              "shortName": "targetDischargingElectricEnergy",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "$ref": "#/definitions/number_0-999999999",
+                    "unit": "Wh"
+                  },
+                  {
+                    "type": "state",
+                    "size": 4,
+                    "enum": [
+                      {
+                        "edt": "0x00000000",
+                        "name": "undefined",
+                        "descriptions": {
+                          "ja": "未設定",
+                          "en": "Not set"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "0xEB": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "充電電力設定値",
+                "en": "Charging electric energy setting"
+              },
+              "shortName": "chargingElectricPower",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "W"
+              }
+            },
+            "0xEC": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "放電電力設定値",
+                "en": "Discharging electric energy setting"
+              },
+              "shortName": "dischargingElectricPower",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999999",
+                "unit": "W"
+              }
+            },
+            "0xED": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "充電電流設定値",
+                "en": "Charging current setting"
+              },
+              "shortName": "chargingCurrent",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-65533",
+                "unit": "A",
+                "multipleOf": 0.1
+              }
+            },
+            "0xEE": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "放電電流設定値",
+                "en": "Discharging current setting"
+              },
+              "shortName": "dischargingCurrent",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-65533",
+                "unit": "A",
+                "multipleOf": 0.1
+              }
+            },
+            "0xEF": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "定格電圧（独立時）",
+                "en": "Rated voltage(Independent)"
+              },
+              "shortName": "ratedVoltageOfIndependentOperation",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-32766",
+                "unit": "V"
+              }
+            }
+          }
+        }
+      ]
+    },
     "0x0280": {
       "validRelease": {
         "from": "A",
@@ -15449,7 +21814,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "積算電力量計測値履歴1",
+            "ja": "積算電力量計測値履歴１",
             "en": "Cumulative amounts of electric energy measurement log 1"
           },
           "shortName": "cumulativeElectricEnergyLog1",
@@ -15533,7 +21898,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "計測チャンネル数（片方向）",
-            "en": "Number of measurement channels (simplex)"
+            "en": "Number of measurement channels(simplex)"
           },
           "shortName": "numberOfMeasurementChannelsSimplex",
           "accessRule": {
@@ -15571,7 +21936,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測チャンネル範囲指定（片方向）",
-            "en": "Channel range specification for cumulative amount of electric power consumption measurement (simplex)"
+            "en": "Channel range specification for cumulative amount of electric power consumption measurement(simplex)"
           },
           "shortName": "channelRangeForCumulativeElectricEnergySimplex",
           "accessRule": {
@@ -15650,7 +22015,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測値リスト（片方向）",
-            "en": "Measured cumulative amount of electric power consumption list (simplex)"
+            "en": "Measured cumulative amount of electric power consumption list(simplex)"
           },
           "shortName": "cumulativeElectricEnergyListSimplex",
           "accessRule": {
@@ -15771,7 +22136,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電流計測チャンネル範囲指定（片方向）",
-            "en": "Channel range specification for instantaneous current measurement (simplex)"
+            "en": "Channel range specification for instantaneous current measurement(simplex)"
           },
           "shortName": "channelRangeForInstantaneousCurrentSimplex",
           "accessRule": {
@@ -15850,7 +22215,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電流計測値リスト（片方向）",
-            "en": "Measured instantaneous current list (simplex)"
+            "en": "Measured instantaneous current list(simplex)"
           },
           "shortName": "instantaneousCurrentListSimplex",
           "accessRule": {
@@ -16013,7 +22378,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電力計測チャンネル範囲指定（片方向）",
-            "en": "Channel range specification for instantaneous power consumption measurement (simplex)"
+            "en": "Channel range specification for instantaneous power consumption measurement(simplex)"
           },
           "shortName": "channelRangeForInstantaneousElectricPowerSimplex",
           "accessRule": {
@@ -16092,7 +22457,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電力計測値リスト（片方向）",
-            "en": "Measured instantaneous power consumption list (simplex)"
+            "en": "Measured instantaneous power consumption list(simplex)"
           },
           "shortName": "instantaneousElectricPowerListSimplex",
           "accessRule": {
@@ -16211,7 +22576,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "計測チャンネル数（双方向）",
-            "en": "Number of measurement channels (duplex)"
+            "en": "Number of measurement channels(duplex)"
           },
           "shortName": "numberOfMeasurementChannelsDuplex",
           "accessRule": {
@@ -16249,7 +22614,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測チャンネル範囲指定（双方向）",
-            "en": "Channel range specification for cumulative amount of electric power consumption measurement (duplex)"
+            "en": "Channel range specification for cumulative amount of electric power consumption measurement(duplex)"
           },
           "shortName": "channelRangeForCumulativeElectricEnergyDuplex",
           "accessRule": {
@@ -16328,7 +22693,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測値リスト（双方向）",
-            "en": "Measured cumulative amount of electric power consumption list (duplex)"
+            "en": "Measured cumulative amount of electric power consumption list(duplex)"
           },
           "shortName": "cumulativeElectricEnergyListDuplex",
           "accessRule": {
@@ -16493,7 +22858,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電流計測チャンネル範囲指定（双方向）",
-            "en": "Channel range specification for instantaneous current measurement (duplex)"
+            "en": "Channel range specification for instantaneous current measurement(duplex)"
           },
           "shortName": "channelRangeForInstantaneousCurrentDuplex",
           "accessRule": {
@@ -16572,7 +22937,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電流計測値リスト（双方向）",
-            "en": "Measured instantaneous current list (duplex)"
+            "en": "Measured instantaneous current list(duplex)"
           },
           "shortName": "instantaneousCurrentListDuplex",
           "accessRule": {
@@ -16735,7 +23100,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電力計測チャンネル範囲指定（双方向）",
-            "en": "Channel range specification for instantaneous power consumption measurement (duplex)"
+            "en": "Channel range specification for instantaneous power consumption measurement(duplex)"
           },
           "shortName": "channelRangeForInstantaneousElectricPowerDuplex",
           "accessRule": {
@@ -16814,7 +23179,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電力計測値リスト（双方向）",
-            "en": "Measured instantaneous power consumption list (duplex)"
+            "en": "Measured instantaneous power consumption list(duplex)"
           },
           "shortName": "instantaneousElectricPowerListDuplex",
           "accessRule": {
@@ -16933,7 +23298,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測値（正方向）",
-            "en": "Measured cumulative amount of electric energy (normal direction)"
+            "en": "Measured cumulative amount of electric energy(normal direction)"
           },
           "shortName": "normalDirectionCumulativeElectricEnergy",
           "accessRule": {
@@ -16977,7 +23342,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測値（逆方向）",
-            "en": "Measured cumulative amount of electric energy (reverse direction)"
+            "en": "Measured cumulative amount of electric energy(reverse direction)"
           },
           "shortName": "reverseDirectionCumulativeElectricEnergy",
           "accessRule": {
@@ -17079,7 +23444,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測値履歴（正方向）",
-            "en": "Historical data of measured cumulative amounts of electric energy (normal direction)"
+            "en": "Historical data of measured cumulative amounts of electric energy(normal direction)"
           },
           "shortName": "normalDirectionCumulativeElectricEnergyLog",
           "accessRule": {
@@ -17116,7 +23481,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算履歴収集日",
-                  "en": "The day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
+                  "en": "the day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
                 }
               },
               {
@@ -17157,7 +23522,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算電力量(8桁)の計測結果履歴",
-                  "en": "The historical data of measured cumulative amounts of electric energy (8 digits)"
+                  "en": "the historical data of measured cumulative amounts of electric energy (8 digits)"
                 }
               }
             ]
@@ -17211,7 +23576,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算履歴収集日",
-                  "en": "The day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
+                  "en": "the day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
                 }
               },
               {
@@ -17252,7 +23617,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算電力量(8桁)の計測結果履歴",
-                  "en": "The historical data of measured cumulative amounts of electric energy (8 digits)"
+                  "en": "the historical data of measured cumulative amounts of electric energy (8 digits)"
                 }
               }
             ]
@@ -18081,875 +24446,1273 @@ const jsonData = {
       }
     },
     "0x0288": {
-      "validRelease": {
-        "from": "F",
-        "to": "latest"
-      },
-      "className": {
-        "ja": "低圧スマート電力量メータ",
-        "en": "Low-voltage smart electric energy meter"
-      },
-      "shortName": "lvSmartElectricEnergyMeter",
-      "elProperties": {
-        "0xD3": {
+      "oneOf": [
+        {
           "validRelease": {
-            "from": "F",
-            "to": "latest"
+            "from": "A",
+            "to": "E"
           },
-          "propertyName": {
-            "ja": "係数",
-            "en": "Coefficient"
+          "className": {
+            "ja": "スマート電力量メータ",
+            "en": "Smart electric energy meter"
           },
-          "shortName": "coefficient",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/number_0-999999"
-          }
-        },
-        "0xD7": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算電力量有効桁数",
-            "en": "Number of effective digits for cumulative amounts of electric energy"
-          },
-          "shortName": "effectiveDigitsOfElectricEnergy",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/number_1-8",
-            "unit": "digit"
-          }
-        },
-        "0xE0": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算電力量計測値（正方向計測値）",
-            "en": "Measured cumulative amount of electric energy (normal direction)"
-          },
-          "shortName": "normalDirectionCumulativeElectricEnergy",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "oneOf": [
-              {
-                "$ref": "#/definitions/number_0-99999999",
-                "unit": "kWh",
-                "coefficient": [
-                  "0xD3",
-                  "0xE1"
-                ],
-                "overflowCode": false,
-                "underflowCode": false
+          "elProperties": {
+            "0x80": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
               },
-              {
-                "type": "state",
-                "size": 4,
-                "enum": [
-                  {
-                    "edt": "0xFFFFFFFE",
-                    "name": "noData",
-                    "descriptions": {
-                      "ja": "No data",
-                      "en": "No data"
-                    },
-                    "readOnly": true
+              "propertyName": {
+                "ja": "動作状態",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "required",
+                "set": "optional",
+                "inf": "required"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xD0": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "電力区分",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xD1": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "所有者区分",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xD2": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "相線式設定状態",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xD3": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "合成変成比",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xD4": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "合成変成比の倍率",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xD5": {
+              "oneOf": [
+                {
+                  "validRelease": {
+                    "from": "A",
+                    "to": "A"
+                  },
+                  "propertyName": {
+                    "ja": "計器認定番号",
+                    "en": ""
+                  },
+                  "accessRule": {
+                    "get": "required",
+                    "set": "notApplicable",
+                    "inf": "optional"
+                  },
+                  "data": {
+                    "$ref": "#/definitions/raw_10"
                   }
-                ]
-              }
-            ]
-          }
-        },
-        "0xE1": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算電力量単位（正方向、逆方向計測値）",
-            "en": "Unit for cumulative amounts of electric energy (normal and reverse directions)"
-          },
-          "shortName": "unitOfElectircEnergy",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "numericValue",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x00",
-                "numericValue": 1
-              },
-              {
-                "edt": "0x01",
-                "numericValue": 0.1
-              },
-              {
-                "edt": "0x02",
-                "numericValue": 0.01
-              },
-              {
-                "edt": "0x03",
-                "numericValue": 0.001
-              },
-              {
-                "edt": "0x04",
-                "numericValue": 0.0001
-              },
-              {
-                "edt": "0x0A",
-                "numericValue": 10
-              },
-              {
-                "edt": "0x0B",
-                "numericValue": 100
-              },
-              {
-                "edt": "0x0C",
-                "numericValue": 1000
-              },
-              {
-                "edt": "0x0D",
-                "numericValue": 10000
-              }
-            ]
-          }
-        },
-        "0xE2": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算電力量計測値履歴1（正方向計測値）",
-            "en": "Historical data of measured cumulative amounts of electric energy 1 (normal direction)"
-          },
-          "shortName": "normalDirectionCumulativeElectricEnergyLog1",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "atomic": "0xE5",
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "day",
-                "element": {
-                  "oneOf": [
-                    {
-                      "$ref": "#/definitions/number_0-99_u16"
-                    },
-                    {
-                      "type": "state",
-                      "size": 2,
-                      "enum": [
-                        {
-                          "edt": "0x00FF",
-                          "name": "defaultValue",
-                          "descriptions": {
-                            "ja": "初期値",
-                            "en": "Default value"
-                          }
-                        }
-                      ]
-                    }
-                  ]
                 },
-                "descriptions": {
-                  "ja": "積算履歴収集日",
-                  "en": "Day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
+                {
+                  "validRelease": {
+                    "from": "B",
+                    "to": "E"
+                  },
+                  "propertyName": {
+                    "ja": "計器認定番号",
+                    "en": ""
+                  },
+                  "accessRule": {
+                    "get": "optional",
+                    "set": "notApplicable",
+                    "inf": "optional"
+                  },
+                  "data": {
+                    "$ref": "#/definitions/raw_10"
+                  }
                 }
+              ]
+            },
+            "0xD6": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
               },
-              {
-                "name": "electricEnergy",
-                "element": {
-                  "type": "array",
-                  "itemSize": 4,
-                  "minItems": 48,
-                  "maxItems": 48,
-                  "items": {
-                    "oneOf": [
+              "propertyName": {
+                "ja": "検定満了年月",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_6"
+              }
+            },
+            "0xD7": {
+              "validRelease": {
+                "from": "B",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "積算電力量有効桁数",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xE0": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "積算電力量計測値（正方向）",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xE1": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "積算電力量単位（正逆方向）",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xE2": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "積算電力量計測値履歴１（正方向）",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_194"
+              }
+            },
+            "0xE3": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "積算電力量計測値（逆方向）",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xE4": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "積算電力量計測値履歴１（逆方向）",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_194"
+              }
+            },
+            "0xE5": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "積算履歴収集日１",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_1"
+              }
+            },
+            "0xE7": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "瞬時電力計測値",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xE8": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "瞬時電流計測値",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xE9": {
+              "validRelease": {
+                "from": "A",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "瞬時電圧計測値",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_4"
+              }
+            },
+            "0xEA": {
+              "validRelease": {
+                "from": "B",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "定時積算電力量計測値（正方向）",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_11"
+              }
+            },
+            "0xEB": {
+              "validRelease": {
+                "from": "B",
+                "to": "E"
+              },
+              "propertyName": {
+                "ja": "定時積算電力量計測値（逆方向）",
+                "en": ""
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/raw_11"
+              }
+            }
+          }
+        },
+        {
+          "validRelease": {
+            "from": "F",
+            "to": "latest"
+          },
+          "className": {
+            "ja": "低圧スマート電力量メータ",
+            "en": "Low-voltage smart electric energy meter"
+          },
+          "shortName": "lvSmartElectricEnergyMeter",
+          "elProperties": {
+            "0xD3": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "係数",
+                "en": "Coefficient"
+              },
+              "shortName": "coefficient",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-999999"
+              }
+            },
+            "0xD7": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算電力量有効桁数",
+                "en": "Number of effective digits for cumulative amounts of electric energy"
+              },
+              "shortName": "effectiveDigitsOfElectricEnergy",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_1-8",
+                "unit": "digit"
+              }
+            },
+            "0xE0": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算電力量計測値（正方向計測値）",
+                "en": "Measured cumulative amount of electric energy(normal direction)"
+              },
+              "shortName": "normalDirectionCumulativeElectricEnergy",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "$ref": "#/definitions/number_0-99999999",
+                    "unit": "kWh",
+                    "coefficient": [
+                      "0xD3",
+                      "0xE1"
+                    ],
+                    "overflowCode": false,
+                    "underflowCode": false
+                  },
+                  {
+                    "type": "state",
+                    "size": 4,
+                    "enum": [
                       {
-                        "$ref": "#/definitions/number_0-99999999",
-                        "unit": "kWh",
-                        "coefficient": [
-                          "0xD3",
-                          "0xE1"
-                        ],
-                        "overflowCode": false,
-                        "underflowCode": false
-                      },
-                      {
-                        "type": "state",
-                        "size": 4,
-                        "enum": [
-                          {
-                            "edt": "0xFFFFFFFE",
-                            "name": "noData",
-                            "descriptions": {
-                              "ja": "No data",
-                              "en": "No data"
-                            },
-                            "readOnly": true
-                          }
-                        ]
+                        "edt": "0xFFFFFFFE",
+                        "name": "noData",
+                        "descriptions": {
+                          "ja": "No data",
+                          "en": "No data"
+                        },
+                        "readOnly": true
                       }
                     ]
                   }
-                },
-                "descriptions": {
-                  "ja": "積算電力量計測値",
-                  "en": "Measured cumulative amounts of electric energy"
-                }
-              }
-            ]
-          },
-          "note": {
-            "ja": "Atomic operation with EPC=0xE5",
-            "en": "Atomic operation with EPC=0xE5"
-          }
-        },
-        "0xE3": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算電力量計測値（逆方向計測値）",
-            "en": "Measured cumulative amounts of electric energy (reverse direction)"
-          },
-          "shortName": "reverseDirectionCumulativeElectricEnergy",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "oneOf": [
-              {
-                "$ref": "#/definitions/number_0-99999999",
-                "unit": "kWh",
-                "coefficient": [
-                  "0xD3",
-                  "0xE1"
-                ],
-                "overflowCode": false,
-                "underflowCode": false
-              },
-              {
-                "type": "state",
-                "size": 4,
-                "enum": [
-                  {
-                    "edt": "0xFFFFFFFE",
-                    "name": "noData",
-                    "descriptions": {
-                      "ja": "No data",
-                      "en": "No data"
-                    },
-                    "readOnly": true
-                  }
                 ]
               }
-            ]
-          }
-        },
-        "0xE4": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算電力量計測値履歴1（逆方向計測値）",
-            "en": "Historical data of measured cumulative amounts of electric energy 1 (reverse direction)"
-          },
-          "shortName": "reverseDirectionCumulativeElectricEnergyLog1",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "atomic": "0xE5",
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "day",
-                "element": {
-                  "oneOf": [
-                    {
-                      "$ref": "#/definitions/number_0-99_u16"
-                    },
-                    {
-                      "type": "state",
-                      "size": 2,
-                      "enum": [
-                        {
-                          "edt": "0x00FF",
-                          "name": "defaultValue",
-                          "descriptions": {
-                            "ja": "初期値",
-                            "en": "Default value"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "descriptions": {
-                  "ja": "積算履歴収集日",
-                  "en": "Day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
-                }
+            },
+            "0xE1": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
               },
-              {
-                "name": "electricEnergy",
-                "element": {
-                  "type": "array",
-                  "itemSize": 4,
-                  "minItems": 48,
-                  "maxItems": 48,
-                  "items": {
-                    "oneOf": [
-                      {
-                        "$ref": "#/definitions/number_0-99999999",
-                        "unit": "kWh",
-                        "coefficient": [
-                          "0xD3",
-                          "0xE1"
-                        ],
-                        "overflowCode": false,
-                        "underflowCode": false
-                      },
-                      {
-                        "type": "state",
-                        "size": 4,
-                        "enum": [
-                          {
-                            "edt": "0xFFFFFFFE",
-                            "name": "noData",
-                            "descriptions": {
-                              "ja": "No data",
-                              "en": "No data"
-                            },
-                            "readOnly": true
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                },
-                "descriptions": {
-                  "ja": "積算電力量計測値",
-                  "en": "Measured cumulative amounts of electric energy"
-                }
-              }
-            ]
-          },
-          "note": {
-            "ja": "Atomic operation with EPC=0xE5",
-            "en": "Atomic operation with EPC=0xE5"
-          }
-        },
-        "0xE5": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算履歴収集日1",
-            "en": "Day for which the historical data of measured cumulative amounts of electric energy is to be retrieved 1"
-          },
-          "shortName": "retrievedDayForElectricEnergy1",
-          "accessRule": {
-            "get": "required",
-            "set": "required",
-            "inf": "optional"
-          },
-          "data": {
-            "oneOf": [
-              {
-                "$ref": "#/definitions/number_0-99"
+              "propertyName": {
+                "ja": "積算電力量単位（正方向、逆方向計測値）",
+                "en": "Unit for cumulative amounts of electric energy(normal and reverse directions)"
               },
-              {
-                "type": "state",
+              "shortName": "unitOfElectircEnergy",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "numericValue",
                 "size": 1,
                 "enum": [
                   {
-                    "edt": "0xFF",
-                    "name": "defaultValue",
-                    "descriptions": {
-                      "ja": "初期値",
-                      "en": "Default value"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          "note": {
-            "ja": "Atomic operation with EPC=0xE2 and 0xE4",
-            "en": "Atomic operation with EPC=0xE2 and 0xE4"
-          }
-        },
-        "0xE7": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "瞬時電力計測値",
-            "en": "Measured instantaneous electric energy"
-          },
-          "shortName": "instantaneousElectricPower",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "oneOf": [
-              {
-                "$ref": "#/definitions/number_-2147483647-2147483645",
-                "unit": "W"
-              },
-              {
-                "type": "state",
-                "size": 4,
-                "enum": [
+                    "edt": "0x00",
+                    "numericValue": 1
+                  },
                   {
-                    "edt": "0x7FFFFFFE",
-                    "name": "noData",
-                    "descriptions": {
-                      "ja": "No data",
-                      "en": "No data"
-                    },
-                    "readOnly": true
+                    "edt": "0x01",
+                    "numericValue": 0.1
+                  },
+                  {
+                    "edt": "0x02",
+                    "numericValue": 0.01
+                  },
+                  {
+                    "edt": "0x03",
+                    "numericValue": 0.001
+                  },
+                  {
+                    "edt": "0x04",
+                    "numericValue": 0.0001
+                  },
+                  {
+                    "edt": "0x0A",
+                    "numericValue": 10
+                  },
+                  {
+                    "edt": "0x0B",
+                    "numericValue": 100
+                  },
+                  {
+                    "edt": "0x0C",
+                    "numericValue": 1000
+                  },
+                  {
+                    "edt": "0x0D",
+                    "numericValue": 10000
                   }
                 ]
               }
-            ]
-          }
-        },
-        "0xE8": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "瞬時電流計測値",
-            "en": "Measured instantaneous currents"
-          },
-          "shortName": "instantaneousCurrent",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "rPhase",
-                "element": {
-                  "oneOf": [
-                    {
-                      "$ref": "#/definitions/number_-32767-32765",
-                      "unit": "A",
-                      "multipleOf": 0.1
-                    },
-                    {
-                      "type": "state",
-                      "size": 2,
-                      "enum": [
+            },
+            "0xE2": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算電力量計測値履歴1（正方向計測値）",
+                "en": "Historical data of measured cumulative amounts of electric energy 1(normal direction)"
+              },
+              "shortName": "normalDirectionCumulativeElectricEnergyLog1",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "atomic": "0xE5",
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "day",
+                    "element": {
+                      "oneOf": [
                         {
-                          "edt": "0x7FFE",
-                          "name": "noData",
-                          "descriptions": {
-                            "ja": "No data",
-                            "en": "No data"
-                          },
-                          "readOnly": true
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "descriptions": {
-                  "ja": "R相",
-                  "en": "R phase"
-                }
-              },
-              {
-                "name": "tPhase",
-                "element": {
-                  "oneOf": [
-                    {
-                      "$ref": "#/definitions/number_-32767-32765",
-                      "unit": "A",
-                      "multipleOf": 0.1
-                    },
-                    {
-                      "type": "state",
-                      "size": 2,
-                      "enum": [
+                          "$ref": "#/definitions/number_0-99_u16"
+                        },
                         {
-                          "edt": "0x7FFE",
-                          "name": "noData",
-                          "descriptions": {
-                            "ja": "No data",
-                            "en": "No data"
-                          },
-                          "readOnly": true
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "descriptions": {
-                  "ja": "T相",
-                  "en": "T phase"
-                }
-              }
-            ]
-          }
-        },
-        "0xEA": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "定時積算電力量計測値（正方向計測値）",
-            "en": "Cumulative amounts of electric energy measured at fixed time (normal direction)"
-          },
-          "shortName": "normalDirectionCumulativeElectricEnergyAtEvery30Min",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "dateAndTime",
-                "element": {
-                  "type": "date-time"
-                },
-                "descriptions": {
-                  "ja": "計測日時",
-                  "en": "Date and time of measurement"
-                }
-              },
-              {
-                "name": "electricEnergy",
-                "element": {
-                  "oneOf": [
-                    {
-                      "$ref": "#/definitions/number_0-99999999",
-                      "unit": "kWh",
-                      "coefficient": [
-                        "0xD3",
-                        "0xE1"
-                      ],
-                      "overflowCode": false,
-                      "underflowCode": false
-                    },
-                    {
-                      "type": "state",
-                      "size": 4,
-                      "enum": [
-                        {
-                          "edt": "0xFFFFFFFE",
-                          "name": "noData",
-                          "descriptions": {
-                            "ja": "No data",
-                            "en": "No data"
-                          },
-                          "readOnly": true
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "descriptions": {
-                  "ja": "積算電力量計測値",
-                  "en": "Cumulative amounts of electric energy measured"
-                }
-              }
-            ]
-          }
-        },
-        "0xEB": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "定時積算電力量計測値（逆方向計測値）",
-            "en": "Cumulative amounts of electric energy measured at fixed time (reverse direction)"
-          },
-          "shortName": "reverseDirectionCumulativeElectricEnergyEvery30Min",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "dateAndTime",
-                "element": {
-                  "type": "date-time"
-                },
-                "descriptions": {
-                  "ja": "計測日時",
-                  "en": "Date and time of measurement"
-                }
-              },
-              {
-                "name": "electricEnergy",
-                "element": {
-                  "oneOf": [
-                    {
-                      "$ref": "#/definitions/number_0-99999999",
-                      "unit": "kWh",
-                      "coefficient": [
-                        "0xD3",
-                        "0xE1"
-                      ],
-                      "overflowCode": false,
-                      "underflowCode": false
-                    },
-                    {
-                      "type": "state",
-                      "size": 4,
-                      "enum": [
-                        {
-                          "edt": "0xFFFFFFFE",
-                          "name": "noData",
-                          "descriptions": {
-                            "ja": "No data",
-                            "en": "No data"
-                          },
-                          "readOnly": true
-                        }
-                      ]
-                    }
-                  ]
-                },
-                "descriptions": {
-                  "ja": "積算電力量計測値",
-                  "en": "Cumulative amounts of electric energy measured"
-                }
-              }
-            ]
-          }
-        },
-        "0xEC": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算電力量計測値履歴2（正方向、逆方向計測値）",
-            "en": "Historical data of measured cumulative amounts of electric energy 2 (normal and reverse directions)"
-          },
-          "shortName": "cumulativeElectricEnergyLog2",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "atomic": "0xED",
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "dateAndTime",
-                "element": {
-                  "type": "date-time",
-                  "size": 6
-                },
-                "descriptions": {
-                  "ja": "積算履歴収集日時",
-                  "en": "Date and time for which the historical data is to be retrieved"
-                }
-              },
-              {
-                "name": "numberOfCollectionSegments",
-                "element": {
-                  "$ref": "#/definitions/number_1-12"
-                },
-                "descriptions": {
-                  "ja": "収集コマ数",
-                  "en": "Number of collection segments"
-                }
-              },
-              {
-                "name": "electricEnergy",
-                "element": {
-                  "type": "array",
-                  "itemSize": 8,
-                  "maxItems": 12,
-                  "items": {
-                    "type": "object",
-                    "properties": [
-                      {
-                        "name": "normalDirectionElectricEnergy",
-                        "element": {
-                          "oneOf": [
+                          "type": "state",
+                          "size": 2,
+                          "enum": [
                             {
-                              "$ref": "#/definitions/number_0-99999999",
-                              "unit": "kWh",
-                              "coefficient": [
-                                "0xD3",
-                                "0xE1"
-                              ],
-                              "overflowCode": false,
-                              "underflowCode": false
-                            },
-                            {
-                              "type": "state",
-                              "size": 4,
-                              "enum": [
-                                {
-                                  "edt": "0xFFFFFFFE",
-                                  "name": "noData",
-                                  "descriptions": {
-                                    "ja": "No data",
-                                    "en": "No data"
-                                  },
-                                  "readOnly": true
-                                }
-                              ]
+                              "edt": "0x00FF",
+                              "name": "defaultValue",
+                              "descriptions": {
+                                "ja": "初期値",
+                                "en": "Default value"
+                              }
                             }
                           ]
-                        },
-                        "descriptions": {
-                          "ja": "正方向",
-                          "en": "Normal direction"
                         }
-                      },
+                      ]
+                    },
+                    "descriptions": {
+                      "ja": "積算履歴収集日",
+                      "en": "Day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
+                    }
+                  },
+                  {
+                    "name": "electricEnergy",
+                    "element": {
+                      "type": "array",
+                      "itemSize": 4,
+                      "minItems": 48,
+                      "maxItems": 48,
+                      "items": {
+                        "oneOf": [
+                          {
+                            "$ref": "#/definitions/number_0-99999999",
+                            "unit": "kWh",
+                            "coefficient": [
+                              "0xD3",
+                              "0xE1"
+                            ],
+                            "overflowCode": false,
+                            "underflowCode": false
+                          },
+                          {
+                            "type": "state",
+                            "size": 4,
+                            "enum": [
+                              {
+                                "edt": "0xFFFFFFFE",
+                                "name": "noData",
+                                "descriptions": {
+                                  "ja": "No data",
+                                  "en": "No data"
+                                },
+                                "readOnly": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "descriptions": {
+                      "ja": "積算電力量計測値",
+                      "en": "Measured cumulative amounts of electric energy"
+                    }
+                  }
+                ]
+              },
+              "note": {
+                "ja": "Atomic operation with EPC=0xE5",
+                "en": "Atomic operation with EPC=0xE5"
+              }
+            },
+            "0xE3": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算電力量計測値（逆方向計測値）",
+                "en": "Measured cumulative amounts of electric energy(reverse direction)"
+              },
+              "shortName": "reverseDirectionCumulativeElectricEnergy",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "$ref": "#/definitions/number_0-99999999",
+                    "unit": "kWh",
+                    "coefficient": [
+                      "0xD3",
+                      "0xE1"
+                    ],
+                    "overflowCode": false,
+                    "underflowCode": false
+                  },
+                  {
+                    "type": "state",
+                    "size": 4,
+                    "enum": [
                       {
-                        "name": "reverseDirectionElectricEnergy",
-                        "element": {
-                          "oneOf": [
+                        "edt": "0xFFFFFFFE",
+                        "name": "noData",
+                        "descriptions": {
+                          "ja": "No data",
+                          "en": "No data"
+                        },
+                        "readOnly": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "0xE4": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算電力量計測値履歴1（逆方向計測値）",
+                "en": "Historical data of measured cumulative amounts of electric energy 1(reverse direction)"
+              },
+              "shortName": "reverseDirectionCumulativeElectricEnergyLog1",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "atomic": "0xE5",
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "day",
+                    "element": {
+                      "oneOf": [
+                        {
+                          "$ref": "#/definitions/number_0-99_u16"
+                        },
+                        {
+                          "type": "state",
+                          "size": 2,
+                          "enum": [
                             {
-                              "$ref": "#/definitions/number_0-99999999",
-                              "unit": "kWh",
-                              "coefficient": [
-                                "0xD3",
-                                "0xE1"
-                              ],
-                              "overflowCode": false,
-                              "underflowCode": false
-                            },
-                            {
-                              "type": "state",
-                              "size": 4,
-                              "enum": [
-                                {
-                                  "edt": "0xFFFFFFFE",
-                                  "name": "noData",
-                                  "descriptions": {
-                                    "ja": "No data",
-                                    "en": "No data"
-                                  },
-                                  "readOnly": true
-                                }
-                              ]
+                              "edt": "0x00FF",
+                              "name": "defaultValue",
+                              "descriptions": {
+                                "ja": "初期値",
+                                "en": "Default value"
+                              }
                             }
                           ]
-                        },
+                        }
+                      ]
+                    },
+                    "descriptions": {
+                      "ja": "積算履歴収集日",
+                      "en": "Day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
+                    }
+                  },
+                  {
+                    "name": "electricEnergy",
+                    "element": {
+                      "type": "array",
+                      "itemSize": 4,
+                      "minItems": 48,
+                      "maxItems": 48,
+                      "items": {
+                        "oneOf": [
+                          {
+                            "$ref": "#/definitions/number_0-99999999",
+                            "unit": "kWh",
+                            "coefficient": [
+                              "0xD3",
+                              "0xE1"
+                            ],
+                            "overflowCode": false,
+                            "underflowCode": false
+                          },
+                          {
+                            "type": "state",
+                            "size": 4,
+                            "enum": [
+                              {
+                                "edt": "0xFFFFFFFE",
+                                "name": "noData",
+                                "descriptions": {
+                                  "ja": "No data",
+                                  "en": "No data"
+                                },
+                                "readOnly": true
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    },
+                    "descriptions": {
+                      "ja": "積算電力量計測値",
+                      "en": "Measured cumulative amounts of electric energy"
+                    }
+                  }
+                ]
+              },
+              "note": {
+                "ja": "Atomic operation with EPC=0xE5",
+                "en": "Atomic operation with EPC=0xE5"
+              }
+            },
+            "0xE5": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算履歴収集日1",
+                "en": "Day for which the historical data of measured cumulative amounts of electric energy is to be retrieved 1"
+              },
+              "shortName": "retrievedDayForElectricEnergy1",
+              "accessRule": {
+                "get": "required",
+                "set": "required",
+                "inf": "optional"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "$ref": "#/definitions/number_0-99"
+                  },
+                  {
+                    "type": "state",
+                    "size": 1,
+                    "enum": [
+                      {
+                        "edt": "0xFF",
+                        "name": "defaultValue",
                         "descriptions": {
-                          "ja": "逆方向",
-                          "en": "Reverse direction"
+                          "ja": "初期値",
+                          "en": "Default value"
                         }
                       }
                     ]
                   }
-                },
-                "descriptions": {
-                  "ja": "積算電力量計測値",
-                  "en": "Measured cumulative amounts of electric energy"
-                }
-              }
-            ]
-          },
-          "note": {
-            "ja": "Atomic operation with EPC=0xED。電力量は最大12セット。分のデータは0x00（0分）または0x1E（30分）。0xFFFFFFFFFFFF01：初期値",
-            "en": "Atomic operation with EPC=0xED, energy is max. 12 sets of data. Data for minutes should be either 0x00 (0 minute) or 0x1E (30 minutes). 0xFFFFFFFFFFFF01: Default value"
-          }
-        },
-        "0xED": {
-          "validRelease": {
-            "from": "F",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算履歴収集日2",
-            "en": "Day for which the historical data of measured cumulative amounts of electric energy is to be retrieved 2"
-          },
-          "shortName": "retrievedDayForElectricEnergy2",
-          "accessRule": {
-            "get": "optional",
-            "set": "optional",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "object",
-            "properties": [
-              {
-                "name": "dateAndTime",
-                "element": {
-                  "type": "date-time",
-                  "size": 6
-                },
-                "descriptions": {
-                  "ja": "積算履歴収集日時",
-                  "en": "Date and time for which the historical data is to be retrieved"
-                }
+                ]
               },
-              {
-                "name": "numberOfCollectionSegments",
-                "element": {
-                  "$ref": "#/definitions/number_1-12"
-                },
-                "descriptions": {
-                  "ja": "収集コマ数",
-                  "en": "Number of collection segments"
-                }
+              "note": {
+                "ja": "Atomic operation with EPC=0xE2 and 0xE4",
+                "en": "Atomic operation with EPC=0xE2 and 0xE4"
               }
-            ]
-          },
-          "note": {
-            "ja": "分のデータは0x00（0分）または0x1E（30分）。0xFFFFFFFFFFFF01：初期値",
-            "en": "Data for minutes should be either 0x00 (0 minute) or 0x1E (30 minutes). 0xFFFFFFFFFFFF01: Default value"
+            },
+            "0xE7": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "瞬時電力計測値",
+                "en": "Measured instantaneous electric energy"
+              },
+              "shortName": "instantaneousElectricPower",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "oneOf": [
+                  {
+                    "$ref": "#/definitions/number_-2147483647-2147483645",
+                    "unit": "W"
+                  },
+                  {
+                    "type": "state",
+                    "size": 4,
+                    "enum": [
+                      {
+                        "edt": "0x7FFFFFFE",
+                        "name": "noData",
+                        "descriptions": {
+                          "ja": "No data",
+                          "en": "No data"
+                        },
+                        "readOnly": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "0xE8": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "瞬時電流計測値",
+                "en": "Measured instantaneous currents"
+              },
+              "shortName": "instantaneousCurrent",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "rPhase",
+                    "element": {
+                      "oneOf": [
+                        {
+                          "$ref": "#/definitions/number_-32767-32765",
+                          "unit": "A",
+                          "multipleOf": 0.1
+                        },
+                        {
+                          "type": "state",
+                          "size": 2,
+                          "enum": [
+                            {
+                              "edt": "0x7FFE",
+                              "name": "noData",
+                              "descriptions": {
+                                "ja": "No data",
+                                "en": "No data"
+                              },
+                              "readOnly": true
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "descriptions": {
+                      "ja": "R相",
+                      "en": "R phase"
+                    }
+                  },
+                  {
+                    "name": "tPhase",
+                    "element": {
+                      "oneOf": [
+                        {
+                          "$ref": "#/definitions/number_-32767-32765",
+                          "unit": "A",
+                          "multipleOf": 0.1
+                        },
+                        {
+                          "type": "state",
+                          "size": 2,
+                          "enum": [
+                            {
+                              "edt": "0x7FFE",
+                              "name": "noData",
+                              "descriptions": {
+                                "ja": "No data",
+                                "en": "No data"
+                              },
+                              "readOnly": true
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "descriptions": {
+                      "ja": "T相",
+                      "en": "T phase"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xEA": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "定時積算電力量計測値（正方向計測値）",
+                "en": "Cumulative amounts of electric energy measured at fixed time(normal direction)"
+              },
+              "shortName": "normalDirectionCumulativeElectricEnergyAtEvery30Min",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "dateAndTime",
+                    "element": {
+                      "type": "date-time"
+                    },
+                    "descriptions": {
+                      "ja": "計測日時",
+                      "en": "Date and time of measurement"
+                    }
+                  },
+                  {
+                    "name": "electricEnergy",
+                    "element": {
+                      "oneOf": [
+                        {
+                          "$ref": "#/definitions/number_0-99999999",
+                          "unit": "kWh",
+                          "coefficient": [
+                            "0xD3",
+                            "0xE1"
+                          ],
+                          "overflowCode": false,
+                          "underflowCode": false
+                        },
+                        {
+                          "type": "state",
+                          "size": 4,
+                          "enum": [
+                            {
+                              "edt": "0xFFFFFFFE",
+                              "name": "noData",
+                              "descriptions": {
+                                "ja": "No data",
+                                "en": "No data"
+                              },
+                              "readOnly": true
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "descriptions": {
+                      "ja": "積算電力量計測値",
+                      "en": "Cumulative amounts of electric energy measured"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xEB": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "定時積算電力量計測値（逆方向計測値）",
+                "en": "Cumulative amounts of electric energy measured at fixed time(reverse direction)"
+              },
+              "shortName": "reverseDirectionCumulativeElectricEnergyEvery30Min",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "dateAndTime",
+                    "element": {
+                      "type": "date-time"
+                    },
+                    "descriptions": {
+                      "ja": "計測日時",
+                      "en": "Date and time of measurement"
+                    }
+                  },
+                  {
+                    "name": "electricEnergy",
+                    "element": {
+                      "oneOf": [
+                        {
+                          "$ref": "#/definitions/number_0-99999999",
+                          "unit": "kWh",
+                          "coefficient": [
+                            "0xD3",
+                            "0xE1"
+                          ],
+                          "overflowCode": false,
+                          "underflowCode": false
+                        },
+                        {
+                          "type": "state",
+                          "size": 4,
+                          "enum": [
+                            {
+                              "edt": "0xFFFFFFFE",
+                              "name": "noData",
+                              "descriptions": {
+                                "ja": "No data",
+                                "en": "No data"
+                              },
+                              "readOnly": true
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "descriptions": {
+                      "ja": "積算電力量計測値",
+                      "en": "Cumulative amounts of electric energy measured"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xEC": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算電力量計測値履歴2（正方向、逆方向計測値）",
+                "en": "Historical data of measured cumulative amounts of electric energy 2(normal and reverse directions)"
+              },
+              "shortName": "cumulativeElectricEnergyLog2",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "atomic": "0xED",
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "dateAndTime",
+                    "element": {
+                      "type": "date-time",
+                      "size": 6
+                    },
+                    "descriptions": {
+                      "ja": "積算履歴収集日時",
+                      "en": "Date and time for which the historical data is to be retrieved"
+                    }
+                  },
+                  {
+                    "name": "numberOfCollectionSegments",
+                    "element": {
+                      "$ref": "#/definitions/number_1-12"
+                    },
+                    "descriptions": {
+                      "ja": "収集コマ数",
+                      "en": "Number of collection segments"
+                    }
+                  },
+                  {
+                    "name": "electricEnergy",
+                    "element": {
+                      "type": "array",
+                      "itemSize": 8,
+                      "maxItems": 12,
+                      "items": {
+                        "type": "object",
+                        "properties": [
+                          {
+                            "name": "normalDirectionElectricEnergy",
+                            "element": {
+                              "oneOf": [
+                                {
+                                  "$ref": "#/definitions/number_0-99999999",
+                                  "unit": "kWh",
+                                  "coefficient": [
+                                    "0xD3",
+                                    "0xE1"
+                                  ],
+                                  "overflowCode": false,
+                                  "underflowCode": false
+                                },
+                                {
+                                  "type": "state",
+                                  "size": 4,
+                                  "enum": [
+                                    {
+                                      "edt": "0xFFFFFFFE",
+                                      "name": "noData",
+                                      "descriptions": {
+                                        "ja": "No data",
+                                        "en": "No data"
+                                      },
+                                      "readOnly": true
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "descriptions": {
+                              "ja": "正方向",
+                              "en": "Normal direction"
+                            }
+                          },
+                          {
+                            "name": "reverseDirectionElectricEnergy",
+                            "element": {
+                              "oneOf": [
+                                {
+                                  "$ref": "#/definitions/number_0-99999999",
+                                  "unit": "kWh",
+                                  "coefficient": [
+                                    "0xD3",
+                                    "0xE1"
+                                  ],
+                                  "overflowCode": false,
+                                  "underflowCode": false
+                                },
+                                {
+                                  "type": "state",
+                                  "size": 4,
+                                  "enum": [
+                                    {
+                                      "edt": "0xFFFFFFFE",
+                                      "name": "noData",
+                                      "descriptions": {
+                                        "ja": "No data",
+                                        "en": "No data"
+                                      },
+                                      "readOnly": true
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "descriptions": {
+                              "ja": "逆方向",
+                              "en": "Reverse direction"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "descriptions": {
+                      "ja": "積算電力量計測値",
+                      "en": "Measured cumulative amounts of electric energy"
+                    }
+                  }
+                ]
+              },
+              "note": {
+                "ja": "Atomic operation with EPC=0xED。電力量は最大12セット。分のデータは0x00（0分）または0x1E（30分）。0xFFFFFFFFFFFF01：初期値",
+                "en": "Atomic operation with EPC=0xED, energy is max. 12 sets of data. Data for minutes should be either 0x00(0 minute) or 0x1E(30 minutes). 0xFFFFFFFFFFFF01 : Default value"
+              }
+            },
+            "0xED": {
+              "validRelease": {
+                "from": "F",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "積算履歴収集日2",
+                "en": "Day for which the historical data of measured cumulative amounts of electric energy is to be retrieved 2"
+              },
+              "shortName": "retrievedDayForElectricEnergy2",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "object",
+                "properties": [
+                  {
+                    "name": "dateAndTime",
+                    "element": {
+                      "type": "date-time",
+                      "size": 6
+                    },
+                    "descriptions": {
+                      "ja": "積算履歴収集日時",
+                      "en": "Date and time for which the historical data is to be retrieved"
+                    }
+                  },
+                  {
+                    "name": "numberOfCollectionSegments",
+                    "element": {
+                      "$ref": "#/definitions/number_1-12"
+                    },
+                    "descriptions": {
+                      "ja": "収集コマ数",
+                      "en": "Number of collection segments"
+                    }
+                  }
+                ]
+              },
+              "note": {
+                "ja": "分のデータは0x00（0分）または0x1E（30分）。0xFFFFFFFFFFFF01：初期値",
+                "en": "Data for minutes should be either 0x00(0 minute) or 0x1E(30 minutes). 0xFFFFFFFFFFFF01 : Default value"
+              }
+            }
           }
         }
-      }
+      ]
     },
     "0x028A": {
       "validRelease": {
@@ -19030,7 +25793,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "定時需要電力（30分平均電力）",
-            "en": "Electric power demand at fixed time (30-minute average electric power)"
+            "en": "Electric power demand at fixed time(30-minute average electric power)"
           },
           "shortName": "averageElectricPowerDemand",
           "accessRule": {
@@ -19317,7 +26080,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "力測積算無効電力量（遅れ）計測値",
-            "en": "Measurement data of reactive electric power consumption (lag) for power factor measurement"
+            "en": "Measurement data of reactive electric power consumption(lag) for power factor measurement"
           },
           "shortName": "cumulativeReactiveElectricEnergy",
           "accessRule": {
@@ -19372,7 +26135,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算無効電力量（遅れ）",
-                  "en": "Cumulative amount of reactive electric power consumption (lag)"
+                  "en": "Cumulative amount of reactive electric power consumption(lag)"
                 }
               }
             ]
@@ -19385,7 +26148,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "定時力測積算無効電力量（遅れ）計測値",
-            "en": "Measurement data of cumulative amount of reactive electric power consumption (lag) at fixed time for power factor measurement"
+            "en": "Measurement data of cumulative amount of reactive electric power consumption(lag) at fixed time for power factor measurement"
           },
           "shortName": "cumulativeReactiveElectricEnergyAtEvery30Min",
           "accessRule": {
@@ -19440,7 +26203,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算無効電力量（遅れ）",
-                  "en": "Cumulative amount of reactive electric power consumption (lag)"
+                  "en": "Cumulative amount of reactive electric power consumption(lag)"
                 }
               }
             ]
@@ -19453,7 +26216,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "力測積算無効電力量（遅れ）有効桁数",
-            "en": "Number of effective digits for measurement data of cumulative amount of reactive electric power consumption (lag) for power factor measurement"
+            "en": "Number of effective digits for measurement data of cumulative amount of reactive electric power consumption(lag) for power factor measurement"
           },
           "shortName": "effectiveDigitsOfReactiveElectricEnergy",
           "accessRule": {
@@ -19473,7 +26236,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "力測積算無効電力量（遅れ）単位",
-            "en": "Unit of measurement data of cumulative amount of reactive electric power consumption (lag)"
+            "en": "Unit of measurement data of cumulative amount of reactive electric power consumption(lag)"
           },
           "shortName": "unitOfReactiveElectricEnergy",
           "accessRule": {
@@ -19531,7 +26294,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "力測積算無効電力量（遅れ）計測値履歴",
-            "en": "Historical data of measurement data of cumulative amount of reactive electric power consumption (lag) for power factor measurement"
+            "en": "Historical data of measurement data of cumulative amount of reactive electric power consumption(lag) for power factor measurement"
           },
           "shortName": "cumulativeReactiveElectricEnergyLog",
           "accessRule": {
@@ -19611,7 +26374,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算無効電力量（遅れ）",
-                  "en": "Measurement data of cumulative amount of reactive electric power consumption (lag)"
+                  "en": "Measurement data of cumulative amount of reactive electric power consumption(lag)"
                 }
               }
             ]
@@ -19734,8 +26497,8 @@ const jsonData = {
             ]
           },
           "note": {
-            "ja": "0: 当日",
-            "en": "0: current day"
+            "ja": "0:当日",
+            "en": "0:current day"
           }
         },
         "0xE2": {
@@ -20128,7 +26891,7 @@ const jsonData = {
         "ja": "一般照明",
         "en": "General lighting"
       },
-      "shortName": "generalLighting",
+      "shortname": "generalLighting",
       "elProperties": {
         "0x90": {
           "validRelease": {
@@ -20139,7 +26902,7 @@ const jsonData = {
             "ja": "ONタイマ予約設定",
             "en": "ON timer reservation setting"
           },
-          "shortName": "onTimerReservation",
+          "shortname": "onTimerReservation",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20255,7 +27018,7 @@ const jsonData = {
             "ja": "照度レベル設定",
             "en": "Illuminance Level"
           },
-          "shortName": "brightness",
+          "shortname": "brightness",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20276,7 +27039,7 @@ const jsonData = {
                 "ja": "光色設定",
                 "en": "Light color setting"
               },
-              "shortName": "lightColor",
+              "shortname": "lightColor",
               "accessRule": {
                 "get": "optional",
                 "set": "optional",
@@ -20295,7 +27058,7 @@ const jsonData = {
                 "ja": "光色設定",
                 "en": "Light color setting"
               },
-              "shortName": "lightColor",
+              "shortname": "lightColor",
               "accessRule": {
                 "get": "optional",
                 "set": "optional",
@@ -20316,7 +27079,7 @@ const jsonData = {
             "ja": "照度レベル段数設定",
             "en": "Brightness level step setting"
           },
-          "shortName": "brightnessLevel",
+          "shortname": "brightnessLevel",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20339,7 +27102,7 @@ const jsonData = {
             "ja": "光色レベル段数設定",
             "en": "Light color step setting"
           },
-          "shortName": "lightColorLevel",
+          "shortname": "lightColorLevel",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20362,7 +27125,7 @@ const jsonData = {
             "ja": "設定可能レベル最大値",
             "en": "Maximum specifiable values"
           },
-          "shortName": "maximumSettableLevel",
+          "shortname": "maximumSettableLevel",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -20429,7 +27192,7 @@ const jsonData = {
             "ja": "常夜灯設定可能レベル最大値",
             "en": "Maximum value of settable level for night lighting"
           },
-          "shortName": "maximumSettableLevelForNightLighting",
+          "shortname": "maximumSettableLevelForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -20496,7 +27259,7 @@ const jsonData = {
             "ja": "点灯モード設定",
             "en": "Lighting mode setting"
           },
-          "shortName": "operationMode",
+          "shortname": "operationMode",
           "accessRule": {
             "get": "required",
             "set": "required",
@@ -20550,7 +27313,7 @@ const jsonData = {
             "ja": "通常灯モード時照度レベル設定",
             "en": "Brightness level setting for main lighting"
           },
-          "shortName": "brightnessLevelForMainLighting",
+          "shortname": "brightnessLevelForMainLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20569,7 +27332,7 @@ const jsonData = {
             "ja": "通常灯モード時照度レベル段数設定",
             "en": "Brightness level step setting for main lighting"
           },
-          "shortName": "brightnessLevelStepForMainLighting",
+          "shortname": "brightnessLevelStepForMainLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20592,7 +27355,7 @@ const jsonData = {
             "ja": "常夜灯モード時照度レベル設定",
             "en": "Brightness level setting for night lighting"
           },
-          "shortName": "brightnessLevelForNightLighting",
+          "shortname": "brightnessLevelForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20601,10 +27364,7 @@ const jsonData = {
           "data": {
             "$ref": "#/definitions/number_0-100%"
           },
-          "note": {
-            "en": "0x00-0x64",
-            "ja": "0x00-0x64"
-          }
+          "note": "0x00-0x64"
         },
         "0xBA": {
           "validRelease": {
@@ -20615,7 +27375,7 @@ const jsonData = {
             "ja": "常夜灯モード時照度レベル段数設定",
             "en": "Brightness level step setting for night lighting"
           },
-          "shortName": "brightnessLevelStepForNightLighting",
+          "shortname": "brightnessLevelStepForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20638,7 +27398,7 @@ const jsonData = {
             "ja": "通常灯モード時光色設定",
             "en": "Light color setting for main lighting"
           },
-          "shortName": "brightnessLevelStepForNightLighting",
+          "shortname": "brightnessLevelStepForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20657,7 +27417,7 @@ const jsonData = {
             "ja": "通常灯モード時光色レベル段数設定",
             "en": "Light color level step setting for main lighting"
           },
-          "shortName": "lightColorLevelForMainLighting",
+          "shortname": "lightColorLevelForMainLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20680,7 +27440,7 @@ const jsonData = {
             "ja": "常夜灯モード時光色設定",
             "en": "Light color setting for night lighting"
           },
-          "shortName": "lightColorLevelForNightLighting",
+          "shortname": "lightColorLevelForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20699,7 +27459,7 @@ const jsonData = {
             "ja": "常夜灯モード時光色レベル段数設定",
             "en": "Light color level step setting for night lighting"
           },
-          "shortName": "lightColorLevelStepForNightLighting",
+          "shortname": "lightColorLevelStepForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20722,7 +27482,7 @@ const jsonData = {
             "ja": "自動モード時点灯モード状態",
             "en": "Lighting mode status in Auto mode"
           },
-          "shortName": "autoMode",
+          "shortname": "autoMode",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -20776,7 +27536,7 @@ const jsonData = {
             "ja": "カラー灯モード時RGB 設定",
             "en": "RGB setting for color lighting"
           },
-          "shortName": "rgb",
+          "shortname": "rgb",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20828,7 +27588,7 @@ const jsonData = {
             "ja": "照度レベル設定",
             "en": "Illuminance Level Setting"
           },
-          "shortMame": "brightness",
+          "shortName": "brightness",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -20847,7 +27607,7 @@ const jsonData = {
       },
       "className": {
         "ja": "電気自動車充電器",
-        "en": "EV charger"
+        "en": "EV Charger"
       },
       "shortName": "evCharger",
       "elProperties": {
@@ -20901,7 +27661,7 @@ const jsonData = {
                     "name": "undefined",
                     "descriptions": {
                       "ja": "不定",
-                      "en": "Undetermined"
+                      "en": "Undefined"
                     }
                   },
                   {
@@ -20909,7 +27669,7 @@ const jsonData = {
                     "name": "notConnected",
                     "descriptions": {
                       "ja": "車両未接続",
-                      "en": "Vehicle not connected"
+                      "en": "Not Connected"
                     }
                   },
                   {
@@ -20917,7 +27677,7 @@ const jsonData = {
                     "name": "notChargeable",
                     "descriptions": {
                       "ja": "車両接続・充電不可",
-                      "en": "Connected to vehicle, Not chargeable"
+                      "en": "Not Chargeable"
                     }
                   },
                   {
@@ -20925,7 +27685,7 @@ const jsonData = {
                     "name": "chargeable",
                     "descriptions": {
                       "ja": "車両接続・充電可",
-                      "en": "Connected to vehicle, Chargeable"
+                      "en": "Chargeable"
                     }
                   }
                 ]
@@ -20960,7 +27720,7 @@ const jsonData = {
                     "name": "undefined",
                     "descriptions": {
                       "ja": "不定",
-                      "en": "Undetermined"
+                      "en": "Undefined"
                     }
                   },
                   {
@@ -20968,7 +27728,7 @@ const jsonData = {
                     "name": "notConnected",
                     "descriptions": {
                       "ja": "車両未接続",
-                      "en": "Vehicle not connected"
+                      "en": "Not Connected"
                     }
                   },
                   {
@@ -20976,7 +27736,7 @@ const jsonData = {
                     "name": "notChargeable",
                     "descriptions": {
                       "ja": "車両接続・充電不可",
-                      "en": "Connected to vehicle, Not chargeable"
+                      "en": "Not Chargeable"
                     }
                   },
                   {
@@ -20984,7 +27744,7 @@ const jsonData = {
                     "name": "chargeable",
                     "descriptions": {
                       "ja": "車両接続・充電可",
-                      "en": "Connected to vehicle, Chargeable"
+                      "en": "Chargeable"
                     }
                   },
                   {
@@ -20992,7 +27752,7 @@ const jsonData = {
                     "name": "unknown",
                     "descriptions": {
                       "ja": "車両接続・充電可否不明",
-                      "en": "Vehicle connection and chargeable/dischargeable status unknown"
+                      "en": "Unknown"
                     }
                   }
                 ]
@@ -21023,7 +27783,7 @@ const jsonData = {
             "type": "object",
             "properties": [
               {
-                "name": "minValue",
+                "name": "minimumElectricPower",
                 "element": {
                   "type": "number",
                   "format": "uint32",
@@ -21037,7 +27797,7 @@ const jsonData = {
                 }
               },
               {
-                "name": "maxValue",
+                "name": "maximumElectricPower",
                 "element": {
                   "type": "number",
                   "format": "uint32",
@@ -21072,7 +27832,7 @@ const jsonData = {
             "type": "object",
             "properties": [
               {
-                "name": "minValue",
+                "name": "minimumCurrent",
                 "element": {
                   "type": "number",
                   "format": "uint16",
@@ -21087,7 +27847,7 @@ const jsonData = {
                 }
               },
               {
-                "name": "maxValue",
+                "name": "maximumCurrent",
                 "element": {
                   "type": "number",
                   "format": "uint16",
@@ -21136,7 +27896,7 @@ const jsonData = {
                 "name": "AC_HLC_Charge",
                 "descriptions": {
                   "ja": "AC_HLC（充電のみ）",
-                  "en": "AC_HLC (charging only)"
+                  "en": "AC_HLC_Charge"
                 }
               },
               {
@@ -21144,7 +27904,7 @@ const jsonData = {
                 "name": "DC_AA_Charge",
                 "descriptions": {
                   "ja": "DCタイプ_AA（充電のみ）",
-                  "en": "DC_type AA (charging only)"
+                  "en": "DC_AA_Charge"
                 }
               },
               {
@@ -21152,7 +27912,7 @@ const jsonData = {
                 "name": "DC_BB_Charge",
                 "descriptions": {
                   "ja": "DCタイプ_BB（充電のみ）",
-                  "en": "DC_type BB (charging only)"
+                  "en": "DC_BB_Charge"
                 }
               },
               {
@@ -21160,7 +27920,7 @@ const jsonData = {
                 "name": "DC_EE_Charge",
                 "descriptions": {
                   "ja": "DCタイプ_EE（充電のみ）",
-                  "en": "DC_type EE (charging only)"
+                  "en": "DC_EE_Charge"
                 }
               },
               {
@@ -21168,7 +27928,7 @@ const jsonData = {
                 "name": "DC_FF_Charge",
                 "descriptions": {
                   "ja": "DCタイプ_FF（充電のみ）",
-                  "en": "DC_type FF (charging only)"
+                  "en": "DC_FF_Charge"
                 }
               }
             ]
@@ -21234,7 +27994,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "車載電池の充電可能残容量値",
-            "en": "Remaining chargeable capacity of vehicle mounted battery"
+            "en": "Remaining Chargeable capacity of vehicle mounted battery"
           },
           "shortName": "remainingChargeableCapacity",
           "accessRule": {
@@ -21399,7 +28159,7 @@ const jsonData = {
                 "name": "charge",
                 "descriptions": {
                   "ja": "充電",
-                  "en": "Charging"
+                  "en": "Charge"
                 }
               },
               {
@@ -21436,7 +28196,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "車載電池の電池残容量1",
-            "en": "Remaining stored electricity of vehicle mounted battery 1"
+            "en": "Remaining stored electricity of vehicle mounted battery1"
           },
           "shortName": "remainingCapacity1",
           "accessRule": {
@@ -21459,7 +28219,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "車載電池の電池残容量3",
-            "en": "Remaining stored electricity of vehicle mounted battery 3"
+            "en": "Remaining stored electricity of vehicle mounted battery3"
           },
           "shortName": "remainingCapacity3",
           "accessRule": {
@@ -21482,7 +28242,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "車両ID",
-            "en": "Vehcle ID"
+            "en": "Vehicle ID"
           },
           "shortName": "vehicleId",
           "accessRule": {
@@ -21502,32 +28262,26 @@ const jsonData = {
                   "maximum": 24
                 },
                 "descriptions": {
-                  "ja": "車両ID情報データサイズ",
-                  "en": "Data size for vehicle ID information"
+                  "ja": "車両ＩＤ情報データサイズ。ＩＤ情報がない場合は、0x00",
+                  "en": "Data size for vehicle ID information. 0x00 if no vehicle ID is available."
                 }
               },
               {
                 "name": "ids",
                 "element": {
-                  "type": "array",
-                  "itemSize": 1,
-                  "maxItems": 24,
-                  "items": {
-                    "type": "number",
-                    "format": "uint8",
-                    "minimum": 0,
-                    "maximum": 255
-                  },
-                  "descriptions": {
-                    "ja": "車両ID情報",
-                    "en": "Vehicle ID information"
-                  }
+                  "type": "raw",
+                  "minSize": 0,
+                  "maxSize": 24
+                },
+                "descriptions": {
+                  "ja": "車両ＩＤ情報。車両毎に規定されたデータ。",
+                  "en": "Vehicle ID informationdata specified for each vehicle."
                 }
               }
             ]
           },
           "note": {
-            "ja": "車両ID情報が取得できない場合はデータサイズに0x00を格納",
+            "ja": "車両ＩＤ情報が取得できない場合はデータサイズに0x00を格納",
             "en": "If vehicle ID cannot be acquired, Ox00 shall be stored in data size"
           }
         },
@@ -21876,7 +28630,7 @@ const jsonData = {
         "to": "latest"
       },
       "className": {
-        "ja": "ハイブリッド給湯機",
+        "ja": "ハイブリッド給湯器",
         "en": "Hybrid water heater"
       },
       "shortName": "hybridWaterHeater",
@@ -22245,6 +28999,1171 @@ const jsonData = {
           "data": {
             "$ref": "#/definitions/number_0-65533",
             "unit": "L"
+          }
+        }
+      }
+    },
+    "0x03B7": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "冷凍冷蔵庫",
+        "en": "Refrigerator"
+      },
+      "shortName": "refrigerator",
+      "elProperties": {
+        "0xA0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "急速冷凍動作設定",
+            "en": "Quick freeze function setting"
+          },
+          "shortName": "quickFreeze",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "normal",
+                "descriptions": {
+                  "ja": "通常冷凍",
+                  "en": "Normal operation"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "quick",
+                "descriptions": {
+                  "ja": "急速冷凍",
+                  "en": "Quick freeze"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "standby",
+                "descriptions": {
+                  "ja": "急速冷凍待機",
+                  "en": "Standby for quick freezing"
+                }
+              }
+            ]
+          }
+        },
+        "0xA1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "急速冷蔵動作設定",
+            "en": "Quick refrigeration function setting"
+          },
+          "shortName": "quickRefrigeration",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "normal",
+                "descriptions": {
+                  "ja": "通常冷蔵",
+                  "en": "Normal operation"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "quick",
+                "descriptions": {
+                  "ja": "急速冷蔵",
+                  "en": "Quick refrigeration"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "standby",
+                "descriptions": {
+                  "ja": "急速冷蔵待機",
+                  "en": "Standby for quick refrigeration"
+                }
+              }
+            ]
+          }
+        },
+        "0xA4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "製氷許可設定",
+            "en": "Icemaker setting"
+          },
+          "shortName": "icemaker",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "enable",
+                "descriptions": {
+                  "ja": "製氷許可",
+                  "en": "Enable icemaker"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "disable",
+                "descriptions": {
+                  "ja": "製氷禁止",
+                  "en": "Disable icemaker"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "standby",
+                "descriptions": {
+                  "ja": "製氷一定時間禁止",
+                  "en": "Temporarily disable icemaker"
+                }
+              }
+            ]
+          }
+        },
+        "0xA5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "製氷動作状態",
+            "en": "Icemaker operation status"
+          },
+          "shortName": "icemakerStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "running",
+                "descriptions": {
+                  "ja": "運転中",
+                  "en": "Ice-making in progress"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "stopped",
+                "descriptions": {
+                  "ja": "停止中",
+                  "en": "Ice-making stopped"
+                }
+              }
+            ]
+          }
+        },
+        "0xA6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "製氷用給水タンク状態",
+            "en": "Icemaker tank status"
+          },
+          "shortName": "icemakerTankStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "normal",
+                "descriptions": {
+                  "ja": "水あり",
+                  "en": "Water in tank"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "warning",
+                "descriptions": {
+                  "ja": "水なし",
+                  "en": "No water"
+                }
+              }
+            ]
+          }
+        },
+        "0xA8": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷蔵室加湿動作設定",
+            "en": "Refrigerator compartment humidification function setting"
+          },
+          "shortName": "refrigeratorHumidification",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "on",
+                "descriptions": {
+                  "ja": "加湿ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "off",
+                "descriptions": {
+                  "ja": "加湿OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xA9": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "野菜室加湿動作設定",
+            "en": "Vegetable compartment humidification function setting"
+          },
+          "shortName": "vegetableHumidification",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "on",
+                "descriptions": {
+                  "ja": "加湿ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "off",
+                "descriptions": {
+                  "ja": "加湿OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xAD": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "脱臭動作設定",
+            "en": "Deodorization function setting"
+          },
+          "shortName": "deodorization",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "on",
+                "descriptions": {
+                  "ja": "脱臭ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "off",
+                "descriptions": {
+                  "ja": "脱臭OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xB0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ドア開閉状態",
+            "en": "Door open/close status"
+          },
+          "shortName": "doorOpenCloseStatus",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "anyOpen",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Door open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "allClose",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Door close"
+                }
+              }
+            ]
+          }
+        },
+        "0xB1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ドア開放警告状態",
+            "en": "Door open warning"
+          },
+          "shortName": "doorOpenWarning",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "ドア開放警告有",
+                  "en": "Door open warning found"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "ドア開放警告無",
+                  "en": "Door open warning not found"
+                }
+              }
+            ]
+          }
+        },
+        "0xB2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷蔵室ドア開閉状態",
+            "en": "Refrigerator compartment door status"
+          },
+          "shortName": "refrigeratorCompartmentDoorStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "open",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "close",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Closed"
+                }
+              }
+            ]
+          }
+        },
+        "0xB3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷凍室ドア開閉状態",
+            "en": "Freezer compartment door status"
+          },
+          "shortName": "freezerCompartmentDoorStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "open",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "close",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Closed"
+                }
+              }
+            ]
+          }
+        },
+        "0xB4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "氷温室ドア開閉状態",
+            "en": "Ice compartment door status"
+          },
+          "shortName": "iceCompartmentDoorStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "open",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "close",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Closed"
+                }
+              }
+            ]
+          }
+        },
+        "0xB5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "野菜室ドア開閉状態",
+            "en": "Vegetable compartment door status"
+          },
+          "shortName": "vegetableCompartmentDoorStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "open",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "close",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Closed"
+                }
+              }
+            ]
+          }
+        },
+        "0xB6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "切換室ドア開閉状態",
+            "en": "Multi-refrigerating mode compartment door status"
+          },
+          "shortName": "multiModeCompartmentDoorStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "open",
+                "descriptions": {
+                  "ja": "ドア開",
+                  "en": "Open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "close",
+                "descriptions": {
+                  "ja": "ドア閉",
+                  "en": "Closed"
+                }
+              }
+            ]
+          }
+        },
+        "0xD1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷蔵室温度計測値",
+            "en": "Measured refrigerator compartment temperature"
+          },
+          "shortName": "measuredRefrigeratorTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xD2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷凍室温度計測値",
+            "en": "Measured freezer compartment temperature"
+          },
+          "shortName": "measuredFreezerTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xD3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "氷温室温度計測値",
+            "en": "Measured subzero-fresh compartment temperature"
+          },
+          "shortName": "measuredIceTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xD4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "野菜室温度計測値",
+            "en": "Measured vegetable compartment temperature"
+          },
+          "shortName": "measuredVegetableTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xD5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "切替室室温度計測値",
+            "en": "Measured multi-refrigerating mode compartment temperature"
+          },
+          "shortName": "measuredMultiModeTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xD8": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "圧縮機回転数レベル",
+            "en": "Compressor rotation speed"
+          },
+          "shortName": "compressorRotationSpeed",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "object",
+            "properties": [
+              {
+                "name": "maxLevel",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 1,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "最大回転数レベル",
+                  "en": "Maximum rotation speed"
+                }
+              },
+              {
+                "name": "level",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "回転数レベル",
+                  "en": "Rotation speed of the actual compressor"
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "0x00:停止",
+            "en": "0x00:Stopped"
+          }
+        },
+        "0xDA": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "消費電流計測値",
+            "en": "Measured electric current consumption"
+          },
+          "shortName": "electricCurrentConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "A",
+            "multipleOf": 0.1
+          }
+        },
+        "0xDC": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "定格消費電力値",
+            "en": "Rated power consumption"
+          },
+          "shortName": "ratedPowerConsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "W"
+          }
+        },
+        "0xE0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "設定可能温度レベル最大値",
+            "en": "Maximum allowable temperature setting level"
+          },
+          "shortName": "maximumAllowableTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "object",
+            "properties": [
+              {
+                "name": "refrigerator",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "冷蔵室",
+                  "en": "Refrigerator compartment"
+                }
+              },
+              {
+                "name": "freezer",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "冷凍室",
+                  "en": "Freezer compartment"
+                }
+              },
+              {
+                "name": "ice",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "氷温室",
+                  "en": "Subzero-fresh compartment"
+                }
+              },
+              {
+                "name": "vegetable",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "野菜室",
+                  "en": "Vegetable compartment"
+                }
+              },
+              {
+                "name": "multi",
+                "element": {
+                  "type": "number",
+                  "format": "uint8",
+                  "minimum": 0,
+                  "maximum": 255
+                },
+                "descriptions": {
+                  "ja": "切換室",
+                  "en": "Multi-refrigerating mode compartment"
+                }
+              },
+              {
+                "name": "reserved",
+                "element": {
+                  "$ref": "#/definitions/raw_3"
+                },
+                "descriptions": {
+                  "ja": "for future reserved",
+                  "en": "Reserved for future use"
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "0x00:室を搭載していない場合",
+            "en": "0x00:no compartment"
+          }
+        },
+        "0xE2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷蔵室温度設定値",
+            "en": "Refrigerator compartment temperature setting"
+          },
+          "shortName": "refrigeratorTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xE3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷凍室温度設定値",
+            "en": "Freezer compartment temperature setting"
+          },
+          "shortName": "freezerTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xE4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "氷温室温度設定値",
+            "en": "Ice temperature setting"
+          },
+          "shortName": "iceTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xE5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "野菜室温度設定値",
+            "en": "Vegetable compartment temperature setting"
+          },
+          "shortName": "vegetableTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xE6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "切換室温度設定値",
+            "en": "Multi-refrigerating mode compartment temperature setting"
+          },
+          "shortName": "multiModeTemperature",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "int8",
+            "unit": "Celsius",
+            "minimum": -127,
+            "maximum": 126
+          }
+        },
+        "0xE9": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷蔵室温度レベル設定",
+            "en": "Refrigerator compartment temperature level setting"
+          },
+          "shortName": "refrigeratorTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "note": {
+            "ja": "最大値はEPC=0xE0の値",
+            "en": "maximum value is at EPC=0xE0"
+          }
+        },
+        "0xEA": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷凍室温度レベル設定",
+            "en": "Freezer compartment temperature level setting"
+          },
+          "shortName": "freezerTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "note": {
+            "ja": "最大値はEPC=0xE0の値",
+            "en": "maximum value is at EPC=0xE0"
+          }
+        },
+        "0xEB": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "氷温室温度レベル設定",
+            "en": "ice compartment temperature level setting"
+          },
+          "shortName": "iceTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "note": {
+            "ja": "最大値はEPC=0xE0の値",
+            "en": "maximum value is at EPC=0xE0"
+          }
+        },
+        "0xEC": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "野菜室温度レベル設定",
+            "en": "Vegetable compartment temperature level setting"
+          },
+          "shortName": "vegetableTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "note": {
+            "ja": "最大値はEPC=0xE0の値",
+            "en": "maximum value is at EPC=0xE0"
+          }
+        },
+        "0xED": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "切換室温度レベル設定",
+            "en": "Multi-refrigerating mode compartment temperature level setting"
+          },
+          "shortName": "multiModeTemperatureLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 1,
+            "maximum": 255
+          },
+          "note": {
+            "ja": "最大値はEPC=0xE0の値",
+            "en": "maximum value is at EPC=0xE0"
           }
         }
       }
@@ -24743,7 +32662,7 @@ const jsonData = {
             "ja": "庫外照明照度レベル設定",
             "en": "Illuminance level setting of lighting outside the case"
           },
-          "shortName": "庫外照明照度レベル設定",
+          "shortName": "brightnessOfLightingOutsideTheCase",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -24838,7 +32757,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ONタイマ時刻設定値",
-            "en": "ON timer setting (time)"
+            "en": "ON timer setting(time)"
           },
           "shortName": "onTimerAbsolute",
           "accessRule": {
@@ -24858,7 +32777,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ONタイマ相対時間設定値",
-            "en": "ON timer setting (relative time)"
+            "en": "ON timer setting(relative time)"
           },
           "shortName": "onTimerRelative",
           "accessRule": {
@@ -24979,7 +32898,7 @@ const jsonData = {
                 "name": "washDryStandard",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞標準",
-                  "en": "<Washing and drying course> Standard"
+                  "en": "<Washing and drying course>Standard"
                 }
               },
               {
@@ -24987,7 +32906,7 @@ const jsonData = {
                 "name": "washDrySilent",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞静音",
-                  "en": "<Washing and drying course> Silent"
+                  "en": "<Washing and drying course>Silent"
                 }
               },
               {
@@ -24995,7 +32914,7 @@ const jsonData = {
                 "name": "washDryHeavilySoiled",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞汚れ大",
-                  "en": "<Washing and drying course> Heavily soiled clothes"
+                  "en": "<Washing and drying course>Heavily soiled clothes"
                 }
               },
               {
@@ -25003,7 +32922,7 @@ const jsonData = {
                 "name": "washDryHardToRemove",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞しつこい汚れ",
-                  "en": "<Washing and drying course> Hard-to-remove stains"
+                  "en": "<Washing and drying course>Hard-to-remove stains"
                 }
               },
               {
@@ -25011,7 +32930,7 @@ const jsonData = {
                 "name": "washDryPresoaking",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞つけおき",
-                  "en": "<Washing and drying course> Presoaking"
+                  "en": "<Washing and drying course>Presoaking"
                 }
               },
               {
@@ -25019,7 +32938,7 @@ const jsonData = {
                 "name": "washDryBlankets",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞毛布",
-                  "en": "<Washing and drying course> Blankets"
+                  "en": "<Washing and drying course>Blankets"
                 }
               },
               {
@@ -25027,7 +32946,7 @@ const jsonData = {
                 "name": "washDrySoft",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞ソフト",
-                  "en": "<Washing and drying course> Soft"
+                  "en": "<Washing and drying course>Soft"
                 }
               },
               {
@@ -25035,7 +32954,7 @@ const jsonData = {
                 "name": "washDryDrymark",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞ドライ",
-                  "en": "<Washing and drying course> Dry"
+                  "en": "<Washing and drying course>Dry"
                 }
               },
               {
@@ -25043,7 +32962,7 @@ const jsonData = {
                 "name": "washDryCleanRinsing",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞清潔すすぎ",
-                  "en": "<Washing and drying course> Clean rinsing"
+                  "en": "<Washing and drying course>Clean rinsing"
                 }
               },
               {
@@ -25051,7 +32970,7 @@ const jsonData = {
                 "name": "washDryIroning",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞アイロン／Yシャツ",
-                  "en": "<Washing and drying course> Ironing/business shirts"
+                  "en": "<Washing and drying course>Ironing/business shirts"
                 }
               },
               {
@@ -25059,7 +32978,7 @@ const jsonData = {
                 "name": "washDryHangDrying",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞吊り干し",
-                  "en": "<Washing and drying course> Hang drying"
+                  "en": "<Washing and drying course>Hang drying"
                 }
               },
               {
@@ -25067,7 +32986,7 @@ const jsonData = {
                 "name": "washDryThick",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞厚物",
-                  "en": "<Washing and drying course> Thick clothes"
+                  "en": "<Washing and drying course>Thick clothes"
                 }
               },
               {
@@ -25075,7 +32994,7 @@ const jsonData = {
                 "name": "washDryDisinfection",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞除菌",
-                  "en": "<Washing and drying course> Disinfection"
+                  "en": "<Washing and drying course>Disinfection"
                 }
               },
               {
@@ -25083,7 +33002,7 @@ const jsonData = {
                 "name": "washDryOilStrains",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞油汚れ",
-                  "en": "<Washing and drying course> Oil stains"
+                  "en": "<Washing and drying course>Oil stains"
                 }
               },
               {
@@ -25091,7 +33010,7 @@ const jsonData = {
                 "name": "washDryMemory",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞メモリー",
-                  "en": "<Washing and drying course> Memory"
+                  "en": "<Washing and drying course>Memory"
                 }
               },
               {
@@ -25099,7 +33018,7 @@ const jsonData = {
                 "name": "washDryDetergentSaving",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞省洗剤",
-                  "en": "<Washing and drying course> Detergent saving"
+                  "en": "<Washing and drying course>Detergent saving"
                 }
               },
               {
@@ -25107,7 +33026,7 @@ const jsonData = {
                 "name": "washDryLightlySoiled",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞汚れ小",
-                  "en": "<Washing and drying course> Lightly soiled clothes"
+                  "en": "<Washing and drying course>Lightly soiled clothes"
                 }
               },
               {
@@ -25115,7 +33034,7 @@ const jsonData = {
                 "name": "washDrySmallAmountQuick",
                 "descriptions": {
                   "ja": "＜洗濯乾燥コース＞少量短時間",
-                  "en": "<Washing and drying course> Quick wash of small amount of laundry"
+                  "en": "<Washing and drying course>Quick wash of small amount of laundry"
                 }
               },
               {
@@ -25123,7 +33042,7 @@ const jsonData = {
                 "name": "washStandard",
                 "descriptions": {
                   "ja": "＜洗濯コース＞標準",
-                  "en": "<Washing course> Standard"
+                  "en": "<Washing course>Standard"
                 }
               },
               {
@@ -25131,7 +33050,7 @@ const jsonData = {
                 "name": "washSilent",
                 "descriptions": {
                   "ja": "＜洗濯コース＞静音",
-                  "en": "<Washing course> Silent"
+                  "en": "<Washing course>Silent"
                 }
               },
               {
@@ -25139,7 +33058,7 @@ const jsonData = {
                 "name": "washHeavilySoiled",
                 "descriptions": {
                   "ja": "＜洗濯コース＞汚れ大",
-                  "en": "<Washing course> Heavily soiled clothes"
+                  "en": "<Washing course>Heavily soiled clothes"
                 }
               },
               {
@@ -25147,7 +33066,7 @@ const jsonData = {
                 "name": "washHardToRemove",
                 "descriptions": {
                   "ja": "＜洗濯コース＞しつこい汚れ",
-                  "en": "<Washing course> Hard-to-remove stains"
+                  "en": "Hard-to-remove stains"
                 }
               },
               {
@@ -25155,7 +33074,7 @@ const jsonData = {
                 "name": "washPresoaking",
                 "descriptions": {
                   "ja": "＜洗濯コース＞つけおき",
-                  "en": "<Washing course> Presoaking"
+                  "en": "<Washing course>Presoaking"
                 }
               },
               {
@@ -25163,7 +33082,7 @@ const jsonData = {
                 "name": "washBlankets",
                 "descriptions": {
                   "ja": "＜洗濯コース＞毛布",
-                  "en": "<Washing course> Blankets"
+                  "en": "<Washing course>Blankets"
                 }
               },
               {
@@ -25171,7 +33090,7 @@ const jsonData = {
                 "name": "washSoft",
                 "descriptions": {
                   "ja": "＜洗濯コース＞ソフト",
-                  "en": "<Washing course> Soft"
+                  "en": "<Washing course>Soft"
                 }
               },
               {
@@ -25179,7 +33098,7 @@ const jsonData = {
                 "name": "washDrymark",
                 "descriptions": {
                   "ja": "＜洗濯コース＞ドライ",
-                  "en": "<Washing course> Dry"
+                  "en": "<Washing course>Dry"
                 }
               },
               {
@@ -25187,7 +33106,7 @@ const jsonData = {
                 "name": "washCleanRinsing",
                 "descriptions": {
                   "ja": "＜洗濯コース＞清潔すすぎ",
-                  "en": "<Washing course> Clean rinsing"
+                  "en": "<Washing course>Clean rinsing"
                 }
               },
               {
@@ -25195,7 +33114,7 @@ const jsonData = {
                 "name": "washDisinfection",
                 "descriptions": {
                   "ja": "＜洗濯コース＞除菌",
-                  "en": "<Washing course> Disinfection"
+                  "en": "<Washing course>Disinfection"
                 }
               },
               {
@@ -25203,7 +33122,7 @@ const jsonData = {
                 "name": "washOilStrains",
                 "descriptions": {
                   "ja": "＜洗濯コース＞油汚れ",
-                  "en": "<Washing course> Oil stains"
+                  "en": "<Washing course>Oil stains"
                 }
               },
               {
@@ -25211,7 +33130,7 @@ const jsonData = {
                 "name": "washMemory",
                 "descriptions": {
                   "ja": "＜洗濯コース＞メモリー",
-                  "en": "<Washing course> Memory"
+                  "en": "<Washing course>Memory"
                 }
               },
               {
@@ -25219,7 +33138,7 @@ const jsonData = {
                 "name": "washDetergentSaving",
                 "descriptions": {
                   "ja": "＜洗濯コース＞省洗剤",
-                  "en": "<Washing course> Detergent saving"
+                  "en": "<Washing course>Detergent saving"
                 }
               },
               {
@@ -25227,7 +33146,7 @@ const jsonData = {
                 "name": "washLightlySoiled",
                 "descriptions": {
                   "ja": "＜洗濯コース＞汚れ小",
-                  "en": "<Washing course> Lightly soiled clothes"
+                  "en": "<Washing course>Lightly soiled clothes"
                 }
               },
               {
@@ -25235,7 +33154,7 @@ const jsonData = {
                 "name": "washSmallAmountQuick",
                 "descriptions": {
                   "ja": "＜洗濯コース＞少量短時間",
-                  "en": "<Washing course> Quick wash of small amount of laundry"
+                  "en": "<Washing course>Quick wash of small amount of laundry"
                 }
               },
               {
@@ -25243,7 +33162,7 @@ const jsonData = {
                 "name": "washTankCleaning",
                 "descriptions": {
                   "ja": "＜洗濯コース＞槽洗浄",
-                  "en": "<Washing course> Tank cleaning"
+                  "en": "<Washing course>Tank cleaning"
                 }
               },
               {
@@ -25251,7 +33170,7 @@ const jsonData = {
                 "name": "dryStandard",
                 "descriptions": {
                   "ja": "＜乾燥コース＞標準",
-                  "en": "<Drying course> Standard"
+                  "en": "<Drying course>Standard"
                 }
               },
               {
@@ -25259,7 +33178,7 @@ const jsonData = {
                 "name": "dryBlankets",
                 "descriptions": {
                   "ja": "＜乾燥コース＞毛布",
-                  "en": "<Drying course> Blankets"
+                  "en": "<Drying course>Blankets"
                 }
               },
               {
@@ -25267,7 +33186,7 @@ const jsonData = {
                 "name": "drySoft",
                 "descriptions": {
                   "ja": "＜乾燥コース＞ソフト",
-                  "en": "<Drying course> Soft"
+                  "en": "<Drying course>Soft"
                 }
               },
               {
@@ -25275,7 +33194,7 @@ const jsonData = {
                 "name": "dryDrymark",
                 "descriptions": {
                   "ja": "＜乾燥コース＞ドライ",
-                  "en": "<Drying course> Dry"
+                  "en": "<Drying course>Dry"
                 }
               },
               {
@@ -25283,7 +33202,7 @@ const jsonData = {
                 "name": "dryIroning",
                 "descriptions": {
                   "ja": "＜乾燥コース＞アイロン／Yシャツ",
-                  "en": "<Drying course> Ironing/business shirts"
+                  "en": "<Drying course>Ironing/business shirts"
                 }
               },
               {
@@ -25291,7 +33210,7 @@ const jsonData = {
                 "name": "dryHangDrying",
                 "descriptions": {
                   "ja": "＜乾燥コース＞吊り干し",
-                  "en": "<Drying course> Hang drying"
+                  "en": "<Drying course>Hang drying"
                 }
               },
               {
@@ -25299,7 +33218,7 @@ const jsonData = {
                 "name": "dryThick",
                 "descriptions": {
                   "ja": "＜乾燥コース＞厚物",
-                  "en": "<Drying course> Thick clothes"
+                  "en": "<Drying course>Thick clothes"
                 }
               },
               {
@@ -25307,7 +33226,7 @@ const jsonData = {
                 "name": "dryDisinfection",
                 "descriptions": {
                   "ja": "＜乾燥コース＞除菌",
-                  "en": "<Drying course> Disinfection"
+                  "en": "<Drying course>Disinfection"
                 }
               },
               {
@@ -25315,7 +33234,7 @@ const jsonData = {
                 "name": "dryShrinkageMinimization",
                 "descriptions": {
                   "ja": "＜乾燥コース＞縮み低減",
-                  "en": "<Drying course> Shrinkage minimization"
+                  "en": "<Drying course>Shrinkage minimization"
                 }
               },
               {
@@ -25323,7 +33242,7 @@ const jsonData = {
                 "name": "dryFinishing",
                 "descriptions": {
                   "ja": "＜乾燥コース＞仕上げ",
-                  "en": "<Drying course> Finishing"
+                  "en": "<Drying course>Finishing"
                 }
               },
               {
@@ -25331,7 +33250,7 @@ const jsonData = {
                 "name": "dryStationaryDrying",
                 "descriptions": {
                   "ja": "＜乾燥コース＞静止乾燥",
-                  "en": "<Drying course> Stationary drying"
+                  "en": "<Drying course>Stationary drying"
                 }
               },
               {
@@ -25339,7 +33258,7 @@ const jsonData = {
                 "name": "dryUserDefinedTime",
                 "descriptions": {
                   "ja": "＜乾燥コース＞時間指定",
-                  "en": "<Drying course> User definition of drying time"
+                  "en": "<Drying course>User definition of drying time"
                 }
               },
               {
@@ -25347,7 +33266,7 @@ const jsonData = {
                 "name": "dryWarming",
                 "descriptions": {
                   "ja": "＜乾燥コース＞衣類あたため",
-                  "en": "<Drying course> Garment warming"
+                  "en": "<Drying course>Garment warming"
                 }
               },
               {
@@ -25355,14 +33274,14 @@ const jsonData = {
                 "name": "dryTankDrying",
                 "descriptions": {
                   "ja": "＜乾燥コース＞槽洗浄",
-                  "en": "<Drying course> Tank cleaning"
+                  "en": "<Drying course>Tank cleaning"
                 }
               }
             ]
           },
           "note": {
             "ja": "洗濯・乾燥のコース設定は洗濯乾燥コース設定１プロパティ（EPC＝0xD0）によって行うか、あるいは洗濯乾燥コース設定2 プロパティ（EPC＝0xD1）と乾燥コース設定プロパティ（EPC＝0xD2）の組み合わせによって行う。機器には、どちらか一方のみを実装することとし、もう一方は実装してはならない。0x40 ~ 0x4F : 洗濯乾燥コース／メーカオリジナルコース, 0x80 ~ 0x8F : 洗濯コース／メーカオリジナルコース, 0xC0 ~ 0xCF : 乾燥コース／メーカオリジナルコース",
-            "en": "The washer and dryer cycle shall be specified either by the \"washer and dryer cycle setting 1\" property (EPC = 0xD0) or by the \"washer and dryer cycle setting 2\" property (EPC = 0xD1) combined with the \"drying cycle setting\" property (EPC = 0xD2). Either the \"washer and dryer cycle setting 1\" property or the \"washer and dryer cycle setting 2\" and \"drying cycle setting\" properties shall be implemented in the actual piece of equipment (the alternative shall not be implemented). 0x40-0x4F : Washing and drying course / maker original course, 0x80-0x8F : Washing course /  maker original course, 0xC0-0xCF : Drying course / maker original course"
+            "en": "The washer and dryer cycle shall be specified either by the “washer and dryer cycle setting 1” property (EPC = 0xD0) or by the “washer and dryer cycle setting 2” property (EPC = 0xD1) combined with the “drying cycle setting” property (EPC = 0xD2). Either the “washer and dryer cycle setting 1” property or the “washer and dryer cycle setting 2” and “drying cycle setting” properties shall be implemented in the actual piece of equipment (the alternative shall not be implemented). 0x40 ~ 0x4F : Washing and drying course / maker original course, 0x80 ~ 0x8F : Washing course /  maker original course, 0xC0 ~ 0xCF : Drying course / maker original course"
           }
         },
         "0xD1": {
@@ -25702,7 +33621,7 @@ const jsonData = {
             "maxSize": 12
           },
           "note": {
-            "ja": "ビットが1の場合、対応するコースの設定が可能なことを、0の場合は不可能なことを示す。ビットとコースの関係はPDFの詳細を参照のこと。",
+            "ja": "ビットが1 の場合、対応するコースの設定が可能なことを、0 の場合は不可能なことを示す。ビットとコースの関係はPDFの詳細を参照のこと。",
             "en": "When the value contained in the bit for the desired washer and dryer cycle option is \"1\", the option can be specified. When the value contained in the bit for the desired washer and dryer cycle option is \"0\", the option cannot be specified. For the requirement as to which bit must be used for which option, refer to the detailed explanation in the PDF."
           }
         },
@@ -25727,7 +33646,7 @@ const jsonData = {
             "maxSize": 4
           },
           "note": {
-            "ja": "ビットが1の場合、対応するコースの設定が可能なことを、0の場合は不可能なことを示す。ビットとコースの関係はPDFの詳細を参照のこと。",
+            "ja": "ビットが1 の場合、対応するコースの設定が可能なことを、0 の場合は不可能なことを示す。ビットとコースの関係はPDFの詳細を参照のこと。",
             "en": "When the value contained in the bit for the desired washer and dryer cycle option is \"1\", the option can be specified. When the value contained in the bit for the desired washer and dryer cycle option is \"0\", the option cannot be specified. For the requirement as to which bit must be used for which option, refer to the detailed explanation in the PDF."
           }
         },
@@ -25752,7 +33671,7 @@ const jsonData = {
             "maxSize": 4
           },
           "note": {
-            "ja": "ビットが1の場合、対応するコースの設定が可能なことを、0の場合は不可能なことを示す。ビットとコースの関係はPDFの詳細を参照のこと。",
+            "ja": "ビットが1 の場合、対応するコースの設定が可能なことを、0 の場合は不可能なことを示す。ビットとコースの関係はPDFの詳細を参照のこと。",
             "en": "When the value contained in the bit for the desired washer and dryer cycle option is \"1\", the option can be specified. When the value contained in the bit for the desired washer and dryer cycle option is \"0\", the option cannot be specified. For the requirement as to which bit must be used for which option, refer to the detailed explanation in the PDF."
           }
         },
@@ -26305,8 +34224,8 @@ const jsonData = {
             ]
           },
           "note": {
-            "ja": "0xE0-0xEF : メーカオリジナルコード",
-            "en": "0xE0-0xEF : Unique code defined by the manufacture"
+            "ja": "0xE0～0xEF : メーカオリジナルコード",
+            "en": "0xE0～0xEF : Unique code defined by the manufacture"
           }
         },
         "0xE3": {
@@ -26413,8 +34332,8 @@ const jsonData = {
             ]
           },
           "note": {
-            "ja": "0x31-0x40 絶対値指定、0xA0-0xA7 プラス相対指定、0xC0-0xC7 マイナス相対指定",
-            "en": "0x31-0x40 Absolute setting, 0xA0-0xA7 Relative plus、0xC0-0xC7 Relative minus"
+            "ja": "0x31–0x40 絶対値指定、0xA0-0xA7 プラス相対指定、0xC0-0xC7 マイナス相対指定",
+            "en": "0x31–0x40 Absolute setting, 0xA0-0xA7 Relative plus、0xC0-0xC7 Relative minus"
           }
         },
         "0xE5": {
@@ -26466,7 +34385,7 @@ const jsonData = {
           },
           "note": {
             "ja": "0xA000-0xA03B プラス相対指定、0xC000-0xC03B マイナス相対指定",
-            "en": "0xA000-0xA03B Relative plus, 0xC000-0xC03B Relative minus"
+            "en": "0xA000-0xA03B Relative plus、0xC000-0xC03B Relative minus"
           }
         },
         "0xE6": {
@@ -26530,7 +34449,7 @@ const jsonData = {
             "maxSize": 4
           },
           "note": {
-            "ja": "0,1,2,3ビット：第1すすぎ、4,5,6,7ビット：第2すすぎ、8,9,10,11ビット：第3すすぎ、12,13,14,15ビット：第4すすぎ、16,17,18,19ビット：第5すすぎ、20,21,22,23ビット：第6すすぎ、24,25,26,27ビット：第7すすぎ、28,29,30,31ビット：第8すすぎ、0000：モード自動設定、0001：溜めすすぎ、0010：流水すすぎ、0011：シャワーすすぎ",
+            "ja": "0,1,2,3 ビット：第1 すすぎ、4,5,6,7 ビット：第2 すすぎ、8,9,10,11 ビット：第3 すすぎ、12,13,14,15 ビット：第4 すすぎ、16,17,18,19 ビット：第5 すすぎ、20,21,22,23 ビット：第6 すすぎ、24,25,26,27 ビット：第7 すすぎ、28,29,30,31 ビット：第8 すすぎ、0000：モード自動設定、0001：溜めすすぎ、0010：流水すすぎ、0011：シャワーすすぎ",
             "en": "Bits 0 through bit 3: 1st rinsing, Bits 4 through bit 7: 2nd rinsing, Bits 8 through bit 11: 3rd rinsing, Bits 12 through bit 15: 4th rinsing, Bits 16 through bit 19: 5th rinsing, Bits 20 through bit 23: 6th rinsing, Bits 24 through bit 27: 7th rinsing, Bits 28 through bit 31: 8th rinsing, 0000: Automatic mode, 0001: Rinsing without additional feeding of water from the tap, 0010: Rinsing with additional feeding of water from the tap, 0011: Shower rinsing"
           }
         },
@@ -26586,7 +34505,7 @@ const jsonData = {
           },
           "note": {
             "ja": "0xA000-0xA03B プラス相対指定、0xC000-0xC03B マイナス相対指定",
-            "en": "0xA000-0xA03B Relative plus, 0xC000-0xC03B Relative minus"
+            "en": "0xA000-0xA03B Relative plus、0xC000-0xC03B Relative minus"
           }
         },
         "0xE9": {
@@ -26638,7 +34557,7 @@ const jsonData = {
           },
           "note": {
             "ja": "0xA000-0xA03B プラス相対指定、0xC000-0xC03B マイナス相対指定",
-            "en": "0xA000-0xA03B Relative plus, 0xC000-0xC03B Relative minus"
+            "en": "0xA000-0xA03B Relative plus、0xC000-0xC03B Relative minus"
           }
         },
         "0xEA": {
@@ -26895,7 +34814,7 @@ const jsonData = {
             "maxSize": 24
           },
           "note": {
-            "ja": "第1,2バイト：有効な表示項目をビットマップで示す。第3バイト：つけおき行程　つけおき行程あり：0x41　つけおき行程なし：0x42。第4,5バイト：洗い時間　値は洗い時間設定値を参照。第6バイト：すすぎ回数　値はすすぎ回数設定値を参照。第7～10バイト：すすぎモード　値はすすぎモード設定を参照。第11バイト：脱水時間　値は脱水時間設定値を参照。第12、13バイト：乾燥時間　値は乾燥時間設定値を参照。第14バイト：温水設定　値は温水設定を参照。第15バイト：水量設定１　値は水量設定１を参照。第16バイト：水量設定2　値は水量設定２を参照。第17バイト：風呂水設定　値は風呂水設定を参照。第18バイト：水流設定　値は水流設定を参照。第19,20バイト：脱水回転数設定　値は脱水回転数設定値を参照。第21バイト：乾燥度設定　値は乾燥度設定を参照。第22,23バイト：つけおき行程時間設定　値はつけおき行程時間設定を参照。第24バイト：ソフトキープ設定　値はソフトキープ設定を参照。",
+            "ja": "第1,2 バイト：有効な表示項目をビットマップで示す。第3 バイト：つけおき行程　つけおき行程あり：0x41　つけおき行程なし：0x42。第4,5 バイト：洗い時間　値は洗い時間設定値を参照。第6 バイト：すすぎ回数　値はすすぎ回数設定値を参照。第7～10 バイト：すすぎモード　値はすすぎモード設定を参照。第11 バイト：脱水時間　値は脱水時間設定値を参照。第12、13 バイト：乾燥時間　値は乾燥時間設定値を参照。第14 バイト：温水設定　値は温水設定を参照。第15 バイト：水量設定１　値は水量設定１を参照。第16 バイト：水量設定2　値は水量設定２を参照。第17 バイト：風呂水設定　値は風呂水設定を参照。第18 バイト：水流設定　値は水流設定を参照。第19,20 バイト：脱水回転数設定　値は脱水回転数設定値を参照。第21 バイト：乾燥度設定　値は乾燥度設定を参照。第22,23 バイト：つけおき行程時間設定　値はつけおき行程時間設定を参照。第24 バイト：ソフトキープ設定　値はソフトキープ設定を参照。",
             "en": "This property indicates the available items in a bitmap format. Byte 3: Presoaking, With presoaking: 0x41, Without presoaking: 0x42. Bytes 4 and 5: Washing time, The value of the \"washing time setting\" property shall be referenced. Byte 6: Number of times of rinsing, The value of the \"number of times of rinsing’ setting\" property shall be referenced. Bytes 7 through 10: Rinsing process, The value of the \"rinsing process setting\" property shall be referenced. Byte 11: Spin drying time, The value of the \"spin drying time setting\" property shall be referenced. Bytes 12 and 13: Drying time, The value of the \"drying time setting\" property shall be referenced. Byte 14: Warm water setting, The value of the \"warm water setting\" property shall be referenced. Byte 15: Water volume setting 1, The value of the \"water volume setting 1\" property shall be referenced. Byte 16: Water volume setting 2, The value of the \"water volume setting 2\" property shall be referenced. Byte 17: Bathtub water recycle setting, The value of the \"bathtub water recycle setting\" property shall be referenced. Byte 18: Water flow rate setting, The value of the \"water flow rate setting\" property shall be referenced. Bytes 19 and 20: \"Rotation speed for spin drying\" setting, The value of the \"’rotation speed for spin drying’ setting\" property shall be referenced. Byte 21: \"Degree of drying\" setting, The value of the \"’degree of drying’ setting\" property shall be referenced. Bytes 22 and 23: Presoaking time setting, The value of the \"presoaking time setting\" property shall be referenced. Byte 24: Wrinkling minimization setting, The value of the \"wrinkling minimization setting\" property shall be referenced."
           }
         }
@@ -27147,5 +35066,815 @@ const jsonData = {
           }
         }
       }
-    }}}
-  
+    },
+    "0x0602": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "テレビ",
+        "en": "Television"
+      },
+      "shortName": "tv",
+      "elProperties": {
+        "0x80": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "動作状態",
+            "en": "Operation status"
+          },
+          "shortName": "operationStatus",
+          "accessRule": {
+            "get": "required",
+            "set": "optional",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x30",
+                "name": "yes",
+                "descriptions": {
+                  "ja": "ON",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x31",
+                "name": "no",
+                "descriptions": {
+                  "ja": "OFF",
+                  "en": "OFF"
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "エネルギーサービスに対応する場合、Set搭載は必須。",
+            "en": "In the case where an “energy service” is to be supported, the implementation of the SET function for this property is mandatory."
+          }
+        },
+        "0xB0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "表示制御設定",
+            "en": "Display control setting"
+          },
+          "shortName": "displayControlStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x30",
+                "name": "enabled",
+                "descriptions": {
+                  "ja": "表示",
+                  "en": "Displaying enabled"
+                }
+              },
+              {
+                "edt": "0x31",
+                "name": "disabled",
+                "descriptions": {
+                  "ja": "非表示",
+                  "en": "Displaying disabled"
+                }
+              }
+            ]
+          }
+        },
+        "0xB1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "文字列設定受付可能状態",
+            "en": "Character string setting acceptance status"
+          },
+          "shortName": "stringSettingAcceptanceStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x30",
+                "name": "ready",
+                "descriptions": {
+                  "ja": "Ready",
+                  "en": "Ready"
+                }
+              },
+              {
+                "edt": "0x31",
+                "name": "busy",
+                "descriptions": {
+                  "ja": "Busy",
+                  "en": "Busy"
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "快適支援サービスとセキュリティサービスに対応する場合、本プロパティの搭載は必須とする。",
+            "en": "In the case where a \"home amenity service\" or a \"security service\" is to be supported, the implementation of this property is mandatory."
+          }
+        },
+        "0xB2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "表示可能文字コード",
+            "en": "Supported character codes"
+          },
+          "shortName": "supportedCharacterCode",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "bitmap",
+            "size": 2,
+            "bitmaps": [
+              {
+                "name": "ANSI_X3.4",
+                "descriptions": {
+                  "ja": "ANSI X3.4",
+                  "en": "ANSI X3.4"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000001"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "notImplemented",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "Not implemented"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "implemented",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Implemented"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "Shift-JIS",
+                "descriptions": {
+                  "ja": "Shift-JIS",
+                  "en": "Shift-JIS"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000010"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "notImplemented",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "Not implemented"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "implemented",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Implemented"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "JIS",
+                "descriptions": {
+                  "ja": "JIS",
+                  "en": "JIS"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00000100"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "notImplemented",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "Not implemented"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "implemented",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Implemented"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "Japanese_EUC",
+                "descriptions": {
+                  "ja": "日本語EUC",
+                  "en": "Japanese EUC"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00001000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "notImplemented",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "Not implemented"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "implemented",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Implemented"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "UCS-4",
+                "descriptions": {
+                  "ja": "UCS-4",
+                  "en": "UCS-4"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00010000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "notImplemented",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "Not implemented"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "implemented",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Implemented"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "UCS-2",
+                "descriptions": {
+                  "ja": "UCS-2",
+                  "en": "UCS-2"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b00100000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "notImplemented",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "Not implemented"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "implemented",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Implemented"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "Latin-1",
+                "descriptions": {
+                  "ja": "Latin-1",
+                  "en": "Latin-1"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b01000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "notImplemented",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "Not implemented"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "implemented",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Implemented"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "UTF-8",
+                "descriptions": {
+                  "ja": "UTF-8",
+                  "en": "UTF-8"
+                },
+                "position": {
+                  "index": 0,
+                  "bitMask": "0b10000000"
+                },
+                "value": {
+                  "type": "state",
+                  "size": 0,
+                  "enum": [
+                    {
+                      "edt": 0,
+                      "name": "notImplemented",
+                      "descriptions": {
+                        "ja": "非搭載",
+                        "en": "Not implemented"
+                      }
+                    },
+                    {
+                      "edt": 1,
+                      "name": "implemented",
+                      "descriptions": {
+                        "ja": "搭載",
+                        "en": "Implemented"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "快適支援サービスとセキュリティサービスに対応する場合、本プロパティの搭載は必須とする。",
+            "en": "In the case where a \"home amenity service\" or a \"security service\" is to be supported, the implementation of this property is mandatory."
+          }
+        },
+        "0xB3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "伝達文字列設定",
+            "en": "Character string to present to the user"
+          },
+          "shortName": "characterStringPresented",
+          "accessRule": {
+            "get": "optional",
+            "set": "required",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "object",
+            "properties": [
+              {
+                "name": "length",
+                "element": {
+                  "$ref": "#/definitions/number_0-255"
+                },
+                "descriptions": {
+                  "ja": "伝達文字バイトコード列データ長の16 進換算値",
+                  "en": "Byte code sequence data length of the character string to present to the user converted to the hexadecimal format"
+                }
+              },
+              {
+                "name": "characterCode",
+                "element": {
+                  "type": "bitmap",
+                  "size": 2,
+                  "bitmaps": [
+                    {
+                      "name": "ANSI_X3.4",
+                      "descriptions": {
+                        "ja": "ANSI X3.4",
+                        "en": "ANSI X3.4"
+                      },
+                      "position": {
+                        "index": 0,
+                        "bitMask": "0b00000001"
+                      },
+                      "value": {
+                        "type": "state",
+                        "size": 0,
+                        "enum": [
+                          {
+                            "edt": 0,
+                            "name": "notImplemented",
+                            "descriptions": {
+                              "ja": "非搭載",
+                              "en": "Not implemented"
+                            }
+                          },
+                          {
+                            "edt": 1,
+                            "name": "implemented",
+                            "descriptions": {
+                              "ja": "搭載",
+                              "en": "Implemented"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "Shift-JIS",
+                      "descriptions": {
+                        "ja": "Shift-JIS",
+                        "en": "Shift-JIS"
+                      },
+                      "position": {
+                        "index": 0,
+                        "bitMask": "0b00000010"
+                      },
+                      "value": {
+                        "type": "state",
+                        "size": 0,
+                        "enum": [
+                          {
+                            "edt": 0,
+                            "name": "notImplemented",
+                            "descriptions": {
+                              "ja": "非搭載",
+                              "en": "Not implemented"
+                            }
+                          },
+                          {
+                            "edt": 1,
+                            "name": "implemented",
+                            "descriptions": {
+                              "ja": "搭載",
+                              "en": "Implemented"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "JIS",
+                      "descriptions": {
+                        "ja": "JIS",
+                        "en": "JIS"
+                      },
+                      "position": {
+                        "index": 0,
+                        "bitMask": "0b00000100"
+                      },
+                      "value": {
+                        "type": "state",
+                        "size": 0,
+                        "enum": [
+                          {
+                            "edt": 0,
+                            "name": "notImplemented",
+                            "descriptions": {
+                              "ja": "非搭載",
+                              "en": "Not implemented"
+                            }
+                          },
+                          {
+                            "edt": 1,
+                            "name": "implemented",
+                            "descriptions": {
+                              "ja": "搭載",
+                              "en": "Implemented"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "Japanese_EUC",
+                      "descriptions": {
+                        "ja": "日本語EUC",
+                        "en": "Japanese EUC"
+                      },
+                      "position": {
+                        "index": 0,
+                        "bitMask": "0b00001000"
+                      },
+                      "value": {
+                        "type": "state",
+                        "size": 0,
+                        "enum": [
+                          {
+                            "edt": 0,
+                            "name": "notImplemented",
+                            "descriptions": {
+                              "ja": "非搭載",
+                              "en": "Not implemented"
+                            }
+                          },
+                          {
+                            "edt": 1,
+                            "name": "implemented",
+                            "descriptions": {
+                              "ja": "搭載",
+                              "en": "Implemented"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "UCS-4",
+                      "descriptions": {
+                        "ja": "UCS-4",
+                        "en": "UCS-4"
+                      },
+                      "position": {
+                        "index": 0,
+                        "bitMask": "0b00010000"
+                      },
+                      "value": {
+                        "type": "state",
+                        "size": 0,
+                        "enum": [
+                          {
+                            "edt": 0,
+                            "name": "notImplemented",
+                            "descriptions": {
+                              "ja": "非搭載",
+                              "en": "Not implemented"
+                            }
+                          },
+                          {
+                            "edt": 1,
+                            "name": "implemented",
+                            "descriptions": {
+                              "ja": "搭載",
+                              "en": "Implemented"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "UCS-2",
+                      "descriptions": {
+                        "ja": "UCS-2",
+                        "en": "UCS-2"
+                      },
+                      "position": {
+                        "index": 0,
+                        "bitMask": "0b00100000"
+                      },
+                      "value": {
+                        "type": "state",
+                        "size": 0,
+                        "enum": [
+                          {
+                            "edt": 0,
+                            "name": "notImplemented",
+                            "descriptions": {
+                              "ja": "非搭載",
+                              "en": "Not implemented"
+                            }
+                          },
+                          {
+                            "edt": 1,
+                            "name": "implemented",
+                            "descriptions": {
+                              "ja": "搭載",
+                              "en": "Implemented"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "Latin-1",
+                      "descriptions": {
+                        "ja": "Latin-1",
+                        "en": "Latin-1"
+                      },
+                      "position": {
+                        "index": 0,
+                        "bitMask": "0b01000000"
+                      },
+                      "value": {
+                        "type": "state",
+                        "size": 0,
+                        "enum": [
+                          {
+                            "edt": 0,
+                            "name": "notImplemented",
+                            "descriptions": {
+                              "ja": "非搭載",
+                              "en": "Not implemented"
+                            }
+                          },
+                          {
+                            "edt": 1,
+                            "name": "implemented",
+                            "descriptions": {
+                              "ja": "搭載",
+                              "en": "Implemented"
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "UTF-8",
+                      "descriptions": {
+                        "ja": "UTF-8",
+                        "en": "UTF-8"
+                      },
+                      "position": {
+                        "index": 0,
+                        "bitMask": "0b10000000"
+                      },
+                      "value": {
+                        "type": "state",
+                        "size": 0,
+                        "enum": [
+                          {
+                            "edt": 0,
+                            "name": "notImplemented",
+                            "descriptions": {
+                              "ja": "非搭載",
+                              "en": "Not implemented"
+                            }
+                          },
+                          {
+                            "edt": 1,
+                            "name": "implemented",
+                            "descriptions": {
+                              "ja": "搭載",
+                              "en": "Implemented"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "descriptions": {
+                  "ja": "使用文字コード",
+                  "en": "Character code to use"
+                }
+              },
+              {
+                "name": "constant_0x00",
+                "element": {
+                  "$ref": "#/definitions/number_0"
+                },
+                "descriptions": {
+                  "ja": "for future reserved",
+                  "en": "for future reserved"
+                }
+              },
+              {
+                "name": "characterString",
+                "element": {
+                  "$ref": "#/definitions/raw_1-244"
+                },
+                "descriptions": {
+                  "ja": "Max244Byte 分の伝達文字列バイトコード列",
+                  "en": "Byte code sequence of the character string to present to the user (max.244 bytes)"
+                }
+              }
+            ]
+          }
+        },
+        "0xB4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "受付け伝達文字列長",
+            "en": "Length of character string accepted"
+          },
+          "shortName": "lengthOfStringAccepted",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "object",
+            "properties": [
+              {
+                "name": "length",
+                "element": {
+                  "$ref": "#/definitions/number_0-244"
+                },
+                "descriptions": {
+                  "ja": "0x00-0xF4",
+                  "en": "0x00 to 0xF4"
+                }
+              },
+              {
+                "name": "reserved",
+                "element": {
+                  "type": "state",
+                  "size": 1,
+                  "enum": [
+                    {
+                      "edt": "0x00",
+                      "name": "reserved",
+                      "descriptions": {
+                        "ja": "reserved",
+                        "en": "reserved"
+                      }
+                    }
+                  ]
+                },
+                "descriptions": {
+                  "ja": "0x00(for future reserved)",
+                  "en": "0x00(for future reserved)"
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "快適支援サービスとセキュリティサービスに対応する場合、本プロパティの搭載は必須とする。",
+            "en": "In the case where a \"home amenity service\" or a \"security service\" is to be supported, the implementation of this property is mandatory."
+          }
+        }
+      }
+    }
+  }
+}

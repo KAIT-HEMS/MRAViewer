@@ -1,7 +1,7 @@
 // mraViewer.js
-// 2020.11.10
+// 2020.11.16
 
-let globalVersionInfo = "V1.1.1 2020-11-10";
+let globalVersionInfo = "V1.1.2 2020-11-16";
 let globalNotes = {}; // 備考欄のデータを保持するため
 let globalBitmaps = {}; // value range欄のbitmapデータを保持するため
 var vm = new Vue({
@@ -133,19 +133,29 @@ function refresh() {
   vm.releaseSelected = selectedRelease;
 
   // 機器オブジェクトの選択の要素を作成
+  // Super class and Node profile
+  const nameSuperClass =
+    vm.rbLanguage == "japanese" ? "スーパークラス" : "Super class";
+  let nameNodeProfile =
+    vm.rbLanguage == "japanese" ? "0x0EF0 ノードプロファイル" : "Node profile";
+  nameNodeProfile =
+    vm.rbName == "name-on" ? nameNodeProfile + "nodeProfile" : nameNodeProfile;
   let deviceList = [
-    { name: "Super class", eoj: "0x0000" },
-    { name: "0x0EF0 Node profile", eoj: "0x0EF0" },
+    { name: nameSuperClass, eoj: "0x0000" },
+    { name: nameNodeProfile, eoj: "0x0EF0" },
+    // { name: "Super class", eoj: "0x0000" },
+    // { name: "0x0EF0 Node profile", eoj: "0x0EF0" },
   ];
   for (const eoj of Object.keys(jsonData.devices)) {
+    // EOJ の定義に oneOf がない場合
     if (!jsonData.devices[eoj].oneOf) {
       let eojShortName = "";
       if (vm.rbName == "name-on") {
         eojShortName = jsonData.devices[eoj].shortName
-        ? ": " + jsonData.devices[eoj].shortName
-        : ": missing shortName";
+          ? ": " + jsonData.devices[eoj].shortName
+          : ": missing shortName";
       }
-      
+
       if (vm.rbLanguage == "japanese") {
         deviceList.push({
           name: eoj + " " + jsonData.devices[eoj].className.ja + eojShortName,
@@ -157,6 +167,8 @@ function refresh() {
           eoj: eoj,
         });
       }
+
+      // EOJ の定義に oneOf がある場合
     } else {
       for (let object of jsonData.devices[eoj].oneOf) {
         const validFrom = object.validRelease.from;
@@ -165,14 +177,21 @@ function refresh() {
             ? latestRelease
             : object.validRelease.to;
         if (validFrom <= selectedRelease && selectedRelease <= validTo) {
+          let eojShortName = "";
+          if (vm.rbName == "name-on") {
+            eojShortName = object.shortName
+              ? ": " + object.shortName
+              : ": missing shortName";
+          }
+
           if (vm.rbLanguage == "japanese") {
             deviceList.push({
-              name: eoj + " " + object.className.ja,
+              name: eoj + " " + object.className.ja + eojShortName,
               eoj: eoj,
             });
           } else {
             deviceList.push({
-              name: eoj + " " + object.className.en,
+              name: eoj + " " + object.className.en + eojShortName,
               eoj: eoj,
             });
           }
@@ -233,17 +252,17 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
   let appendix = {};
   let pushFlag = true;
   appendix.epc = key;
+
   // プロパティ名の設定
-  let epcShortName = "";
-  if (vm.rbName == "name-on") {
-    epcShortName = property.shortName
+  const epcShortName = property.shortName
     ? ": " + property.shortName
     : ": missing shortName";
-  }
-  if (vm.rbLanguage == "japanese") {
-    appendix.name = property.propertyName.ja + epcShortName;
-  } else {
-    appendix.name = property.propertyName.en + epcShortName;
+  appendix.name =
+    vm.rbLanguage == "japanese"
+      ? property.propertyName.ja
+      : property.propertyName.en;
+  if (vm.rbName == "name-on") {
+    appendix.name += epcShortName;
   }
 
   // access rule Set, Get
@@ -370,16 +389,19 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
         const multiple = property.data.multipleOf
           ? property.data.multipleOf
           : 1;
-        // ３けた区切りのコンマを追加 (Intl.NumberFormat)
+        // 10進数表示の３けた区切りのコンマを追加 (Intl.NumberFormat)
         const digit =
           new Intl.NumberFormat().format(property.data.minimum * multiple) +
           " ~ " +
           new Intl.NumberFormat().format(property.data.maximum * multiple);
+        // 16進数表示の文字列作成
+        // TODO:0x0の桁数分の0を追加
+        // TODO:.minimumがマイナスの時のHEXの値の処理を追加
         const hex =
           "0x" +
-          property.data.minimum.toString(16).toUpperCase() +
+          toStringHex(property.data.minimum, 0) +
           " ~ 0x" +
-          property.data.maximum.toString(16).toUpperCase();
+          toStringHex(property.data.maximum, 0);
         appendix.range = digit + " " + hex;
       }
       appendix.dataType = property.data.format;
@@ -530,6 +552,7 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
       // display array header
       const arrayHeaderProperty = {
         propertyName: property.propertyName,
+        shortName: property.shortName,
         accessRule: property.accessRule,
         data: {
           type: "arrayHeader",
@@ -564,7 +587,7 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
         }
         // objectTitleにnameを追加
         if (vm.rbName == "name-on") {
-          objectTitle += (": " + arrayObject[i].name);
+          objectTitle += ": " + arrayObject[i].name;
         }
         const objectHeaderProperty = {
           propertyName: property.propertyName,
@@ -621,12 +644,36 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
   }
 }
 
-// 数値(number)を16進数表記の文字列に変換する
+// function toStringHex(int:number, int:bytes)
+// 数値(number)を(bytes)桁数の16進数表記の文字列に変換する
 // 数値のbyte数は(bytes)
+// bytes = 0 の場合は、numberをもとに桁数を計算する
 // example: toStringHex(10, 1) => "0A"
 // example: toStringHex(10, 2) => "000A"
+// example: toStringHex(-3, 1) => "FD"
 function toStringHex(number, bytes) {
+  // bytes = 0 の時、number の byte 数を計算する
+  if (bytes == 0) {
+    if (Math.abs(number) <= 0xff) {
+      bytes = 1;
+    } else if (Math.abs(number) <= 0xffff) {
+      bytes = 2;
+    } else {
+      bytes = 4;
+    }
+  }
+  if (number < 0) {
+    // number が負の値の処理。２の補数を計算。
+    if (Math.abs(number) <= 0xff) {
+      number = 0xff + number + 1;
+    } else if (Math.abs(number) <= 0xffff) {
+      number = 0xffff + number + 1;
+    } else {
+      number = 0xffffffff + number + 1;
+    }
+  }
   let str = number.toString(16).toUpperCase();
+  // 桁数分、頭に0をpaddingする
   while (str.length < 2 * bytes) {
     str = "0" + str;
   }
