@@ -1895,7 +1895,6 @@ const jsonData = {
               "ja": "設置場所",
               "en": "Installation location"
             },
-            "shortName": "installationLocation",
             "accessRule": {
               "get": "required",
               "set": "required",
@@ -2631,6 +2630,10 @@ const jsonData = {
             "$ref": "#/definitions/number_-2732-32766",
             "unit": "Celsius",
             "multipleOf": 0.1
+          },
+          "note": {
+            "ja": "温度計測値を(0.1℃単位で)示す。",
+            "en": "This property indicates the measured temperrature value in units of 0.1℃."
           }
         }
       }
@@ -2667,8 +2670,8 @@ const jsonData = {
             "multipleOf": 0.001
           },
           "note": {
-            "ja": "オーバーフロー時は0にリセット",
-            "en": "The value is reset to 0 after overflow"
+            "ja": "積算電力量を0.001kWhで示す。オーバーフロー時は0にリセット。",
+            "en": "This property indicates cumulative amounts of electric energy in 0.001kWh. The value is reset to 0 after overflow."
           }
         },
         "0xE1": {
@@ -2689,6 +2692,10 @@ const jsonData = {
           "data": {
             "$ref": "#/definitions/number_-999999999-999999999",
             "unit": "W"
+          },
+          "note": {
+            "ja": "瞬時電力値をWで示す。",
+            "en": "This property indicates measured instantaneous electric energy in watts."
           }
         },
         "0xE2": {
@@ -2710,6 +2717,10 @@ const jsonData = {
             "$ref": "#/definitions/number_-32767-32766",
             "unit": "W",
             "multipleOf": 0.1
+          },
+          "note": {
+            "ja": "瞬時電力値を0.1Wで示す。",
+            "en": "This property indicates instantaneous electric energy in units of 0.1W."
           }
         },
         "0xE3": {
@@ -2731,6 +2742,10 @@ const jsonData = {
             "$ref": "#/definitions/number_-32767-32766",
             "unit": "kW",
             "multipleOf": 0.1
+          },
+          "note": {
+            "ja": "瞬時電力値を0.k1Wで示す。",
+            "en": "This property indicates instantaneous electric energy in units of 0.1kW."
           }
         },
         "0xE4": {
@@ -2805,6 +2820,10 @@ const jsonData = {
                     }
                   ]
                 }
+              },
+              "note": {
+                "ja": "積算電力量(0.001kWh)の計測結果履歴を、30分毎データを過去24時間で示す。",
+                "en": "This property indicates measurement result log of cumulative amounts of electric energy (0.001kWh) fir the past 24 hours in 30-minute sections."
               }
             }
           ]
@@ -2827,6 +2846,10 @@ const jsonData = {
           "data": {
             "$ref": "#/definitions/number_0-65533",
             "unit": "V"
+          },
+          "note": {
+            "ja": "実行電圧値をVで示す。本プロパティは、計測定格電圧値として固定値で実装してもよい。",
+            "en": "This property indicates effective voltage value in volts. This property may be implemeented as a fixed value of the rated voltage of measurement."
           }
         }
       }
@@ -2884,6 +2907,10 @@ const jsonData = {
           "data": {
             "$ref": "#/definitions/number_0-65533",
             "unit": "V"
+          },
+          "note": {
+            "ja": "電流値センサ計測対象の定格電圧値。本プロパティは、固定値として実装してもよい。",
+            "en": "Rated voltage value to be measured by current sensor. This property may be implemeented as a fixed value."
           }
         },
         "0xE2": {
@@ -7930,6 +7957,854 @@ const jsonData = {
         }
       }
     },
+    "0x0263": {
+      "oneOf": [
+        {
+          "validRelease": {
+            "from": "A",
+            "to": "C"
+          },
+          "className": {
+            "ja": "電動雨戸・シャッター",
+            "en": "Electrically operated rain sliding door/shutter"
+          },
+          "shortName": "electricRainDoor",
+          "elProperties": {
+            "0xE0": {
+              "validRelease": {
+                "from": "A",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "開閉設定１",
+                "en": "Open/close setting 1"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "required_c",
+                "inf": "required"
+              },
+              "data": {
+                "$ref": "#/definitions/state_OPEN-CLOSE-STOP-414243"
+              },
+              "note": {
+                "ja": "0xE0または0xE7のいずれかが必須",
+                "en": "either 0xE0 or 0xE7 is required"
+              }
+            },
+            "0xE1": {
+              "validRelease": {
+                "from": "A",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "開度レベル設定",
+                "en": "Degree-of-opening level"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/level_31-8"
+              }
+            },
+            "0xE2": {
+              "validRelease": {
+                "from": "A",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "ブラインド角度設定値",
+                "en": "Blind angle setting"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-180degree"
+              }
+            },
+            "0xE3": {
+              "validRelease": {
+                "from": "A",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "開閉速度設定",
+                "en": "Opening/closing speed setting"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/state_LOW-MID-HIGH-414243"
+              }
+            },
+            "0xE4": {
+              "validRelease": {
+                "from": "A",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "開度レベル設定2",
+                "en": "Degree-of-opening level2"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/number_0-255"
+              }
+            },
+            "0xE5": {
+              "validRelease": {
+                "from": "A",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "電気錠設定",
+                "en": "Electric lock setting"
+              },
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "$ref": "#/definitions/state_LOCK-UNLOCK-4142"
+              }
+            },
+            "0xE7": {
+              "validRelease": {
+                "from": "A",
+                "to": "C"
+              },
+              "propertyName": {
+                "ja": "開閉設定2",
+                "en": "Open/Close setting2"
+              },
+              "accessRule": {
+                "get": "required_c",
+                "set": "required_c",
+                "inf": "required"
+              },
+              "data": {
+                "$ref": "#/definitions/state_OPEN-CLOSE-4142"
+              },
+              "note": {
+                "ja": "0xE0または0xE7のいずれかが必須",
+                "en": "either 0xE0 or 0xE7 is required"
+              }
+            }
+          }
+        },
+        {
+          "validRelease": {
+            "from": "D",
+            "to": "latest"
+          },
+          "className": {
+            "ja": "電動雨戸・シャッター",
+            "en": "Electrically operated rain sliding door/shutter"
+          },
+          "shortName": "electricRainDoor",
+          "elProperties": {
+            "0x89": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "異常内容（復帰可能な異常）",
+                "en": "Fault description (Recoverable faults)"
+              },
+              "shortName": "faultDescription",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "required"
+              },
+              "data": {
+                "type": "state",
+                "size": 2,
+                "enum": [
+                  {
+                    "edt": "0x0402",
+                    "name": "obstacleCaught",
+                    "descriptions": {
+                      "ja": "障害物挟込み",
+                      "en": "Obstacle caught"
+                    }
+                  },
+                  {
+                    "edt": "0x0502",
+                    "name": "outageRecovery",
+                    "descriptions": {
+                      "ja": "停電復帰",
+                      "en": "Recovery from outage"
+                    }
+                  },
+                  {
+                    "edt": "0x0602",
+                    "name": "timeOut",
+                    "descriptions": {
+                      "ja": "タイムアウト",
+                      "en": "Time out"
+                    }
+                  },
+                  {
+                    "edt": "0x0702",
+                    "name": "batteryLow",
+                    "descriptions": {
+                      "ja": "電池残量低下",
+                      "en": "Battery low"
+                    }
+                  }
+                ]
+              },
+              "note": {
+                "ja": "下位1バイトは、スーパークラスのリセットボタンを押し再操作(0x02)固定。上位1バイトは、復帰可能な異常内容を小分類まで定義。0x45～0xFFはユーザ定義。",
+                "en": "Lower-order one byte: Restarting the device by performance a reset operation = 0x02. Higher-order one byte: The detailed fault classification. 0x45 to 0xFF are defined by user."
+              }
+            },
+            "0x90": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "タイマ動作設定",
+                "en": "Timer operation setting"
+              },
+              "shortName": "timerOperationMode",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "required"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "true",
+                    "descriptions": {
+                      "ja": "ON",
+                      "en": "ON"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "false",
+                    "descriptions": {
+                      "ja": "OFF",
+                      "en": "OFF"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xD0": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "開速度設定",
+                "en": "Opening speed setting"
+              },
+              "shortName": "openingSpeed",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "low",
+                    "descriptions": {
+                      "ja": "低",
+                      "en": "Low"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "medium",
+                    "descriptions": {
+                      "ja": "中",
+                      "en": "Medium"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "high",
+                    "descriptions": {
+                      "ja": "高",
+                      "en": "High"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xD1": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "閉速度設定",
+                "en": "Closing speed setting"
+              },
+              "shortName": "closingSpeed",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "low",
+                    "descriptions": {
+                      "ja": "低",
+                      "en": "Low"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "medium",
+                    "descriptions": {
+                      "ja": "中",
+                      "en": "Medium"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "high",
+                    "descriptions": {
+                      "ja": "高",
+                      "en": "High"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xD2": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "動作時間設定値",
+                "en": "Operation time"
+              },
+              "shortName": "operationTime",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "number",
+                "format": "uint8",
+                "minimum": 0,
+                "maximum": 253,
+                "unit": "second"
+              }
+            },
+            "0xE0": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "開閉動作設定",
+                "en": "Open/close operation setting"
+              },
+              "shortName": "openCloseOperation",
+              "accessRule": {
+                "get": "required",
+                "set": "required",
+                "inf": "required"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "open",
+                    "descriptions": {
+                      "ja": "開",
+                      "en": "Open"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "close",
+                    "descriptions": {
+                      "ja": "閉",
+                      "en": "Close"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "stop",
+                    "descriptions": {
+                      "ja": "停止",
+                      "en": "Stop"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xE1": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "開度レベル設定",
+                "en": "Degree-of-opening setting"
+              },
+              "shortName": "degreeOfOpening",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "number",
+                "format": "uint8",
+                "unit": "%",
+                "minimum": 0,
+                "maximum": 100
+              }
+            },
+            "0xE2": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "ブラインド角度設定値",
+                "en": "Blind angle setting"
+              },
+              "shortName": "blindAngle",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "number",
+                "format": "uint8",
+                "unit": "degree",
+                "minimum": 0,
+                "maximum": 180
+              }
+            },
+            "0xE3": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "開閉速度設定",
+                "en": "Opening/closing speed setting"
+              },
+              "shortName": "openCloseSpeed",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "low",
+                    "descriptions": {
+                      "ja": "低",
+                      "en": "Low"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "medium",
+                    "descriptions": {
+                      "ja": "中",
+                      "en": "Medium"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "high",
+                    "descriptions": {
+                      "ja": "高",
+                      "en": "High"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xE5": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "電気錠設定",
+                "en": "Electric lock setting"
+              },
+              "shortName": "electricLock",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "true",
+                    "descriptions": {
+                      "ja": "施錠",
+                      "en": "Lock"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "false",
+                    "descriptions": {
+                      "ja": "解錠",
+                      "en": "Unlock"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xE8": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "遠隔操作設定状態",
+                "en": "Remote operation setting status"
+              },
+              "shortName": "remoteOperation",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "required"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "true",
+                    "descriptions": {
+                      "ja": "ON（許可）",
+                      "en": "ON(permitted)"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "false",
+                    "descriptions": {
+                      "ja": "OFF（禁止）",
+                      "en": "OFF(prohibited)"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xE9": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "選択開度動作設定",
+                "en": "Selective degree-of-opening setting"
+              },
+              "shortName": "selectiveDegreeOfOpening",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "required"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "degreeOfOpening",
+                    "descriptions": {
+                      "ja": "開度レベル設定位置開",
+                      "en": "Degree-of-opening setting position: Open"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "operationTimeOfOpening",
+                    "descriptions": {
+                      "ja": "動作時間設定値開",
+                      "en": "Operation time setting value: Open"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "operationTimeOfClosing",
+                    "descriptions": {
+                      "ja": "動作時間設定値閉",
+                      "en": "Operation time setting value: Close"
+                    }
+                  },
+                  {
+                    "edt": "0x44",
+                    "name": "localSetting",
+                    "descriptions": {
+                      "ja": "ローカル設定位置",
+                      "en": "Local setting position"
+                    }
+                  },
+                  {
+                    "edt": "0x45",
+                    "name": "slitDegreeOfOpening",
+                    "descriptions": {
+                      "ja": "スリット開度設定",
+                      "en": "Slit degree-of-opning setting"
+                    }
+                  }
+                ]
+              },
+              "note": {
+                "ja": "0x46以降はユーザ定義（開度レベル設定のショートカットなど）",
+                "en": "0x46 to 0xFF are defined by user. (shortcut to degree-of-opening setting, etc.)"
+              }
+            },
+            "0xEA": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "開閉状態",
+                "en": "Open/closed status"
+              },
+              "shortName": "openCloseStatus",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "required"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "fullyOpen",
+                    "descriptions": {
+                      "ja": "全開",
+                      "en": "Fully open"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "fullyClosed",
+                    "descriptions": {
+                      "ja": "全閉",
+                      "en": "Fully closed"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "opening",
+                    "descriptions": {
+                      "ja": "開動作中",
+                      "en": "Opening"
+                    }
+                  },
+                  {
+                    "edt": "0x44",
+                    "name": "closing",
+                    "descriptions": {
+                      "ja": "閉動作中",
+                      "en": "Closing"
+                    }
+                  },
+                  {
+                    "edt": "0x45",
+                    "name": "stoppedHalfway",
+                    "descriptions": {
+                      "ja": "途中停止",
+                      "en": "Stopped halfway"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xED": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "スリット開度設定",
+                "en": "Slit degree-of-opening"
+              },
+              "shortName": "slitDegreeOfOpening",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "level",
+                "base": "0x31",
+                "minimum": 1,
+                "maximum": 8,
+                "multiplef": 1
+              }
+            },
+            "0xEE": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "ワンタイム開速度設定",
+                "en": "One-time opening speed setting"
+              },
+              "shortName": "oneTimeOpeningSpeed",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "low",
+                    "descriptions": {
+                      "ja": "低",
+                      "en": "Low"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "medium",
+                    "descriptions": {
+                      "ja": "中",
+                      "en": "Medium"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "high",
+                    "descriptions": {
+                      "ja": "高",
+                      "en": "High"
+                    }
+                  },
+                  {
+                    "edt": "0x44",
+                    "name": "none",
+                    "descriptions": {
+                      "ja": "無し",
+                      "en": "None"
+                    }
+                  }
+                ]
+              }
+            },
+            "0xEF": {
+              "validRelease": {
+                "from": "D",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "ワンタイム閉速度設定",
+                "en": "One-time closing speed setting"
+              },
+              "shortName": "oneTimeClosingSpeed",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "low",
+                    "descriptions": {
+                      "ja": "低",
+                      "en": "Low"
+                    }
+                  },
+                  {
+                    "edt": "0x42",
+                    "name": "medium",
+                    "descriptions": {
+                      "ja": "中",
+                      "en": "Medium"
+                    }
+                  },
+                  {
+                    "edt": "0x43",
+                    "name": "high",
+                    "descriptions": {
+                      "ja": "高",
+                      "en": "High"
+                    }
+                  },
+                  {
+                    "edt": "0x44",
+                    "name": "none",
+                    "descriptions": {
+                      "ja": "無し",
+                      "en": "None"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
     "0x026B": {
       "validRelease": {
         "from": "A",
@@ -9822,6 +10697,350 @@ const jsonData = {
           "data": {
             "$ref": "#/definitions/number_0-65533",
             "unit": "L"
+          }
+        }
+      }
+    },
+    "0x026F": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "電気錠",
+        "en": "Electric lock"
+      },
+      "shortName": "electricLock",
+      "elProperties": {
+        "0xE0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "施錠設定1",
+            "en": "Lock setting1"
+          },
+          "shortName": "mainElectricLock",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "施錠",
+                  "en": "lock"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "解錠",
+                  "en": "unlock"
+                }
+              }
+            ]
+          }
+        },
+        "0xE1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "施錠設定2",
+            "en": "Lock setting 2"
+          },
+          "shortName": "subElectricLock",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "施錠",
+                  "en": "lock"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "解錠",
+                  "en": "unlock"
+                }
+              }
+            ]
+          }
+        },
+        "0xE2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ドアガード施錠状態",
+            "en": "Lock status of door guard"
+          },
+          "shortName": "doorGuardLocked",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "施錠",
+                  "en": "lock"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "解錠",
+                  "en": "unlock"
+                }
+              }
+            ]
+          }
+        },
+        "0xE3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "扉開閉状態",
+            "en": "Door open/close status"
+          },
+          "shortName": "doorOpened",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "開",
+                  "en": "open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "閉",
+                  "en": "close"
+                }
+              }
+            ]
+          }
+        },
+        "0xE4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "在室・不在状態",
+            "en": "Occupant/ non-occupant status"
+          },
+          "shortName": "occupant",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "在室",
+                  "en": "occupant"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "不在",
+                  "en": "non-occupant"
+                }
+              }
+            ]
+          }
+        },
+        "0xE5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "警報状態",
+            "en": "Alarm status"
+          },
+          "shortName": "alarmStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x40",
+                "name": "normal",
+                "descriptions": {
+                  "ja": "通常状態（警報なし）",
+                  "en": "normal(no alarm)"
+                }
+              },
+              {
+                "edt": "0x41",
+                "name": "breakOpen",
+                "descriptions": {
+                  "ja": "こじ開け",
+                  "en": "break open"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "doorOpen",
+                "descriptions": {
+                  "ja": "こじ開け",
+                  "en": "door open"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "manualUnlocked",
+                "descriptions": {
+                  "ja": "手動解錠",
+                  "en": "manual unlocked"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "tampered",
+                "descriptions": {
+                  "ja": "タンパ",
+                  "en": "manual unlocked"
+                }
+              }
+            ]
+          }
+        },
+        "0xE6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "自動施錠モード設定",
+            "en": "Auto lock mode setting"
+          },
+          "shortName": "autoLockMode",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "入",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "切",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0xE7": {
+          "validRelease": {
+            "from": "D",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "電池残量状態",
+            "en": "Battery level"
+          },
+          "shortName": "replaceBatteryLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "required"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x40",
+                "name": "ordinaryLevel",
+                "descriptions": {
+                  "ja": "",
+                  "descriptions": {
+                    "ja": "通常",
+                    "en": "Ordinary level"
+                  }
+                }
+              },
+              {
+                "edt": "0x41",
+                "name": "replacementNotification",
+                "descriptions": {
+                  "ja": "交換通知有",
+                  "en": "Notification of battery replacement"
+                }
+              }
+            ]
           }
         }
       }
@@ -11738,6 +12957,1719 @@ const jsonData = {
               }
             }
           ]
+        }
+      }
+    },
+    "0x0279": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "住宅用太陽光発電",
+        "en": "Household solar power generation"
+      },
+      "shortName": "pvPowerGeneration",
+      "elProperties": {
+        "0x83": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "識別番号",
+            "en": "Identification number"
+          },
+          "shortName": "id",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 17,
+            "maxSize": 17
+          },
+          "note": {
+            "ja": "1バイト目は0xFE。2〜4バイト目はメーカコード。残りは機器毎のユニーク値",
+            "en": "1st data is 0xFE. 2nd to 4th data is manufacture code. The rest should be unique to each device."
+          }
+        },
+        "0x97": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "現在時刻設定",
+            "en": "Current time setting"
+          },
+          "shortName": "currentTime",
+          "accessRule": {
+            "get": "required_c",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "time",
+            "size": 2
+          },
+          "note": {
+            "ja": "出力制御スケジュールにより出力制御を行う場合は必須",
+            "en": "required if output control by schedule is capable"
+          }
+        },
+        "0x98": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "現在年月日設定",
+            "en": "Current date setting"
+          },
+          "shortName": "currentDate",
+          "accessRule": {
+            "get": "required_c",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "date-time",
+            "size": 4
+          },
+          "note": {
+            "ja": "出力制御スケジュールにより出力制御を行う場合は必須",
+            "en": "required if output control by schedule is capable"
+          }
+        },
+        "0xA0": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "出力制御設定１",
+            "en": "Output power control setting 1"
+          },
+          "shortName": "outputPowerControl1",
+          "accessRule": {
+            "get": "required_c",
+            "set": "required_c",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "%",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "note": {
+            "ja": "出力制御が可能な場合は、0xA0または0xA1のいずれかが必須",
+            "en": "either 0xA0 or 0xA1 is required if output control is capable"
+          }
+        },
+        "0xA1": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "出力制御設定２",
+            "en": "Output power control setting 2"
+          },
+          "shortName": "outputPowerControl2",
+          "accessRule": {
+            "get": "required_c",
+            "set": "required_c",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "W"
+          },
+          "note": {
+            "ja": "出力制御が可能な場合は、0xA0または0xA1のいずれかが必須",
+            "en": "either 0xA0 or 0xA1 is required if output control is capable"
+          }
+        },
+        "0xA2": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "余剰買取制御機能設定",
+            "en": "Function to control purchase surplus electricity setting"
+          },
+          "shortName": "surplusPurchaseControl",
+          "accessRule": {
+            "get": "required_c",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "有効",
+                  "en": "Valid"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "無効",
+                  "en": "Invalid"
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "出力制御が可能な場合は必須",
+            "en": "required if output control is capable"
+          }
+        },
+        "0xB0": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "出力制御スケジュール",
+            "en": "Output power control schedule"
+          },
+          "shortName": "outputPowerControllingSchedule",
+          "accessRule": {
+            "get": "required_c",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "object",
+            "properties": [
+              {
+                "name": "date",
+                "element": {
+                  "oneOf": [
+                    {
+                      "type": "date-time",
+                      "size": 4
+                    },
+                    {
+                      "type": "state",
+                      "size": 4,
+                      "enum": [
+                        {
+                          "edt": "0xFFFFFFFF",
+                          "name": "unknown",
+                          "descriptions": {
+                            "ja": "不明",
+                            "en": "Unknown"
+                          },
+                          "readOnly": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "rate",
+                "element": {
+                  "type": "array",
+                  "itemSize": 1,
+                  "minItems": 96,
+                  "maxItems": 96,
+                  "items": {
+                    "oneOf": [
+                      {
+                        "type": "number",
+                        "format": "uint8",
+                        "unit": "%",
+                        "minimum": 0,
+                        "maximum": 100
+                      },
+                      {
+                        "type": "state",
+                        "size": 1,
+                        "enum": [
+                          {
+                            "edt": "0xFF",
+                            "name": "unknown",
+                            "descriptions": {
+                              "ja": "不明",
+                              "en": "Unknown"
+                            },
+                            "readOnly": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "現在年月日(YYYY：MM：DD)＋0x00～0x64(0～100％)×96(30分毎の値、2日分)。出力制御スケジュールにより出力制御を行う場合は必須",
+            "en": "Current date (YYYY:MM:DD)+0x00-0x64 (0-100%) x 96 (values every 30 minutes, for 2 days). required if output control by schedule is capable."
+          }
+        },
+        "0xB1": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "次回アクセス日時",
+            "en": "Next access date and time"
+          },
+          "shortName": "updateScheduleDateAndTime",
+          "accessRule": {
+            "get": "required_c",
+            "set": "notApplicable",
+            "inf": "required"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "date-time",
+                "size": 7
+              },
+              {
+                "type": "state",
+                "size": 7,
+                "enum": [
+                  {
+                    "edt": "0xFFFFFFFFFFFFFF",
+                    "state": {
+                      "ja": "出力制御スケジュールによる出力制御が必要ない太陽光発電および、出力制御スケジュールが取得できていない場合",
+                      "en": "Solar power generation that requires no output power control by output power controlling schedule and cases where output power controlling schedule has not been acquired"
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          },
+          "note": {
+            "ja": "出力制御スケジュールにより出力制御を行う場合は必須",
+            "en": "required if output control by schedule is capable"
+          }
+        },
+        "0xB2": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "余剰買取制御機能タイプ",
+            "en": "Function to control the type of surplus electricity purchase"
+          },
+          "shortName": "surplusPurchaseControlType",
+          "accessRule": {
+            "get": "required_c",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "有効",
+                  "en": "Valid"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "無効",
+                  "en": "Invalid"
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "出力制御スケジュールにより出力制御を行う場合は必須",
+            "en": "required if output control by schedule is capable"
+          }
+        },
+        "0xB3": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "出力変化時間設定値",
+            "en": "Output power change time setting value"
+          },
+          "shortName": "outputPowerChangeTime",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "second"
+          }
+        },
+        "0xB4": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "上限クリップ設定値",
+            "en": "Upper limit clip setting value"
+          },
+          "shortName": "upperLimitClip",
+          "accessRule": {
+            "get": "required_c",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "W"
+          },
+          "note": {
+            "ja": "0xFFFFは未設定を示す。出力制御スケジュールにより出力制御を行う場合は必須",
+            "en": "0xFFFF means no setting. required if output control by schedule is capable."
+          }
+        },
+        "0xC0": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "運転力率設定値",
+            "en": "Operation power factor setting value"
+          },
+          "shortName": "operatingPowerFactor",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "%",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "0xC1": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "FIT契約タイプ",
+            "en": "FIT contract type"
+          },
+          "shortName": "contractType",
+          "accessRule": {
+            "get": "required",
+            "set": "required",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "FIT",
+                "descriptions": {
+                  "ja": "FIT",
+                  "en": "FIT"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "nonFIT",
+                "descriptions": {
+                  "ja": "非FIT",
+                  "en": "Non-FIT"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "undefined",
+                "descriptions": {
+                  "ja": "未設定",
+                  "en": "No setting"
+                },
+                "state": {
+                  "ja": "未設定",
+                  "en": "No setting"
+                }
+              }
+            ]
+          }
+        },
+        "0xC2": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "自家消費タイプ",
+            "en": "Self-consumption type"
+          },
+          "shortName": "selfConsumptionType",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "withSelfConsumption",
+                "descriptions": {
+                  "ja": "自家消費有",
+                  "en": "With self-consumption"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "withoutSelfConsumption",
+                "descriptions": {
+                  "ja": "自家消費無",
+                  "en": "Without self-consumption"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "unknown",
+                "descriptions": {
+                  "ja": "不明",
+                  "en": "Unknown"
+                },
+                "state": {
+                  "ja": "不明",
+                  "en": "Unknown"
+                }
+              }
+            ]
+          }
+        },
+        "0xC3": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "設備認定容量",
+            "en": "Capacity approved by equipment"
+          },
+          "shortName": "approvedCapacity",
+          "accessRule": {
+            "get": "required_c",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "W"
+          },
+          "note": {
+            "ja": "0xFFFFは未設定を示す。0xC3または0xC4のいずれかが必須。",
+            "en": "0xFFFF means no setting. either 0xC3 or 0xC4 is required."
+          }
+        },
+        "0xC4": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "換算係数",
+            "en": "Conversion coefficient"
+          },
+          "shortName": "conversionCoefficient",
+          "accessRule": {
+            "get": "required_c",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "%",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "note": {
+            "ja": "0xC3または0xC4のいずれかが必須",
+            "en": "either 0xC3 or 0xC4 is required"
+          }
+        },
+        "0xD0": {
+          "oneOf": [
+            {
+              "validRelease": {
+                "from": "A",
+                "to": "J"
+              },
+              "propertyName": {
+                "ja": "系統連系状態",
+                "en": "System-interconnected type"
+              },
+              "shortName": "powerSystemInterconnectionStatus",
+              "accessRule": {
+                "get": "optional",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x00",
+                    "name": "reversePowerFlowAcceptable",
+                    "descriptions": {
+                      "ja": "系統連系（逆潮流可）",
+                      "en": "System-interconnected type(reverse power flow acceptable)"
+                    }
+                  },
+                  {
+                    "edt": "0x01",
+                    "name": "Independent",
+                    "descriptions": {
+                      "ja": "独立",
+                      "en": "Independent type"
+                    }
+                  },
+                  {
+                    "edt": "0x02",
+                    "name": "reversePowerFlowNotAcceptable",
+                    "descriptions": {
+                      "ja": "系統連系（逆潮流不可）",
+                      "en": "System-interconnected type(reverse power flow not acceptable)"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "validRelease": {
+                "from": "K",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "系統連系状態",
+                "en": "System-interconnected type"
+              },
+              "shortName": "powerSystemInterconnectionStatus",
+              "accessRule": {
+                "get": "required",
+                "set": "notApplicable",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x00",
+                    "name": "reversePowerFlowAcceptable",
+                    "descriptions": {
+                      "ja": "系統連系（逆潮流可）",
+                      "en": "System-interconnected type(reverse power flow acceptable)"
+                    }
+                  },
+                  {
+                    "edt": "0x01",
+                    "name": "Independent",
+                    "descriptions": {
+                      "ja": "独立",
+                      "en": "Independent type"
+                    }
+                  },
+                  {
+                    "edt": "0x02",
+                    "name": "reversePowerFlowNotAcceptable",
+                    "descriptions": {
+                      "ja": "系統連系（逆潮流不可）",
+                      "en": "System-interconnected type(reverse power flow not acceptable)"
+                    }
+                  },
+                  {
+                    "edt": "0x03",
+                    "name": "unknown",
+                    "descriptions": {
+                      "ja": "不明",
+                      "en": "Unknown"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "0xD1": {
+          "validRelease": {
+            "from": "K",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "出力抑制状態",
+            "en": "Output power restraint status"
+          },
+          "shortName": "outputPowerRestraintStatus",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "outputControl",
+                "descriptions": {
+                  "ja": "抑制中（出力制御）",
+                  "en": "Ongoing restraint (output power control)"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "exceptControl",
+                "descriptions": {
+                  "ja": "抑制中（出力制御以外）",
+                  "en": "Ongoing restraint (except output power control)"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "reasonUnknown",
+                "descriptions": {
+                  "ja": "抑制中（抑制要因不明）",
+                  "en": "Ongoing restraint (reason for restraint is unknown)"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "notPowerRestraint",
+                "descriptions": {
+                  "ja": "抑制未実施",
+                  "en": "Not restraining"
+                }
+              },
+              {
+                "edt": "0x45",
+                "name": "unknown",
+                "descriptions": {
+                  "ja": "不明",
+                  "en": "Unknown"
+                }
+              }
+            ]
+          }
+        },
+        "0xE0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "瞬時発電電力計測値",
+            "en": "Measured instantaneous amount of electricity generated"
+          },
+          "shortName": "instantaneousElectricPowerGeneration",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "W"
+          }
+        },
+        "0xE1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "積算発電電力量計測値",
+            "en": "Measured cumulative amount of electric energy generated"
+          },
+          "shortName": "cumulativeElectricEnergyOfGeneration",
+          "accessRule": {
+            "get": "required",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint32",
+            "minimum": 0,
+            "maximum": 999999999,
+            "unit": "kWh",
+            "multipleOf": 0.001
+          },
+          "note": {
+            "ja": "積算電力量を0.001kWhで示す。オーバーフロー時は0にリセット。",
+            "en": "This property indicates cumulative amounts of electric energy in 0.001kWh. The value is reset to 0 after overflow."
+          }
+        },
+        "0xE2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "積算発電電力量リセット設定",
+            "en": "Resetting cumulative amount of electric energy generated"
+          },
+          "shortName": "resetCumulativeElectricEnergyOfGeneration",
+          "accessRule": {
+            "get": "notApplicable",
+            "set": "optional",
+            "inf": "notApplicable"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x00",
+                "name": "reset",
+                "descriptions": {
+                  "ja": "リセット",
+                  "en": "Reset"
+                }
+              }
+            ]
+          }
+        },
+        "0xE3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "積算売電電力量計測値",
+            "en": "Measured cumulative amount of electric energy sold"
+          },
+          "shortName": "cumulativeElectricEnergySold",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint32",
+            "minimum": 0,
+            "maximum": 99999999,
+            "unit": "kWh",
+            "multipleOf": 0.001
+          },
+          "note": {
+            "ja": "売電電力の積算値を0.001kWhで示す。オーバーフロー時は0にリセット。",
+            "en": "This property indicates cumulative value of sold power in 0.001kWh. The value is reset to 0 after overflow."
+          }
+        },
+        "0xE4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "積算売電電力量リセット設定",
+            "en": "Resetting cumulative amount of electric energy sold"
+          },
+          "shortName": "resetCumulativeElectricEnergySold",
+          "accessRule": {
+            "get": "notApplicable",
+            "set": "optional",
+            "inf": "notApplicable"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x00",
+                "name": "reset",
+                "descriptions": {
+                  "ja": "リセット",
+                  "en": "Reset"
+                }
+              }
+            ]
+          }
+        },
+        "0xE5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "発電電力制限設定1",
+            "en": "Power generation output limit setting 1"
+          },
+          "shortName": "powerGenerationOutputLimit1",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "unit": "%",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "0xE6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "発電電力制限設定2",
+            "en": "Power generation output limit setting 2"
+          },
+          "shortName": "powerGenerationOutputLimit2",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "W"
+          }
+        },
+        "0xE7": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "売電電力制限設定",
+            "en": "Limit setting for the amount of electricity sold"
+          },
+          "shortName": "limitElectricEnergySold",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "W"
+          }
+        },
+        "0xE8": {
+          "oneOf": [
+            {
+              "validRelease": {
+                "from": "A",
+                "to": "J"
+              },
+              "propertyName": {
+                "ja": "定格発電電力値（系統連系時）",
+                "en": "Rated power generation output (System-interconnected)"
+              },
+              "shortName": "ratedElectricPowerOfgeneration",
+              "accessRule": {
+                "get": "optional",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "number",
+                "format": "uint16",
+                "minimum": 0,
+                "maximum": 65533,
+                "unit": "W"
+              }
+            },
+            {
+              "validRelease": {
+                "from": "K",
+                "to": "latest"
+              },
+              "propertyName": {
+                "ja": "定格発電電力値（系統連系時）",
+                "en": "Rated power generation output (System-interconnected)"
+              },
+              "shortName": "ratedElectricPowerOfgeneration",
+              "accessRule": {
+                "get": "required",
+                "set": "optional",
+                "inf": "optional"
+              },
+              "data": {
+                "type": "number",
+                "format": "uint16",
+                "minimum": 0,
+                "maximum": 65533,
+                "unit": "W"
+              },
+              "note": {
+                "ja": "0xFFFFは未設定を示す",
+                "en": "0xFFFF means no setting"
+              }
+            }
+          ]
+        },
+        "0xE9": {
+          "validRelease": {
+            "from": "C",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "定格発電電力値（独立時）",
+            "en": "Rated power generation output (Independent)"
+          },
+          "shortName": "ratedElectricPowerOfgenerationIndependent",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533,
+            "unit": "W"
+          }
+        }
+      }
+    },
+    "0x027A": {
+      "validRelease": {
+        "from": "A",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "冷温水熱源機",
+        "en": "Cold or hot water heat source equipment"
+      },
+      "shortName": "coldOrHotWaterHeatSourceEquipment",
+      "elProperties": {
+        "0x90": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ONタイマ予約設定",
+            "en": "ON timer reservation setting"
+          },
+          "shortName": "onTimerReservation",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "予約入",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "交予約切",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0x91": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ONタイマ時刻設定値",
+            "en": "ON timer setting"
+          },
+          "shortName": "onTimerTime",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "time",
+            "size": 2
+          }
+        },
+        "0x92": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "ONタイマ相対時間設定値",
+            "en": "Relative ON timer setting"
+          },
+          "shortName": "onTimerRelativeTime",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "time",
+            "size": 2
+          }
+        },
+        "0x94": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "OFFタイマ予約設定",
+            "en": "OFF timer reservation setting"
+          },
+          "shortName": "offTimerReservation",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "true",
+                "descriptions": {
+                  "ja": "予約入",
+                  "en": "ON"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "false",
+                "descriptions": {
+                  "ja": "交予約切",
+                  "en": "OFF"
+                }
+              }
+            ]
+          }
+        },
+        "0x95": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "OFFタイマ時刻設定値",
+            "en": "Time set by OFF timer"
+          },
+          "shortName": "offTimerTime",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "time",
+            "size": 2
+          }
+        },
+        "0x96": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "OFFタイマ相対時間設定値",
+            "en": "Relative OFF timer setting"
+          },
+          "shortName": "offTimerRelativeTime",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "time",
+            "size": 2
+          }
+        },
+        "0xD1": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "冷水温設定２設定可能最大レベル",
+            "en": "Cold water temperature setting 2 Maximum allowable setting level"
+          },
+          "shortName": "coldWaterTemperatue2MaximumLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "required"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 33,
+            "maximum": 47
+          },
+          "note": {
+            "ja": "冷房(冷水)水温設定2の最大段階数",
+            "en": "The maximum number of steps for cooling (cold water) temperature setting 2"
+          }
+        },
+        "0xD2": {
+          "validRelease": {
+            "from": "M",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "温水温設定２設定可能最大レベル",
+            "en": "Warm water temperature setting 2 Maximum allowable setting level"
+          },
+          "shortName": "wormWaterTemperatue2MaximumLevel",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "required"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint8",
+            "minimum": 49,
+            "maximum": 63
+          },
+          "note": {
+            "ja": "暖房(温水)水温設定2の最大段階数",
+            "en": "The maximum number of steps for heating (warm water) temperature setting 2"
+          }
+        },
+        "0xE0": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "運転モード設定",
+            "en": "Operation mode setting"
+          },
+          "shortName": "operationMode",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "heating",
+                "descriptions": {
+                  "ja": "暖房",
+                  "en": "Heating"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "cooling",
+                "descriptions": {
+                  "ja": "冷房",
+                  "en": "Cooling"
+                }
+              }
+            ]
+          }
+        },
+        "0xE1": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "水温設定1",
+            "en": "Water temperature setting 1"
+          },
+          "shortName": "waterTemperature1",
+          "accessRule": {
+            "get": "required_c",
+            "set": "required_c",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "uint8",
+                "unit": "℃",
+                "minimum": 0,
+                "maximum": 100
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x71",
+                    "name": "AUTO",
+                    "descriptions": {
+                      "ja": "AUTO",
+                      "en": "AUTO"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "note": {
+            "ja": "EPC=0xE1または0xE2のどちらかの実装が必須",
+            "en": "Either EPC=0xE1 or 0xE2 is required"
+          }
+        },
+        "0xE2": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "水温設定2",
+            "en": "Water temperature setting 2"
+          },
+          "shortName": "waterTemperature2",
+          "accessRule": {
+            "get": "required_c",
+            "set": "required_c",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "level",
+                "base": "0x21",
+                "maximum": 15
+              },
+              {
+                "type": "level",
+                "base": "0x31",
+                "maximum": 15
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x41",
+                    "name": "AUTO",
+                    "descriptions": {
+                      "ja": "AUTO",
+                      "en": "AUTO"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "note": {
+            "ja": "EPC=0xE1または0xE2のどちらかの実装が必須。冷水:0x21~0x2F, 温水:0x31~0x3F。",
+            "en": "Either EPC=0xE1 or 0xE2 is required. Cold Water:0x21, Hot Water:0x31."
+          }
+        },
+        "0xE3": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "往き水温計測値（出口水温）",
+            "en": "Measured temperature of outward water (Exit water Temperature)"
+          },
+          "shortName": "outwardWaterTemperatureExit",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "uint8",
+                "unit": "℃",
+                "minimum": 0,
+                "maximum": 100
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x7E",
+                    "name": "undefined",
+                    "descriptions": {
+                      "ja": "不明",
+                      "en": "Undefined"
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xE4": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "戻り水温計測値（入口水温）",
+            "en": "Measured temperature of inward water (Entrance water Temperature)"
+          },
+          "shortName": "inwardWaterTemperatureEntrance",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "oneOf": [
+              {
+                "type": "number",
+                "format": "uint8",
+                "unit": "℃",
+                "minimum": 0,
+                "maximum": 100
+              },
+              {
+                "type": "state",
+                "size": 1,
+                "enum": [
+                  {
+                    "edt": "0x7E",
+                    "name": "undefined",
+                    "descriptions": {
+                      "ja": "不明",
+                      "en": "Undefined"
+                    },
+                    "readOnly": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "0xE5": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "特殊運転設定",
+            "en": "Special operation setting"
+          },
+          "shortName": "specialOperation",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "normal",
+                "descriptions": {
+                  "ja": "通常運転",
+                  "en": "Normal operation"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "modest",
+                "descriptions": {
+                  "ja": "控えめ運転",
+                  "en": "modest operation"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "highPower",
+                "descriptions": {
+                  "ja": "ハイパワー運転",
+                  "en": "high power operation"
+                },
+                "state": {
+                  "ja": "ハイパワー運転",
+                  "en": "high power operation"
+                }
+              }
+            ]
+          }
+        },
+        "0xE6": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "デイリータイマー設定",
+            "en": "Daily timer setting"
+          },
+          "shortName": "dailyTimer",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x40",
+                "name": "timerMode",
+                "descriptions": {
+                  "ja": "タイマー切",
+                  "en": "Timer OFF"
+                }
+              },
+              {
+                "edt": "0x41",
+                "name": "timer1",
+                "descriptions": {
+                  "ja": "タイマー１",
+                  "en": "timer 1"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "timer2",
+                "descriptions": {
+                  "ja": "タイマー２",
+                  "en": "timer 2"
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "最大2種のタイマー使用可能",
+            "en": "Up to 2 kinds of timer can be used"
+          }
+        },
+        "0xE7": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "デイリータイマー1設定",
+            "en": "Daily timer setting 1"
+          },
+          "shortName": "dailyTimer1",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 6,
+            "maxSize": 6
+          },
+          "note": {
+            "ja": "24時間を30分単位で分割、全6バイトを割り当て、各bit 1:運転、0:停止",
+            "en": "Set the time in the unit of 30 minutes, dividing 24 hours by 30 minutes and allocated 6 bytes. Each bit 1: worked 0: stopped"
+          }
+        },
+        "0xE8": {
+          "validRelease": {
+            "from": "A",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "デイリータイマー2設定",
+            "en": "Daily timer setting 2"
+          },
+          "shortName": "dailyTimer2",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 6,
+            "maxSize": 6
+          },
+          "note": {
+            "ja": "24時間を30分単位で分割、全6バイトを割り当て、各bit 1:運転、0:停止",
+            "en": "Set the time in the unit of 30 minutes, dividing 24 hours by 30 minutes and allocated 6 bytes. Each bit 1: worked 0: stopped"
+          }
+        },
+        "0xE9": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "定格消費電力値",
+            "en": "Rated power consumption"
+          },
+          "shortName": "ratedPowerconsumption",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "object",
+            "properties": [
+              {
+                "name": "heating",
+                "element": {
+                  "type": "number",
+                  "format": "uint16",
+                  "minimum": 0,
+                  "maximum": 65533,
+                  "unit": "W"
+                },
+                "descriptions": {
+                  "ja": "暖房（温水）運転モード時の定格消費電力",
+                  "en": "Rated power consumption of heater (hot water) mode in watts"
+                }
+              },
+              {
+                "name": "cooling",
+                "element": {
+                  "type": "number",
+                  "format": "uint16",
+                  "minimum": 0,
+                  "maximum": 65533,
+                  "unit": "W"
+                },
+                "descriptions": {
+                  "ja": "冷房（冷水）運転モード時の定格消費電力",
+                  "en": "Rated power consumption of cooler (cold water) mode in watts"
+                }
+              }
+            ]
+          },
+          "note": {
+            "ja": "暖房（温水）：冷房（冷水）",
+            "en": "Heater (hot water) : cooler (cold water)"
+          }
+        },
+        "0xEA": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "消費電力計測方法",
+            "en": "Power consumption measurement method"
+          },
+          "shortName": "powerConsumptionMeasurementMethod",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "nodeUnit",
+                "descriptions": {
+                  "ja": "ノード単位",
+                  "en": "Node unit"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "classUnit",
+                "descriptions": {
+                  "ja": "クラス単位",
+                  "en": "Class unit"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "instanceUnit",
+                "descriptions": {
+                  "ja": "インスタンス単位",
+                  "en": "Instance unit"
+                }
+              }
+            ]
+          }
         }
       }
     },
@@ -27588,7 +30520,7 @@ const jsonData = {
             "ja": "照度レベル設定",
             "en": "Illuminance Level Setting"
           },
-          "shortName": "brightness",
+          "shortMame": "brightness",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -32662,7 +35594,7 @@ const jsonData = {
             "ja": "庫外照明照度レベル設定",
             "en": "Illuminance level setting of lighting outside the case"
           },
-          "shortName": "brightnessOfLightingOutsideTheCase",
+          "shortName": "庫外照明照度レベル設定",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -35063,6 +37995,467 @@ const jsonData = {
           },
           "data": {
             "$ref": "#/definitions/raw_12"
+          }
+        }
+      }
+    },
+    "0x05FF": {
+      "validRelease": {
+        "from": "G",
+        "to": "latest"
+      },
+      "className": {
+        "ja": "コントローラ",
+        "en": "Controller"
+      },
+      "shortName": "controller",
+      "elProperties": {
+        "0xC0": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "コントローラID",
+            "en": "Controller ID"
+          },
+          "shortName": "controllerId",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 1,
+            "maxSize": 40
+          }
+        },
+        "0xC1": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "管理台数",
+            "en": "Number of devices controlled"
+          },
+          "shortName": "numberOfDevices",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533
+          }
+        },
+        "0xC2": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "インデックス",
+            "en": "Index"
+          },
+          "shortName": "deviceListIndex",
+          "accessRule": {
+            "get": "optional",
+            "set": "optional",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533
+          }
+        },
+        "0xC3": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "機器ID",
+            "en": "Device ID"
+          },
+          "shortName": "deviceListId",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 1,
+            "maxSize": 40
+          }
+        },
+        "0xC4": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "機種",
+            "en": "Device type"
+          },
+          "shortName": "deviceListType",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 2,
+            "maxSize": 2
+          },
+          "note": {
+            "ja": "クラスグループコード＋クラスコード",
+            "en": "Class group code + class code"
+          }
+        },
+        "0xC5": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "名称",
+            "en": "Name"
+          },
+          "shortName": "deviceListName",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 1,
+            "maxSize": 64
+          },
+          "note": {
+            "ja": "UTF-8(BOM無し)で指定",
+            "en": "Specified using UTF-8 (no BOM)"
+          }
+        },
+        "0xC6": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "接続状態",
+            "en": "Connection status"
+          },
+          "shortName": "deviceListConnectionStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "connected",
+                "descriptions": {
+                  "ja": "接続中",
+                  "en": "Connected"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "disconnected",
+                "descriptions": {
+                  "ja": "離脱中",
+                  "en": "Disconnected"
+                }
+              },
+              {
+                "edt": "0x43",
+                "name": "notRegistered",
+                "descriptions": {
+                  "ja": "未登録",
+                  "en": "Not registered"
+                }
+              },
+              {
+                "edt": "0x44",
+                "name": "deleted",
+                "descriptions": {
+                  "ja": "削除",
+                  "en": "Deleted"
+                }
+              }
+            ]
+          }
+        },
+        "0xC7": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "管理対象機器事業者コード",
+            "en": "Business code of the device to be controlled"
+          },
+          "shortName": "deviceListBusinessCode",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 3,
+            "maxSize": 3
+          },
+          "note": {
+            "ja": "(ECHONETコンソーシアムで規定。)",
+            "en": "(Assigned by the ECHONET Consortium)"
+          }
+        },
+        "0xC8": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "管理対象機器商品コード",
+            "en": "Product code of the device to be controlled"
+          },
+          "shortName": "deviceListProductCode",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 1,
+            "maxSize": 12
+          },
+          "note": {
+            "ja": "(各メーカ毎に規定。)",
+            "en": "(Assigned by each manufacturer)"
+          }
+        },
+        "0xC9": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "管理対象機器製造年月日",
+            "en": "Manufacture date of the device to be controlled"
+          },
+          "shortName": "deviceListManufactureDate",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "date-time",
+            "size": 4
+          },
+          "note": {
+            "ja": "YYMD(1文字1バイト)で示す。",
+            "en": "This property indicates the date as YYMD (1 character = 1 byte)"
+          }
+        },
+        "0xCA": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "管理対象機器登録情報更新年月日",
+            "en": "Registerd information renewal date of the device to be controlled"
+          },
+          "shortName": "deviceListRegisteredInfoRenewalDate",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "date-time",
+            "size": 4
+          },
+          "note": {
+            "ja": "YYMD(1文字1バイト)で示す。",
+            "en": "This property indicates the date as YYMD (1 character = 1 byte)"
+          }
+        },
+        "0xCB": {
+          "validRelease": {
+            "from": "G",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "管理対象機器登録情報更新バージョン情報",
+            "en": "Registerd information renewal version information of the device to be controlled"
+          },
+          "shortName": "deviceListRegisteredInfoRenewalVersion",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "number",
+            "format": "uint16",
+            "minimum": 0,
+            "maximum": 65533
+          }
+        },
+        "0xCC": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "管理対象機器設置場所",
+            "en": "Place to install device to be controlled"
+          },
+          "shortName": "deviceListPlace",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 1,
+            "maxSize": 1
+          },
+          "note": {
+            "ja": "2.2 設置場所プロパティを参照",
+            "en": "See “2.2 Installation location property”"
+          }
+        },
+        "0xCD": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "管理対象機器異常発生状態",
+            "en": "Fault status of device to be controlled"
+          },
+          "shortName": "deviceListFaultStatus",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "state",
+            "size": 1,
+            "enum": [
+              {
+                "edt": "0x41",
+                "name": "fault",
+                "descriptions": {
+                  "ja": "異常発生有",
+                  "en": "Fault occurred"
+                }
+              },
+              {
+                "edt": "0x42",
+                "name": "noFault",
+                "descriptions": {
+                  "ja": "異常発生無",
+                  "en": "No fault has occurred"
+                }
+              }
+            ]
+          }
+        },
+        "0xCE": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "管理対象機器Setプロパティマップ",
+            "en": "Set property map for device to be controlled"
+          },
+          "shortName": "deviceListSetPropertyMap",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 1,
+            "maxSize": 17
+          },
+          "note": {
+            "ja": "付録1を参照のこと",
+            "en": "Refer to Appendix 1"
+          }
+        },
+        "0xCF": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "管理対象機器Getプロパティマップ",
+            "en": "Get property map for device to be controlled"
+          },
+          "shortName": "deviceListGetPropertyMap",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 1,
+            "maxSize": 17
+          },
+          "note": {
+            "ja": "付録1を参照のこと",
+            "en": "Refer to Appendix 1"
+          }
+        },
+        "0xE0": {
+          "validRelease": {
+            "from": "I",
+            "to": "latest"
+          },
+          "propertyName": {
+            "ja": "設置住所",
+            "en": "Address of installation location"
+          },
+          "shortName": "deviceListAddress",
+          "accessRule": {
+            "get": "optional",
+            "set": "notApplicable",
+            "inf": "optional"
+          },
+          "data": {
+            "type": "raw",
+            "minSize": 1,
+            "maxSize": 255
+          },
+          "note": {
+            "ja": "UTF-8(BOM無し)で指定",
+            "en": "Specified using UTF-8 (no BOM)"
           }
         }
       }
