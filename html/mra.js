@@ -1,10 +1,10 @@
 const jsonData = {
   "metaData": {
-    "date": "2020-11-16",
+    "date": "2020-11-18",
     "release": "M",
     "version": "1.0.0rc1",
     "note": {
-      "ja": " Machine Readable Appendix official release",
+      "ja": "Machine Readable Appendix official release",
       "en": "Machine Readable Appendix official release"
     },
     "Copyright": "(C) 2020 Kanagawa Institute of Technology, ECHONET CONSORTIUM"
@@ -769,7 +769,7 @@ const jsonData = {
       "enum": [
         {
           "edt": "0x41",
-          "name": "xxx",
+          "name": "incandescent",
           "descriptions": {
             "ja": "電球色",
             "en": "Incandescent lamp color"
@@ -777,7 +777,7 @@ const jsonData = {
         },
         {
           "edt": "0x42",
-          "name": "yyy",
+          "name": "white",
           "descriptions": {
             "ja": "白色",
             "en": "White"
@@ -785,7 +785,7 @@ const jsonData = {
         },
         {
           "edt": "0x43",
-          "name": "zzz",
+          "name": "daylightWhite",
           "descriptions": {
             "ja": "昼白色",
             "en": "Daylight white"
@@ -793,7 +793,7 @@ const jsonData = {
         },
         {
           "edt": "0x44",
-          "name": "aaa",
+          "name": "daylightColor",
           "descriptions": {
             "ja": "昼光色",
             "en": "Daylight color"
@@ -801,7 +801,7 @@ const jsonData = {
         },
         {
           "edt": "0x40",
-          "name": "bbb",
+          "name": "other",
           "descriptions": {
             "ja": "その他",
             "en": "Other"
@@ -815,7 +815,7 @@ const jsonData = {
       "enum": [
         {
           "edt": "0x41",
-          "name": "xxx",
+          "name": "incandescent",
           "descriptions": {
             "ja": "電球色",
             "en": "Incandescent lamp color"
@@ -823,7 +823,7 @@ const jsonData = {
         },
         {
           "edt": "0x42",
-          "name": "yyy",
+          "name": "white",
           "descriptions": {
             "ja": "白色",
             "en": "White"
@@ -831,7 +831,7 @@ const jsonData = {
         },
         {
           "edt": "0x43",
-          "name": "zzz",
+          "name": "daylightWhite",
           "descriptions": {
             "ja": "昼白色",
             "en": "Daylight white"
@@ -839,7 +839,7 @@ const jsonData = {
         },
         {
           "edt": "0x44",
-          "name": "aaa",
+          "name": "daylightColor",
           "descriptions": {
             "ja": "昼光色",
             "en": "Daylight color"
@@ -868,7 +868,7 @@ const jsonData = {
       "enum": [
         {
           "edt": "0xFD",
-          "name": "xxx",
+          "name": "undefined",
           "descriptions": {
             "ja": "不明",
             "en": "Undefined"
@@ -1324,7 +1324,7 @@ const jsonData = {
           "enum": [
             {
               "edt": "0x30",
-              "name": "yes",
+              "name": "true",
               "descriptions": {
                 "ja": "起動中",
                 "en": "Booting"
@@ -1332,7 +1332,7 @@ const jsonData = {
             },
             {
               "edt": "0x31",
-              "name": "no",
+              "name": "false",
               "descriptions": {
                 "ja": "未起動中",
                 "en": "not booting"
@@ -1408,7 +1408,7 @@ const jsonData = {
           "enum": [
             {
               "edt": "0x41",
-              "name": "yes",
+              "name": "true",
               "descriptions": {
                 "ja": "異常あり",
                 "en": "Fault occurred"
@@ -1416,7 +1416,7 @@ const jsonData = {
             },
             {
               "edt": "0x42",
-              "name": "no",
+              "name": "false",
               "descriptions": {
                 "ja": "異常なし",
                 "en": "No fault has occurred"
@@ -1553,7 +1553,7 @@ const jsonData = {
           "ja": "状変アナウンスプロパティマップ",
           "en": "Status change announcement property map"
         },
-        "shortName": "statusChangeAnnouncementPropertyMap",
+        "shortName": "infPropertyMap",
         "accessRule": {
           "get": "required",
           "set": "notApplicable",
@@ -1622,7 +1622,7 @@ const jsonData = {
           "ja": "個体識別情報",
           "en": "Unique identifier data"
         },
-        "shortName": "uniqueIdData",
+        "shortName": "uid",
         "accessRule": {
           "get": "optional",
           "set": "optional",
@@ -1706,6 +1706,10 @@ const jsonData = {
               "name": "numberOfinstances",
               "element": {
                 "$ref": "#/definitions/number_0-84"
+              },
+              "descriptions": {
+                "ja": "インスタンス数",
+                "en": "Number of instances"
               }
             },
             {
@@ -1717,6 +1721,10 @@ const jsonData = {
                 "items": {
                   "$ref": "#/definitions/raw_3"
                 }
+              },
+              "descriptions": {
+                "ja": "インスタンスリスト",
+                "en": "Instance list"
               }
             }
           ]
@@ -1746,12 +1754,20 @@ const jsonData = {
           "properties": [
             {
               "name": "numberOfInstances",
+              "descriptions": {
+                "ja": "インスタンス数",
+                "en": "Number of Instances"
+              },
               "element": {
                 "$ref": "#/definitions/number_0-84"
               }
             },
             {
               "name": "instanceList",
+              "descriptions": {
+                "ja": "インスタンスリスト",
+                "en": "instance list"
+              },
               "element": {
                 "type": "array",
                 "itemSize": 3,
@@ -1788,12 +1804,20 @@ const jsonData = {
           "properties": [
             {
               "name": "numberOfClasses",
+              "descriptions": {
+                "ja": "クラス数",
+                "en": "Number of classes"
+              },
               "element": {
                 "$ref": "#/definitions/number_1-8"
               }
             },
             {
               "name": "classList",
+              "descriptions": {
+                "ja": "クラスリスト",
+                "en": "Class list"
+              },
               "element": {
                 "type": "array",
                 "itemSize": 2,
@@ -1844,7 +1868,7 @@ const jsonData = {
           "enum": [
             {
               "edt": "0x30",
-              "name": "yes",
+              "name": "true",
               "descriptions": {
                 "ja": "ON",
                 "en": "ON"
@@ -1852,7 +1876,7 @@ const jsonData = {
             },
             {
               "edt": "0x31",
-              "name": "no",
+              "name": "false",
               "descriptions": {
                 "ja": "OFF",
                 "en": "OFF"
@@ -1895,6 +1919,7 @@ const jsonData = {
               "ja": "設置場所",
               "en": "Installation location"
             },
+            "shortName": "installationLocation",
             "accessRule": {
               "get": "required",
               "set": "required",
@@ -1961,7 +1986,7 @@ const jsonData = {
               "$ref": "#/definitions/raw_17"
             },
             "note": {
-              "ja": "1バイト目は0xFE。2〜4バイト目はメーカコード。残りは機器毎のユニーク値",
+              "ja": "1バイト目は0xFE。2～4バイト目はメーカコード。残りは機器毎のユニーク値",
               "en": "1st data is 0xFE. 2nd to 4th data is manufacture code. The rest should be unique to each device."
             }
           },
@@ -1984,7 +2009,7 @@ const jsonData = {
               "$ref": "#/definitions/raw_17"
             },
             "note": {
-              "ja": "1バイト目は0xFE。2〜4バイト目はメーカコード。残りは機器毎のユニーク値",
+              "ja": "1バイト目は0xFE。2～4バイト目はメーカコード。残りは機器毎のユニーク値",
               "en": "1st data is 0xFE. 2nd to 4th data is manufacture code. The rest should be unique to each device."
             }
           }
@@ -2092,7 +2117,7 @@ const jsonData = {
           "enum": [
             {
               "edt": "0x41",
-              "name": "yes",
+              "name": "true",
               "descriptions": {
                 "ja": "異常あり",
                 "en": "Fault occurred"
@@ -2100,7 +2125,7 @@ const jsonData = {
             },
             {
               "edt": "0x42",
-              "name": "no",
+              "name": "false",
               "descriptions": {
                 "ja": "異常なし",
                 "en": "No fault has occurred"
@@ -2249,7 +2274,7 @@ const jsonData = {
           "enum": [
             {
               "edt": "0x41",
-              "name": "yes",
+              "name": "true",
               "descriptions": {
                 "ja": "節電動作中",
                 "en": "Power Saving"
@@ -2257,7 +2282,7 @@ const jsonData = {
             },
             {
               "edt": "0x42",
-              "name": "no",
+              "name": "false",
               "descriptions": {
                 "ja": "通常動作中",
                 "en": "No Power Saving"
@@ -2315,7 +2340,7 @@ const jsonData = {
               "ja": "遠隔操作設定",
               "en": "Remote controll setting"
             },
-            "shortName": "remoteControlSetting",
+            "shortName": "remoteControl",
             "accessRule": {
               "get": "optional",
               "set": "optional",
@@ -2327,7 +2352,7 @@ const jsonData = {
               "enum": [
                 {
                   "edt": "0x41",
-                  "name": "notThroughPublicNetwork",
+                  "name": "ture",
                   "descriptions": {
                     "ja": "公衆回線未経由操作",
                     "en": "Not through a public network"
@@ -2335,7 +2360,7 @@ const jsonData = {
                 },
                 {
                   "edt": "0x42",
-                  "name": "throughPublicNetwork",
+                  "name": "false",
                   "descriptions": {
                     "ja": "公衆回線経由操作",
                     "en": "Through a public network"
@@ -2353,7 +2378,7 @@ const jsonData = {
               "ja": "遠隔操作設定",
               "en": "Remote controll setting"
             },
-            "shortName": "remoteControlSetting",
+            "shortName": "remoteControl",
             "accessRule": {
               "get": "optional",
               "set": "optional",
@@ -2365,7 +2390,7 @@ const jsonData = {
               "enum": [
                 {
                   "edt": "0x41",
-                  "name": "notThroughPublicNetwork",
+                  "name": "true",
                   "descriptions": {
                     "ja": "公衆回線未経由操作",
                     "en": "Not through a public network"
@@ -2373,7 +2398,7 @@ const jsonData = {
                 },
                 {
                   "edt": "0x42",
-                  "name": "throughPublicNetwork",
+                  "name": "false",
                   "descriptions": {
                     "ja": "公衆回線経由操作",
                     "en": "Through a public network"
@@ -2381,7 +2406,7 @@ const jsonData = {
                 },
                 {
                   "edt": "0x61",
-                  "name": "notPossible",
+                  "name": "true",
                   "descriptions": {
                     "ja": "通信回線正常（公衆回線経由の操作不可）",
                     "en": "Communication line is normal (operation through a public network is not possible)"
@@ -2389,7 +2414,7 @@ const jsonData = {
                 },
                 {
                   "edt": "0x62",
-                  "name": "possible",
+                  "name": "false",
                   "descriptions": {
                     "ja": "通信回線正常（公衆回線経由の操作可能）",
                     "en": "Communication line is normal (operation through a public network is possible)"
@@ -2480,6 +2505,10 @@ const jsonData = {
           "properties": [
             {
               "name": "unit",
+              "descriptions": {
+                "ja": "積算運転時間",
+                "en": "Cumulative operating time"
+              },
               "element": {
                 "type": "state",
                 "size": 1,
@@ -2523,6 +2552,10 @@ const jsonData = {
               "name": "time",
               "element": {
                 "$ref": "#/definitions/number_0-4294967295"
+              },
+              "descriptions": {
+                "ja": "時間",
+                "en": "time"
               }
             }
           ]
@@ -2537,7 +2570,7 @@ const jsonData = {
           "ja": "状変アナウンスプロパティマップ",
           "en": "Status change announcement property map"
         },
-        "shortName": "statusChangeAnnouncementPropertyMap",
+        "shortName": "infPropertyMap",
         "accessRule": {
           "get": "required",
           "set": "notApplicable",
@@ -2670,7 +2703,7 @@ const jsonData = {
             "multipleOf": 0.001
           },
           "note": {
-            "ja": "積算電力量を0.001kWhで示す。オーバーフロー時は0にリセット。",
+            "ja": "積算電力量を0.001kWhで示す。オーバーフロー時は0にリセット",
             "en": "This property indicates cumulative amounts of electric energy in 0.001kWh. The value is reset to 0 after overflow."
           }
         },
@@ -7314,7 +7347,7 @@ const jsonData = {
                 "edt": "0x41",
                 "name": "true",
                 "descriptions": {
-                  "ja": "サーモON ",
+                  "ja": "サーモON",
                   "en": "Thermostat ON"
                 }
               },
@@ -7597,7 +7630,7 @@ const jsonData = {
                 "edt": "0x02",
                 "name": "less100W",
                 "descriptions": {
-                  "ja": "50W以上〜100W未満",
+                  "ja": "50W以上～100W未満",
                   "en": "50W-100W"
                 }
               },
@@ -7605,7 +7638,7 @@ const jsonData = {
                 "edt": "0x03",
                 "name": "less150W",
                 "descriptions": {
-                  "ja": "100W以上〜150W未満",
+                  "ja": "100W以上～150W未満",
                   "en": "100W-150W"
                 }
               },
@@ -7613,7 +7646,7 @@ const jsonData = {
                 "edt": "0x04",
                 "name": "less200W",
                 "descriptions": {
-                  "ja": "150W以上〜200W未満",
+                  "ja": "150W以上～200W未満",
                   "en": "150W-200W"
                 }
               },
@@ -8250,7 +8283,7 @@ const jsonData = {
                   },
                   {
                     "edt": "0x43",
-                    "name": "high",
+                    "name": "High",
                     "descriptions": {
                       "ja": "高",
                       "en": "High"
@@ -8296,7 +8329,7 @@ const jsonData = {
                   },
                   {
                     "edt": "0x43",
-                    "name": "high",
+                    "name": "High",
                     "descriptions": {
                       "ja": "高",
                       "en": "High"
@@ -8837,7 +8870,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "予約入",
                   "en": "Reservation ON"
@@ -8845,7 +8878,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "予約切",
                   "en": "Reservation OFF"
@@ -8913,7 +8946,7 @@ const jsonData = {
                   },
                   {
                     "edt": "0x42",
-                    "name": "munualHeating",
+                    "name": "manualHeating",
                     "descriptions": {
                       "ja": "手動沸き上げ",
                       "en": "Non-automatic water heating function used:"
@@ -8959,7 +8992,7 @@ const jsonData = {
                   },
                   {
                     "edt": "0x42",
-                    "name": "munualHeating",
+                    "name": "manualHeating",
                     "descriptions": {
                       "ja": "手動沸き上げ",
                       "en": "Non-automatic water heating function used:"
@@ -8991,17 +9024,17 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
-                  "ja": "AUTO",
+                  "ja": "Auto",
                   "en": "Automatic water temperature control function used"
                 }
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
-                  "ja": "非AUTO",
+                  "ja": "非Auto",
                   "en": "Automatic water temperature control function not used"
                 }
               }
@@ -9031,7 +9064,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x41",
-                    "name": "yes",
+                    "name": "true",
                     "descriptions": {
                       "ja": "沸き上げ中",
                       "en": "Heating"
@@ -9039,7 +9072,7 @@ const jsonData = {
                   },
                   {
                     "edt": "0x42",
-                    "name": "no",
+                    "name": "false",
                     "descriptions": {
                       "ja": "非沸き上げ中",
                       "en": "Not heating"
@@ -9069,7 +9102,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x41",
-                    "name": "yes",
+                    "name": "true",
                     "descriptions": {
                       "ja": "沸き上げ中",
                       "en": "Heating"
@@ -9077,7 +9110,7 @@ const jsonData = {
                   },
                   {
                     "edt": "0x42",
-                    "name": "no",
+                    "name": "false",
                     "descriptions": {
                       "ja": "非沸き上げ中",
                       "en": "Not heating"
@@ -9141,7 +9174,8 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0xFD",
-                    "state": {
+                    "name": "infinite",
+                    "descriptions": {
                       "ja": "無限",
                       "en": "No time limit"
                     }
@@ -9240,7 +9274,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x41",
-                    "name": "yes",
+                    "name": "true",
                     "descriptions": {
                       "ja": "昼間沸き増し許可",
                       "en": "Daytime reheating permitted"
@@ -9248,7 +9282,7 @@ const jsonData = {
                   },
                   {
                     "edt": "0x42",
-                    "name": "no",
+                    "name": "false",
                     "descriptions": {
                       "ja": "昼間沸き増し禁止",
                       "en": "Daytime reheating not permitted"
@@ -9278,7 +9312,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x41",
-                    "name": "yes",
+                    "name": "true",
                     "descriptions": {
                       "ja": "昼間沸き増し許可",
                       "en": "Daytime reheating permitted"
@@ -9286,7 +9320,7 @@ const jsonData = {
                   },
                   {
                     "edt": "0x42",
-                    "name": "no",
+                    "name": "false",
                     "descriptions": {
                       "ja": "昼間沸き増し禁止",
                       "en": "Daytime reheating not permitted"
@@ -9351,14 +9385,16 @@ const jsonData = {
                   "enum": [
                     {
                       "edt": 0,
-                      "state": {
+                      "name": "true",
+                      "descriptions": {
                         "ja": "正常",
                         "en": "No Alarm"
                       }
                     },
                     {
                       "edt": 1,
-                      "state": {
+                      "name": "false",
+                      "descriptions": {
                         "ja": "発生",
                         "en": "Alarm"
                       }
@@ -9382,14 +9418,16 @@ const jsonData = {
                   "enum": [
                     {
                       "edt": 0,
-                      "state": {
+                      "name": "true",
+                      "descriptions": {
                         "ja": "正常",
                         "en": "No Alarm"
                       }
                     },
                     {
                       "edt": 1,
-                      "state": {
+                      "name": "false",
+                      "descriptions": {
                         "ja": "発生",
                         "en": "Alarm"
                       }
@@ -9413,14 +9451,16 @@ const jsonData = {
                   "enum": [
                     {
                       "edt": 0,
-                      "state": {
+                      "name": "true",
+                      "descriptions": {
                         "ja": "正常",
                         "en": "No Alarm"
                       }
                     },
                     {
                       "edt": 1,
-                      "state": {
+                      "descriptions": {
+                        "name": "false",
                         "ja": "発生",
                         "en": "Alarm"
                       }
@@ -9452,7 +9492,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "給湯中",
                   "en": "Supplying hot water"
@@ -9460,7 +9500,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "非給湯中",
                   "en": "Not supplying hot water"
@@ -9510,7 +9550,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x01",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "参加",
                   "en": "Participation"
@@ -9518,7 +9558,7 @@ const jsonData = {
               },
               {
                 "edt": "0x00",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "不参加",
                   "en": "Non Participation"
@@ -9588,7 +9628,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "昼間沸き上げシフト時刻１",
+            "ja": "昼間沸き上げシフト時刻1",
             "en": "Daytime heating shift time 1"
           },
           "shortName": "waterHeatingShiftTime1",
@@ -9605,74 +9645,74 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x09",
-                    "name": "09:00:00",
-                    "state": {
+                    "name": "at9000",
+                    "descriptions": {
                       "ja": "9時",
-                      "en": "9:00"
+                      "en": "09:00"
                     }
                   },
                   {
                     "edt": "0x0A",
-                    "name": "10:00:00",
-                    "state": {
+                    "name": "at1000",
+                    "descriptions": {
                       "ja": "10時",
                       "en": "10:00"
                     }
                   },
                   {
                     "edt": "0x0B",
-                    "name": "11:00:00",
-                    "state": {
+                    "name": "at1100",
+                    "descriptions": {
                       "ja": "11時",
                       "en": "11:00"
                     }
                   },
                   {
                     "edt": "0x0C",
-                    "name": "12:00:00",
-                    "state": {
+                    "name": "at1200",
+                    "descriptions": {
                       "ja": "12時",
                       "en": "12:00"
                     }
                   },
                   {
                     "edt": "0x0D",
-                    "name": "13:00:00",
-                    "state": {
+                    "name": "at1300",
+                    "descriptions": {
                       "ja": "13時",
                       "en": "13:00"
                     }
                   },
                   {
                     "edt": "0x0E",
-                    "name": "14:00:00",
-                    "state": {
+                    "name": "at1400",
+                    "descriptions": {
                       "ja": "14時",
                       "en": "14:00"
                     }
                   },
                   {
                     "edt": "0x0F",
-                    "name": "15:00:00",
-                    "state": {
+                    "name": "at1500",
+                    "descriptions": {
                       "ja": "15時",
                       "en": "15:00"
                     }
                   },
                   {
                     "edt": "0x10",
-                    "name": "16:00:00",
-                    "state": {
+                    "name": "at1600",
+                    "descriptions": {
                       "ja": "16時",
                       "en": "16:00"
                     }
                   },
                   {
                     "edt": "0x11",
-                    "name": "17:00:00",
-                    "state": {
+                    "name": "at1700",
+                    "descriptions": {
                       "ja": "17時（エネルギーシフト回数が2回の場合はこの値無効になる）",
-                      "en": "17:00(this value is nullified if energy shifts occur twice)"
+                      "en": "17:00 (this value is nullified if energy shifts occur twice)"
                     }
                   }
                 ]
@@ -9683,7 +9723,8 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x00",
-                    "state": {
+                    "name": "cleared",
+                    "descriptions": {
                       "ja": "クリア状態",
                       "en": "Undefined"
                     }
@@ -9699,7 +9740,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "昼間沸き上げシフト時刻１での沸き上げ予測電力量",
+            "ja": "昼間沸き上げシフト時刻1での沸き上げ予測電力量",
             "en": "Expected electric energy at daytime heating shift time 1"
           },
           "shortName": "estimatedElectricEnergyAtShiftTime1",
@@ -9712,28 +9753,28 @@ const jsonData = {
             "type": "object",
             "properties": [
               {
-                "name": "10:00",
+                "name": "at1000",
                 "element": {
                   "$ref": "#/definitions/number_0-4294967293",
                   "unit": "Wh"
                 }
               },
               {
-                "name": "13:00",
+                "name": "at1300",
                 "element": {
                   "$ref": "#/definitions/number_0-4294967293",
                   "unit": "Wh"
                 }
               },
               {
-                "name": "15:00",
+                "name": "at1500",
                 "element": {
                   "$ref": "#/definitions/number_0-4294967293",
                   "unit": "Wh"
                 }
               },
               {
-                "name": "17:00",
+                "name": "at1700",
                 "element": {
                   "$ref": "#/definitions/number_0-4294967293",
                   "unit": "Wh"
@@ -9748,7 +9789,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "時間あたり消費電力量１",
+            "ja": "時間あたり消費電力量1",
             "en": "Consumption of electric energy per hour 1"
           },
           "shortName": "electricEnergyConsumptionRate1",
@@ -9797,7 +9838,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "昼間沸き上げシフト時刻２",
+            "ja": "昼間沸き上げシフト時刻2",
             "en": "Daytime heating shift time 2"
           },
           "shortName": "waterHeatingShiftTime2",
@@ -9814,64 +9855,64 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x0A",
-                    "name": "10:00:00",
-                    "state": {
+                    "name": "at1000",
+                    "descriptions": {
                       "ja": "10時",
                       "en": "10:00"
                     }
                   },
                   {
                     "edt": "0x0B",
-                    "name": "11:00:00",
-                    "state": {
+                    "name": "at1100",
+                    "descriptions": {
                       "ja": "11時",
                       "en": "11:00"
                     }
                   },
                   {
                     "edt": "0x0C",
-                    "name": "12:00:00",
-                    "state": {
+                    "name": "at1200",
+                    "descriptions": {
                       "ja": "12時",
                       "en": "12:00"
                     }
                   },
                   {
                     "edt": "0x0D",
-                    "name": "13:00:00",
-                    "state": {
+                    "name": "at1300",
+                    "descriptions": {
                       "ja": "13時",
                       "en": "13:00"
                     }
                   },
                   {
                     "edt": "0x0E",
-                    "name": "14:00:00",
-                    "state": {
+                    "name": "at1400",
+                    "descriptions": {
                       "ja": "14時",
                       "en": "14:00"
                     }
                   },
                   {
                     "edt": "0x0F",
-                    "name": "15:00:00",
-                    "state": {
+                    "name": "at1500",
+                    "descriptions": {
                       "ja": "15時",
                       "en": "15:00"
                     }
                   },
                   {
                     "edt": "0x10",
-                    "name": "16:00:00",
-                    "state": {
+                    "name": "at1600",
+                    "descriptions": {
                       "ja": "16時",
                       "en": "16:00"
                     }
                   },
                   {
                     "edt": "0x11",
-                    "name": "17:00:00",
-                    "state": {
+                    "name": "at1700",
+                    "descriptions": {
                       "ja": "17時",
                       "en": "17:00"
                     }
@@ -9884,7 +9925,8 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x00",
-                    "state": {
+                    "name": "cleared",
+                    "descriptions": {
                       "ja": "クリア状態",
                       "en": "Undefined"
                     }
@@ -9900,7 +9942,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "昼間沸き上げシフト時刻２での沸き上げ予測電力量",
+            "ja": "昼間沸き上げシフト時刻2での沸き上げ予測電力量",
             "en": "Expected electric energy at daytime heating shift time 2"
           },
           "shortName": "estimatedElectricEnergyAtShiftTime2",
@@ -9913,21 +9955,21 @@ const jsonData = {
             "type": "object",
             "properties": [
               {
-                "name": "13:00",
+                "name": "at1300",
                 "element": {
                   "$ref": "#/definitions/number_0-4294967293",
                   "unit": "Wh"
                 }
               },
               {
-                "name": "15:00",
+                "name": "at1500",
                 "element": {
                   "$ref": "#/definitions/number_0-4294967293",
                   "unit": "Wh"
                 }
               },
               {
-                "name": "17:00",
+                "name": "at1700",
                 "element": {
                   "$ref": "#/definitions/number_0-4294967293",
                   "unit": "Wh"
@@ -9942,7 +9984,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "時間あたり消費電力量２",
+            "ja": "時間あたり消費電力量2",
             "en": "Consumption of electric energy per hour 2"
           },
           "shortName": "electricEnergyConsumptionRate2",
@@ -9955,21 +9997,21 @@ const jsonData = {
             "type": "object",
             "properties": [
               {
-                "name": "13:00",
+                "name": "at1300",
                 "element": {
                   "$ref": "#/definitions/number_0-65533",
                   "unit": "Wh"
                 }
               },
               {
-                "name": "15:00",
+                "name": "at1500",
                 "element": {
                   "$ref": "#/definitions/number_0-65533",
                   "unit": "Wh"
                 }
               },
               {
-                "name": "17:00",
+                "name": "at1700",
                 "element": {
                   "$ref": "#/definitions/number_0-65533",
                   "unit": "Wh"
@@ -10022,7 +10064,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "風呂湯量設定４",
+            "ja": "風呂湯量設定4",
             "en": "Bath water volume setting4"
           },
           "shortName": "bathWaterVolume4",
@@ -10041,7 +10083,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "風呂湯量設定４設定可能最大レベル",
+            "ja": "風呂湯量設定4設定可能最大レベル",
             "en": "Bath water volume setting4 maximum settable level"
           },
           "shortName": "maximumAllowableWaterVolume4",
@@ -10094,7 +10136,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x30",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "ミュートON",
                   "en": "Mute ON"
@@ -10102,7 +10144,7 @@ const jsonData = {
               },
               {
                 "edt": "0x31",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "ミュートOFF",
                   "en": "Mute OFF"
@@ -10187,7 +10229,8 @@ const jsonData = {
                         "enum": [
                           {
                             "edt": "0x8000",
-                            "state": {
+                            "name": "invalid",
+                            "descriptions": {
                               "ja": "無効値",
                               "en": "Invalid data"
                             }
@@ -10228,7 +10271,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "中間期H/Pユニット定格消費電力",
-            "en": "Rated power consumption of H/P unit in in-between season"
+            "en": "Rated power consumption of H/P unit in in-between seasons"
           },
           "shortName": "betweenSeasonRatedPower",
           "accessRule": {
@@ -10341,18 +10384,18 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "自動入",
-                  "en": "mode ON"
+                  "en": "\"Automatic bath water heating\" mode ON"
                 }
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "自動解除",
-                  "en": "mode OFF"
+                  "en": "\"Automatic bath water heating\" mode OFF"
                 }
               }
             ]
@@ -10379,18 +10422,18 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
-                  "ja": "自動入",
-                  "en": "“Automatic bath water heating”　mode ON"
+                  "ja": "追い焚き入",
+                  "en": "Bath reheating ON"
                 }
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
-                  "ja": "自動解除",
-                  "en": "“Automatic bath water heating”　mode OFF"
+                  "ja": "追い焚き切",
+                  "en": "Bath reheating OFF"
                 }
               }
             ]
@@ -10419,18 +10462,18 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x41",
-                    "name": "yes",
+                    "name": "true",
                     "descriptions": {
                       "ja": "足し湯",
-                      "en": "“Addition of hot water” function ON"
+                      "en": "\"Addition of hot water\" function ON"
                     }
                   },
                   {
                     "edt": "0x42",
-                    "name": "no",
+                    "name": "false",
                     "descriptions": {
                       "ja": "足し湯切",
-                      "en": "“Addition of hot water” function OFF"
+                      "en": "\"Addition of hot water\" function OFF"
                     }
                   }
                 ]
@@ -10457,18 +10500,18 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x41",
-                    "name": "yes",
+                    "name": "true",
                     "descriptions": {
-                      "ja": "足し湯",
-                      "en": "“Addition of hot water” function ON"
+                      "ja": "足し湯入",
+                      "en": "\"Addition of hot water\" function ON"
                     }
                   },
                   {
                     "edt": "0x42",
-                    "name": "no",
+                    "name": "false",
                     "descriptions": {
                       "ja": "足し湯切",
-                      "en": "“Addition of hot water” function OFF"
+                      "en": "\"Addition of hot water\" function OFF"
                     }
                   }
                 ]
@@ -10499,18 +10542,18 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x41",
-                    "name": "yes",
+                    "name": "true",
                     "descriptions": {
                       "ja": "ぬるめ入",
-                      "en": "“Lukewarm water temperature” function ON"
+                      "en": "\"Lukewarm water temperature\" function ON"
                     }
                   },
                   {
                     "edt": "0x42",
-                    "name": "no",
+                    "name": "false",
                     "descriptions": {
                       "ja": "ぬるめ切",
-                      "en": "“Lukewarm water temperature” function OFF"
+                      "en": "\"Lukewarm water temperature\" function OFF"
                     }
                   }
                 ]
@@ -10537,18 +10580,18 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x41",
-                    "name": "yes",
+                    "name": "true",
                     "descriptions": {
                       "ja": "足し湯",
-                      "en": "“Addition of hot water” function ON"
+                      "en": "\"Addition of hot water\" function ON"
                     }
                   },
                   {
                     "edt": "0x42",
-                    "name": "no",
+                    "name": "false",
                     "descriptions": {
                       "ja": "足し湯切",
-                      "en": "“Addition of hot water” function OFF"
+                      "en": "\"Addition of hot water\" function OFF"
                     }
                   }
                 ]
@@ -10562,8 +10605,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "風呂湯量設定１",
-            "en": "Bath water volume setting1"
+            "ja": "風呂湯量設定1",
+            "en": "Bath water volume setting 1"
           },
           "shortName": "bathWaterVolume1",
           "accessRule": {
@@ -10582,8 +10625,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "風呂湯量設定２",
-            "en": "Bath water volume setting2"
+            "ja": "風呂湯量設定2",
+            "en": "Bath water volume setting 2"
           },
           "shortName": "bathWaterVolume2",
           "accessRule": {
@@ -10602,7 +10645,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "浴室優先設定",
-            "en": "Bathroom pripority setting"
+            "en": "Bathroom priority setting"
           },
           "shortName": "bathroomPriority",
           "accessRule": {
@@ -10616,7 +10659,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "浴室優先入",
                   "en": "Priority bath ON"
@@ -10624,7 +10667,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "浴室優先切",
                   "en": "Priority bath OFF"
@@ -10685,8 +10728,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "風呂湯量設定３",
-            "en": "Bath water volume setting3"
+            "ja": "風呂湯量設定3",
+            "en": "Bath water volume setting 3"
           },
           "shortName": "bathWaterVolume3",
           "accessRule": {
@@ -11025,11 +11068,8 @@ const jsonData = {
                 "edt": "0x40",
                 "name": "ordinaryLevel",
                 "descriptions": {
-                  "ja": "",
-                  "descriptions": {
-                    "ja": "通常",
-                    "en": "Ordinary level"
-                  }
+                  "ja": "通常",
+                  "en": "Ordinary level"
                 }
               },
               {
@@ -11062,7 +11102,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "風呂自動ON タイマ予約設定",
+            "ja": "風呂自動ONタイマ予約設定",
             "en": "ON timer reservation setting"
           },
           "shortName": "onTimerReservation",
@@ -11077,7 +11117,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "予約入",
                   "en": "Reservation ON"
@@ -11085,7 +11125,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "予約切",
                   "en": "Reservation OFF"
@@ -11120,7 +11160,7 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "風呂自動ON タイマ相対時間設定値",
+            "ja": "風呂自動ONタイマ相対時間設定値",
             "en": "Set value of ON timer relative time"
           },
           "shortName": "onTimerRelativeTimeSettingValue",
@@ -11155,7 +11195,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "給湯燃焼状態有",
                   "en": "Hot water heating status found"
@@ -11163,7 +11203,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "無",
                   "en": "Hot water heating status not found"
@@ -11212,7 +11252,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "給湯保温動作",
                   "en": "Hot water warmer operation"
@@ -11220,7 +11260,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "給湯保温動作解除",
                   "en": "Hot water warmer operation resetting"
@@ -11307,7 +11347,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "ミュートON",
                   "en": "Mute ON"
@@ -11315,7 +11355,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "ミュートOFF",
                   "en": "Mute OFF"
@@ -11440,7 +11480,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "燃焼状態有",
                   "en": "Heating"
@@ -11448,7 +11488,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "燃焼状態無",
                   "en": "Not Heating"
@@ -11478,7 +11518,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "自動入",
                   "en": "Auto ON"
@@ -11486,7 +11526,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "自動切",
                   "en": "Auto OFF"
@@ -11516,7 +11556,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "追い焚き入",
                   "en": "Additional boil-up ON"
@@ -11524,7 +11564,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "追い焚き切",
                   "en": "Additional boil-up OFF"
@@ -11554,7 +11594,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "足し湯入",
                   "en": "Hot water addition ON"
@@ -11562,7 +11602,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "足し湯切",
                   "en": "Hot water addition OFF"
@@ -11592,7 +11632,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "ぬるめ入",
                   "en": "Hot water temperature lowering ON"
@@ -11600,7 +11640,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "ぬるめ切",
                   "en": "Hot water temperature lowering OFF"
@@ -11671,7 +11711,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x41",
-                    "name": "yes",
+                    "name": "true",
                     "descriptions": {
                       "ja": "浴室優先入",
                       "en": "Bathroom priority ON"
@@ -11679,7 +11719,7 @@ const jsonData = {
                   },
                   {
                     "edt": "0x42",
-                    "name": "no",
+                    "name": "false",
                     "descriptions": {
                       "ja": "入浴優先切",
                       "en": "Bathroom priority OFF"
@@ -11709,7 +11749,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0x41",
-                    "name": "yes",
+                    "name": "true",
                     "descriptions": {
                       "ja": "浴室優先入",
                       "en": "Bathroom priority ON"
@@ -11717,7 +11757,7 @@ const jsonData = {
                   },
                   {
                     "edt": "0x42",
-                    "name": "no",
+                    "name": "false",
                     "descriptions": {
                       "ja": "入浴優先切",
                       "en": "Bathroom priority OFF"
@@ -11749,7 +11789,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "シャワー給湯状態有",
                   "en": "Shower hot water supply ON"
@@ -11757,7 +11797,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "シャワー給湯状態無",
                   "en": "Shower hot water supply OFF"
@@ -11787,7 +11827,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "台所湯量状態有",
                   "en": "Kitchen hot water supply ON"
@@ -11795,7 +11835,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "台所湯量状態無",
                   "en": "Kitchen hot water supply OFF"
@@ -11825,7 +11865,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "予約入",
                   "en": "Reservation ON"
@@ -11833,7 +11873,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "予約無",
                   "en": "Reservation OFF"
@@ -11937,7 +11977,7 @@ const jsonData = {
       },
       "className": {
         "ja": "浴室暖房乾燥機",
-        "en": "Bathroom heater and dryer"
+        "en": "Bathroom heater dryer"
       },
       "shortName": "bathroomHeaterDryer",
       "elProperties": {
@@ -11948,7 +11988,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ONタイマ予約設定1",
-            "en": "\"ON timer-based reservation\" setting 1"
+            "en": "On timer reservation setting 1"
           },
           "shortName": "onTimerReservation1",
           "accessRule": {
@@ -11962,18 +12002,18 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "on",
+                "name": "true",
                 "descriptions": {
                   "ja": "予約入",
-                  "en": "Reservation function ON"
+                  "en": "Reservation ON"
                 }
               },
               {
                 "edt": "0x42",
-                "name": "off",
+                "name": "false",
                 "descriptions": {
                   "ja": "予約切",
-                  "en": "Reservation function OFF"
+                  "en": "Reservation OFF"
                 }
               }
             ]
@@ -11986,7 +12026,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ONタイマ時刻設定値",
-            "en": "ON timer setting(time)"
+            "en": "ON timer setting value"
           },
           "shortName": "onTimer",
           "accessRule": {
@@ -11997,6 +12037,10 @@ const jsonData = {
           "data": {
             "type": "time",
             "size": 2
+          },
+          "note": {
+            "ja": "秒の指定は無視される",
+            "en": "Number of seconds is ignored"
           }
         },
         "0x92": {
@@ -12006,7 +12050,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ONタイマ相対時間設定値",
-            "en": "ON timer setting(relative time)"
+            "en": "ON relative timer setting value"
           },
           "shortName": "onRelativeTimer",
           "accessRule": {
@@ -12017,6 +12061,10 @@ const jsonData = {
           "data": {
             "type": "time",
             "size": 2
+          },
+          "note": {
+            "ja": "秒の指定は無視される",
+            "en": "Number of seconds is ignored"
           }
         },
         "0x94": {
@@ -12026,7 +12074,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "OFFタイマ予約設定",
-            "en": "\"OFF timer-based reservation\" setting"
+            "en": "OFF timer reservation setting"
           },
           "shortName": "offTimerReservation",
           "accessRule": {
@@ -12040,18 +12088,18 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "on",
+                "name": "true",
                 "descriptions": {
                   "ja": "予約入",
-                  "en": "Reservation function ON"
+                  "en": "Reservation ON"
                 }
               },
               {
                 "edt": "0x42",
-                "name": "off",
+                "name": "false",
                 "descriptions": {
                   "ja": "予約切",
-                  "en": "Reservation function OFF"
+                  "en": "Reservation OFF"
                 }
               }
             ]
@@ -12064,7 +12112,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "OFFタイマ時刻設定値",
-            "en": "OFF timer setting(time)"
+            "en": "OFF timer setting value"
           },
           "shortName": "offTimer",
           "accessRule": {
@@ -12075,6 +12123,10 @@ const jsonData = {
           "data": {
             "type": "time",
             "size": 2
+          },
+          "note": {
+            "ja": "秒の指定は無視される",
+            "en": "Number of seconds is ignored"
           }
         },
         "0x96": {
@@ -12084,7 +12136,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "OFFタイマ相対時間設定値",
-            "en": "OFF timer setting(relative time)"
+            "en": "OFF relative timer setting value"
           },
           "shortName": "offRelativeTimer",
           "accessRule": {
@@ -12095,6 +12147,10 @@ const jsonData = {
           "data": {
             "type": "time",
             "size": 2
+          },
+          "note": {
+            "ja": "秒の指定は無視される",
+            "en": "Number of seconds is ignored"
           }
         },
         "0xB0": {
@@ -12193,7 +12249,7 @@ const jsonData = {
                     "name": "ventilation",
                     "descriptions": {
                       "ja": "換気運転",
-                      "en": "Ventilation operation"
+                      "en": "Ventilation"
                     }
                   },
                   {
@@ -12201,7 +12257,7 @@ const jsonData = {
                     "name": "prewarming",
                     "descriptions": {
                       "ja": "入浴前予備暖房運転",
-                      "en": "Bathroom pre-warmer operation"
+                      "en": "Prewarming operation"
                     }
                   },
                   {
@@ -12209,7 +12265,7 @@ const jsonData = {
                     "name": "heating",
                     "descriptions": {
                       "ja": "入浴中暖房運転",
-                      "en": "Bathroom heater operation"
+                      "en": "Heating operation"
                     }
                   },
                   {
@@ -12217,7 +12273,7 @@ const jsonData = {
                     "name": "drying",
                     "descriptions": {
                       "ja": "乾燥運転",
-                      "en": "Bathroom dryer operation"
+                      "en": "Drying operation"
                     }
                   },
                   {
@@ -12225,7 +12281,7 @@ const jsonData = {
                     "name": "circulation",
                     "descriptions": {
                       "ja": "涼風運転",
-                      "en": "Cool air circulator operation"
+                      "en": "Circulation"
                     }
                   },
                   {
@@ -12288,7 +12344,7 @@ const jsonData = {
                     "name": "auto",
                     "descriptions": {
                       "ja": "自動",
-                      "en": "Automatic"
+                      "en": "Auto"
                     }
                   },
                   {
@@ -12313,7 +12369,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "入浴前予備暖房運転設定",
-                "en": "Bathroom pre-warmer_operation setting"
+                "en": "Bathroom prewarming operation setting"
               },
               "shortName": "bathroomPrewarming",
               "accessRule": {
@@ -12337,7 +12393,7 @@ const jsonData = {
                         "name": "auto",
                         "descriptions": {
                           "ja": "自動",
-                          "en": "Automatic"
+                          "en": "Auto"
                         }
                       },
                       {
@@ -12360,7 +12416,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "入浴前予備暖房運転設定",
-                "en": "Bathroom pre-warmer_operation setting"
+                "en": "Bathroom prewarming operation setting"
               },
               "shortName": "bathroomPrewarming",
               "accessRule": {
@@ -12384,7 +12440,7 @@ const jsonData = {
                         "name": "auto",
                         "descriptions": {
                           "ja": "自動",
-                          "en": "Automatic"
+                          "en": "Auto"
                         }
                       },
                       {
@@ -12409,7 +12465,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "入浴中暖房運転設定",
-            "en": "Bathroom heater operation setting"
+            "en": "Bathroom heating operation setting"
           },
           "shortName": "bathroomHeating",
           "accessRule": {
@@ -12433,7 +12489,7 @@ const jsonData = {
                     "name": "auto",
                     "descriptions": {
                       "ja": "自動",
-                      "en": "Automatic"
+                      "en": "Auto"
                     }
                   },
                   {
@@ -12456,7 +12512,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "乾燥運転設定",
-            "en": "Bathroom dryer operation setting"
+            "en": "Bathroom drying operation setting"
           },
           "shortName": "bathroomDrying",
           "accessRule": {
@@ -12480,7 +12536,7 @@ const jsonData = {
                     "name": "auto",
                     "descriptions": {
                       "ja": "自動",
-                      "en": "Automatic"
+                      "en": "Auto"
                     }
                   },
                   {
@@ -12503,7 +12559,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "涼風運転設定",
-            "en": "Cool air circulator operation setting"
+            "en": "Cool air circulation operation setting"
           },
           "shortName": "coolAirCirculation",
           "accessRule": {
@@ -12527,7 +12583,7 @@ const jsonData = {
                     "name": "auto",
                     "descriptions": {
                       "ja": "自動",
-                      "en": "Automatic"
+                      "en": "Auto"
                     }
                   },
                   {
@@ -12574,7 +12630,7 @@ const jsonData = {
                     "name": "auto",
                     "descriptions": {
                       "ja": "自動",
-                      "en": "Automatic"
+                      "en": "Auto"
                     }
                   },
                   {
@@ -12621,7 +12677,7 @@ const jsonData = {
                     "name": "auto",
                     "descriptions": {
                       "ja": "自動",
-                      "en": "Automatic"
+                      "en": "Auto"
                     }
                   },
                   {
@@ -12643,8 +12699,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "室内相対湿度計測値",
-            "en": "Measured relative bathroom humidity"
+            "ja": "浴室内相対湿度計測値",
+            "en": "Measured value of bathroom relative humidity"
           },
           "shortName": "bathroomHumidity",
           "accessRule": {
@@ -12666,8 +12722,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "室内温度計測値",
-            "en": "Measured bathroom temperature"
+            "ja": "浴室内温度計測値",
+            "en": "Measured value of bathroom temperature"
           },
           "shortName": "bathroomTemperature",
           "accessRule": {
@@ -12714,7 +12770,7 @@ const jsonData = {
                     "name": "auto",
                     "descriptions": {
                       "ja": "自動",
-                      "en": "Automatic"
+                      "en": "Auto"
                     }
                   }
                 ]
@@ -12743,7 +12799,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "lit",
+                "name": "true",
                 "descriptions": {
                   "ja": "点灯",
                   "en": "Lit"
@@ -12751,7 +12807,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "notLit",
+                "name": "false",
                 "descriptions": {
                   "ja": "消灯",
                   "en": "Not lit"
@@ -12781,7 +12837,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "detected",
+                "name": "true",
                 "descriptions": {
                   "ja": "人体検知あり",
                   "en": "Detected"
@@ -12789,7 +12845,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "notDetected",
+                "name": "false",
                 "descriptions": {
                   "ja": "人体検知なし",
                   "en": "Not detected"
@@ -12807,7 +12863,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "ONタイマ予約設定1",
-                "en": "\"ON timer-based reservation\" setting 2"
+                "en": "ON timer reservation setting 2"
               },
               "shortName": "onTimerReservation2",
               "accessRule": {
@@ -12824,7 +12880,7 @@ const jsonData = {
                     "name": "ventilationReservation",
                     "descriptions": {
                       "ja": "換気運転予約",
-                      "en": "Reservation function ON for the ventilation mode"
+                      "en": "Ventilation　reservation"
                     }
                   },
                   {
@@ -12832,7 +12888,7 @@ const jsonData = {
                     "name": "prewarmingReservation",
                     "descriptions": {
                       "ja": "入浴前予備暖房運転予約",
-                      "en": "Reservation function ON for the bathroom prewarmer mode"
+                      "en": "Prewarming operation　reservation"
                     }
                   },
                   {
@@ -12840,7 +12896,7 @@ const jsonData = {
                     "name": "heatingReservation",
                     "descriptions": {
                       "ja": "入浴中暖房運転予約",
-                      "en": "Reservation function ON for the bathroom heater mode"
+                      "en": "Heating operation　reservation"
                     }
                   },
                   {
@@ -12848,7 +12904,7 @@ const jsonData = {
                     "name": "dryingReservation",
                     "descriptions": {
                       "ja": "乾燥運転予約",
-                      "en": "Reservation function ON for the bathroom dryer mode"
+                      "en": "Drying operation　reservation"
                     }
                   },
                   {
@@ -12856,7 +12912,7 @@ const jsonData = {
                     "name": "circulationReservation",
                     "descriptions": {
                       "ja": "涼風運転予約",
-                      "en": "Reservation function ON for the cool air circulator mode"
+                      "en": "Circulation　reservatio"
                     }
                   },
                   {
@@ -12864,7 +12920,7 @@ const jsonData = {
                     "name": "noReservation",
                     "descriptions": {
                       "ja": "予約切",
-                      "en": "Reservation function OFF"
+                      "en": "No reservation"
                     }
                   }
                 ]
@@ -12877,7 +12933,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "ONタイマ予約設定2",
-                "en": "\"ON timer-based reservation\" setting 2"
+                "en": "ON timer reservation setting 2"
               },
               "shortName": "onTimerReservation2",
               "accessRule": {
@@ -12894,7 +12950,7 @@ const jsonData = {
                     "name": "ventilationReservation",
                     "descriptions": {
                       "ja": "換気運転予約",
-                      "en": "Reservation function ON for the ventilation mode"
+                      "en": "Ventilation　reservation"
                     }
                   },
                   {
@@ -12902,7 +12958,7 @@ const jsonData = {
                     "name": "prewarmingReservation",
                     "descriptions": {
                       "ja": "入浴前予備暖房運転予約",
-                      "en": "Reservation function ON for the bathroom prewarmer mode"
+                      "en": "Prewarming operation　reservation"
                     }
                   },
                   {
@@ -12910,7 +12966,7 @@ const jsonData = {
                     "name": "heatingReservation",
                     "descriptions": {
                       "ja": "入浴中暖房運転予約",
-                      "en": "Reservation function ON for the bathroom heater mode"
+                      "en": "Heating operation　reservation"
                     }
                   },
                   {
@@ -12918,7 +12974,7 @@ const jsonData = {
                     "name": "dryingReservation",
                     "descriptions": {
                       "ja": "乾燥運転予約",
-                      "en": "Reservation function ON for the bathroom dryer mode"
+                      "en": "Drying operation　reservation"
                     }
                   },
                   {
@@ -12926,7 +12982,7 @@ const jsonData = {
                     "name": "circulationReservation",
                     "descriptions": {
                       "ja": "涼風運転予約",
-                      "en": "Reservation function ON for the cool air circulator mode"
+                      "en": "Circulation　reservation"
                     }
                   },
                   {
@@ -12950,7 +13006,7 @@ const jsonData = {
                     "name": "noReservation",
                     "descriptions": {
                       "ja": "予約切",
-                      "en": "Reservation function OFF"
+                      "en": "No reservation"
                     }
                   }
                 ]
@@ -13180,6 +13236,10 @@ const jsonData = {
                       ]
                     }
                   ]
+                },
+                "descriptions": {
+                  "ja": "現在年月日",
+                  "en": "Current date (YYYY: MM: DD)"
                 }
               },
               {
@@ -13215,13 +13275,17 @@ const jsonData = {
                       }
                     ]
                   }
+                },
+                "descriptions": {
+                  "ja": "0x00～0x64（0～100%） x 96（30分毎の値、2日分）",
+                  "en": "0x00-0x64 (0-100%) x 96 (values every 30 minutes, for 2 days)"
                 }
               }
             ]
           },
           "note": {
-            "ja": "現在年月日(YYYY：MM：DD)＋0x00～0x64(0～100％)×96(30分毎の値、2日分)。出力制御スケジュールにより出力制御を行う場合は必須",
-            "en": "Current date (YYYY:MM:DD)+0x00-0x64 (0-100%) x 96 (values every 30 minutes, for 2 days). required if output control by schedule is capable."
+            "ja": "出力制御スケジュールにより出力制御を行う場合は必須",
+            "en": "Required if output control by schedule is capable"
           }
         },
         "0xB1": {
@@ -13251,7 +13315,7 @@ const jsonData = {
                 "enum": [
                   {
                     "edt": "0xFFFFFFFFFFFFFF",
-                    "state": {
+                    "descriptions": {
                       "ja": "出力制御スケジュールによる出力制御が必要ない太陽光発電および、出力制御スケジュールが取得できていない場合",
                       "en": "Solar power generation that requires no output power control by output power controlling schedule and cases where output power controlling schedule has not been acquired"
                     },
@@ -13355,7 +13419,7 @@ const jsonData = {
           },
           "note": {
             "ja": "0xFFFFは未設定を示す。出力制御スケジュールにより出力制御を行う場合は必須",
-            "en": "0xFFFF means no setting. required if output control by schedule is capable."
+            "en": "0xFFFF means no setting. Required if output control by schedule is capable"
           }
         },
         "0xC0": {
@@ -13504,8 +13568,8 @@ const jsonData = {
             "unit": "W"
           },
           "note": {
-            "ja": "0xFFFFは未設定を示す。0xC3または0xC4のいずれかが必須。",
-            "en": "0xFFFF means no setting. either 0xC3 or 0xC4 is required."
+            "ja": "0xFFFFは未設定を示す。0xC3または0xC4のいずれかが必須",
+            "en": "0xFFFF means no setting. Either 0xC3 or 0xC4 is required."
           }
         },
         "0xC4": {
@@ -13748,7 +13812,7 @@ const jsonData = {
             "multipleOf": 0.001
           },
           "note": {
-            "ja": "積算電力量を0.001kWhで示す。オーバーフロー時は0にリセット。",
+            "ja": "積算電力量を0.001kWhで示す。オーバーフロー時は0にリセット",
             "en": "This property indicates cumulative amounts of electric energy in 0.001kWh. The value is reset to 0 after overflow."
           }
         },
@@ -13806,7 +13870,7 @@ const jsonData = {
             "multipleOf": 0.001
           },
           "note": {
-            "ja": "売電電力の積算値を0.001kWhで示す。オーバーフロー時は0にリセット。",
+            "ja": "売電電力の積算値を0.001kWhで示す。オーバーフロー時は0にリセット",
             "en": "This property indicates cumulative value of sold power in 0.001kWh. The value is reset to 0 after overflow."
           }
         },
@@ -19960,7 +20024,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "AC実効容量（充電）",
-            "en": "AC effective capacity(charging)"
+            "en": "AC effective capacity (charging)"
           },
           "shortName": "ACEffectiveChargingCapacity",
           "accessRule": {
@@ -19983,7 +20047,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "AC実効容量（放電）",
-            "en": "AC effective capacity(discharging)"
+            "en": "AC effective capacity (discharging)"
           },
           "shortName": "ACEffectiveDischargingCapacity",
           "accessRule": {
@@ -21175,7 +21239,7 @@ const jsonData = {
             "ja": "積算放電電力量リセット設定",
             "en": "\"Measured cumulative discharging electric energy\" reset setting"
           },
-          "shortName": "\"cumulativeDischargingElectricEnergy\"Reset",
+          "shortName": "cumulativeDischargingElectricEnergyReset",
           "accessRule": {
             "get": "notApplicable",
             "set": "optional",
@@ -21229,7 +21293,7 @@ const jsonData = {
             "ja": "積算充電電力量リセット設定",
             "en": "\"Measured cumulative charging electric energy\" reset setting"
           },
-          "shortName": "\"cumulativeChargingElectricEnergy\"Reset",
+          "shortName": "cumulativeChargingElectricEnergyReset",
           "accessRule": {
             "get": "notApplicable",
             "set": "optional",
@@ -21584,7 +21648,7 @@ const jsonData = {
                     "name": "reversePowerFlowAcceptable",
                     "descriptions": {
                       "ja": "系統連系（逆潮流可）",
-                      "en": "System interconnection(reverse power flow acceptable)"
+                      "en": "System interconnection (reverse power flow acceptable)"
                     }
                   },
                   {
@@ -21600,7 +21664,7 @@ const jsonData = {
                     "name": "reversePowerFlowNotAcceptable",
                     "descriptions": {
                       "ja": "系統連系（逆潮流不可）",
-                      "en": "System-interconnected type(reverse power flow not acceptable)"
+                      "en": "System-interconnected type (reverse power flow not acceptable)"
                     }
                   }
                 ]
@@ -21630,7 +21694,7 @@ const jsonData = {
                     "name": "reversePowerFlowAcceptable",
                     "descriptions": {
                       "ja": "系統連系（逆潮流可）",
-                      "en": "System interconnection(reverse power flow acceptable)"
+                      "en": "System interconnection (reverse power flow acceptable)"
                     }
                   },
                   {
@@ -21646,7 +21710,7 @@ const jsonData = {
                     "name": "reversePowerFlowNotAcceptable",
                     "descriptions": {
                       "ja": "系統連系（逆潮流不可）",
-                      "en": "System-interconnected type(reverse power flow not acceptable)"
+                      "en": "System-interconnected type (reverse power flow not acceptable)"
                     }
                   }
                 ]
@@ -21896,7 +21960,7 @@ const jsonData = {
             ],
             "note": {
               "ja": "EPC=0xE0を実装する場合は、EPC=0xE1,E7,E8,E9,EAを実装しない。プラス値：充電　マイナス値：放電。",
-              "en": "In case EPC=0xE0 is implemented, EPC=0xE1,E7,E8,E9,EA should not be implemented. Positive value : Charging, Negative value : Discharging."
+              "en": "In case EPC=0xE0 is implemented, EPC=0xE1,E7,E8,E9,EA should not be implemented. Positive value: Charging, Negative value: Discharging."
             }
           }
         },
@@ -21944,7 +22008,7 @@ const jsonData = {
             ],
             "note": {
               "ja": "EPC=0xE1を実装する場合は、EPC=0xE0,E7,E8,E9,EAを実装しない。プラス値：充電　マイナス値：放電。",
-              "en": "In case EPC=0xE1 is implemented, EPC=0xE0,E7,E8,E9,EA should not be implemented. Positive value : Charging, Negative value : Discharging."
+              "en": "In case EPC=0xE1 is implemented, EPC=0xE0,E7,E8,E9,EA should not be implemented. Positive value: Charging, Negative value: Discharging."
             }
           }
         },
@@ -23877,7 +23941,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "車載電池の使用容量値1",
-                "en": "Used capacity of vehicle mounted battery 1 "
+                "en": "Used capacity of vehicle mounted battery 1"
               },
               "shortName": "usedCapacity1",
               "accessRule": {
@@ -24670,128 +24734,6 @@ const jsonData = {
         }
       ]
     },
-    "0x0280": {
-      "validRelease": {
-        "from": "A",
-        "to": "latest"
-      },
-      "className": {
-        "ja": "電力量メータ",
-        "en": "Watt-hour meter"
-      },
-      "shortName": "wattHourMeter",
-      "elProperties": {
-        "0xE0": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算電力量計測値",
-            "en": "Cumulative amounts of electric energy measurement value"
-          },
-          "shortName": "cumulativeElectricEnergy",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "$ref": "#/definitions/number_0-99999999",
-            "unit": "kWh",
-            "coefficient": [
-              "0xE2"
-            ],
-            "overflowCode": false,
-            "underflowCode": false
-          },
-          "note": {
-            "ja": "0xE2の値を乗算する必要あり",
-            "en": "It is necessary to mutiply the value of 0xE2"
-          }
-        },
-        "0xE2": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算電力量単位",
-            "en": "Cumulative amounts of electric energy unit"
-          },
-          "shortName": "unitOfElectircEnergy",
-          "accessRule": {
-            "get": "required",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "numericValue",
-            "size": 1,
-            "enum": [
-              {
-                "edt": "0x01",
-                "numericValue": 0.1
-              },
-              {
-                "edt": "0x02",
-                "numericValue": 0.01
-              }
-            ]
-          }
-        },
-        "0xE3": {
-          "validRelease": {
-            "from": "A",
-            "to": "latest"
-          },
-          "propertyName": {
-            "ja": "積算電力量計測値履歴１",
-            "en": "Cumulative amounts of electric energy measurement log 1"
-          },
-          "shortName": "cumulativeElectricEnergyLog1",
-          "accessRule": {
-            "get": "optional",
-            "set": "notApplicable",
-            "inf": "optional"
-          },
-          "data": {
-            "type": "array",
-            "itemSize": 4,
-            "minItems": 48,
-            "maxItems": 48,
-            "items": {
-              "oneOf": [
-                {
-                  "$ref": "#/definitions/number_0-99999999",
-                  "unit": "kWh",
-                  "coefficient": [
-                    "0xE2"
-                  ],
-                  "overflowCode": false,
-                  "underflowCode": false
-                },
-                {
-                  "type": "state",
-                  "size": 4,
-                  "enum": [
-                    {
-                      "edt": "0xFFFFFFFE",
-                      "name": "noData",
-                      "descriptions": {
-                        "ja": "No data",
-                        "en": "No data"
-                      },
-                      "readOnly": true
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
     "0x0287": {
       "validRelease": {
         "from": "A",
@@ -24830,7 +24772,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "計測チャンネル数（片方向）",
-            "en": "Number of measurement channels(simplex)"
+            "en": "Number of measurement channels (simplex)"
           },
           "shortName": "numberOfMeasurementChannelsSimplex",
           "accessRule": {
@@ -24868,7 +24810,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測チャンネル範囲指定（片方向）",
-            "en": "Channel range specification for cumulative amount of electric power consumption measurement(simplex)"
+            "en": "Channel range specification for cumulative amount of electric power consumption measurement (simplex)"
           },
           "shortName": "channelRangeForCumulativeElectricEnergySimplex",
           "accessRule": {
@@ -24947,7 +24889,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測値リスト（片方向）",
-            "en": "Measured cumulative amount of electric power consumption list(simplex)"
+            "en": "Measured cumulative amount of electric power consumption list (simplex)"
           },
           "shortName": "cumulativeElectricEnergyListSimplex",
           "accessRule": {
@@ -25068,7 +25010,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電流計測チャンネル範囲指定（片方向）",
-            "en": "Channel range specification for instantaneous current measurement(simplex)"
+            "en": "Channel range specification for instantaneous current measurement (simplex)"
           },
           "shortName": "channelRangeForInstantaneousCurrentSimplex",
           "accessRule": {
@@ -25147,7 +25089,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電流計測値リスト（片方向）",
-            "en": "Measured instantaneous current list(simplex)"
+            "en": "Measured instantaneous current list (simplex)"
           },
           "shortName": "instantaneousCurrentListSimplex",
           "accessRule": {
@@ -25310,7 +25252,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電力計測チャンネル範囲指定（片方向）",
-            "en": "Channel range specification for instantaneous power consumption measurement(simplex)"
+            "en": "Channel range specification for instantaneous power consumption measurement (simplex)"
           },
           "shortName": "channelRangeForInstantaneousElectricPowerSimplex",
           "accessRule": {
@@ -25389,7 +25331,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電力計測値リスト（片方向）",
-            "en": "Measured instantaneous power consumption list(simplex)"
+            "en": "Measured instantaneous power consumption list (simplex)"
           },
           "shortName": "instantaneousElectricPowerListSimplex",
           "accessRule": {
@@ -25508,7 +25450,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "計測チャンネル数（双方向）",
-            "en": "Number of measurement channels(duplex)"
+            "en": "Number of measurement channels (duplex)"
           },
           "shortName": "numberOfMeasurementChannelsDuplex",
           "accessRule": {
@@ -25546,7 +25488,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測チャンネル範囲指定（双方向）",
-            "en": "Channel range specification for cumulative amount of electric power consumption measurement(duplex)"
+            "en": "Channel range specification for cumulative amount of electric power consumption measurement (duplex)"
           },
           "shortName": "channelRangeForCumulativeElectricEnergyDuplex",
           "accessRule": {
@@ -25625,7 +25567,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測値リスト（双方向）",
-            "en": "Measured cumulative amount of electric power consumption list(duplex)"
+            "en": "Measured cumulative amount of electric power consumption list (duplex)"
           },
           "shortName": "cumulativeElectricEnergyListDuplex",
           "accessRule": {
@@ -25790,7 +25732,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電流計測チャンネル範囲指定（双方向）",
-            "en": "Channel range specification for instantaneous current measurement(duplex)"
+            "en": "Channel range specification for instantaneous current measurement (duplex)"
           },
           "shortName": "channelRangeForInstantaneousCurrentDuplex",
           "accessRule": {
@@ -25869,7 +25811,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電流計測値リスト（双方向）",
-            "en": "Measured instantaneous current list(duplex)"
+            "en": "Measured instantaneous current list (duplex)"
           },
           "shortName": "instantaneousCurrentListDuplex",
           "accessRule": {
@@ -26032,7 +25974,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電力計測チャンネル範囲指定（双方向）",
-            "en": "Channel range specification for instantaneous power consumption measurement(duplex)"
+            "en": "Channel range specification for instantaneous power consumption measurement (duplex)"
           },
           "shortName": "channelRangeForInstantaneousElectricPowerDuplex",
           "accessRule": {
@@ -26111,7 +26053,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "瞬時電力計測値リスト（双方向）",
-            "en": "Measured instantaneous power consumption list(duplex)"
+            "en": "Measured instantaneous power consumption list (duplex)"
           },
           "shortName": "instantaneousElectricPowerListDuplex",
           "accessRule": {
@@ -26230,7 +26172,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測値（正方向）",
-            "en": "Measured cumulative amount of electric energy(normal direction)"
+            "en": "Measured cumulative amount of electric energy (normal direction)"
           },
           "shortName": "normalDirectionCumulativeElectricEnergy",
           "accessRule": {
@@ -26274,7 +26216,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測値（逆方向）",
-            "en": "Measured cumulative amount of electric energy(reverse direction)"
+            "en": "Measured cumulative amount of electric energy (reverse direction)"
           },
           "shortName": "reverseDirectionCumulativeElectricEnergy",
           "accessRule": {
@@ -26376,7 +26318,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算電力量計測値履歴（正方向）",
-            "en": "Historical data of measured cumulative amounts of electric energy(normal direction)"
+            "en": "Historical data of measured cumulative amounts of electric energy (normal direction)"
           },
           "shortName": "normalDirectionCumulativeElectricEnergyLog",
           "accessRule": {
@@ -26413,7 +26355,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算履歴収集日",
-                  "en": "the day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
+                  "en": "The day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
                 }
               },
               {
@@ -26454,7 +26396,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算電力量(8桁)の計測結果履歴",
-                  "en": "the historical data of measured cumulative amounts of electric energy (8 digits)"
+                  "en": "The historical data of measured cumulative amounts of electric energy (8 digits)"
                 }
               }
             ]
@@ -26508,7 +26450,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算履歴収集日",
-                  "en": "the day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
+                  "en": "The day for which the historical data of measured cumulative amounts of electric energy is to be retrieved"
                 }
               },
               {
@@ -26549,7 +26491,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算電力量(8桁)の計測結果履歴",
-                  "en": "the historical data of measured cumulative amounts of electric energy (8 digits)"
+                  "en": "The historical data of measured cumulative amounts of electric energy (8 digits)"
                 }
               }
             ]
@@ -27830,7 +27772,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "積算電力量計測値（正方向計測値）",
-                "en": "Measured cumulative amount of electric energy(normal direction)"
+                "en": "Measured cumulative amount of electric energy (normal direction)"
               },
               "shortName": "normalDirectionCumulativeElectricEnergy",
               "accessRule": {
@@ -27875,7 +27817,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "積算電力量単位（正方向、逆方向計測値）",
-                "en": "Unit for cumulative amounts of electric energy(normal and reverse directions)"
+                "en": "Unit for cumulative amounts of electric energy (normal and reverse directions)"
               },
               "shortName": "unitOfElectircEnergy",
               "accessRule": {
@@ -27933,7 +27875,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "積算電力量計測値履歴1（正方向計測値）",
-                "en": "Historical data of measured cumulative amounts of electric energy 1(normal direction)"
+                "en": "Historical data of measured cumulative amounts of electric energy 1 (normal direction)"
               },
               "shortName": "normalDirectionCumulativeElectricEnergyLog1",
               "accessRule": {
@@ -28029,7 +27971,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "積算電力量計測値（逆方向計測値）",
-                "en": "Measured cumulative amounts of electric energy(reverse direction)"
+                "en": "Measured cumulative amount of electric energy (reverse direction)"
               },
               "shortName": "reverseDirectionCumulativeElectricEnergy",
               "accessRule": {
@@ -28074,7 +28016,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "積算電力量計測値履歴1（逆方向計測値）",
-                "en": "Historical data of measured cumulative amounts of electric energy 1(reverse direction)"
+                "en": "Historical data of measured cumulative amounts of electric energy 1 (reverse direction)"
               },
               "shortName": "reverseDirectionCumulativeElectricEnergyLog1",
               "accessRule": {
@@ -28333,7 +28275,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "定時積算電力量計測値（正方向計測値）",
-                "en": "Cumulative amounts of electric energy measured at fixed time(normal direction)"
+                "en": "Cumulative amounts of electric energy measured at fixed time (normal direction)"
               },
               "shortName": "normalDirectionCumulativeElectricEnergyAtEvery30Min",
               "accessRule": {
@@ -28400,7 +28342,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "定時積算電力量計測値（逆方向計測値）",
-                "en": "Cumulative amounts of electric energy measured at fixed time(reverse direction)"
+                "en": "Cumulative amounts of electric energy measured at fixed time (reverse direction)"
               },
               "shortName": "reverseDirectionCumulativeElectricEnergyEvery30Min",
               "accessRule": {
@@ -28467,7 +28409,7 @@ const jsonData = {
               },
               "propertyName": {
                 "ja": "積算電力量計測値履歴2（正方向、逆方向計測値）",
-                "en": "Historical data of measured cumulative amounts of electric energy 2(normal and reverse directions)"
+                "en": "Historical data of measured cumulative amounts of electric energy 2 (normal and reverse directions)"
               },
               "shortName": "cumulativeElectricEnergyLog2",
               "accessRule": {
@@ -28593,7 +28535,7 @@ const jsonData = {
               },
               "note": {
                 "ja": "Atomic operation with EPC=0xED。電力量は最大12セット。分のデータは0x00（0分）または0x1E（30分）。0xFFFFFFFFFFFF01：初期値",
-                "en": "Atomic operation with EPC=0xED, energy is max. 12 sets of data. Data for minutes should be either 0x00(0 minute) or 0x1E(30 minutes). 0xFFFFFFFFFFFF01 : Default value"
+                "en": "Atomic operation with EPC=0xED, energy is max. 12 sets of data. Data for minutes should be either 0x00 (0 minute) or 0x1E (30 minutes). 0xFFFFFFFFFFFF01: Default value"
               }
             },
             "0xED": {
@@ -28639,7 +28581,7 @@ const jsonData = {
               },
               "note": {
                 "ja": "分のデータは0x00（0分）または0x1E（30分）。0xFFFFFFFFFFFF01：初期値",
-                "en": "Data for minutes should be either 0x00(0 minute) or 0x1E(30 minutes). 0xFFFFFFFFFFFF01 : Default value"
+                "en": "Data for minutes should be either 0x00 (0 minute) or 0x1E (30 minutes). 0xFFFFFFFFFFFF01: Default value"
               }
             }
           }
@@ -28725,7 +28667,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "定時需要電力（30分平均電力）",
-            "en": "Electric power demand at fixed time(30-minute average electric power)"
+            "en": "Electric power demand at fixed time (30-minute average electric power)"
           },
           "shortName": "averageElectricPowerDemand",
           "accessRule": {
@@ -29012,7 +28954,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "力測積算無効電力量（遅れ）計測値",
-            "en": "Measurement data of reactive electric power consumption(lag) for power factor measurement"
+            "en": "Measurement data of reactive electric power consumption (lag) for power factor measurement"
           },
           "shortName": "cumulativeReactiveElectricEnergy",
           "accessRule": {
@@ -29067,7 +29009,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算無効電力量（遅れ）",
-                  "en": "Cumulative amount of reactive electric power consumption(lag)"
+                  "en": "Cumulative amount of reactive electric power consumption (lag)"
                 }
               }
             ]
@@ -29080,7 +29022,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "定時力測積算無効電力量（遅れ）計測値",
-            "en": "Measurement data of cumulative amount of reactive electric power consumption(lag) at fixed time for power factor measurement"
+            "en": "Measurement data of cumulative amount of reactive electric power consumption (lag) at fixed time for power factor measurement"
           },
           "shortName": "cumulativeReactiveElectricEnergyAtEvery30Min",
           "accessRule": {
@@ -29135,7 +29077,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算無効電力量（遅れ）",
-                  "en": "Cumulative amount of reactive electric power consumption(lag)"
+                  "en": "Cumulative amount of reactive electric power consumption (lag)"
                 }
               }
             ]
@@ -29148,7 +29090,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "力測積算無効電力量（遅れ）有効桁数",
-            "en": "Number of effective digits for measurement data of cumulative amount of reactive electric power consumption(lag) for power factor measurement"
+            "en": "Number of effective digits for measurement data of cumulative amount of reactive electric power consumption (lag) for power factor measurement"
           },
           "shortName": "effectiveDigitsOfReactiveElectricEnergy",
           "accessRule": {
@@ -29168,7 +29110,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "力測積算無効電力量（遅れ）単位",
-            "en": "Unit of measurement data of cumulative amount of reactive electric power consumption(lag)"
+            "en": "Unit of measurement data of cumulative amount of reactive electric power consumption (lag)"
           },
           "shortName": "unitOfReactiveElectricEnergy",
           "accessRule": {
@@ -29226,7 +29168,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "力測積算無効電力量（遅れ）計測値履歴",
-            "en": "Historical data of measurement data of cumulative amount of reactive electric power consumption(lag) for power factor measurement"
+            "en": "Historical data of measurement data of cumulative amount of reactive electric power consumption (lag) for power factor measurement"
           },
           "shortName": "cumulativeReactiveElectricEnergyLog",
           "accessRule": {
@@ -29306,7 +29248,7 @@ const jsonData = {
                 },
                 "descriptions": {
                   "ja": "積算無効電力量（遅れ）",
-                  "en": "Measurement data of cumulative amount of reactive electric power consumption(lag)"
+                  "en": "Measurement data of cumulative amount of reactive electric power consumption (lag)"
                 }
               }
             ]
@@ -29429,8 +29371,8 @@ const jsonData = {
             ]
           },
           "note": {
-            "ja": "0:当日",
-            "en": "0:current day"
+            "ja": "0: 当日",
+            "en": "0: current day"
           }
         },
         "0xE2": {
@@ -29440,7 +29382,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "積算有効電力量計測値",
-            "en": "Measured cumulative amount of active electric energy"
+            "en": "Measured cumulative amounts of active electric energy"
           },
           "shortName": "cumulativeActiveElectricEnergy",
           "accessRule": {
@@ -29576,7 +29518,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "力測積算有効電力量計測値",
-            "en": "Measurement data of cumulative amount of active electric energy for power factor measurement"
+            "en": "Measurement data of cumulative amounts of active electric energy for power factor measurement"
           },
           "shortName": "cumulativeActiveElectricEnergyForPowerFactor",
           "accessRule": {
@@ -29823,7 +29765,7 @@ const jsonData = {
         "ja": "一般照明",
         "en": "General lighting"
       },
-      "shortname": "generalLighting",
+      "shortName": "generalLighting",
       "elProperties": {
         "0x90": {
           "validRelease": {
@@ -29834,7 +29776,7 @@ const jsonData = {
             "ja": "ONタイマ予約設定",
             "en": "ON timer reservation setting"
           },
-          "shortname": "onTimerReservation",
+          "shortName": "onTimerReservation",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -29846,7 +29788,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "予約入",
                   "en": "Reservation ON"
@@ -29854,7 +29796,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "予約切",
                   "en": "Reservation OFF"
@@ -29904,7 +29846,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "予約入",
                   "en": "Reservation ON"
@@ -29912,7 +29854,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "予約切",
                   "en": "Reservation OFF"
@@ -29948,9 +29890,9 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "照度レベル設定",
-            "en": "Illuminance Level"
+            "en": "Illuminance level"
           },
-          "shortname": "brightness",
+          "shortName": "brightness",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -29971,7 +29913,7 @@ const jsonData = {
                 "ja": "光色設定",
                 "en": "Light color setting"
               },
-              "shortname": "lightColor",
+              "shortName": "lightColor",
               "accessRule": {
                 "get": "optional",
                 "set": "optional",
@@ -29990,7 +29932,7 @@ const jsonData = {
                 "ja": "光色設定",
                 "en": "Light color setting"
               },
-              "shortname": "lightColor",
+              "shortName": "lightColor",
               "accessRule": {
                 "get": "optional",
                 "set": "optional",
@@ -30011,7 +29953,7 @@ const jsonData = {
             "ja": "照度レベル段数設定",
             "en": "Brightness level step setting"
           },
-          "shortname": "brightnessLevel",
+          "shortName": "brightnessLevelStep",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30021,7 +29963,7 @@ const jsonData = {
             "$ref": "#/definitions/raw_1"
           },
           "note": {
-            "ja": "0x01～設定可能照度レベル最大値 (暗～明)",
+            "ja": "0x01～設定可能照度レベル最大値（暗～明）",
             "en": "From 0x01 to the maximum specifiable illuminance level value (dark to bright)"
           }
         },
@@ -30034,7 +29976,7 @@ const jsonData = {
             "ja": "光色レベル段数設定",
             "en": "Light color step setting"
           },
-          "shortname": "lightColorLevel",
+          "shortName": "lightColorLevelStep",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30044,7 +29986,7 @@ const jsonData = {
             "$ref": "#/definitions/raw_1"
           },
           "note": {
-            "ja": "0x01～設定可能光色レベル最大値 (電球色～白色)",
+            "ja": "0x01～設定可能光色レベル最大値（電球色～白色）",
             "en": "From 0x01 to the maximum specifiable light color value (incandescent lamp color to white)"
           }
         },
@@ -30057,7 +29999,7 @@ const jsonData = {
             "ja": "設定可能レベル最大値",
             "en": "Maximum specifiable values"
           },
-          "shortname": "maximumSettableLevel",
+          "shortName": "maximumSpecifiableLevel",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -30079,6 +30021,7 @@ const jsonData = {
                       "enum": [
                         {
                           "edt": "0x00",
+                          "name": "notBrightness",
                           "descriptions": {
                             "ja": "機能を搭載していない場合",
                             "en": "When the function is not implemented"
@@ -30102,6 +30045,7 @@ const jsonData = {
                       "enum": [
                         {
                           "edt": "0x00",
+                          "name": "notColor",
                           "descriptions": {
                             "ja": "機能を搭載していない場合",
                             "en": "When the function is not implemented"
@@ -30124,7 +30068,7 @@ const jsonData = {
             "ja": "常夜灯設定可能レベル最大値",
             "en": "Maximum value of settable level for night lighting"
           },
-          "shortname": "maximumSettableLevelForNightLighting",
+          "shortName": "maximumSettableLevelForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -30146,6 +30090,7 @@ const jsonData = {
                       "enum": [
                         {
                           "edt": "0x00",
+                          "name": "notBrightness",
                           "descriptions": {
                             "ja": "機能を搭載していない場合",
                             "en": "When the function is not implemented"
@@ -30169,6 +30114,7 @@ const jsonData = {
                       "enum": [
                         {
                           "edt": "0x00",
+                          "name": "notColor",
                           "descriptions": {
                             "ja": "機能を搭載していない場合",
                             "en": "When the function is not implemented"
@@ -30191,7 +30137,7 @@ const jsonData = {
             "ja": "点灯モード設定",
             "en": "Lighting mode setting"
           },
-          "shortname": "operationMode",
+          "shortName": "operationMode",
           "accessRule": {
             "get": "required",
             "set": "required",
@@ -30214,7 +30160,7 @@ const jsonData = {
                 "name": "normal",
                 "descriptions": {
                   "ja": "通常灯",
-                  "en": "Main Lighting"
+                  "en": "Main lighting"
                 }
               },
               {
@@ -30222,7 +30168,7 @@ const jsonData = {
                 "name": "night",
                 "descriptions": {
                   "ja": "常夜灯",
-                  "en": "Night Lighting"
+                  "en": "Night lighting"
                 }
               },
               {
@@ -30230,7 +30176,7 @@ const jsonData = {
                 "name": "color",
                 "descriptions": {
                   "ja": "カラー灯",
-                  "en": "Color Lighting"
+                  "en": "Color lighting"
                 }
               }
             ]
@@ -30245,7 +30191,7 @@ const jsonData = {
             "ja": "通常灯モード時照度レベル設定",
             "en": "Brightness level setting for main lighting"
           },
-          "shortname": "brightnessLevelForMainLighting",
+          "shortName": "brightnessLevelForMainLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30264,7 +30210,7 @@ const jsonData = {
             "ja": "通常灯モード時照度レベル段数設定",
             "en": "Brightness level step setting for main lighting"
           },
-          "shortname": "brightnessLevelStepForMainLighting",
+          "shortName": "brightnessLevelStepForMainLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30287,7 +30233,7 @@ const jsonData = {
             "ja": "常夜灯モード時照度レベル設定",
             "en": "Brightness level setting for night lighting"
           },
-          "shortname": "brightnessLevelForNightLighting",
+          "shortName": "brightnessLevelForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30296,7 +30242,10 @@ const jsonData = {
           "data": {
             "$ref": "#/definitions/number_0-100%"
           },
-          "note": "0x00-0x64"
+          "note": {
+            "ja": "0x00-0x64",
+            "en": "0x00-0x64"
+          }
         },
         "0xBA": {
           "validRelease": {
@@ -30307,7 +30256,7 @@ const jsonData = {
             "ja": "常夜灯モード時照度レベル段数設定",
             "en": "Brightness level step setting for night lighting"
           },
-          "shortname": "brightnessLevelStepForNightLighting",
+          "shortName": "brightnessLevelStepForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30317,7 +30266,7 @@ const jsonData = {
             "$ref": "#/definitions/raw_1"
           },
           "note": {
-            "ja": "0x01～設定可能照度レベル最大値 (暗～明)",
+            "ja": "0x01～設定可能照度レベル最大値（暗～明）",
             "en": "0x01 to the maximum value of settable illuminance level (dark to bright)"
           }
         },
@@ -30330,7 +30279,7 @@ const jsonData = {
             "ja": "通常灯モード時光色設定",
             "en": "Light color setting for main lighting"
           },
-          "shortname": "brightnessLevelStepForNightLighting",
+          "shortName": "brightnessLevelStepForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30349,7 +30298,7 @@ const jsonData = {
             "ja": "通常灯モード時光色レベル段数設定",
             "en": "Light color level step setting for main lighting"
           },
-          "shortname": "lightColorLevelForMainLighting",
+          "shortName": "lightColorLevelStepForMainLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30359,8 +30308,8 @@ const jsonData = {
             "$ref": "#/definitions/raw_1"
           },
           "note": {
-            "ja": "0x01～設定可能光色レベル最大値 (電球色～白色)",
-            "en": "0x01to the maximum value of settable light color level (incandescent lamp color to white)"
+            "ja": "0x01～設定可能光色レベル最大値（電球色～白色）",
+            "en": "0x01 to the maximum value of settable light color level (incandescent lamp color to white)"
           }
         },
         "0xBD": {
@@ -30372,7 +30321,7 @@ const jsonData = {
             "ja": "常夜灯モード時光色設定",
             "en": "Light color setting for night lighting"
           },
-          "shortname": "lightColorLevelForNightLighting",
+          "shortName": "lightColorLevelForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30391,7 +30340,7 @@ const jsonData = {
             "ja": "常夜灯モード時光色レベル段数設定",
             "en": "Light color level step setting for night lighting"
           },
-          "shortname": "lightColorLevelStepForNightLighting",
+          "shortName": "lightColorLevelStepForNightLighting",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30401,7 +30350,7 @@ const jsonData = {
             "$ref": "#/definitions/raw_1"
           },
           "note": {
-            "ja": "0x01～設定可能光色レベル最大値 (電球色～白色)",
+            "ja": "0x01～設定可能光色レベル最大値（電球色～白色）",
             "en": "0x01 to the maximum value of settable light color level (incandescent lamp color to white)"
           }
         },
@@ -30412,9 +30361,9 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "自動モード時点灯モード状態",
-            "en": "Lighting mode status in Auto mode"
+            "en": "Lighting mode status in auto mode"
           },
-          "shortname": "autoMode",
+          "shortName": "autoMode",
           "accessRule": {
             "get": "optional",
             "set": "notApplicable",
@@ -30429,7 +30378,7 @@ const jsonData = {
                 "name": "normal",
                 "descriptions": {
                   "ja": "通常灯",
-                  "en": "Main Lighting"
+                  "en": "Main lighting"
                 }
               },
               {
@@ -30437,7 +30386,7 @@ const jsonData = {
                 "name": "night",
                 "descriptions": {
                   "ja": "常夜灯",
-                  "en": "Night Lighting"
+                  "en": "Night lighting"
                 }
               },
               {
@@ -30453,7 +30402,7 @@ const jsonData = {
                 "name": "color",
                 "descriptions": {
                   "ja": "カラー灯",
-                  "en": "Color Lighting"
+                  "en": "Color lighting"
                 }
               }
             ]
@@ -30465,10 +30414,10 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "カラー灯モード時RGB 設定",
+            "ja": "カラー灯モード時RGB設定",
             "en": "RGB setting for color lighting"
           },
-          "shortname": "rgb",
+          "shortName": "rgb",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30520,7 +30469,7 @@ const jsonData = {
             "ja": "照度レベル設定",
             "en": "Illuminance Level Setting"
           },
-          "shortMame": "brightness",
+          "shortName": "brightness",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -30949,7 +30898,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "車載電池の使用容量値1",
-            "en": "Used capacity of vehicle mounted battery 1 "
+            "en": "Used capacity of vehicle mounted battery 1"
           },
           "shortName": "usedCapacity1",
           "accessRule": {
@@ -31341,11 +31290,11 @@ const jsonData = {
               },
               {
                 "type": "state",
-                "name": "notSet",
                 "size": 1,
                 "enum": [
                   {
                     "edt": "0x00",
+                    "name": "notSet",
                     "descriptions": {
                       "ja": "未設定",
                       "en": "Not set"
@@ -31517,7 +31466,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x30",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "ON",
                   "en": "ON"
@@ -31525,7 +31474,7 @@ const jsonData = {
               },
               {
                 "edt": "0x31",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "OFF",
                   "en": "OFF"
@@ -31635,7 +31584,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "沸き上げ中",
                   "en": "Water is heating"
@@ -31643,7 +31592,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "非沸き上げ中",
                   "en": "Water is not heating"
@@ -31673,7 +31622,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "沸き上げ中",
                   "en": "Water is heating"
@@ -31681,7 +31630,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "非沸き上げ中",
                   "en": "Water is not heating"
@@ -31711,7 +31660,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "設定する",
                   "en": "Set"
@@ -31719,7 +31668,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "設定しない",
                   "en": "No setting"
@@ -31749,7 +31698,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "設定する",
                   "en": "Set"
@@ -31757,7 +31706,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "設定しない",
                   "en": "No setting"
@@ -31771,7 +31720,7 @@ const jsonData = {
             "ja": "太陽光発電連携モード設定",
             "en": "Linkage mode setting for solar power generation"
           },
-          "shortName": "linkageModeForSolarPowerGenerations",
+          "shortName": "linkageModeForSolarPowerGeneration",
           "validRelease": {
             "from": "L",
             "to": "latest"
@@ -31840,6 +31789,10 @@ const jsonData = {
             "properties": [
               {
                 "name": "startTime",
+                "descriptions": {
+                  "ja": "開始時間",
+                  "en": "Start time"
+                },
                 "element": {
                   "type": "time",
                   "size": 2
@@ -31850,6 +31803,10 @@ const jsonData = {
                 "element": {
                   "type": "time",
                   "size": 2
+                },
+                "descriptions": {
+                  "ja": "終了時間",
+                  "en": "End time"
                 }
               }
             ]
@@ -31876,7 +31833,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "yes",
+                "name": "true",
                 "descriptions": {
                   "ja": "給湯中",
                   "en": "Supplying hot water"
@@ -31884,7 +31841,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "no",
+                "name": "false",
                 "descriptions": {
                   "ja": "非給湯中",
                   "en": "Not supplying hot water"
@@ -33142,7 +33099,7 @@ const jsonData = {
                       "size": 3,
                       "enum": [
                         {
-                          "edt": "0xFFFFFF",
+                          "edt": "0xFF",
                           "name": "noSetting",
                           "descriptions": {
                             "ja": "設定なし",
@@ -33171,7 +33128,7 @@ const jsonData = {
                       "size": 3,
                       "enum": [
                         {
-                          "edt": "0xFFFFFF",
+                          "edt": "0xFF",
                           "name": "noSetting",
                           "descriptions": {
                             "ja": "設定なし",
@@ -33200,7 +33157,7 @@ const jsonData = {
                       "size": 3,
                       "enum": [
                         {
-                          "edt": "0xFFFFFF",
+                          "edt": "0xFF",
                           "name": "noSetting",
                           "descriptions": {
                             "ja": "設定なし",
@@ -33229,7 +33186,7 @@ const jsonData = {
                       "size": 3,
                       "enum": [
                         {
-                          "edt": "0xFFFFFF",
+                          "edt": "0xFF",
                           "name": "noSetting",
                           "descriptions": {
                             "ja": "設定なし",
@@ -33269,7 +33226,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x40",
-                "name": "off",
+                "name": "false",
                 "descriptions": {
                   "ja": "チャイルドロックOFF",
                   "en": "Child lock OFF"
@@ -33277,7 +33234,7 @@ const jsonData = {
               },
               {
                 "edt": "0x41",
-                "name": "on",
+                "name": "true",
                 "descriptions": {
                   "ja": "チャイルドロックON",
                   "en": "Child lock ON"
@@ -33307,7 +33264,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x40",
-                "name": "off",
+                "name": "false",
                 "descriptions": {
                   "ja": "ラジエントヒータロックOFF",
                   "en": "Radiant heater lock OFF"
@@ -33315,7 +33272,7 @@ const jsonData = {
               },
               {
                 "edt": "0x41",
-                "name": "on",
+                "name": "true",
                 "descriptions": {
                   "ja": "ラジエントヒータロックON",
                   "en": "Radiant heater lock ON"
@@ -33767,7 +33724,7 @@ const jsonData = {
             "ja": "一括停止設定",
             "en": "\"All stop\" setting"
           },
-          "shortName": "",
+          "shortName": "allStop",
           "accessRule": {
             "get": "notApplicable",
             "set": "required",
@@ -33795,7 +33752,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "コンロ加熱モード設定",
-            "en": "\"Heating modes of stoves\" setting"
+            "en": "Heating modes of stoves"
           },
           "shortName": "heatingModesOfStoves",
           "accessRule": {
@@ -33822,7 +33779,7 @@ const jsonData = {
                     },
                     {
                       "edt": "0x42",
-                      "name": "deepFryingMode",
+                      "name": "deepFrying",
                       "descriptions": {
                         "ja": "天ぷら（揚げ物）",
                         "en": "Deep-frying mode (tempura, etc.)"
@@ -33883,7 +33840,7 @@ const jsonData = {
                     },
                     {
                       "edt": "0x42",
-                      "name": "deepFryingMode",
+                      "name": "deepFrying",
                       "descriptions": {
                         "ja": "天ぷら（揚げ物）",
                         "en": "Deep-frying mode (tempura, etc.)"
@@ -33944,7 +33901,7 @@ const jsonData = {
                     },
                     {
                       "edt": "0x42",
-                      "name": "deepFryingMode",
+                      "name": "deepFrying",
                       "descriptions": {
                         "ja": "天ぷら（揚げ物）",
                         "en": "Deep-frying mode (tempura, etc.)"
@@ -34500,7 +34457,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "炊飯予約設定時刻設定値",
-            "en": "Set value of rice cooking reservation setting time"
+            "en": "Rice cooking reservation time setting"
           },
           "shortName": "reservationTime",
           "accessRule": {
@@ -34511,6 +34468,10 @@ const jsonData = {
           "data": {
             "type": "time",
             "size": 2
+          },
+          "note": {
+            "ja": "秒の指定は無視される",
+            "en": "number of seconds is ignored"
           }
         },
         "0x92": {
@@ -34520,7 +34481,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "炊飯予約設定相対時間設定値",
-            "en": "Set value of rice cooking reservation setting relative time"
+            "en": "Rice cooking reservation relative time setting"
           },
           "shortName": "reservationRelativeTime",
           "accessRule": {
@@ -34531,6 +34492,10 @@ const jsonData = {
           "data": {
             "type": "time",
             "size": 2
+          },
+          "note": {
+            "ja": "秒の指定は無視される",
+            "en": "number of seconds is ignored"
           }
         },
         "0xB0": {
@@ -34540,7 +34505,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "蓋開閉状態",
-            "en": "Cover open/close status"
+            "en": "Cover closure status"
           },
           "shortName": "coverStatus",
           "accessRule": {
@@ -34565,7 +34530,7 @@ const jsonData = {
                 "name": "close",
                 "descriptions": {
                   "ja": "蓋閉",
-                  "en": "Cover closed"
+                  "en": "Cover close"
                 }
               }
             ]
@@ -34692,7 +34657,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "enabled",
+                "name": "true",
                 "descriptions": {
                   "ja": "保温有",
                   "en": "Warmer enabled"
@@ -34700,7 +34665,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "disabled",
+                "name": "false",
                 "descriptions": {
                   "ja": "保温無",
                   "en": "Warmer disabled"
@@ -34730,7 +34695,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "removed",
+                "name": "true",
                 "descriptions": {
                   "ja": "取り外し有",
                   "en": "Removed"
@@ -34738,7 +34703,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "notRemoved",
+                "name": "false",
                 "descriptions": {
                   "ja": "取り外し無",
                   "en": "Not removed"
@@ -34768,7 +34733,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "removed",
+                "name": "true",
                 "descriptions": {
                   "ja": "取り外し有",
                   "en": "Removed"
@@ -34776,7 +34741,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "notRemoved",
+                "name": "false",
                 "descriptions": {
                   "ja": "取り外し無",
                   "en": "Not removed"
@@ -34794,7 +34759,7 @@ const jsonData = {
       },
       "className": {
         "ja": "業務用ショーケース",
-        "en": "Commercial show case"
+        "en": "Commercial showcase"
       },
       "shortName": "commercialShowcase",
       "elProperties": {
@@ -34859,7 +34824,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "吐出温度計測値",
-            "en": "Measured value of discharge temperature"
+            "en": "Used to acquire measurements of discharge temperature"
           },
           "shortName": "dischargeTemperature",
           "accessRule": {
@@ -34872,7 +34837,8 @@ const jsonData = {
             "format": "int8",
             "unit": "Celsius",
             "minimum": -127,
-            "maximum": 125
+            "maximum": 125,
+            "multipleOf": 1
           }
         },
         "0xCA": {
@@ -34930,7 +34896,7 @@ const jsonData = {
                         "name": "none",
                         "descriptions": {
                           "ja": "設定なし",
-                          "en": "No setting"
+                          "en": "None"
                         }
                       }
                     ]
@@ -34947,7 +34913,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ショーケースタイプ情報",
-            "en": "Showcase type information"
+            "en": "This property indicates the type of the showcase"
           },
           "shortName": "showcaseType",
           "accessRule": {
@@ -34993,7 +34959,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ドアタイプ情報",
-            "en": "Door type information"
+            "en": "This property indicates the type of the showcase door"
           },
           "shortName": "doorType",
           "accessRule": {
@@ -35030,8 +34996,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "ショーケース構成情報",
-            "en": "Showcase configuration information"
+            "ja": "冷凍機内蔵型か冷凍機別置型かを示すショーケース構成情報",
+            "en": "This property indicates refrigerator type, such as built-in or separate"
           },
           "shortName": "refrigeratorType",
           "accessRule": {
@@ -35069,7 +35035,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ショーケース形状情報",
-            "en": "Showcase shape information"
+            "en": "This property indicates the shape of the showcase"
           },
           "shortName": "shapeType",
           "accessRule": {
@@ -35085,7 +35051,7 @@ const jsonData = {
                 "edt": "0x41",
                 "name": "box",
                 "descriptions": {
-                  "ja": "箱型",
+                  "ja": "箱形",
                   "en": "Box type"
                 }
               },
@@ -35093,7 +35059,7 @@ const jsonData = {
                 "edt": "0x42",
                 "name": "desktop",
                 "descriptions": {
-                  "ja": "卓上型",
+                  "ja": "卓上形",
                   "en": "Desktop type"
                 }
               },
@@ -35109,7 +35075,7 @@ const jsonData = {
                 "edt": "0x44",
                 "name": "quadrupleQuintupleGlass",
                 "descriptions": {
-                  "ja": "四面ガラス式",
+                  "ja": "四面（五面）ガラス式",
                   "en": "Quadruple (quintuple) glass type"
                 }
               },
@@ -35118,7 +35084,7 @@ const jsonData = {
                 "name": "reach-in",
                 "descriptions": {
                   "ja": "リーチイン",
-                  "en": "Reach-in"
+                  "en": "Reach-in type"
                 }
               },
               {
@@ -35133,7 +35099,7 @@ const jsonData = {
                 "edt": "0x47",
                 "name": "multistageOpenAndCeilingBlowoff",
                 "descriptions": {
-                  "ja": "多段型オープン（天井吹出形）",
+                  "ja": "多段形オープン（天井吹出形）",
                   "en": "Multistage open (ceiling blowoff type)"
                 }
               },
@@ -35141,7 +35107,7 @@ const jsonData = {
                 "edt": "0x48",
                 "name": "multistageOpenAndBacksideBlowoff",
                 "descriptions": {
-                  "ja": "多段型オープン（背面吹出形）",
+                  "ja": "多段形オープン（背面吹出形）",
                   "en": "Multistage open (backside blowoff type)"
                 }
               },
@@ -35149,7 +35115,7 @@ const jsonData = {
                 "edt": "0x49",
                 "name": "flat",
                 "descriptions": {
-                  "ja": "平型",
+                  "ja": "平形",
                   "en": "Flat type"
                 }
               },
@@ -35178,8 +35144,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "庫内温度帯情報",
-            "en": "Temperature range information for inside the case"
+            "ja": "冷蔵用途か冷凍用途かを示す庫内温度帯情報",
+            "en": "This property indicates the purpose of the showcase, either refrigeration or freezing"
           },
           "shortName": "purposeType",
           "accessRule": {
@@ -35217,7 +35183,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "庫内照明動作状態",
-            "en": "Internal lighting operation status"
+            "en": "Indicates ON/OFF status of lighting installed inside the showcase"
           },
           "shortName": "internalLightingOperationStatus",
           "accessRule": {
@@ -35231,7 +35197,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x30",
-                "name": "on",
+                "name": "true",
                 "descriptions": {
                   "ja": "ON",
                   "en": "ON"
@@ -35239,7 +35205,7 @@ const jsonData = {
               },
               {
                 "edt": "0x31",
-                "name": "off",
+                "name": "false",
                 "descriptions": {
                   "ja": "OFF",
                   "en": "OFF"
@@ -35255,7 +35221,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "庫外照明動作状態",
-            "en": "External lighting operation status"
+            "en": "Indicates ON/OFF status of lighting installed outside the showcase"
           },
           "shortName": "externalLightingOperationStatus",
           "accessRule": {
@@ -35269,7 +35235,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x30",
-                "name": "on",
+                "name": "true",
                 "descriptions": {
                   "ja": "ON",
                   "en": "ON"
@@ -35277,7 +35243,7 @@ const jsonData = {
               },
               {
                 "edt": "0x31",
-                "name": "off",
+                "name": "false",
                 "descriptions": {
                   "ja": "OFF",
                   "en": "OFF"
@@ -35293,7 +35259,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "コンプレッサ動作状態",
-            "en": "Compressor operation status"
+            "en": "Indicates ON/OFF status of compressor when showcase and compressor are a single unit"
           },
           "shortName": "compressorOperationStatus",
           "accessRule": {
@@ -35307,7 +35273,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x30",
-                "name": "on",
+                "name": "true",
                 "descriptions": {
                   "ja": "ON",
                   "en": "ON"
@@ -35315,7 +35281,7 @@ const jsonData = {
               },
               {
                 "edt": "0x31",
-                "name": "off",
+                "name": "false",
                 "descriptions": {
                   "ja": "OFF",
                   "en": "OFF"
@@ -35331,7 +35297,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "庫内温度計測値",
-            "en": "Measured value of internal temperature"
+            "en": "Used to acquire internal temperature measurements inside the showcase"
           },
           "shortName": "internalTemperature",
           "accessRule": {
@@ -35344,7 +35310,8 @@ const jsonData = {
             "format": "int8",
             "unit": "Celsius",
             "minimum": -127,
-            "maximum": 125
+            "maximum": 125,
+            "multipleOf": 1
           }
         },
         "0xE4": {
@@ -35353,8 +35320,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "冷凍能力値",
-            "en": "Freezing capability value"
+            "ja": "冷却時に要する定格消費電力（冷凍能力値）",
+            "en": "Indicates rated power consumption necessary when showcase is cooling"
           },
           "shortName": "ratedElectricPowerForFreezing",
           "accessRule": {
@@ -35367,6 +35334,7 @@ const jsonData = {
             "format": "uint16",
             "minimum": 0,
             "maximum": 65533,
+            "multipleOf": 1,
             "unit": "W"
           }
         },
@@ -35376,8 +35344,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "霜取りヒータ消費電力",
-            "en": "Defrosting heater power consumption"
+            "ja": "霜取りヒータ稼働時の定格消費電",
+            "en": "Indicates rated power consumption when heater is operating during showcase defrosting"
           },
           "shortName": "ratedElectricPowerForDefrostingHeater",
           "accessRule": {
@@ -35390,6 +35358,7 @@ const jsonData = {
             "format": "uint16",
             "minimum": 0,
             "maximum": 65533,
+            "multipleOf": 1,
             "unit": "W"
           }
         },
@@ -35399,8 +35368,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "ファンモータ消費電力",
-            "en": "Fan motor power consumption"
+            "ja": "ファンモータ稼働時の定格消費電力",
+            "en": "Indicates rated power consumption when showcase is operating fan motor"
           },
           "shortName": "ratedElectricPowerForFanMotor",
           "accessRule": {
@@ -35413,6 +35382,7 @@ const jsonData = {
             "format": "uint16",
             "minimum": 0,
             "maximum": 65533,
+            "multipleOf": 1,
             "unit": "W"
           }
         },
@@ -35422,8 +35392,8 @@ const jsonData = {
             "to": "latest"
           },
           "propertyName": {
-            "ja": "ヒーターモード",
-            "en": "Heater mode"
+            "ja": "ホット用ヒーター動作状態（ヒーターモード）",
+            "en": "Indicates ON/OFF status of showcases with heater for hot function"
           },
           "shortName": "heaterOperationStatus",
           "accessRule": {
@@ -35437,7 +35407,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x30",
-                "name": "on",
+                "name": "true",
                 "descriptions": {
                   "ja": "ON",
                   "en": "ON"
@@ -35445,7 +35415,7 @@ const jsonData = {
               },
               {
                 "edt": "0x31",
-                "name": "off",
+                "name": "false",
                 "descriptions": {
                   "ja": "OFF",
                   "en": "OFF"
@@ -35461,7 +35431,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "庫内照明タイプ",
-            "en": "Type of lighting inside the showcase"
+            "en": "Indicates type of lighting installed inside the showcase"
           },
           "shortName": "insideLightingType",
           "accessRule": {
@@ -35515,7 +35485,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "庫外照明タイプ",
-            "en": "Type of lighting outside the case"
+            "en": "Indicates type of lighting installed outside the showcase"
           },
           "shortName": "outsideLightingType",
           "accessRule": {
@@ -35569,7 +35539,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "庫内照明照度レベル設定",
-            "en": "Illuminance level setting of lighting inside the showcase"
+            "en": "Indicates lighting level in % installed inside of the showcase"
           },
           "shortName": "targetInsideBrightness",
           "accessRule": {
@@ -35592,9 +35562,9 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "庫外照明照度レベル設定",
-            "en": "Illuminance level setting of lighting outside the case"
+            "en": "Indicates lighting level in % installed outside of the showcase"
           },
-          "shortName": "庫外照明照度レベル設定",
+          "shortName": "targetOutsideBrightness",
           "accessRule": {
             "get": "optional",
             "set": "optional",
@@ -35605,7 +35575,8 @@ const jsonData = {
             "format": "uint8",
             "unit": "%",
             "minimum": 0,
-            "maximum": 100
+            "maximum": 100,
+            "multipleOf": 1
           }
         },
         "0xEF": {
@@ -35615,7 +35586,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "庫内温度設定値",
-            "en": "Temperature setting of inside the case"
+            "en": "Set temperature setting of inside the case and acquire the current setting"
           },
           "shortName": "targetInsideTemperature",
           "accessRule": {
@@ -35628,7 +35599,8 @@ const jsonData = {
             "format": "int8",
             "unit": "Celsius",
             "minimum": -127,
-            "maximum": 126
+            "maximum": 126,
+            "multipleOf": 1
           }
         }
       }
@@ -35651,7 +35623,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ONタイマ予約設定",
-            "en": "ON timer setting"
+            "en": "ON timer reservation setting"
           },
           "shortName": "onTimerReservationStatus",
           "accessRule": {
@@ -35665,7 +35637,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "on",
+                "name": "enable",
                 "descriptions": {
                   "ja": "予約入",
                   "en": "Reservation ON"
@@ -35673,7 +35645,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "off",
+                "name": "disable",
                 "descriptions": {
                   "ja": "予約切",
                   "en": "Reservation OFF"
@@ -35689,7 +35661,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ONタイマ時刻設定値",
-            "en": "ON timer setting(time)"
+            "en": "ON timer setting"
           },
           "shortName": "onTimerAbsolute",
           "accessRule": {
@@ -35700,6 +35672,10 @@ const jsonData = {
           "data": {
             "type": "time",
             "size": 2
+          },
+          "note": {
+            "ja": "秒の指定は無視される",
+            "en": "Number of seconds is ignored"
           }
         },
         "0x92": {
@@ -35709,7 +35685,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "ONタイマ相対時間設定値",
-            "en": "ON timer setting(relative time)"
+            "en": "Relative time-based ON timer setting"
           },
           "shortName": "onTimerRelative",
           "accessRule": {
@@ -35751,7 +35727,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "closed",
+                "name": "close",
                 "descriptions": {
                   "ja": "扉・蓋閉",
                   "en": "Door/cover closed"
@@ -35784,7 +35760,7 @@ const jsonData = {
                 "name": "run",
                 "descriptions": {
                   "ja": "洗濯乾燥開始・再開／洗濯乾燥運転中",
-                  "en": "Start/resume or operation ongoing"
+                  "en": "Start/restart(ed) or in progress"
                 }
               },
               {
@@ -35998,7 +35974,7 @@ const jsonData = {
                 "name": "washHardToRemove",
                 "descriptions": {
                   "ja": "＜洗濯コース＞しつこい汚れ",
-                  "en": "Hard-to-remove stains"
+                  "en": "<Washing course>Hard-to-remove stains"
                 }
               },
               {
@@ -36548,9 +36524,394 @@ const jsonData = {
             "inf": "optional"
           },
           "data": {
-            "type": "raw",
-            "minSize": 12,
-            "maxSize": 12
+            "type": "bitmap",
+            "size": 12,
+            "bitmaps": [
+              {
+                "name": "washDryStandard",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞標準",
+                  "en": "<Washing and drying course>Standard"
+                },
+                "edt": "0x21"
+              },
+              {
+                "name": "washDrySilent",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞静音",
+                  "en": "<Washing and drying course>silent"
+                },
+                "edt": "0x22"
+              },
+              {
+                "name": "washDryHeavilySoiled",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞汚れ大",
+                  "en": "<Washing and drying course>heavily soiled"
+                },
+                "edt": "0x23"
+              },
+              {
+                "name": "washDryHardToRemove",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞しつこい汚れ",
+                  "en": "<Washing and drying course>hard-to-remove stains"
+                },
+                "edt": "0x24"
+              },
+              {
+                "name": "washDryPresoaking",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞つけおき",
+                  "en": "<Washing and drying course>presoaking"
+                },
+                "edt": "0x25"
+              },
+              {
+                "name": "washDryBlankets",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞毛布",
+                  "en": "<Washing and drying course>blankets"
+                },
+                "edt": "0x26"
+              },
+              {
+                "name": "washDrySoft",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞ソフト",
+                  "en": "<Washing and drying course>soft"
+                },
+                "edt": "0x27"
+              },
+              {
+                "name": "washDryDrymark",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞ドライ",
+                  "en": "<Washing and drying course>dry"
+                },
+                "edt": "0x28"
+              },
+              {
+                "name": "washDryCleanRinsing",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞清潔すすぎ",
+                  "en": "<Washing and drying course>clean rinsing"
+                },
+                "edt": "0x29"
+              },
+              {
+                "name": "washDryIroning",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞アイロン／Y シャツ",
+                  "en": "<Washing and drying course>ironing/business shirts"
+                },
+                "edt": "0x2A"
+              },
+              {
+                "name": "washDryHangDrying",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞吊り干し",
+                  "en": "<Washing and drying course>hang drying"
+                },
+                "edt": "0x2B"
+              },
+              {
+                "name": "washDryThick",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞厚物",
+                  "en": "<Washing and drying course>thick clothes"
+                },
+                "edt": "0x2C"
+              },
+              {
+                "name": "washDryDisinfection",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞除菌",
+                  "en": "<Washing and drying course>disinfection"
+                },
+                "edt": "0x2D"
+              },
+              {
+                "name": "washDryOilStrains",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞油汚れ",
+                  "en": "<Washing and drying course>oil stains"
+                },
+                "edt": "0x2E"
+              },
+              {
+                "name": "washDryMemory",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞メモリー",
+                  "en": "<Washing and drying course>memory"
+                },
+                "edt": "0x2F"
+              },
+              {
+                "name": "washDryDetergentSaving",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞省洗剤",
+                  "en": "<Washing and drying course>detergent saving"
+                },
+                "edt": "0x30"
+              },
+              {
+                "name": "washDryLightlySoiled",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞汚れ少",
+                  "en": "<Washing and drying course>lightly soiled clothes"
+                },
+                "edt": "0x31"
+              },
+              {
+                "name": "washDrySmallAmountQuick",
+                "descriptions": {
+                  "ja": "＜洗濯乾燥コース＞少量短時間",
+                  "en": "<Washing and drying course>quick wash of small amount of laundry"
+                },
+                "edt": "0x32"
+              },
+              {
+                "name": "washStandard",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞標準",
+                  "en": "<Washing course>Standard"
+                },
+                "edt": "0x61"
+              },
+              {
+                "name": "washSilent",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞静音",
+                  "en": "<Washing course>silent"
+                },
+                "edt": "0x62"
+              },
+              {
+                "name": "washHeavilySoiled",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞汚れ大",
+                  "en": "<Washing course>heavily soiled clothes"
+                },
+                "edt": "0x63"
+              },
+              {
+                "name": "washHardToRemove",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞しつこい汚れ",
+                  "en": "<Washing course>hard-to-remove stains"
+                },
+                "edt": "0x64"
+              },
+              {
+                "name": "washPresoaking",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞つけおき",
+                  "en": "<Washing course>presoaking"
+                },
+                "edt": "0x65"
+              },
+              {
+                "name": "washBlankets",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞毛布",
+                  "en": "<Washing course>blankets"
+                },
+                "edt": "0x66"
+              },
+              {
+                "name": "washSoft",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞ソフト",
+                  "en": "<Washing course>soft"
+                },
+                "edt": "0x67"
+              },
+              {
+                "name": "washDrymark",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞ドライ",
+                  "en": "<Washing course>dry"
+                },
+                "edt": "0x68"
+              },
+              {
+                "name": "washCleanRinsing",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞清潔すすぎ",
+                  "en": "<Washing course>clean rinsing"
+                },
+                "edt": "0x69"
+              },
+              {
+                "name": "washDisinfection",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞除菌",
+                  "en": "<Washing course>disinfection"
+                },
+                "edt": "0x6A"
+              },
+              {
+                "name": "washOilStrains",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞油汚れ",
+                  "en": "<Washing course>oil stains"
+                },
+                "edt": "0x6B"
+              },
+              {
+                "name": "washMemory",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞メモリ",
+                  "en": "<Washing course>memory"
+                },
+                "edt": "0x6C"
+              },
+              {
+                "name": "washDetergentSaving",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞省洗剤",
+                  "en": "<Washing course>detergent saving"
+                },
+                "edt": "0x6D"
+              },
+              {
+                "name": "washLightlySoiled",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞汚れ少",
+                  "en": "<Washing course>lightly soiled clothes"
+                },
+                "edt": "0x6E"
+              },
+              {
+                "name": "washSmallAmountQuick",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞少量短時間",
+                  "en": "<Washing course>quick wash of small amount of laundry"
+                },
+                "edt": "0x6F"
+              },
+              {
+                "name": "washTankCleaning",
+                "descriptions": {
+                  "ja": "＜洗濯コース＞槽洗浄",
+                  "en": "<Washing course>tank cleaning"
+                },
+                "edt": "0x7F"
+              },
+              {
+                "name": "dryStandard",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞標準",
+                  "en": "<Drying course>Standard"
+                },
+                "edt": "0xA1"
+              },
+              {
+                "name": "dryBlankets",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞毛布",
+                  "en": "<Drying course>blankets"
+                },
+                "edt": "0xA2"
+              },
+              {
+                "name": "drySoft",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞ソフト",
+                  "en": "<Drying course>soft"
+                },
+                "edt": "0xA3"
+              },
+              {
+                "name": "dryDrymark",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞ドライ",
+                  "en": "<Drying course>dry"
+                },
+                "edt": "0xA4"
+              },
+              {
+                "name": "dryIroning",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞アイロン／Y シャツ",
+                  "en": "<Drying course>ironing/business shirts"
+                },
+                "edt": "0xA5"
+              },
+              {
+                "name": "dryHangDrying",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞吊り干し",
+                  "en": "<Drying course>hang drying"
+                },
+                "edt": "0xA6"
+              },
+              {
+                "name": "dryThick",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞厚物",
+                  "en": "<Drying course>thick clothes"
+                },
+                "edt": "0xA7"
+              },
+              {
+                "name": "dryDisinfection",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞除菌",
+                  "en": "<Drying course>disinfection"
+                },
+                "edt": "0xA8"
+              },
+              {
+                "name": "dryShrinkageMinimization",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞縮み低減",
+                  "en": "<Drying course>shrinkage minimization"
+                },
+                "edt": "0xA9"
+              },
+              {
+                "name": "dryFinishing",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞仕上げ",
+                  "en": "<Drying course>finishing"
+                },
+                "edt": "0xAA"
+              },
+              {
+                "name": "dryStationaryDrying",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞静止乾燥",
+                  "en": "<Drying course>stationary drying"
+                },
+                "edt": "0xAB"
+              },
+              {
+                "name": "dryUserDefinedTime",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞時間指定",
+                  "en": "<Drying course>user definition of drying time"
+                },
+                "edt": "0xAC"
+              },
+              {
+                "name": "dryWarming",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞衣類あたため",
+                  "en": "<Drying course>garment warming"
+                },
+                "edt": "0xAD"
+              },
+              {
+                "name": "dryTankDrying",
+                "descriptions": {
+                  "ja": "＜乾燥コース＞槽乾燥",
+                  "en": "<Drying course>tank drying"
+                },
+                "edt": "0xBF"
+              }
+            ]
           },
           "note": {
             "ja": "ビットが1 の場合、対応するコースの設定が可能なことを、0 の場合は不可能なことを示す。ビットとコースの関係はPDFの詳細を参照のこと。",
@@ -36573,9 +36934,146 @@ const jsonData = {
             "inf": "optional"
           },
           "data": {
-            "type": "raw",
-            "minSize": 4,
-            "maxSize": 4
+            "type": "bitmap",
+            "size": 4,
+            "bitmaps": [
+              {
+                "name": "washDryNoWash",
+                "descriptions": {
+                  "ja": "洗濯なし",
+                  "en": "No washing"
+                },
+                "edt": "0x20"
+              },
+              {
+                "name": "washDryStandard",
+                "descriptions": {
+                  "ja": "標準",
+                  "en": "standard"
+                },
+                "edt": "0x21"
+              },
+              {
+                "name": "washDrySilent",
+                "descriptions": {
+                  "ja": "静音",
+                  "en": "silent"
+                },
+                "edt": "0x22"
+              },
+              {
+                "name": "washDryHeavilySoiled",
+                "descriptions": {
+                  "ja": "汚れ大",
+                  "en": "heavily soiled clothes"
+                },
+                "edt": "0x23"
+              },
+              {
+                "name": "washDryHardToRemove",
+                "descriptions": {
+                  "ja": "しつこい汚れ",
+                  "en": "hard-to-remove stains"
+                },
+                "edt": "0x24"
+              },
+              {
+                "name": "washDryPresoaking",
+                "descriptions": {
+                  "ja": "つけおき",
+                  "en": "presoaking"
+                },
+                "edt": "0x25"
+              },
+              {
+                "name": "washDryBlankets",
+                "descriptions": {
+                  "ja": "毛布",
+                  "en": "blankets"
+                },
+                "edt": "0x26"
+              },
+              {
+                "name": "washDrySoft",
+                "descriptions": {
+                  "ja": "ソフト",
+                  "en": "soft"
+                },
+                "edt": "0x27"
+              },
+              {
+                "name": "washDryDrymark",
+                "descriptions": {
+                  "ja": "ドライ",
+                  "en": "dry"
+                },
+                "edt": "0x28"
+              },
+              {
+                "name": "washDryCleanRinsing",
+                "descriptions": {
+                  "ja": "清潔すすぎ",
+                  "en": "clean rinsing"
+                },
+                "edt": "0x29"
+              },
+              {
+                "name": "washDryDisinfection",
+                "descriptions": {
+                  "ja": "除菌",
+                  "en": "disinfection"
+                },
+                "edt": "0x2D"
+              },
+              {
+                "name": "washDryOilStrains",
+                "descriptions": {
+                  "ja": "油汚れ",
+                  "en": "oil stains"
+                },
+                "edt": "0x2E"
+              },
+              {
+                "name": "washDryMemory",
+                "descriptions": {
+                  "ja": "メモリー",
+                  "en": "memory"
+                },
+                "edt": "0x2F"
+              },
+              {
+                "name": "washDryDetergentSaving",
+                "descriptions": {
+                  "ja": "省洗剤",
+                  "en": "detergent saving"
+                },
+                "edt": "0x30"
+              },
+              {
+                "name": "washDryLightlySoiled",
+                "descriptions": {
+                  "ja": "汚れ少",
+                  "en": "lightly soiled clothes"
+                },
+                "edt": "0x31"
+              },
+              {
+                "name": "washDrySmallAmountQuick",
+                "descriptions": {
+                  "ja": "少量短時間",
+                  "en": "quick wash of small amount of laundry"
+                },
+                "edt": "0x32"
+              },
+              {
+                "name": "washDryTankCleaning",
+                "descriptions": {
+                  "ja": "槽洗浄",
+                  "en": "tank cleaning"
+                },
+                "edt": "0x3F"
+              }
+            ]
           },
           "note": {
             "ja": "ビットが1 の場合、対応するコースの設定が可能なことを、0 の場合は不可能なことを示す。ビットとコースの関係はPDFの詳細を参照のこと。",
@@ -36598,9 +37096,138 @@ const jsonData = {
             "inf": "optional"
           },
           "data": {
-            "type": "raw",
-            "minSize": 4,
-            "maxSize": 4
+            "type": "bitmap",
+            "size": 4,
+            "bitmaps": [
+              {
+                "name": "dryNoDrying",
+                "descriptions": {
+                  "ja": "乾燥なし",
+                  "en": "No drying"
+                },
+                "edt": "0xA0"
+              },
+              {
+                "name": "dryStandard",
+                "descriptions": {
+                  "ja": "標準",
+                  "en": "standard"
+                },
+                "edt": "0xA1"
+              },
+              {
+                "name": "dryBlankets",
+                "descriptions": {
+                  "ja": "毛布",
+                  "en": "blankets"
+                },
+                "edt": "0xA2"
+              },
+              {
+                "name": "drySoft",
+                "descriptions": {
+                  "ja": "ソフト",
+                  "en": "soft"
+                },
+                "edt": "0xA3"
+              },
+              {
+                "name": "dryDrymark",
+                "descriptions": {
+                  "ja": "ドライ",
+                  "en": "dry"
+                },
+                "edt": "0xA4"
+              },
+              {
+                "name": "dryIroning",
+                "descriptions": {
+                  "ja": "アイロン／Y シャツ",
+                  "en": "ironing/business shirts"
+                },
+                "edt": "0xA5"
+              },
+              {
+                "name": "dryHangDrying",
+                "descriptions": {
+                  "ja": "吊り干し",
+                  "en": "hang drying"
+                },
+                "edt": "0xA6"
+              },
+              {
+                "name": "dryThick",
+                "descriptions": {
+                  "ja": "厚物",
+                  "en": "thick clothes"
+                },
+                "edt": "0xA7"
+              },
+              {
+                "name": "dryDisinfection",
+                "descriptions": {
+                  "ja": "除菌",
+                  "en": "disinfection"
+                },
+                "edt": "0xA8"
+              },
+              {
+                "name": "dryShrinkageMinimization",
+                "descriptions": {
+                  "ja": "縮み低減",
+                  "en": "shrinkage minimization"
+                },
+                "edt": "0xA9"
+              },
+              {
+                "name": "dryFinishing",
+                "descriptions": {
+                  "ja": "仕上げ",
+                  "en": "finishing"
+                },
+                "edt": "0xAA"
+              },
+              {
+                "name": "dryStationaryDrying",
+                "descriptions": {
+                  "ja": "静止乾燥",
+                  "en": "stationary drying"
+                },
+                "edt": "0xAB"
+              },
+              {
+                "name": "dryUserDefinedTime",
+                "descriptions": {
+                  "ja": "時間指定",
+                  "en": "user definition of drying time"
+                },
+                "edt": "0xC"
+              },
+              {
+                "name": "dryWarming",
+                "descriptions": {
+                  "ja": "衣類あたため",
+                  "en": "garment warming"
+                },
+                "edt": "0xAD"
+              },
+              {
+                "name": "dryHeaterCurrentLimit",
+                "descriptions": {
+                  "ja": "ヒータ入力制限",
+                  "en": "heater current limit"
+                },
+                "edt": "0xAE"
+              },
+              {
+                "name": "dryTankDrying",
+                "descriptions": {
+                  "ja": "槽乾燥",
+                  "en": "tank drying"
+                },
+                "edt": "0xBF"
+              }
+            ]
           },
           "note": {
             "ja": "ビットが1 の場合、対応するコースの設定が可能なことを、0 の場合は不可能なことを示す。ビットとコースの関係はPDFの詳細を参照のこと。",
@@ -36682,7 +37309,7 @@ const jsonData = {
                 "format": "uint16",
                 "minimum": 0,
                 "maximum": 4095,
-                "unit": "rpm"
+                "unit": "r/min"
               },
               {
                 "type": "level",
@@ -36942,7 +37569,7 @@ const jsonData = {
                 "name": "washing",
                 "descriptions": {
                   "ja": "洗い",
-                  "en": "washing"
+                  "en": "Washing"
                 }
               },
               {
@@ -37021,7 +37648,7 @@ const jsonData = {
                 "edt": "0x71",
                 "name": "1stRinsing",
                 "descriptions": {
-                  "ja": "第１すすぎ",
+                  "ja": "第1すすぎ",
                   "en": "1st rinsing"
                 }
               },
@@ -37029,7 +37656,7 @@ const jsonData = {
                 "edt": "0x72",
                 "name": "2ndRinsing",
                 "descriptions": {
-                  "ja": "第２すすぎ",
+                  "ja": "第2すすぎ",
                   "en": "2nd rinsing"
                 }
               },
@@ -37037,7 +37664,7 @@ const jsonData = {
                 "edt": "0x73",
                 "name": "3rdRinsing",
                 "descriptions": {
-                  "ja": "第３すすぎ",
+                  "ja": "第3すすぎ",
                   "en": "3rd rinsing"
                 }
               },
@@ -37045,7 +37672,7 @@ const jsonData = {
                 "edt": "0x74",
                 "name": "4thRinsing",
                 "descriptions": {
-                  "ja": "第４すすぎ",
+                  "ja": "第4すすぎ",
                   "en": "4th rinsing"
                 }
               },
@@ -37053,7 +37680,7 @@ const jsonData = {
                 "edt": "0x75",
                 "name": "5thRinsing",
                 "descriptions": {
-                  "ja": "第５すすぎ",
+                  "ja": "第5すすぎ",
                   "en": "5th rinsing"
                 }
               },
@@ -37061,7 +37688,7 @@ const jsonData = {
                 "edt": "0x76",
                 "name": "6thRinsing",
                 "descriptions": {
-                  "ja": "第６すすぎ",
+                  "ja": "第6すすぎ",
                   "en": "6th rinsing"
                 }
               },
@@ -37069,7 +37696,7 @@ const jsonData = {
                 "edt": "0x77",
                 "name": "7thRinsing",
                 "descriptions": {
-                  "ja": "第７すすぎ",
+                  "ja": "第7すすぎ",
                   "en": "7th rinsing"
                 }
               },
@@ -37077,7 +37704,7 @@ const jsonData = {
                 "edt": "0x78",
                 "name": "8thRinsing",
                 "descriptions": {
-                  "ja": "第８すすぎ",
+                  "ja": "第8すすぎ",
                   "en": "8th rinsing"
                 }
               },
@@ -37085,7 +37712,7 @@ const jsonData = {
                 "edt": "0x81",
                 "name": "1stSpinDrying",
                 "descriptions": {
-                  "ja": "第１脱水",
+                  "ja": "第1脱水",
                   "en": "1st spin drying"
                 }
               },
@@ -37093,7 +37720,7 @@ const jsonData = {
                 "edt": "0x82",
                 "name": "2ndSpinDrying",
                 "descriptions": {
-                  "ja": "第２脱水",
+                  "ja": "第2脱水",
                   "en": "2nd spin drying"
                 }
               },
@@ -37101,7 +37728,7 @@ const jsonData = {
                 "edt": "0x83",
                 "name": "3rdSpinDrying",
                 "descriptions": {
-                  "ja": "第３脱水",
+                  "ja": "第3脱水",
                   "en": "3rd spin drying"
                 }
               },
@@ -37109,7 +37736,7 @@ const jsonData = {
                 "edt": "0x84",
                 "name": "4thSpinDrying",
                 "descriptions": {
-                  "ja": "第４脱水",
+                  "ja": "第4脱水",
                   "en": "4th spin drying"
                 }
               },
@@ -37117,7 +37744,7 @@ const jsonData = {
                 "edt": "0x85",
                 "name": "5thSpinDrying",
                 "descriptions": {
-                  "ja": "第５脱水",
+                  "ja": "第5脱水",
                   "en": "5th spin drying"
                 }
               },
@@ -37125,7 +37752,7 @@ const jsonData = {
                 "edt": "0x86",
                 "name": "6thSpinDrying",
                 "descriptions": {
-                  "ja": "第６脱水",
+                  "ja": "第6脱水",
                   "en": "6th spin drying"
                 }
               },
@@ -37133,7 +37760,7 @@ const jsonData = {
                 "edt": "0x87",
                 "name": "7thSpinDrying",
                 "descriptions": {
-                  "ja": "第７脱水",
+                  "ja": "第7脱水",
                   "en": "7th spin drying"
                 }
               },
@@ -37141,7 +37768,7 @@ const jsonData = {
                 "edt": "0x88",
                 "name": "8thSpinDrying",
                 "descriptions": {
-                  "ja": "第８脱水",
+                  "ja": "第8脱水",
                   "en": "8th spin drying"
                 }
               },
@@ -37376,9 +38003,42 @@ const jsonData = {
             "inf": "optional"
           },
           "data": {
-            "type": "raw",
-            "minSize": 4,
-            "maxSize": 4
+            "type": "bitmap",
+            "size": 4,
+            "bitmaps": [
+              {
+                "name": "auto",
+                "descriptions": {
+                  "ja": "モード自動設定",
+                  "en": "Automatic mode"
+                },
+                "edt": "0x00"
+              },
+              {
+                "name": "withoutAdditionalWater",
+                "descriptions": {
+                  "ja": "溜めすすぎ",
+                  "en": "Rinsing without additional feeding of water from the tap"
+                },
+                "edt": "0x01"
+              },
+              {
+                "name": "withAdditionalWater",
+                "descriptions": {
+                  "ja": "流水すすぎ",
+                  "en": "Rinsing with additional feeding of water from the tap"
+                },
+                "edt": "0x02"
+              },
+              {
+                "name": "shower",
+                "descriptions": {
+                  "ja": "シャワーすすぎ",
+                  "en": "Shower rinsing"
+                },
+                "edt": "0x03"
+              }
+            ]
           },
           "note": {
             "ja": "0,1,2,3 ビット：第1 すすぎ、4,5,6,7 ビット：第2 すすぎ、8,9,10,11 ビット：第3 すすぎ、12,13,14,15 ビット：第4 すすぎ、16,17,18,19 ビット：第5 すすぎ、20,21,22,23 ビット：第6 すすぎ、24,25,26,27 ビット：第7 すすぎ、28,29,30,31 ビット：第8 すすぎ、0000：モード自動設定、0001：溜めすすぎ、0010：流水すすぎ、0011：シャワーすすぎ",
@@ -37532,7 +38192,7 @@ const jsonData = {
                     "edt": "0xFF",
                     "name": "auto",
                     "descriptions": {
-                      "ja": "温水自動設定",
+                      "ja": "温度自動設定",
                       "en": "Automatic water temperature setting"
                     }
                   }
@@ -37708,7 +38368,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x41",
-                "name": "locked",
+                "name": "true",
                 "descriptions": {
                   "ja": "ロック",
                   "en": "Locked"
@@ -37716,7 +38376,7 @@ const jsonData = {
               },
               {
                 "edt": "0x42",
-                "name": "unlocked",
+                "name": "false",
                 "descriptions": {
                   "ja": "アンロック",
                   "en": "Unlocked"
@@ -37770,7 +38430,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "特殊状態",
-            "en": "Exceptional status"
+            "en": "Indicates that the showcase freezer is in an exceptional status"
           },
           "shortName": "exceptionalStatus",
           "accessRule": {
@@ -37784,7 +38444,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x40",
-                "name": "normalStatus",
+                "name": "false",
                 "descriptions": {
                   "ja": "通常状態",
                   "en": "Normal status"
@@ -37792,7 +38452,7 @@ const jsonData = {
               },
               {
                 "edt": "0x41",
-                "name": "defrostingStatus",
+                "name": "true",
                 "descriptions": {
                   "ja": "除霜状態",
                   "en": "Defrosting status"
@@ -37846,7 +38506,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "外気温度計測値",
-            "en": "Measured value of outdoor air temperature"
+            "en": "Used to acquire measurements of outdoor air temperature"
           },
           "shortName": "outdoorAirTemperature",
           "accessRule": {
@@ -37859,7 +38519,8 @@ const jsonData = {
             "format": "int8",
             "unit": "Celsius",
             "minimum": -127,
-            "maximum": 126
+            "maximum": 125,
+            "multipleOf": 1
           }
         },
         "0xCA": {
@@ -37917,7 +38578,7 @@ const jsonData = {
                         "name": "none",
                         "descriptions": {
                           "ja": "設定なし",
-                          "en": "No setting"
+                          "en": "None"
                         }
                       }
                     ]
@@ -37934,7 +38595,7 @@ const jsonData = {
           },
           "propertyName": {
             "ja": "コンプレッサ動作状態",
-            "en": "Compressor operation status"
+            "en": "Indicates compressor ON/OFF status"
           },
           "shortName": "compressorOperationStatus",
           "accessRule": {
@@ -37948,7 +38609,7 @@ const jsonData = {
             "enum": [
               {
                 "edt": "0x30",
-                "name": "on",
+                "name": "true",
                 "descriptions": {
                   "ja": "ON",
                   "en": "ON"
@@ -37956,7 +38617,7 @@ const jsonData = {
               },
               {
                 "edt": "0x31",
-                "name": "off",
+                "name": "false",
                 "descriptions": {
                   "ja": "OFF",
                   "en": "OFF"
@@ -37973,8 +38634,8 @@ const jsonData = {
         "to": "latest"
       },
       "className": {
-        "ja": "スイッチ (JEM_A/HA端子対応)",
-        "en": "Switch (supporting JEM-A/HA terminals)"
+        "ja": "スイッチ（JEMA/HA端子対応）",
+        "en": "switch"
       },
       "shortName": "switch",
       "elProperties": {
