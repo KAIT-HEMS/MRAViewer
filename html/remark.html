@@ -13,7 +13,7 @@
     <div class="navbar navbar-dark bg-dark shadow-sm">
       <div class="container d-flex justify-content-between">
         <a href="#" class="navbar-brand">
-          <h1 id="note-title" class="h6"></h1>
+          <h1 id="remark-title" class="h6"></h1>
         </a>
       </div>
     </div>
@@ -21,8 +21,8 @@
   <main role="main">
     <div class="pt-3">
       <div class="container">
-<!--        <pre id="note-content"></pre>-->
-        <p id="note-content"></p>
+<!--        <pre id="remark-content"></pre>-->
+        <p id="remark-content"></p>
       </div>
     </div>
   </main>
@@ -42,10 +42,10 @@
     }, false);
 
     function showContents() {
-      let title = window.localStorage.getItem('note-title');
-      let content = window.localStorage.getItem('note-content');
-      $('#note-title').text(title);
-      $('#note-content').text(content);
+      let title = window.localStorage.getItem('remark-title');
+      let content = window.localStorage.getItem('remark-content');
+      $('#remark-title').text(title);
+      $('#remark-content').text(content);
     }
 
   </script>

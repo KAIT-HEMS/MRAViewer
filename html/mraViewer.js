@@ -1,8 +1,8 @@
 // mraViewer.js
-// 2020.11.16
+// 2020.12.02
 
-let globalVersionInfo = "V1.1.2 2020-11-16";
-let globalNotes = {}; // 備考欄のデータを保持するため
+let globalVersionInfo = "V1.2.0 2020-12-03";
+let globalRemarks = {}; // 備考欄のデータを保持するため
 let globalBitmaps = {}; // value range欄のbitmapデータを保持するため
 var vm = new Vue({
   el: "#app",
@@ -54,10 +54,10 @@ var vm = new Vue({
       window.open("bitmap.html", "bitmap", "width=600,height=300");
     },
     // 備考欄の*をクリックしたときの動作
-    showNote: function (noteEpc) {
-      window.localStorage.setItem("note-title", "Note for EPC = " + noteEpc);
-      window.localStorage.setItem("note-content", globalNotes[noteEpc]);
-      window.open("note.html", "note", "width=600,height=300");
+    showRemark: function (remarkEpc) {
+      window.localStorage.setItem("remark-title", "Remark for EPC = " + remarkEpc);
+      window.localStorage.setItem("remark-content", globalRemarks[remarkEpc]);
+      window.open("remark.html", "remark", "width=600,height=300");
     },
   },
 });
@@ -253,7 +253,7 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
   let pushFlag = true;
   appendix.epc = key;
 
-  // プロパティ名の設定
+  // プロパティ名(appendix.name)の設定
   const epcShortName = property.shortName
     ? ": " + property.shortName
     : ": missing shortName";
@@ -265,7 +265,7 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
     appendix.name += epcShortName;
   }
 
-  // access rule Set, Get
+  // access rule Set, Get(appendix.accessRule, appendix.accessRuleRequired)
   switch (property.accessRule.get) {
     case "notApplicable":
       switch (property.accessRule.set) {
@@ -358,20 +358,24 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
     default:
       console.log("Error: accessRule is ", property.accessRule.get);
   }
-  // access rule Anno
+  
+  // access rule Anno (appendix.inf)
   if (property.accessRule.inf == "required") {
     appendix.inf = "○";
   }
-  if (property.note) {
-    appendix.note = key;
+  
+  // remark (appendix.remark)
+  if (property.remark) {
+    appendix.remark = key;
     if (vm.rbLanguage == "japanese") {
-      globalNotes[key] = property.note.ja;
+      globalRemarks[key] = property.remark.ja;
     } else {
-      globalNotes[key] = property.note.en;
+      globalRemarks[key] = property.remark.en;
     }
   } else {
-    appendix.note = "empty";
+    appendix.remark = "empty";
   }
+
   // value range
   switch (property.data.type) {
     case "state":
@@ -386,8 +390,8 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
         appendix.range = property.data.enum;
         console.log(appendix.range);
       } else {
-        const multiple = property.data.multipleOf
-          ? property.data.multipleOf
+        const multiple = property.data.multiple
+          ? property.data.multiple
           : 1;
         // 10進数表示の３けた区切りのコンマを追加 (Intl.NumberFormat)
         const digit =
@@ -560,6 +564,7 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
           minItems: property.data.minItems,
           maxItems: property.data.maxItems,
         },
+        remark: property.remark // 2020.12.01
       };
       processOneOf(key, arrayHeaderProperty, id, indexObject, indexOneOf);
 
@@ -597,7 +602,7 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
             type: "objectHeader",
             name: objectTitle,
           },
-          note: property.note,
+          remark: property.remark,
         };
         processOneOf(key, objectHeaderProperty, id, indexObject, indexOneOf);
 
@@ -611,9 +616,9 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
       console.log("default", property.data.type);
   } // end of switch
 
-  if (property.data.multipleOf) {
+  if (property.data.multiple) {
     if (property.data.unit) {
-      appendix.unit = property.data.multipleOf + " " + property.data.unit;
+      appendix.unit = property.data.multiple + " " + property.data.unit;
     } else {
       appendix.unit = property.data.unit;
     }
@@ -626,14 +631,14 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
     appendix.accessRule = "";
     appendix.accessRuleRequired = "";
     appendix.inf = "";
-    appendix.note = "empty";
+    appendix.remark = "empty";
   } else if (indexObject > 0 && (indexOneOf === null || indexOneOf === 0)) {
     appendix.epc = "";
     appendix.name = "";
     appendix.accessRule = "";
     appendix.accessRuleRequired = "";
     appendix.inf = "";
-    appendix.note = "empty";
+    appendix.remark = "empty";
   }
   appendix.id = id;
   if (pushFlag === true) {

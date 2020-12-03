@@ -1,5 +1,5 @@
 <!-- index.html for mraViewer-->
-<!-- 2020.11.16 -->
+<!-- 2020.12.02 -->
 <!-- Hiroyuki Fujita -->
 
 <!doctype html>
@@ -257,12 +257,12 @@
                   <td class="col8">{{ appendix.accessRuleRequired }}</td>
                   <td class="col9">{{ appendix.inf }}</td>
 
-                  <!-- Column note -->
-                  <template v-if="appendix.note === 'empty'">
+                  <!-- Column remark -->
+                  <template v-if="appendix.remark === 'empty'">
                     <td class="col10"></td>
                   </template>
                   <template v-else>
-                    <td class="col10" v-on:click="showNote(appendix.note)">*</td>
+                    <td class="col10" v-on:click="showRemark(appendix.remark)">*</td>
                   </template>
                 </tr>
               </tbody>
