@@ -1,7 +1,8 @@
 // mraViewer.js
-// 2020.12.02
+// 2021.02.04
+// MRA V1.1.0 対応バージョン
 
-let globalVersionInfo = "V1.2.0 2020-12-03";
+let globalVersionInfo = "V1.3.0 2021-02-04";
 let globalRemarks = {}; // 備考欄のデータを保持するため
 let globalBitmaps = {}; // value range欄のbitmapデータを保持するため
 var vm = new Vue({
@@ -584,15 +585,19 @@ function createAppendixList(key, property, id, indexObject, indexOneOf) {
       for (let i = 0; i < arrayObject.length; i++, indexObject++) {
         // display object header
         let objectTitle = "Missing descriptions";
-        if (arrayObject[i].descriptions) {
+        // if (arrayObject[i].descriptions) {
+        if (arrayObject[i].elementName) {
           objectTitle =
             vm.rbLanguage == "japanese"
-              ? arrayObject[i].descriptions.ja
-              : arrayObject[i].descriptions.en;
+              // ? arrayObject[i].descriptions.ja
+              // : arrayObject[i].descriptions.en;
+              ? arrayObject[i].elementName.ja
+              : arrayObject[i].elementName.en;
         }
         // objectTitleにnameを追加
         if (vm.rbName == "name-on") {
-          objectTitle += ": " + arrayObject[i].name;
+          // objectTitle += ": " + arrayObject[i].name;
+          objectTitle += ": " + arrayObject[i].shortName;
         }
         const objectHeaderProperty = {
           propertyName: property.propertyName,
