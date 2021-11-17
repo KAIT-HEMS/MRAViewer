@@ -1,111 +1,73 @@
-// parseJSON.js for MRA
-// 2020.11.06
+// parseJSON.js for mraViewer
+// 2021.11.17
+// MRA Viewer V1.0.0 b1
+// Copyright (c) 2021 Kanagawa Institute of Technology
+// Released under the MIT License.
 'use strict';
 
-// ********** TEST PROGRAM **********
-// const selectedEoj = "0x0000"; // Super Class
-// const selectedEoj = "0x002D"; // F-latest
-// const selectedEoj = "0x0130"; // oneOfがない場合
-// const selectedEoj = "0x0288"; // oneOfがある場合（A-E, F-latest)
-// const selectedEoj = "0x0287"; // EPC=0xE0
-// const selectedRelease = "A";
-// const selectedRelease = "B";
-// const selectedRelease = "F";
-
-// const deviceDescription = getDeviceDescriptionObj(selectedEoj, selectedRelease);
-// console.log(deviceDescription);
-// ********** TEST PROGRAM **********
-
-
-// function: EOJとReleaseから、該当するdevice description objectをreturnする
+// function: 引数で指定したEOJとReleaseから、該当するdevice description objectをreturnする
 // input: string:selectedEoj, string:selectedRelease, example: ('0x0130', 'A')
-// output: object:device description object
-// note: oneOfと$refを処理したものがreturnされる
+// output: object:device description object ($refを処理したものがreturnされる)
 function getDeviceDescriptionObj(selectedEoj, selectedRelease) {
-  console.log("EOJ:", selectedEoj, " Release:", selectedRelease);
-//   console.log("JSON data Date:", jsonData.metaData.date, "Relase:", jsonData.metaData.release, "Version:", jsonData.metaData.version);
-
-  // replace $ref in definitions
-  let definitions = Object.assign({}, jsonData.definitions);  // copy object
-  for (const [key, value] of Object.entries(definitions)) {
-    definitions[key] = replaceRef(value);
-  }
   let deviceObject = {};
   if (selectedEoj == "0x0EF0") {
-    deviceObject = JSON.parse(JSON.stringify(jsonData.nodeProfile));   // copy object
+    deviceObject = JSON.parse(JSON.stringify(jsonData.nodeProfile));  // copy object
   } else if (selectedEoj == "0x0000") {
     deviceObject = JSON.parse(JSON.stringify(jsonData.superClass));   // copy object
   } else {
-    deviceObject = JSON.parse(JSON.stringify(jsonData.devices[selectedEoj]));   // copy object
+    // jsonData.devices は object の array。object の eoj が selectedEoj と同じものを利用する
+    for (const device of jsonData.devices) {
+      if (device.eoj == selectedEoj) {
+        deviceObject = JSON.parse(JSON.stringify(device));   // copy object
+      }
+    }
   }
   const latestRelease = jsonData.metaData.release;
 
-  // device object：oneOfの選択とselectedReleaseの確認
+  // device object：selectedReleaseの確認
   if (Object.keys(deviceObject).length !== 0) {
-    if (!deviceObject.oneOf) {    // deviceObjectにoneOfが無い場合
-        const validFrom = deviceObject.validRelease.from;
-        const validTo = (deviceObject.validRelease.to == 'latest') ? latestRelease : deviceObject.validRelease.to;
-        // selectedReleaseがvalidRelease内にあることの確認
-        if (!((validFrom <= selectedRelease) && ( selectedRelease <= validTo))) {
-          console.log("ERROR: no object for the selected Release");
-          return;
-        }
-    } else {        // deviceObjectにoneOfがある場合
-    console.log("device object oneOf");
-        for (const object of deviceObject.oneOf) {
-            const validFrom = object.validRelease.from;
-            const validTo = (object.validRelease.to == 'latest') ? latestRelease : object.validRelease.to;
-          // selectedReleaseがvalidRelease内にあることの確認
-            if ((validFrom <= selectedRelease) && ( selectedRelease <= validTo )) {
-                deviceObject = object;
-                break;
-            }
-        }
-        if (deviceObject.oneOf) { // oneOfが残っていたら、selectedReleaseに置き換わっていないということ
-          console.log("ERROR: no object for the selected Release");
-          return;        
-        }
+    const validFrom = deviceObject.validRelease.from;
+    const validTo = (deviceObject.validRelease.to == 'latest') ? latestRelease : deviceObject.validRelease.to;
+    // selectedReleaseがvalidRelease内にあることの確認
+    if (!((validFrom <= selectedRelease) && ( selectedRelease <= validTo))) {
+      console.log("ERROR: no object for the selected Release");
+      return;
     }
   } else {
     console.log("ERROR: no object for the selected EOJ");
     return;
   }
 
-  // property object：oneOfの選択とselectedReleaseの確認
-  for (const [key, value] of Object.entries(deviceObject.elProperties)) {
-    if (!value.oneOf) {    // property objectにoneOfが無い場合
-      const validFrom = value.validRelease.from;
-      const validTo = (value.validRelease.to == 'latest') ? latestRelease : value.validRelease.to;
-      // selectedReleaseがvalidRelease内になければpropertyを削除
-      if (!((validFrom <= selectedRelease) && ( selectedRelease <= validTo ))) {
-        delete deviceObject.elProperties[key];
-      }
-    } else {        // property objectにoneOfがある場合
-      for (const object of value.oneOf) {
-        const validFrom = object.validRelease.from;
-        const validTo = (object.validRelease.to == 'latest') ? latestRelease : object.validRelease.to;
-        // selectedReleaseがvalidRelease内にあることの確認
-        if ((validFrom <= selectedRelease) && ( selectedRelease <= validTo )) {
-          deviceObject.elProperties[key] = object;
-          delete deviceObject.elProperties[key].oneOf;
-          break;  // ひとつみつかれば、Loopから抜ける
-        }
-      }
-      if (deviceObject.elProperties[key].oneOf) {    // oneOfが残っている場合propertyを削除
-        delete deviceObject.elProperties[key];
-      }   
+  // selectedRelease に対応しない property object を削除
+  let deletePos = [];
+  for (const property of deviceObject.elProperties) {
+    const validFrom = property.validRelease.from;
+    const validTo = (property.validRelease.to == 'latest') ? latestRelease : property.validRelease.to;
+    // selectedReleaseがvalidRelease内になければpropertyを削除
+    if (!((validFrom <= selectedRelease) && ( selectedRelease <= validTo ))) {
+      // push position to delete
+      const pos = deviceObject.elProperties.indexOf(property);
+      deletePos.push(pos);
     }
   }
-
-// propertyの$refの処理
-  for (const property in deviceObject.elProperties) {
-    const propertyData = deviceObject.elProperties[property].data;
-    deviceObject.elProperties[property].data = replaceRef(propertyData);
+  // reverse positions to delete
+  deletePos = deletePos.reverse();
+  // delete property from last to top in the loop
+  for (const pos of deletePos) {
+    deviceObject.elProperties.splice(pos, 1);
   }
+
+  // replace $ref
+  for (let property of deviceObject.elProperties) {
+    const propertyData = property.data;
+    const pos = deviceObject.elProperties.indexOf(property);
+    property.data = replaceRef(propertyData);
+  }
+  console.log("parseJSON deviceObject", deviceObject);
   return deviceObject;  
 }
 
-// function: inputのkeyが'$ref'ならdefinitions[value]をreturnする。それ以外はinputをreturnする
+// function: inputのkeyが'$ref'ならdefinitions[value]に置換する。それ以外はinputをreturnする
 // input: object
 // output: object
 function replaceRef(inputObject) {

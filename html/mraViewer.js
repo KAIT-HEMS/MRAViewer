@@ -1,8 +1,11 @@
-// mraViewer.js
-// 2021.02.04
-// MRA V1.1.0 対応バージョン
+// mraViewer.js for mraViewer
+// 2021.11.17
+// MRA Viewer V1.0.0 b1
+// Copyright (c) 2021 Kanagawa Institute of Technology
+// Released under the MIT License.
+'use strict';
 
-let globalVersionInfo = "V1.3.0 2021-02-04";
+let globalVersionInfo = "V1.0.0 2021-11-16";
 let globalRemarks = {}; // 備考欄のデータを保持するため
 let globalBitmaps = {}; // value range欄のbitmapデータを保持するため
 var vm = new Vue({
@@ -44,8 +47,10 @@ var vm = new Vue({
         jsonData.metaData.date +
         ", Release:" +
         jsonData.metaData.release +
-        ", Version:" +
-        jsonData.metaData.version;
+        "\nData Version:" +
+        jsonData.metaData.dataVersion +
+        ", Format Version:" +
+        jsonData.metaData.formatVersion;
       window.alert(message);
     },
     // 値域欄のbitmapをクリックしたときの動作
@@ -102,16 +107,21 @@ function refresh() {
   console.log("devices:", jsonData.devices);
   if (selectedEoj == "0x0EF0" || selectedEoj == "0x0000") {
     firstRelease = "A";
-  } else if (!jsonData.devices[selectedEoj].oneOf) {
-    firstRelease = jsonData.devices[selectedEoj].validRelease.from;
-  } else {
-    for (let object of jsonData.devices[selectedEoj].oneOf) {
-      firstRelease =
-        object.validRelease.from < firstRelease
-          ? object.validRelease.from
-          : firstRelease;
+  } else  {
+    for (const device of jsonData.devices) {
+      if (device.eoj == selectedEoj) {
+        firstRelease = device.validRelease.from;
+      }
     }
   }
+    // } else {
+  //   for (let object of jsonData.devices[selectedEoj].oneOf) {
+  //     firstRelease =
+  //       object.validRelease.from < firstRelease
+  //         ? object.validRelease.from
+  //         : firstRelease;
+  //   }
+  // }
 
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
   let releaseList = [];
@@ -133,7 +143,7 @@ function refresh() {
       : latestRelease;
   vm.releaseSelected = selectedRelease;
 
-  // 機器オブジェクトの選択の要素を作成
+  // 機器オブジェクトの選択の要素 (deviceList) を作成
   // Super class and Node profile
   const nameSuperClass =
     vm.rbLanguage == "japanese" ? "スーパークラス" : "Super class";
@@ -143,63 +153,68 @@ function refresh() {
     vm.rbName == "name-on" ? nameNodeProfile + "nodeProfile" : nameNodeProfile;
   let deviceList = [
     { name: nameSuperClass, eoj: "0x0000" },
-    { name: nameNodeProfile, eoj: "0x0EF0" },
+    { name: nameNodeProfile, eoj: "0x0EF0" }
     // { name: "Super class", eoj: "0x0000" },
     // { name: "0x0EF0 Node profile", eoj: "0x0EF0" },
   ];
-  for (const eoj of Object.keys(jsonData.devices)) {
-    // EOJ の定義に oneOf がない場合
-    if (!jsonData.devices[eoj].oneOf) {
+    // TODO:要修正
+  // for (const eoj of Object.keys(jsonData.devices)) {
+  for (const device of jsonData.devices) {
+    const eoj = device.eoj;
+      // EOJ の定義に oneOf がない場合
+    // TODO:要修正
+    // if (!jsonData.devices[eoj].oneOf) {
       let eojShortName = "";
       if (vm.rbName == "name-on") {
-        eojShortName = jsonData.devices[eoj].shortName
-          ? ": " + jsonData.devices[eoj].shortName
+        eojShortName = device.shortName ? ": " + device.shortName
+        // eojShortName = jsonData.devices[eoj].shortName
+        //   ? ": " + jsonData.devices[eoj].shortName
           : ": missing shortName";
       }
 
       if (vm.rbLanguage == "japanese") {
         deviceList.push({
-          name: eoj + " " + jsonData.devices[eoj].className.ja + eojShortName,
+          name: eoj + " " + device.className.ja + eojShortName,
           eoj: eoj,
         });
       } else {
         deviceList.push({
-          name: eoj + " " + jsonData.devices[eoj].className.en + eojShortName,
+          name: eoj + " " + device.className.en + eojShortName,
           eoj: eoj,
         });
       }
 
       // EOJ の定義に oneOf がある場合
-    } else {
-      for (let object of jsonData.devices[eoj].oneOf) {
-        const validFrom = object.validRelease.from;
-        const validTo =
-          object.validRelease.to == "latest"
-            ? latestRelease
-            : object.validRelease.to;
-        if (validFrom <= selectedRelease && selectedRelease <= validTo) {
-          let eojShortName = "";
-          if (vm.rbName == "name-on") {
-            eojShortName = object.shortName
-              ? ": " + object.shortName
-              : ": missing shortName";
-          }
+    // } else {
+    //   for (let object of jsonData.devices[eoj].oneOf) {
+    //     const validFrom = object.validRelease.from;
+    //     const validTo =
+    //       object.validRelease.to == "latest"
+    //         ? latestRelease
+    //         : object.validRelease.to;
+    //     if (validFrom <= selectedRelease && selectedRelease <= validTo) {
+    //       let eojShortName = "";
+    //       if (vm.rbName == "name-on") {
+    //         eojShortName = object.shortName
+    //           ? ": " + object.shortName
+    //           : ": missing shortName";
+    //       }
 
-          if (vm.rbLanguage == "japanese") {
-            deviceList.push({
-              name: eoj + " " + object.className.ja + eojShortName,
-              eoj: eoj,
-            });
-          } else {
-            deviceList.push({
-              name: eoj + " " + object.className.en + eojShortName,
-              eoj: eoj,
-            });
-          }
-          break;
-        }
-      }
-    }
+    //       if (vm.rbLanguage == "japanese") {
+    //         deviceList.push({
+    //           name: eoj + " " + object.className.ja + eojShortName,
+    //           eoj: eoj,
+    //         });
+    //       } else {
+    //         deviceList.push({
+    //           name: eoj + " " + object.className.en + eojShortName,
+    //           eoj: eoj,
+    //         });
+    //       }
+    //       break;
+    //     }
+    //   }
+    // }
   }
   console.log("deviceList:", deviceList);
   vm.deviceList = deviceList;
@@ -209,30 +224,36 @@ function refresh() {
     selectedEoj,
     selectedRelease
   );
+  console.log("deviceObjectOriginal", deviceObjectOriginal);
   let deviceObject = JSON.parse(JSON.stringify(deviceObjectOriginal));
   // propertyを１つづつ取り出してprocessOneOfに渡す。
-  let id = 0; // index for v-for, front end の表示のラインid
+  let id = 0; // index for v-for, frontend の表示のラインid
   vm.appendix_list = [];
-  for (const [key, property] of Object.entries(deviceObject.elProperties)) {
+  // TODO: 要修正 deviceObject.elProperties は array
+  // for (const [key, property] of Object.entries(deviceObject.elProperties)) {
+  console.log("deviceObject", deviceObject);
+  for (const property of deviceObject.elProperties) {
     let indexObject = null;
     let indexOneOf = null;
-    processOneOf(key, property, id, indexObject, indexOneOf);
+    // console.log("epc", property.epc, "property", property, "id", id, "indexObject", indexObject, "indexOneOf", indexOneOf);
+    processOneOf(property.epc, property, id, indexObject, indexOneOf);
   }
 }
 
 // oneOfの処理
-function processOneOf(key, property, id, indexObject, indexOneOf) {
+function processOneOf(epc, property, id, indexObject, indexOneOf) {
+  // console.log("epc", epc, "property", property, "id", id, "indexObject", indexObject, "indexOneOf", indexOneOf);
   // oneOfの処理
   if (property.data.oneOf) {
     const arrayOneOf = property.data.oneOf;
     for (indexOneOf = 0; indexOneOf < arrayOneOf.length; indexOneOf++) {
       property.data = arrayOneOf[indexOneOf];
-      createAppendixList(key, property, id, indexObject, indexOneOf);
+      createAppendixList(epc, property, id, indexObject, indexOneOf);
       id++;
     }
   } else {
     // const index = 0;  // 不要？
-    createAppendixList(key, property, id, indexObject, indexOneOf);
+    createAppendixList(epc, property, id, indexObject, indexOneOf);
     id++;
   }
 }
